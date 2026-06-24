@@ -247,6 +247,11 @@ a {
   text-transform: uppercase;
 }
 
+.course-kicker {
+  font-size: 0.95rem;
+  margin-left: 0.18rem;
+}
+
 .course-hero h1 {
   max-width: 850px;
   margin: 0;
