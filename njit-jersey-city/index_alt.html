@@ -3,58 +3,129 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NJIT Jersey City | Alternate Landing</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>NJIT Jersey City</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #070b12;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      @media (max-width: 720px) {
+        body {
+          padding: 0;
+          align-items: start;
+        }
+      }
+
+      main {
+        width: 100%;
+      }
+
+      .hero-svg-wrap {
+        display: block;
+        width: min(100%, 1672px);
+        margin-inline: auto;
+      }
+
+      .hero-svg {
+        display: block;
+        width: 100%;
+        height: auto;
+        background: #0b111b;
+      }
+
+      /* Hotspot rects are transparent by default */
+      .hero-svg a rect {
+        fill: transparent;
+        stroke: transparent;
+        stroke-width: 3;
+        transition: fill 120ms ease, stroke 120ms ease;
+      }
+
+      .hero-svg a:hover rect,
+      .hero-svg a:focus-visible rect {
+        fill: rgba(215, 25, 32, 0.12);
+        stroke: rgba(255, 255, 255, 0.86);
+        outline: none;
+      }
+
+      /* Remove default SVG focus outline — handled by rect stroke above */
+      .hero-svg a:focus {
+        outline: none;
+      }
+
+      /* Keyboard focus must remain visible for accessibility */
+      .hero-svg a:focus-visible rect {
+        stroke: rgba(255, 255, 255, 0.86);
+        fill: rgba(215, 25, 32, 0.12);
+      }
+    </style>
   </head>
-  <body class="alt-page">
-    <header class="alt-hero">
-      <nav class="course-nav" aria-label="Alternate landing navigation">
-        <a href="index.html">Original landing</a>
-        <a href="pages/jersey-city.html">Jersey City</a>
-      </nav>
+  <body>
+    <main aria-label="NJIT Jersey City landing page">
+      <!--
+        SVG approach: the viewBox matches the image's native pixel dimensions (1672×941).
+        All hotspot <rect> coordinates are expressed in that same coordinate space, so
+        they stay perfectly aligned regardless of how the browser scales the element.
+        No object-fit gaps, no percentage drift, crisp on every display.
+      -->
+      <div class="hero-svg-wrap">
+        <svg
+          class="hero-svg"
+          viewBox="0 0 1672 941"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="NJIT Jersey City landing graphic — AI, Cybersecurity, Hyperscale Computing, and Emerging Technologies"
+        >
+          <image
+            href="assets/explore-JC-emerging-NJIT.png"
+            x="0" y="0"
+            width="1672" height="941"
+          />
 
-      <div class="alt-hero-content">
-        <p class="course-kicker">NJIT Jersey City</p>
-        <h1>Explore Computing at the Edge of Industry</h1>
-        <p class="course-lede">
-          Programs and professional pathways built around the technologies reshaping software,
-          infrastructure, security, and intelligent systems.
-        </p>
-
-        <section class="branch-grid" aria-label="Explore branches">
-          <a class="branch-card" href="pages/artificial-intelligence.html">
-            <span class="branch-icon branch-ai" aria-hidden="true"></span>
-            <span class="branch-copy">
-              <strong>Artificial Intelligence</strong>
-              <small>Applied AI, models, agents, and decision systems.</small>
-            </span>
+          <!-- NJIT logo / overview -->
+          <a href="pages/about-njit.html" aria-label="NJIT overview">
+            <rect x="90"  y="88"  width="527" height="127" rx="4" />
           </a>
 
-          <a class="branch-card" href="pages/cybersecurity.html">
-            <span class="branch-icon branch-cyber" aria-hidden="true"></span>
-            <span class="branch-copy">
-              <strong>Cybersecurity</strong>
-              <small>Secure systems, privacy, risk, and resilient operations.</small>
-            </span>
+          <!-- Explore Jersey City -->
+          <a href="pages/jersey-city.html" aria-label="Explore Jersey City NJIT">
+            <rect x="0"   y="476" width="726" height="100" rx="4" />
           </a>
 
-          <a class="branch-card" href="pages/hyperscale-computing.html">
-            <span class="branch-icon branch-hyperscale" aria-hidden="true"></span>
-            <span class="branch-copy">
-              <strong>Hyperscale Computing</strong>
-              <small>Cloud platforms, scalable services, and data infrastructure.</small>
-            </span>
+          <!-- Artificial Intelligence -->
+          <a href="pages/artificial-intelligence.html" aria-label="Artificial Intelligence">
+            <rect x="74"  y="645" width="139" height="151" rx="4" />
           </a>
 
-          <a class="branch-card" href="pages/emerging-technologies.html">
-            <span class="branch-icon branch-emerging" aria-hidden="true"></span>
-            <span class="branch-copy">
-              <strong>Emerging Technologies</strong>
-              <small>AI-assisted engineering and future-focused computing practice.</small>
-            </span>
+          <!-- Cybersecurity -->
+          <a href="pages/cybersecurity.html" aria-label="Cybersecurity">
+            <rect x="259" y="645" width="132" height="151" rx="4" />
           </a>
-        </section>
+
+          <!-- Hyperscale Computing -->
+          <a href="pages/hyperscale-computing.html" aria-label="Hyperscale Computing">
+            <rect x="436" y="645" width="149" height="151" rx="4" />
+          </a>
+
+          <!-- Emerging Technologies -->
+          <a href="pages/emerging-technologies.html" aria-label="Emerging Technologies">
+            <rect x="615" y="645" width="157" height="151" rx="4" />
+          </a>
+        </svg>
       </div>
-    </header>
+    </main>
   </body>
 </html>
