@@ -177,19 +177,8 @@ a {
   align-items: end;
   padding: 88px 24px 48px;
   background:
-    linear-gradient(0deg, #070b12 0%, rgba(7, 11, 18, 0.7) 30%, rgba(7, 11, 18, 0.25) 55%, rgba(7, 11, 18, 0) 78%),
-    radial-gradient(130% 120% at 80% 6%, #16243f 0%, #0c1326 44%, #070a13 100%);
-}
-
-/* Abstract network backdrop (location-independent) for the CS 690 hero */
-.course-hero-net {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.55;
-  pointer-events: none;
+    linear-gradient(0deg, #05070b 0%, rgba(5, 7, 11, 0) 62%),
+    radial-gradient(135% 125% at 75% 4%, #161b26 0%, #0b0e15 48%, #06080d 100%);
 }
 
 .course-hero::after {
