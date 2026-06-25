@@ -206,6 +206,10 @@
 
         .hero__content { padding: 130px 18px 42px; }
         .hero__logo img { width: clamp(168px, 46vw, 210px); }
+
+        /* Keep one row on phones, sized up to fill the width (larger than the
+           original, while still fitting the longest line at ~320px) */
+        .headline { font-size: clamp(0.8rem, 4.4vw, 2.2rem); }
       }
 
       @media (max-width: 560px) {
@@ -227,7 +231,7 @@
 
       <div class="hero__content">
         <p class="kicker">NJIT Jersey City</p>
-        <h1 class="headline">AI<span class="dot">&bull;</span>Cybersecurity<span class="dot">&bull;</span>Hyperscaling</h1>
+        <h1 class="headline"><span class="term">AI<span class="dot">&bull;</span></span><span class="term">Cybersecurity<span class="dot">&bull;</span></span><span class="term">Hyperscaling</span></h1>
         <p class="lede">Graduate programs at the edge of industry, in the heart of Jersey City.</p>
         <a class="explore" href="pages/jersey-city.html" aria-label="Explore NJIT in Jersey City">
           <img src="assets/image-parts/tile-explore-cut.png" alt="Explore NJIT in Jersey City">
