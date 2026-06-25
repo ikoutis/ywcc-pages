@@ -7,125 +7,251 @@
     <style>
       :root {
         color-scheme: dark;
+        --bg: #070b12;
+        --text: #f7f9fc;
+        --muted: #b9c2d1;
+        --accent: #d71920;
+        --cyan: #45d4ff;
+        --border: rgba(255, 255, 255, 0.14);
       }
 
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
 
       body {
         margin: 0;
-        min-height: 100vh;
-        background: #070b12;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: inherit; }
+
+      /* ---------------- HERO ---------------- */
+      .hero {
+        position: relative;
+        min-height: 76vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background: var(--bg);
+      }
+
+      /* Clean skyline scene (no baked-in text) */
+      .hero__photo {
+        position: absolute;
+        inset: 0;
+        background: url("assets/image-parts/tile-jc-background.png") center right / cover no-repeat;
+      }
+
+      /* Darken the left so the logo, headline and button read cleanly */
+      .hero__scrim {
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(90deg, var(--bg) 0%, rgba(7, 11, 18, 0.9) 30%, rgba(7, 11, 18, 0.45) 64%, rgba(7, 11, 18, 0.12) 100%);
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto 0 0;
+        height: 5px;
+        background: linear-gradient(90deg, var(--accent), #ffffff 22%, var(--cyan) 48%, transparent 84%);
+        z-index: 3;
+      }
+
+      /* NJIT logo — screen blend drops its dark backdrop so it sits on the scene */
+      .hero__logo {
+        position: absolute;
+        top: clamp(18px, 3vw, 34px);
+        left: clamp(16px, 3vw, 40px);
+        z-index: 3;
+        display: block;
+        line-height: 0;
+      }
+
+      .hero__logo img {
+        display: block;
+        width: clamp(190px, 24vw, 300px);
+        height: auto;
+      }
+
+      .hero__content {
+        position: relative;
+        z-index: 2;
+        width: min(1180px, 100%);
+        margin-inline: auto;
+        padding: 150px 24px 60px;
+      }
+
+      .kicker {
+        margin: 0 0 16px;
+        color: var(--cyan);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      /* White main message — single row, fluid so it always fits */
+      .headline {
+        margin: 0;
+        white-space: nowrap;
+        font-size: clamp(0.6rem, 3.6vw, 3.2rem);
+        font-weight: 800;
+        line-height: 1.05;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+      }
+
+      .headline .dot {
+        color: var(--accent);
+        margin: 0 0.26em;
+        font-weight: 900;
+      }
+
+      .lede {
+        max-width: 30ch;
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 1.4vw, 1.18rem);
+        line-height: 1.55;
+      }
+
+      /* Explore button graphic — screen blend removes its dark backdrop */
+      .explore {
+        display: inline-block;
+        margin-top: 30px;
+        line-height: 0;
+        transition: transform 140ms ease, filter 140ms ease;
+      }
+
+      .explore img {
+        display: block;
+        width: clamp(280px, 34vw, 430px);
+        height: auto;
+      }
+
+      .explore:hover,
+      .explore:focus-visible {
+        transform: translateY(-2px);
+        filter: brightness(1.1);
+        outline: none;
+      }
+
+      /* ---------------- PROGRAM TILES ---------------- */
+      .programs {
+        width: min(1180px, 100%);
+        margin-inline: auto;
+        padding: 56px 24px 84px;
+      }
+
+      .programs__kicker {
+        margin: 0 0 22px;
+        color: var(--cyan);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .tiles {
         display: grid;
-        place-items: center;
-        padding: 24px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+
+      /* Each tile is a finished square graphic (icon + label baked in) */
+      .tile {
+        display: block;
+        aspect-ratio: 1 / 1;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        overflow: hidden;
+        line-height: 0;
+        transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+      }
+
+      .tile img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .tile:hover,
+      .tile:focus-visible {
+        transform: translateY(-5px);
+        border-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+        outline: none;
+      }
+
+      /* ---------------- RESPONSIVE ---------------- */
+      @media (max-width: 900px) {
+        .tiles { grid-template-columns: 1fr 1fr; }
       }
 
       @media (max-width: 720px) {
-        body {
-          padding: 0;
-          align-items: start;
+        .hero {
+          min-height: 80vh;
+          align-items: flex-end;
         }
+
+        .hero__scrim {
+          background:
+            linear-gradient(0deg, var(--bg) 6%, rgba(7, 11, 18, 0.84) 44%, rgba(7, 11, 18, 0.5) 100%);
+        }
+
+        .hero__content { padding: 130px 18px 42px; }
+        .hero__logo img { width: clamp(168px, 46vw, 210px); }
       }
 
-      main {
-        width: 100%;
-      }
-
-      .hero-svg-wrap {
-        display: block;
-        width: min(100%, 1672px);
-        margin-inline: auto;
-      }
-
-      .hero-svg {
-        display: block;
-        width: 100%;
-        height: auto;
-        background: #0b111b;
-      }
-
-      /* Hotspot rects are transparent by default */
-      .hero-svg a rect {
-        fill: transparent;
-        stroke: transparent;
-        stroke-width: 3;
-        transition: fill 120ms ease, stroke 120ms ease;
-      }
-
-      .hero-svg a:hover rect,
-      .hero-svg a:focus-visible rect {
-        fill: rgba(215, 25, 32, 0.12);
-        stroke: rgba(255, 255, 255, 0.86);
-        outline: none;
-      }
-
-      /* Remove default SVG focus outline — handled by rect stroke above */
-      .hero-svg a:focus {
-        outline: none;
-      }
-
-      /* Keyboard focus must remain visible for accessibility */
-      .hero-svg a:focus-visible rect {
-        stroke: rgba(255, 255, 255, 0.86);
-        fill: rgba(215, 25, 32, 0.12);
+      @media (max-width: 560px) {
+        .hero__content { padding-left: 16px; padding-right: 16px; }
+        .programs { padding: 42px 16px 64px; }
+        .tiles { gap: 12px; }
       }
     </style>
   </head>
   <body>
-    <main aria-label="NJIT Jersey City landing page">
-      <!--
-        SVG approach: the viewBox matches the image's native pixel dimensions (1672×941).
-        All hotspot <rect> coordinates are expressed in that same coordinate space, so
-        they stay perfectly aligned regardless of how the browser scales the element.
-        No object-fit gaps, no percentage drift, crisp on every display.
-      -->
-      <div class="hero-svg-wrap">
-        <svg
-          class="hero-svg"
-          viewBox="0 0 1672 941"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="NJIT Jersey City landing graphic — AI, Cybersecurity, Hyperscale Computing, and Emerging Technologies"
-        >
-          <image
-            href="assets/explore-JC-emerging-NJIT.png"
-            x="0" y="0"
-            width="1672" height="941"
-          />
 
-          <!-- NJIT logo / overview -->
-          <a href="pages/about-njit.html" aria-label="NJIT overview">
-            <rect x="90"  y="88"  width="527" height="127" rx="4" />
-          </a>
+    <header class="hero">
+      <div class="hero__photo" aria-hidden="true"></div>
+      <div class="hero__scrim" aria-hidden="true"></div>
 
-          <!-- Explore Jersey City -->
-          <a href="pages/jersey-city.html" aria-label="Explore Jersey City NJIT">
-            <rect x="0"   y="476" width="726" height="100" rx="4" />
-          </a>
+      <a class="hero__logo" href="pages/about-njit.html" aria-label="NJIT — New Jersey Institute of Technology">
+        <img src="assets/image-parts/tile-njit-logo-cut.png" alt="NJIT — New Jersey Institute of Technology">
+      </a>
 
-          <!-- Artificial Intelligence -->
-          <a href="pages/artificial-intelligence.html" aria-label="Artificial Intelligence">
-            <rect x="74"  y="645" width="139" height="151" rx="4" />
-          </a>
-
-          <!-- Cybersecurity -->
-          <a href="pages/cybersecurity.html" aria-label="Cybersecurity">
-            <rect x="259" y="645" width="132" height="151" rx="4" />
-          </a>
-
-          <!-- Hyperscale Computing -->
-          <a href="pages/hyperscale-computing.html" aria-label="Hyperscale Computing">
-            <rect x="436" y="645" width="149" height="151" rx="4" />
-          </a>
-
-          <!-- Emerging Technologies -->
-          <a href="pages/emerging-technologies.html" aria-label="Emerging Technologies">
-            <rect x="615" y="645" width="157" height="151" rx="4" />
-          </a>
-        </svg>
+      <div class="hero__content">
+        <p class="kicker">NJIT Jersey City</p>
+        <h1 class="headline">AI<span class="dot">&bull;</span>Cybersecurity<span class="dot">&bull;</span>Hyperscaling</h1>
+        <p class="lede">Graduate programs at the edge of industry, in the heart of Jersey City.</p>
+        <a class="explore" href="pages/jersey-city.html" aria-label="Explore NJIT in Jersey City">
+          <img src="assets/image-parts/tile-explore-cut.png" alt="Explore NJIT in Jersey City">
+        </a>
       </div>
+    </header>
+
+    <main class="programs">
+      <p class="programs__kicker">Explore programs</p>
+      <nav class="tiles" aria-label="Program areas">
+        <a class="tile" href="pages/artificial-intelligence.html">
+          <img src="assets/image-parts/tile-ai.png" alt="Artificial Intelligence" loading="lazy">
+        </a>
+        <a class="tile" href="pages/cybersecurity.html">
+          <img src="assets/image-parts/tile-cybersecurity.png" alt="Cybersecurity" loading="lazy">
+        </a>
+        <a class="tile" href="pages/hyperscale-computing.html">
+          <img src="assets/image-parts/tile-hyperscale.png" alt="Hyperscale Computing" loading="lazy">
+        </a>
+        <a class="tile" href="pages/emerging-technologies/">
+          <img src="assets/image-parts/tile-emerging.png" alt="Emerging Technologies" loading="lazy">
+        </a>
+      </nav>
     </main>
+
   </body>
 </html>
