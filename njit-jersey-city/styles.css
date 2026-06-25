@@ -252,7 +252,7 @@ a {
 }
 
 .course-hero h1 {
-  max-width: 850px;
+  max-width: 1040px;
   margin: 0;
   font-size: clamp(2.4rem, 6vw, 5.2rem);
   line-height: 0.92;
