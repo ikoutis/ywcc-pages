@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NJIT Catalog Ontology &amp; Quality Dashboard</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-head">
+      <div class="wrap">
+        <p class="kicker">NJIT · 2024–2025 Undergraduate Catalog</p>
+        <h1>Catalog Ontology &amp; Quality Dashboard</h1>
+        <p class="lede">
+          A structured ontology of every undergraduate program and course — with prerequisite
+          dependencies — mined from the official catalog, scored for quality (presentation and
+          content) with a rubric + AI-assisted evaluation, and surfaced with actionable
+          suggestions for improvement.
+        </p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="block">
+        <div class="stats" id="stats"></div>
+      </section>
+
+      <section class="block">
+        <h2>Catalog health</h2>
+        <p class="sub">Deterministic, objective signals computed over the whole ontology.</p>
+        <div class="flags" id="quality" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))"></div>
+      </section>
+
+      <section class="block">
+        <h2>Programs</h2>
+        <p class="sub">Browse by college or discipline. Programs in the Ying Wu College of Computing carry AI quality scores (pilot); the rest show structural data and can be scored in a follow-up run.</p>
+        <div class="controls">
+          <select id="f-college"></select>
+          <select id="f-kind">
+            <option value="">All types</option>
+            <option value="degree">Degrees</option>
+            <option value="minor">Minors</option>
+            <option value="certificate">Certificates</option>
+          </select>
+          <input id="f-q" type="search" placeholder="Search programs…" />
+          <span class="unscored" id="count"></span>
+        </div>
+        <div class="grid" id="grid"></div>
+      </section>
+
+      <div class="footer">
+        Generated from <code>2024-2025 Undergraduate.pdf</code> by the pipeline in
+        <code>catalog/pipeline/</code>. Data: <code>catalog/data/*.json</code>.
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script>boot("overview");</script>
+  </body>
+</html>

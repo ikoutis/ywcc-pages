@@ -1,0 +1,65 @@
+{
+  "id": "b-s-in-information-technology-254",
+  "name": "B.S. in Information Technology",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 4,
+      "justification": "The eight-term plan follows a clear, well-ordered IT progression: foundations (IT 101, CS 100, IT 120) lead into programming (CS 113, IT 114), then design/web (IT 201, IT 202), then systems and networks (IT 340, IT 420, IS 331), and finally integration and a capstone (IT 490 Systems Integration, IT 491 IT Capstone Project). Difficulty ramps sensibly term over term with no abrupt jumps, and professional-skills and ethics courses (YWCC 207/307, COM 313, IS 350) are threaded in appropriately. The main weakness is that eight 'Specialization Course' slots and seven 'General Elective' slots are unresolved placeholders, so the specialization pathway that gives the degree its shape is not visible on the page.",
+      "suggestion": "Name the concrete specialization tracks and the courses each contains (with any track-internal prerequisites) so the 24 credits of specialization coursework read as a coherent pathway rather than generic placeholders."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is sensible and well-formed: the deepest chain is 6 (culminating in IT 490 Systems Integration, which requires CS 113/115, IS 331/CS 331, and IT 340), a reasonable depth for a four-year program that shows genuine layering without over-constraining. Prerequisites throughout carry explicit grade conditions and clear OR-alternatives (e.g., IT 114 requires CS 113 or CS 115). missingCourseCount is 4, but the dangling references (GER 200, GER 300, YWCC 207, YWCC 307) are general-education placeholders and 1-credit YWCC professional-development seminars rather than core IT prerequisites, so they do not break the technical dependency chain.",
+      "suggestion": "Resolve the four dangling references (GER 200, GER 300, YWCC 207, YWCC 307) by linking the GER placeholders to their category pages and ensuring the YWCC 207/307 seminar codes match catalog entries, so the prerequisite graph has zero unresolved references."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the provided data. The plan lists courses and credits but never states what a graduate should know or be able to do (e.g., competencies in networking, system administration, database design, or web application development). For a catalog page, the absence of explicit outcomes is a real deficiency that prevents students, accreditors, and employers from understanding the program's intended competencies.",
+      "suggestion": "Publish a short set of explicit, measurable program learning outcomes (e.g., 'design and administer networked systems', 'build multi-tier web applications', 'apply computing ethics') mapped to the core IT course sequence."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 5,
+      "justification": "Credits reconcile exactly: summedTermCredits is 120 against a stated total of 120, giving a creditReconcileDelta of 0.0 (internally consistent). The per-term load is well balanced (15, 16, 15, 13, 15, 16, 15, 15), staying within a normal full-time range with no overloaded or underweight semester. The split across general-education (ENGL, MATH, science, HSS/GER), IT major core, specialization courses, and general electives is transparent and appropriately proportioned across the four years.",
+      "suggestion": "Add a one-line credit-category summary (e.g., major core vs. specialization vs. GER vs. free electives) so the already-balanced distribution is visible at a glance without summing the term tables."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "The overall structure is legible: terms are clearly labeled by year and semester, credits are shown per item and per term, and core courses carry codes and titles. However, there are notable parsing/presentation artifacts: general-education requirements are broken across multiple rows with catalog URLs bleeding into the title text (e.g., 'Science Literacy GER (http://catalog.njit.edu/...' followed by a stray 'education-requirements/natural-science-ger/)' row with a null credit), several items have null course codes, and at least one title is truncated ('Computing & Effective Com'). These flaws hurt readability even though the plan is followable.",
+      "suggestion": "Clean the GER rows so each requirement is a single line with a proper hyperlinked label (not raw URL fragments split across rows), and expand truncated titles like 'Computing & Effective Com' to their full names."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The required coursework maps well to current IT practice: networking (IT 120, IT 420 Computer Systems and Networks), Linux system administration (IT 340), database design and management (IS 331), modern web/internet applications (IT 202), systems integration across platforms and e-commerce (IT 490), computing ethics and society (IS 350), and a team-based capstone (IT 491). Professional communication (COM 313 Technical Writing) and YWCC professional-development seminars add employability value. The emphasis is contemporary and job-aligned; the main uncertainty is that cloud, security, and data-analytics currency depends on the unspecified specialization tracks, which are not shown.",
+      "suggestion": "Surface the specialization-track catalog so modern in-demand areas (cloud/DevOps, cybersecurity, data analytics) are explicitly represented and clearly current rather than hidden behind generic 'Specialization Course' placeholders."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "The sampled course descriptions are present, specific, and informative rather than thin or placeholder. Each conveys concrete topics and scope, e.g., IT 340 lists Linux booting, process control, file systems, and user/resource management; IT 202 covers multi-tier web architecture with hands-on modern web languages; IS 331 explains database back-end functionality for analysis and decision-making. Excerpts are truncated (a display artifact) and a couple carry minor stray text (MATH 138 ends with '298 Jordan'), but substance and specificity are consistently strong."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated unambiguously and are internally consistent. Grade conditions are explicit (e.g., CS 113 requires 'CS 100 or CS 103 with a grade C or better'), alternative paths are spelled out with OR logic (IT 114: 'CS 113 or CS 115'; IT 202 allows a department-approved high-level-language course), and true entry-level courses correctly show no prerequisite (CS 100, IT 101, IT 120, MATH 105). Deductions are minor: some prerequisites reference GER-category placeholders (e.g., COM 313/312 require a 'History and Humanities GER 200 level' course) that tie into the four dangling references rather than concrete course codes."
+    }
+  },
+  "topSuggestions": [
+    "Publish explicit, measurable program-level learning outcomes mapped to the core IT sequence — the biggest gap, since none are currently present.",
+    "Resolve the specialization pathway by naming the actual tracks and their courses so the 24 credits of 'Specialization Course' placeholders (and 21 credits of 'General Elective') become a visible, coherent, industry-current curriculum.",
+    "Fix the four dangling course references (GER 200, GER 300, YWCC 207, YWCC 307) so the prerequisite/requirement graph has zero unresolved codes.",
+    "Clean up presentation artifacts: collapse the split GER rows with embedded URL fragments into single hyperlinked requirement lines, remove null-code stray rows, and expand truncated titles like 'Computing & Effective Com'.",
+    "Add a credit-category summary (major core vs. specialization vs. GER vs. free electives) to make the already-consistent 120-credit distribution transparent at a glance."
+  ]
+}
