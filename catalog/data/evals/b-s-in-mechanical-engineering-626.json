@@ -1,0 +1,111 @@
+{
+ "id": "b-s-in-mechanical-engineering-626",
+ "name": "B.S. in Mechanical Engineering",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 2,
+   "justification": "The 8-term plan reconciles to 120 credits with a standard math/science base (MATH 111/112/211/222, PHYS 111/121, CHEM 121/122), but the technical spine is overwhelmingly Industrial Engineering: IE 203, IE 224, IE 331, IE 334/335/339, IE 355, IE 439/440/445, IE 441, IE 459/461/466 and an IE 443/444 capstone, with only MECH 320 (Statics & Strength), MECH 236 (Dynamics), ME 339 (Mechanical Design) and ECE 405 representing mechanical content. For a degree titled Mechanical Engineering the required plan omits the mechanical thermal-fluids core entirely, so the sequence does not progress toward ME competencies.",
+   "suggestion": "Reconcile the published plan of study with the degree title: restore the mechanical-engineering spine (thermodynamics, fluid mechanics, heat transfer, machine design sequence, vibrations/controls) in place of the industrial-engineering plan currently shown."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 4,
+   "justification": "The prerequisite graph is healthy: deepestPrereqChain is 7 with well-formed upper-level chains (IE 331 depth 5; IE 440, IE 445, IE 459, IE 461 depth 6, each built on IE 331/MATH 112). All 5 dangling references (missingCourseCount 5: CHEM 125A, GER 200, GER 300, PHYS 111A, PHYS 121A) are chemistry/physics lab co-requisites and GER placeholders rather than real broken course links.",
+   "suggestion": "Resolve the CHEM 125A, PHYS 111A/121A lab and GER 200/300 catalog entries so the metrics show zero dangling references."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or ABET-style educational objectives appear in the provided data; only the plan of study and course descriptions are present. For a flagship engineering B.S. this absence is a genuine catalog finding.",
+   "suggestion": "Publish explicit program learning outcomes / ABET student outcomes (design, analysis, experimentation, professional responsibility)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 4,
+   "justification": "The plan reconciles exactly: summedTermCredits 120 equals statedTotalCredits 120 (creditReconcileDelta 0.0), with terms loaded at 14-17 credits and a transparent split across GER, a math/science block, and the major core.",
+   "suggestion": "Trim the heavy 17-credit second-year second semester and add an explicit credit-summary table (major core vs. math/science vs. GER vs. technical electives)."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 2,
+   "justification": "Terms are labeled and legible, but the page misrepresents the program: a Mechanical Engineering plan is populated with the Industrial Engineering curriculum. It also carries parsing artifacts (a null-code, 0-credit 'FYS SEM' row and 'Select one of the following:' rows with null credits) and a course-title typo ('Idustrial Simulation', IE 445).",
+   "suggestion": "Correct the plan-of-study content to match the ME degree and fix the null-code rows and the 'Idustrial Simulation' typo."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 2,
+   "justification": "As published, the required plan cannot demonstrate current mechanical-engineering practice because the mechanical core is absent: there is no thermodynamics, fluid mechanics, heat transfer, CAD/CAM, FEA, or mechatronics requirement. The IE content that is present (IE 445 simulation, IE 461 quality, IE 459 supply chain) is reasonably current for industrial engineering but does not address ME currency.",
+   "suggestion": "After restoring the ME spine, add modern mechanical content (FEA/CAE, mechatronics/robotics, additive manufacturing) so the plan reflects contemporary ME practice."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "Sampled descriptions are present and specific with real technical content (IE 440 on Markov chains/queueing/inventory, IE 445 on discrete-event simulation, IE 461 on process capability and defect prevention, MECH/ME entries on statics, dynamics and design); only a few GER/humanities entries are terse."
+  },
+  "prerequisiteClarity": {
+   "score": 4,
+   "justification": "Prerequisites are explicit with sensible grade and standing conditions (e.g., IE 440 'IE 331 and MATH 112', IE 331 'MATH 211', IE 461 'IE 331'); minor ambiguity appears in 'IE 331 or equivalent' (IE 445) and the 5 dangling lab/GER placeholders."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Thermodynamics and heat transfer",
+    "rationale": "A mechanical-engineering B.S. requires thermodynamics and heat transfer, yet neither appears in the required plan (only MECH 320/236 and ME 339 are mechanical); the department's MET 303/MET 404 equivalents show the content exists and should anchor the ME core."
+   },
+   {
+    "topic": "Fluid mechanics",
+    "rationale": "Fluid mechanics is foundational to ME (turbomachinery, HVAC, aerodynamics) but is absent from the shown plan; add a required fluid-mechanics course to the sophomore/junior sequence."
+   },
+   {
+    "topic": "Mechanical vibrations and control systems",
+    "rationale": "The plan has no vibrations or dynamic-systems/controls course; modern mechanical systems demand both, so a vibrations and a controls course should join MECH 236 Dynamics."
+   },
+   {
+    "topic": "Finite element analysis / computational mechanics",
+    "rationale": "Design is represented only by ME 339; a FEA/CAE course (the department offers ME 425 Finite Element Method) is expected in a contemporary ME curriculum for stress and thermal simulation."
+   },
+   {
+    "topic": "CAD/CAM and manufacturing processes for mechanical design",
+    "rationale": "Only IE 203 computer graphics and IE 224 process design appear; ME graduates need parametric CAD, GD&T and CAM tied to mechanical design."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Additive manufacturing and design for AM",
+    "rationale": "3D printing is reshaping mechanical prototyping and production; the department's CHE 415 Introduction to 3D Printing could be adopted as an ME elective."
+   },
+   {
+    "trend": "Model-based design and digital twins",
+    "rationale": "Simulation-driven design and digital twins are now standard in mechanical product development; the design and dynamics courses (ME 339, MECH 236) are natural hosts."
+   },
+   {
+    "trend": "Mechatronics, robotics and autonomous systems",
+    "rationale": "Mechanical systems increasingly integrate sensing, actuation and control; a mechatronics/robotics requirement (cf. ME 431 Robotics and Automation) would modernize the plan."
+   },
+   {
+    "trend": "Clean-energy and sustainable thermal systems",
+    "rationale": "Electrification, renewables and energy efficiency are central to ME hiring; a thermal-systems/energy course should build on a restored thermodynamics core."
+   },
+   {
+    "trend": "AI/ML for engineering design and analysis",
+    "rationale": "Data-driven modeling and ML surrogates are entering mechanical analysis workflows; the university's ENGR 301 Engineering Applications of Data Science could serve as a bridge elective."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Reconcile the plan of study with the degree title: the published B.S. Mechanical Engineering plan is populated with the Industrial Engineering curriculum (IE 203/224/331/.../466 with an IE 443/444 capstone) and omits the mechanical thermal-fluids core.",
+  "Restore/require the mechanical core: thermodynamics, fluid mechanics, heat transfer, a machine-design sequence, and vibrations/controls.",
+  "Publish explicit program learning outcomes / ABET student outcomes, which are absent from the data.",
+  "Add modern mechanical content (FEA/CAE via ME 425, mechatronics/robotics via ME 431, additive manufacturing via CHE 415).",
+  "Resolve the 5 dangling references (CHEM 125A, PHYS 111A/121A labs, GER 200/300) and fix the 'Idustrial Simulation' (IE 445) title typo."
+ ]
+}

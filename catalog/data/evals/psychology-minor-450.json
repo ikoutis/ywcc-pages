@@ -1,0 +1,111 @@
+{
+  "id": "psychology-minor-450",
+  "name": "Psychology Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "A reasonable psychology spine is present: PSY 215 Biology of Behavior, PSY 321 Social Psychology, PSY 389 Psychopathology, PSY 304/307 Research Methods I/II, PSY 333 Principles of Psychometrics, and the PSY 359/361 Cyberpsychology sequence. Coherence is limited by missing core subfields (no cognitive or developmental psychology visible) and by an empty requirementGroups with no declared required core.",
+      "suggestion": "Declare a required foundation (a general-psychology gateway plus research methods) and ensure cognitive and developmental breadth in the menu."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is clean: missingCourseCount is 0 (no dangling references), and chains carry consistent, explicit grade conditions. The discipline-internal chains are sensible (PSY 333 -> PSY 210; PSY 361 -> PSY 359); the deepest chain (5) is modest and healthy for a minor.",
+      "suggestion": "Surface PSY 210 as an explicit gateway in the menu since it already anchors internal prerequisites like PSY 333."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the parsed data (the page carries only a name and a course menu, with an empty requirementGroups). For a catalog page this absence is itself a real finding.",
+      "suggestion": "Publish 3-5 explicit, measurable program learning outcomes stating what a completer of the minor should know and be able to do."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "statedTotalCredits is null so the credit requirement is not published, and creditReconcileDelta is null (an expected caveat for a menu-style minor with no parsed term plan). Courses are uniformly 3 credits, so the menu is even but the total is opaque.",
+      "suggestion": "Publish the total credit requirement and the split between a required methods/foundation core and electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Course descriptions are present and substantive, but the program page has no description, no requirementGroups, and no stated credits, so the psychology pathway is not legibly structured.",
+      "suggestion": "Add a program description and group the menu into a foundation core (methods + breadth) and electives."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The PSY 359/361 Cyberpsychology sequence and PSY 333 Psychometrics give the minor a distinctive, technology-aligned edge suited to NJIT, and PSY 339 Psychology of Diversity is timely. However the absence of cognitive, developmental, and applied-statistics/software depth narrows preparation for graduate study and practice.",
+      "suggestion": "Modernize PSY 307 Research Methods II and PSY 333 Psychometrics with hands-on R/Python and open-science practices, and add cognitive/developmental breadth."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Sampled descriptions are present and substantive; none are flagged thin or missing (PSY 361 carries an abbreviated title, 'Found of Cyberpsychology II')."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "prerequisiteRaw is present with consistent 'C or higher' conditions and 0 dangling references; internal chains PSY 333 -> PSY 210 and PSY 361 -> PSY 359 are unambiguous. Several courses list no prerequisite (PSY 215, PSY 321, PSY 339, PSY 389), which reads as intended open entry rather than an error."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Cognitive psychology & cognitive neuroscience",
+        "rationale": "No cognition/perception/memory course is visible, yet it is a foundational subfield for any psychology credential."
+      },
+      {
+        "topic": "Developmental (lifespan) psychology",
+        "rationale": "Lifespan development is absent from the menu."
+      },
+      {
+        "topic": "Clinical/health breadth beyond psychopathology",
+        "rationale": "PSY 389 Psychopathology is the only clinical touchpoint; counseling and health psychology are missing."
+      },
+      {
+        "topic": "Applied statistics & analysis software",
+        "rationale": "PSY 307 Research Methods II and PSY 333 Psychometrics should include hands-on R/SPSS/Python data-analysis skills."
+      },
+      {
+        "topic": "Biological/neuroscience depth",
+        "rationale": "Beyond PSY 215 Biology of Behavior, there is little neuroscience content."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Cyberpsychology & human-technology interaction",
+        "rationale": "PSY 359/361 already lead here - a real NJIT strength to expand into social-media effects, VR, and online behavior."
+      },
+      {
+        "trend": "Computational & open-science psychology",
+        "rationale": "Modernize PSY 307 and PSY 333 with reproducibility, preregistration, and code-based analysis."
+      },
+      {
+        "trend": "Digital mental health & therapeutics",
+        "rationale": "Telehealth and app-based interventions extend PSY 389 Psychopathology toward current practice."
+      },
+      {
+        "trend": "Affective computing & human-AI interaction",
+        "rationale": "Link psychology to STS 375 AI and the Human Mind for emotion-aware and human-centered AI."
+      },
+      {
+        "trend": "Diversity science / culturally responsive psychology",
+        "rationale": "Build on PSY 339 Psychology of Diversity as identity and equity become central to the field."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Add core cognitive and developmental psychology courses for subfield breadth.",
+    "Publish explicit learning outcomes and define a required foundation (methods + breadth) vs. electives.",
+    "State the total credit requirement.",
+    "Modernize research methods and psychometrics with hands-on R/Python and open-science practices.",
+    "Leverage the PSY 359/361 Cyberpsychology sequence as a signature applied thread."
+  ]
+}

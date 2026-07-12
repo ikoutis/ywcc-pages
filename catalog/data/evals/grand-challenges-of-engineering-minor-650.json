@@ -1,0 +1,111 @@
+{
+ "id": "grand-challenges-of-engineering-minor-650",
+ "name": "Grand Challenges of Engineering Minor",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 2,
+   "justification": "No plan-of-study terms are parsed (requirementGroups 0), normal for a minor, but the 16-credit minor's identity is weak in the data: its on-theme spine (ENGR 290 intro [dangling], ENGR 491/492 research, ENGR 493 service learning, ENGR 301 data science, ENGR 423 drone science) is embedded in a large manufacturing/mechanical pool (MNET 215/300/303/318/405/416/420, MET 307/308/403/404/409) that is identical to the sibling Manufacturing Engineering Technology minor, so the Grand-Challenges focus is diluted.",
+   "suggestion": "Curate a Grand-Challenges-aligned pool (energy/sustainability, water/environment, health, security) around the ENGR research/service-learning spine rather than sharing the manufacturing course list."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 3,
+   "justification": "deepestPrereqChain is 7 with reasonable chains (MNET 405 depth 4, MET 404 depth 5). Both dangling references (missingCourseCount 2: CPT 325, ENGR 290) are genuine broken links, and ENGR 290 is especially notable because it is the program's own intro/gateway course and a prerequisite for ENGR 493.",
+   "suggestion": "Resolve the dangling references, prioritizing ENGR 290, the minor's own gateway course."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No minor-level learning outcomes appear in the provided data; only a course pool is present.",
+   "suggestion": "Publish explicit learning outcomes describing the interdisciplinary, challenge-driven competencies a completer should gain."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 3,
+   "justification": "The stated total is 16 credits, but with no parsed terms creditReconcileDelta is null, so the required-vs-elective split cannot be verified; the null delta is a data-consistency caveat for a minor rather than a defect.",
+   "suggestion": "Publish the required-vs-elective credit breakdown so the 16 credits reconcile transparently."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 2,
+   "justification": "The page shows a 16-credit total but no plan of study, and its sample course list is identical to the Manufacturing Engineering Technology minor (both id-650), a data-consistency concern that makes the two minors indistinguishable in the catalog.",
+   "suggestion": "Differentiate the Grand-Challenges course list from the manufacturing minor and add a description tying it to the NAE Grand Challenges themes."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 3,
+   "justification": "The NAE Grand Challenges framing is highly relevant, and several pool courses support it (ENGR 301 data science, ENGR 423 drones, ENGR 491/492 research, ENGR 493 service learning). However, the dominant MNET/MET manufacturing courses map only weakly to challenge themes such as clean energy, water, health, security and infrastructure.",
+   "suggestion": "Add courses that map directly to NAE challenge themes (clean energy/sustainability, environmental/water, health informatics, cybersecurity) and foreground the ENGR spine as the required core."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "Descriptions are present and specific (ENGR 301 on engineering applications of data science, ENGR 493 on service-learning and multicultural competency, MNET 405 on NC mill/lathe programming, MET 404 on heat-transfer modes); only a few instructor-permission entries are terse."
+  },
+  "prerequisiteClarity": {
+   "score": 3,
+   "justification": "Many prerequisites are explicit (ENGR 492 'ENGR 491', MNET 405 'ME 215 and MNET 303', MNET 420 'MNET 315'), but two genuine dangling references (ENGR 290, CPT 325) plus several instructor-permission/'None' gateways reduce clarity, and ENGR 493's requirement on the missing ENGR 290 is a real break."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Clean energy and sustainability",
+    "rationale": "NAE challenges lead with economical solar, fusion and carbon management, yet the pool has no energy or sustainability course, only manufacturing and mechanical electives."
+   },
+   {
+    "topic": "Clean water and environmental engineering",
+    "rationale": "Access to clean water is a headline Grand Challenge with no representation in the sampled courses."
+   },
+   {
+    "topic": "Health informatics and better medicines",
+    "rationale": "Advancing health informatics and engineering better medicines are core challenges; the department's health courses (MIT 326, MIT 360/362) are not foregrounded here."
+   },
+   {
+    "topic": "Securing cyberspace",
+    "rationale": "Cybersecurity is an explicit Grand Challenge missing from the pool; MIT 231 Introduction to Computer Security for Medical Devices exists in the department and could seed it."
+   },
+   {
+    "topic": "Urban infrastructure resilience",
+    "rationale": "Restoring and improving urban infrastructure is a named challenge with no course coverage in the sampled list."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "AI/ML for grand-challenge problem solving",
+    "rationale": "Data-driven methods cut across every NAE challenge; ENGR 301 Engineering Applications of Data Science is a natural required anchor."
+   },
+   {
+    "trend": "Climate and clean-energy engineering",
+    "rationale": "Decarbonization and renewable energy are the defining engineering frontier and should headline a Grand-Challenges minor."
+   },
+   {
+    "trend": "Global health technology and access",
+    "rationale": "Engineering better medicines and health informatics is a fast-growing challenge area the minor could emphasize."
+   },
+   {
+    "trend": "Autonomous systems and drones for humanitarian/infrastructure use",
+    "rationale": "ENGR 423 Drone Science Fundamentals positions the minor for disaster-response and infrastructure-monitoring applications."
+   },
+   {
+    "trend": "Convergence and human-centered design",
+    "rationale": "Interdisciplinary, community-engaged engineering (ENGR 493 service learning) reflects how grand-challenge work is actually organized."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Differentiate the course pool from the Manufacturing Engineering Technology minor: the two id-650 minors carry an identical sample course list, making them indistinguishable in the data.",
+  "Resolve the dangling references ENGR 290 (the minor's own gateway/intro course) and CPT 325.",
+  "Publish explicit learning outcomes and a required-vs-elective plan, both absent from the data.",
+  "Add courses mapping to NAE challenge themes: clean energy/sustainability, environmental/water, health informatics, and cybersecurity (e.g., MIT 231).",
+  "Foreground the ENGR research/service-learning spine (ENGR 290/491/492/493) and AI/data (ENGR 301) as the required core."
+ ]
+}

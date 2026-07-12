@@ -1,0 +1,111 @@
+{
+ "id": "b-s-in-electrical-and-computer-engineering-technology-642",
+ "name": "B.S. in Electrical and Computer Engineering Technology",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 4,
+   "justification": "The 8-term plan builds a clear, well-ordered ECET spine: circuits (ECET 201 -> 202), analog (ECET 205), digital (ECET 215 -> 365), computer architecture (ECET 211), embedded systems (ECET 311 -> 411), transform-method analysis (ECET 300), circuit measurements (ECET 303), IC applications (ECET 305), communications (ECET 214) and numerical computing (ECET 344), culminating in ECET 400 Senior Project (depth 9). Prerequisite depths rise smoothly from 0 through 9; coherence is only slightly softened by a heavy 18-credit sixth term.",
+   "suggestion": "Rebalance the 18-credit Third-Year second semester by shifting one course to a lighter term so difficulty ramps evenly."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 4,
+   "justification": "The prerequisite graph is deep and healthy: deepestPrereqChain 9, matching the 8-semester structure, with strong upper-level chains (ECET 300, ECET 305, ECET 411 at depth 8; ECET 400 at depth 9) and compound prerequisites. All 3 dangling references (missingCourseCount 3: GER 200, PHYS 102A, PHYS 103A) are a GER placeholder and physics-lab co-requisites, not real broken links.",
+   "suggestion": "Resolve the PHYS 102A/103A lab and GER 200 catalog entries so the metrics show zero dangling references; verify the depth-9 chain does not over-gate the senior project."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or ABET student outcomes appear in the provided data; only the plan of study and course descriptions are present, which is a real finding for an accredited-track technology B.S.",
+   "suggestion": "Publish explicit ETAC/ABET-style student outcomes (hardware/software design, testing, teamwork, communication)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 4,
+   "justification": "The plan reconciles exactly: summedTermCredits 120 equals statedTotalCredits 120 (creditReconcileDelta 0.0). Loading is mostly even, though it swings from a light 12-credit fourth term to a heavy 18-credit sixth term.",
+   "suggestion": "Even out the 12-credit and 18-credit terms and add a credit-summary table (major core vs. math/science vs. GER vs. technical electives)."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 4,
+   "justification": "Terms are labeled and the required courses are legible, but the plan carries minor artifacts: an 'or MNET 315 or Industrial Statistics' fragment split from MATH 305, a duplicated 'ECET Technical Elective 3' label, and several null-code elective rows.",
+   "suggestion": "Render alternative requirements ('MATH 305 or MNET 315') as single entries and de-duplicate the repeated technical-elective labels."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 4,
+   "justification": "The required core reflects current ECET practice well: two-course embedded-systems design (ECET 311/411), digital logic and IC design (ECET 215/365/305), transform-domain analysis (ECET 300), communications (ECET 214) and numerical computing (ECET 344). The main currency gaps are the lack of FPGA/HDL design, IoT/wireless connectivity, power electronics and hardware cybersecurity.",
+   "suggestion": "Add FPGA/HDL (VHDL/Verilog) and an IoT/edge elective built on the ECET 311/411 embedded sequence."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "Descriptions are present and technically specific (ECET 300 on Laplace transforms and circuit analysis, ECET 311 on microcontroller architecture/instruction sets/assemblers, ECET 411 on designing embedded systems for the senior project); a few entries (ECET 205, ECET 365) run prerequisite text into the description field."
+  },
+  "prerequisiteClarity": {
+   "score": 4,
+   "justification": "Prerequisites are explicit with sensible compound logic and grade conditions (ECET 300 '(ECET 303 or ECE 232) and (MATH 238 or MATH 112)', ECET 311 chaining CS, ECET 211/215 and ECET 205, ECET 400 'ECET 305 and ECET 344 and ECET 411 and COM 313'); the only detractors are prerequisite text merged into some descriptions and the PHYS-lab/GER placeholders."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "FPGA and HDL design (VHDL/Verilog)",
+    "rationale": "Digital content stops at ECET 215/365 gate-level logic; contemporary ECET practice expects reconfigurable-logic and HDL design, which no course in the plan provides."
+   },
+   {
+    "topic": "Internet of Things and wireless connectivity",
+    "rationale": "ECET 311/411 cover microcontrollers and ECET 214 covers communications, but there is no dedicated IoT/wireless-protocol course despite embedded-connectivity dominating the field."
+   },
+   {
+    "topic": "Power electronics and renewable-energy systems",
+    "rationale": "Circuits and analog electronics (ECET 201/202/205) are covered, yet there is no power-electronics or energy-conversion course for the fast-growing electrification sector."
+   },
+   {
+    "topic": "Embedded and hardware cybersecurity",
+    "rationale": "With two embedded courses (ECET 311/411) the program handles devices but not their security; secure firmware and hardware-attack defenses are now expected."
+   },
+   {
+    "topic": "PCB design and signal integrity",
+    "rationale": "The plan analyzes circuits (ECET 300/303/305) but includes no board-level design/signal-integrity course, a practical gap for a hands-on technology degree."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Edge AI and TinyML on microcontrollers",
+    "rationale": "The ECET 311/411 embedded sequence is an ideal vehicle to add on-device inference, one of the fastest-moving areas in embedded engineering."
+   },
+   {
+    "trend": "IoT and connected cyber-physical systems",
+    "rationale": "Combining ECET 214 communications with the embedded core positions graduates for IoT product work if a connectivity course is added."
+   },
+   {
+    "trend": "FPGA/SoC and hardware acceleration",
+    "rationale": "Reconfigurable computing is central to modern signal processing and ML acceleration and would extend ECET 365 digital design."
+   },
+   {
+    "trend": "Operational-technology (OT) security",
+    "rationale": "As embedded devices connect to networks, securing them is a priority the program is well placed to teach on top of ECET 411."
+   },
+   {
+    "trend": "Power electronics for EVs and renewables",
+    "rationale": "Electrification demand makes power-electronics competency increasingly valuable atop the ECET 202/205 analog base."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish explicit ETAC/ABET-style program learning outcomes, which are absent from the data.",
+  "Add FPGA/HDL (VHDL/Verilog) and an IoT/edge-AI elective to modernize the embedded and digital tracks (building on ECET 311/411 and ECET 365).",
+  "Add power-electronics/renewable-energy and embedded-cybersecurity electives to close the biggest currency gaps.",
+  "Resolve dangling references (GER 200, PHYS 102A/103A labs) and clean plan artifacts (the 'or MNET 315' fragment, duplicated 'ECET Technical Elective 3').",
+  "Rebalance the heavy 18-credit Third-Year second semester against the light 12-credit term."
+ ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "global-studies-minor-447",
+  "name": "Global Studies Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 2,
+      "justification": "The visible course pool (40 of 51 referenced) is dominated by general Communication/Media courses (COM 201, 240, 303, 310, 315-390) that are not intrinsically global; genuinely global content is confined to a thin history spine (HIST 213 The Twentieth-Century World, HIST 363 The United States as a World Power, HIST 365 Science and Technology in the Global South, HIST 367 International Law and Diplomacy, HIST 372 Contemporary Europe). With no requirementGroups (empty plan of study) and no defined global core, the menu reads as a broad HSS elective list rather than a curated global-studies pathway.",
+      "suggestion": "Define a curated global core (a required internationally focused sequence plus a world-region or language component) and separate it from general electives."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is clean: missingCourseCount is 0 (no dangling references), and chains carry consistent, explicit grade conditions. The deepest chain is 6, driven mainly by the ENGL 101 -> ENGL 102 -> 200-level GER -> 300-level gateway pattern rather than deep discipline-internal sequencing, which is reasonable for a minor.",
+      "suggestion": "Keep gateway chains shallow for a minor by allowing more 200-level global entry points that do not stack the full ENGL/GER ladder."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the parsed data (the page carries only a name and a course menu, with an empty requirementGroups). For a catalog page this absence is itself a real finding.",
+      "suggestion": "Publish 3-5 explicit, measurable program learning outcomes stating what a completer of the minor should know and be able to do."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "statedTotalCredits is null, so the number of credits the minor requires is not published, and creditReconcileDelta is null (a data-consistency caveat expected for a menu-style minor with no term breakdown, not a defect in itself). Courses are uniformly 3 credits, so within-menu balance is fine, but the total requirement and any core/elective split are opaque.",
+      "suggestion": "Publish the total credit requirement (e.g., 15-18) and how credits split between a required global core and electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The program page (as parsed) has no description, no requirementGroups, and no stated credits; course-level descriptions are present and substantive, but the program itself is thinly presented and the course menu's global focus is not legible.",
+      "suggestion": "Add a short program description and a legibly grouped plan of study (core vs. regional/thematic electives)."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The world-history courses (HIST 365 on the Global South, HIST 367 International Law and Diplomacy, HIST 372 Contemporary Europe) plus digital-society electives (COM 343 Social Media Analytics, COM 371 Social Network Theory) give some current relevance to careers in international NGOs, global business, and policy; however the pool lacks international relations, global political economy, and any language/area-studies depth expected of the field.",
+      "suggestion": "Add contemporary global-affairs and political-economy coursework so the minor connects to global governance and development careers."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Sampled course descriptions are present and substantive (full-sentence overviews such as COM 201's history/theory/practice framing); none are flagged thin or missing."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "prerequisiteRaw is present for essentially every course with consistent, explicit grade conditions ('C or higher') and 0 dangling references (missingCourseCount=0). The main ambiguity is that many prereqs cite a GER category ('one History and Humanities GER 200-level course') rather than a specific course."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "World languages / area-studies proficiency",
+        "rationale": "A Global Studies minor typically requires language competency or a region specialization; the visible pool has no language or single-region deep-dive course."
+      },
+      {
+        "topic": "International relations & global governance",
+        "rationale": "There are no political-science/IR courses on international institutions or diplomacy beyond the single historical HIST 367."
+      },
+      {
+        "topic": "Global political economy & development",
+        "rationale": "No economics or development courses appear; the Global South is represented only by HIST 365."
+      },
+      {
+        "topic": "Migration, refugees & human rights",
+        "rationale": "A core of contemporary global studies, entirely absent from the referenced courses."
+      },
+      {
+        "topic": "Global health & environmental governance",
+        "rationale": "Transnational public health and climate governance are missing; STS 308 Globalization / STS 363 Sustainability could be cross-listed."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Digital globalization & transnational media flows",
+        "rationale": "Leverage COM 343 Social Media Analytics and COM 371 Social Network Theory to study cross-border information and influence."
+      },
+      {
+        "trend": "Climate migration & environmental geopolitics",
+        "rationale": "Connect the history spine to climate-driven displacement, an increasingly central global issue."
+      },
+      {
+        "trend": "Decolonial & Global South perspectives",
+        "rationale": "Build HIST 365 Science and Technology in the Global South into a fuller decolonial/area-studies track."
+      },
+      {
+        "trend": "Global supply chains & economic interdependence",
+        "rationale": "Post-pandemic reshoring and trade fragmentation warrant a global political-economy offering the minor currently lacks."
+      },
+      {
+        "trend": "Data-driven / spatial global analysis (GIS)",
+        "rationale": "Quantitative and mapping methods for global problems would modernize an otherwise humanities-only menu."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Define and publish a curated global core (required internationally focused sequence plus a language or world-region component) instead of a broad HSS elective menu.",
+    "Publish explicit program learning outcomes.",
+    "State the total credit requirement and the core-vs-elective structure.",
+    "Add international relations / global political economy and migration/human-rights courses.",
+    "Reduce reliance on US-centric media electives and foreground world-history and globalization courses."
+  ]
+}

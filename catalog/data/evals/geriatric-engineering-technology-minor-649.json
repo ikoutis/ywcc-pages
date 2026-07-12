@@ -1,0 +1,111 @@
+{
+ "id": "geriatric-engineering-technology-minor-649",
+ "name": "Geriatric Engineering Technology Minor",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 2,
+   "justification": "No plan-of-study terms are parsed (requirementGroups 0), which is normal for a minor, but the 36-course sample pool does not reflect the minor's stated theme: it is a generic mechanical/manufacturing-technology selection (MET 236/237/301/302/303/304/307/308/314/403/404/407/409/415, ME 215, ENGR/ENTR/IE courses) with no gerontology, assistive-technology, rehabilitation or aging-health content. Notably, the department's MIT 360 Introduction to Gerontology and MIT 362 Geriatric Engineering I (which appear in the sibling 650-suffixed minors) are absent here.",
+   "suggestion": "Rebuild the course pool around the aging/assistive theme, starting with MIT 360 Gerontology and MIT 362 Geriatric Engineering I plus human factors (IE 355)."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 3,
+   "justification": "deepestPrereqChain is 7 with sound chains (MET 404 depth 5 on MET 303/304, MET 302 depth 7). Of the 4 dangling references, two are genuine broken links (CPT 325, ENGR 290) and two are GER placeholders (GER 200, GER 300).",
+   "suggestion": "Resolve the genuine dangling references CPT 325 and ENGR 290, and the GER 200/300 placeholders."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No minor-level learning outcomes appear in the provided data; only a course pool is present.",
+   "suggestion": "Publish explicit learning outcomes describing the assistive/aging-technology competencies a completer should gain."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 2,
+   "justification": "statedTotalCredits is null and creditReconcileDelta is null with no parsed terms, so neither the required credit total nor its distribution can be determined from the data; the missing total is a data gap that should be filled for a catalog minor.",
+   "suggestion": "State the minor's total credits and publish a required-vs-elective credit breakdown."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 2,
+   "justification": "The page lacks a credit total and a plan of study, and the displayed course pool does not match the minor's name, so a prospective student cannot tell what a Geriatric Engineering Technology minor entails.",
+   "suggestion": "Add the credit total, a structured course list, and a short description tying the minor to gerontechnology and assistive engineering."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 2,
+   "justification": "The minor's premise, engineering for an aging population (assistive devices, rehabilitation, aging-in-place, gerontechnology), is highly relevant and growing, but the sampled courses contain none of that content, so as published the minor does not reflect the field it names.",
+   "suggestion": "Populate the pool with aging-focused courses (MIT 360/362), assistive-robotics/wearables and health-informatics options so it reflects current gerontechnology practice."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "The sampled descriptions themselves are present and specific (MET 404 on conduction/convection/radiation heat transfer, MET 307/308 on plastics conversion and processing, ENGR 301 on engineering applications of data science); the weakness is topical fit to the minor, not description quality."
+  },
+  "prerequisiteClarity": {
+   "score": 3,
+   "justification": "Most prerequisites are explicit and compound (MET 404 '(MATH 309 or MATH 211 or MATH 213), and MET 303, and MET 304'), but two genuine dangling references (CPT 325, ENGR 290) plus several 'None'/junior-standing-only entries reduce overall clarity."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Gerontology and the physiology of aging",
+    "rationale": "The minor names geriatric engineering but includes no aging-science course; MIT 360 Introduction to Gerontology exists in the department and appears in the sibling minors but is absent here."
+   },
+   {
+    "topic": "Assistive and rehabilitation technology design",
+    "rationale": "There is no course on designing assistive/rehabilitation devices; MIT 362 Geriatric Engineering I (assistive-technology system design) exists in the department yet is missing from this pool."
+   },
+   {
+    "topic": "Human factors and ergonomics for older adults",
+    "rationale": "Designing for reduced mobility, vision and dexterity requires human-factors grounding; IE 355 Human Factors is available in the department but not included."
+   },
+   {
+    "topic": "Biomechanics and mobility/fall-prevention devices",
+    "rationale": "Mobility aids, exoskeletons and fall-prevention systems are core geriatric-engineering topics with no representation in the sampled courses."
+   },
+   {
+    "topic": "Health informatics and remote monitoring",
+    "rationale": "Telehealth and remote patient monitoring for aging-in-place are absent; the department's MIT 326 Electronic Medical Record Design and MIT 231 medical-device security could support this."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Wearables and remote monitoring for aging-in-place",
+    "rationale": "Continuous health sensing lets older adults live independently; a wearables/remote-monitoring course would give the minor a genuine geriatric focus."
+   },
+   {
+    "trend": "AI/ML for fall detection and health prediction",
+    "rationale": "Machine learning on sensor data drives modern elder-care technology; ENGR 301 Engineering Applications of Data Science is a ready anchor."
+   },
+   {
+    "trend": "Assistive robotics and smart-home/IoT for elder care",
+    "rationale": "Service robots and connected homes are rapidly entering geriatric care and would align the minor with its stated purpose."
+   },
+   {
+    "trend": "3D-printed custom assistive devices and prosthetics",
+    "rationale": "Additive manufacturing enables personalized aids; CHE 415 Introduction to 3D Printing is already in the pool and could be aimed at assistive design."
+   },
+   {
+    "trend": "Medical-device cybersecurity and privacy",
+    "rationale": "Connected geriatric devices raise safety and privacy stakes; MIT 231 Introduction to Computer Security for Medical Devices is available in the department."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Align the course pool with the minor's theme: it currently contains no aging/assistive content; add MIT 360 Gerontology and MIT 362 Geriatric Engineering I (offered in the department, absent here) and human factors (IE 355).",
+  "State the minor's total credits (statedTotalCredits is null) and publish a required-vs-elective structure.",
+  "Publish explicit learning outcomes, which are absent from the data.",
+  "Add assistive-robotics/wearables, health-informatics (MIT 326) and medical-device-security (MIT 231) options, and aim CHE 415 3D printing at custom assistive devices.",
+  "Resolve the genuine dangling references CPT 325 and ENGR 290."
+ ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "literature-minor-448",
+  "name": "Literature Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "A workable literature spine is visible (LIT 230 Introduction to Literature, LIT 320 American Literature, LIT 340 Contemporary Literature, LIT 355 Poetry, LIT 378 Literature and Nature, LIT 325 Special Topics), giving a genre/period sampler. But the 15-credit menu is embedded in a large COM/HIST pool, requirementGroups is empty, and there is no period-distribution requirement to guarantee historical breadth.",
+      "suggestion": "Anchor the minor on LIT 230 plus a period/genre distribution requirement, and separate literature courses from the broader COM/HIST electives."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is clean: missingCourseCount is 0 (no dangling references), and chains carry consistent, explicit grade conditions. Chains are shallow within the discipline (LIT 230 with an ENGL 102 co-requisite) and the deepest chain (6) reflects the institution-wide ENGL/GER gateway rather than literature-internal stacking.",
+      "suggestion": "Keep LIT electives reachable after a single gateway so a minor is not gated behind the full 300-level GER ladder."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the parsed data (the page carries only a name and a course menu, with an empty requirementGroups). For a catalog page this absence is itself a real finding.",
+      "suggestion": "Publish 3-5 explicit, measurable program learning outcomes stating what a completer of the minor should know and be able to do."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 4,
+      "justification": "A 15-credit total is stated and all courses are uniform 3-credit offerings, making the requirement transparent and balanced; the null creditReconcileDelta only reflects the absence of a parsed term plan (a data caveat, not a defect).",
+      "suggestion": "State how the 15 credits split between a required introduction/core and distribution electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Course descriptions are present and substantive and total credits are stated, but the program page has no description and no requirementGroups, so period/genre organization is not legible on the page.",
+      "suggestion": "Add a program description and group the menu by period and genre so breadth is visible."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The menu shows healthy genre range (LIT 355 Poetry, LIT 340 Contemporary Literature, LIT 378 Literature and Nature) and a modern digital touch (COM 369 Digital Poetry) relevant to writing, publishing, and content careers; it lacks literary theory, world/postcolonial literature, and a defined digital-humanities thread.",
+      "suggestion": "Add literary theory and world literature, and formalize a digital-humanities option that pairs literary study with computational text analysis."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Sampled LIT/COM/HIST descriptions are present and informative; none are flagged thin or missing."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "prerequisiteRaw is present with consistent 'C or higher' conditions and 0 dangling references; LIT 230's ENGL 102 co-requisite is clearly noted. Most upper electives cite a GER category rather than a specific literature prerequisite, a mild ambiguity."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Literary theory & criticism",
+        "rationale": "No dedicated theory/criticism course is visible, yet it is foundational for a literature minor's interpretive rigor."
+      },
+      {
+        "topic": "World / global & postcolonial literature",
+        "rationale": "The visible pool is American/contemporary-centric (LIT 320, LIT 340) with no world literature in translation."
+      },
+      {
+        "topic": "Historical-period breadth (pre-1800)",
+        "rationale": "Medieval/Renaissance/Romantic coverage is missing; HIST 329 Dante is a history course, not a literature offering."
+      },
+      {
+        "topic": "Creative writing / craft",
+        "rationale": "A creative-writing thread within LIT is absent, even though COM 390 Electronic Writing Workshop hints at demand."
+      },
+      {
+        "topic": "Digital humanities & computational text analysis",
+        "rationale": "A natural fit at a STEM university and a build on COM 369 Digital Poetry, but not present as a defined option."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Digital humanities / distant reading",
+        "rationale": "Text mining and computational analysis pair literature with NJIT's technical strengths; extend LIT courses with a DH option."
+      },
+      {
+        "trend": "Environmental humanities / ecocriticism",
+        "rationale": "LIT 378 Literature and Nature is a strong seed to grow into a fuller ecocriticism sequence."
+      },
+      {
+        "trend": "Speculative fiction & climate/AI narratives",
+        "rationale": "LIT 386 Science Fiction connects literary study to technology and climate futures relevant to this campus."
+      },
+      {
+        "trend": "Electronic literature & media convergence",
+        "rationale": "COM 369 Digital Poetry points toward born-digital and interactive narrative forms."
+      },
+      {
+        "trend": "Global anglophone & translation studies",
+        "rationale": "Diversifying the canon beyond American/contemporary literature reflects where the discipline is heading."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Require a literary-theory/criticism course and add world/postcolonial literature for canon breadth.",
+    "Guarantee historical-period distribution from pre-1800 through the contemporary.",
+    "Publish explicit learning outcomes and a core-vs-distribution structure.",
+    "Formalize a digital-humanities thread building on LIT genre courses and COM 369 Digital Poetry.",
+    "Expand environmental-humanities offerings from LIT 378 Literature and Nature."
+  ]
+}

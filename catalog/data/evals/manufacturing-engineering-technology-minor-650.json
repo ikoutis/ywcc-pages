@@ -1,0 +1,111 @@
+{
+ "id": "manufacturing-engineering-technology-minor-650",
+ "name": "Manufacturing Engineering Technology Minor",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 3,
+   "justification": "No plan-of-study terms are parsed (requirementGroups 0), normal for a minor, and the 16-credit pool is strongly manufacturing-aligned: MNET 215 materials/metrology, MNET 300 machining, MNET 303 CAD/CAM, MNET 318 manufacturing process design, MNET 405 NC machine tools, MNET 416 production scheduling, MNET 420 quality systems, plus ME 215 materials, MET 307/308 plastics, CHE 415 3D printing and IE 224 production. It reads as a coherent manufacturing menu, though it also carries off-theme entries (ENTR courses, MIT gerontology, ENGR drone/service learning) shared verbatim with the sibling Grand Challenges minor.",
+   "suggestion": "Trim the off-theme entries and declare a required manufacturing core plus a curated elective list."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 3,
+   "justification": "deepestPrereqChain is 7 with sound manufacturing chains (MNET 405 depth 4 on ME 215/MNET 303, MNET 318 depth 2 on MNET 303, MNET 416/420 depth 4 on MNET 315). Both dangling references (missingCourseCount 2: CPT 325, ENGR 290) are genuine broken links and are off-theme for a manufacturing minor.",
+   "suggestion": "Resolve the dangling references CPT 325 and ENGR 290 (both off-theme carryovers from the shared pool)."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No minor-level learning outcomes appear in the provided data; only a course pool is present.",
+   "suggestion": "Publish explicit learning outcomes describing the manufacturing competencies a completer should gain."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 3,
+   "justification": "The stated total is 16 credits, but with no parsed terms creditReconcileDelta is null, so the required-vs-elective split cannot be verified; the null delta is a data-consistency caveat for a minor rather than a defect.",
+   "suggestion": "Publish the required-vs-elective credit breakdown so the 16 credits reconcile transparently."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 3,
+   "justification": "The 16-credit total is stated and the manufacturing courses are legible, but there is no plan of study and the sample course list is identical to the Grand Challenges minor (both id-650), including off-theme ENTR/MIT/ENGR entries that dilute the manufacturing focus.",
+   "suggestion": "Differentiate the list from the Grand Challenges minor and remove off-theme courses so the manufacturing identity is clear."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 4,
+   "justification": "The pool reflects current manufacturing-technology practice well: machining (MNET 300), CAD/CAM (MNET 303), manufacturing process design (MNET 318), NC/CNC machine tools (MNET 405), production scheduling (MNET 416), quality systems/SPC/ISO (MNET 420), plastics processing (MET 307/308) and 3D printing (CHE 415). The main gaps are automation/robotics, Industry 4.0/IIoT and deeper additive manufacturing.",
+   "suggestion": "Add automation/robotics and an Industry 4.0/IIoT-and-digital-twin option (IE 449/455 are available; build on MNET 303/318/416)."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "Descriptions are present and specific (MNET 300 on speeds/feeds and tooling, MNET 405 on mill/lathe CNC programming and economics, MNET 420 on SPC, TQM, ISO and reliability, MET 308 on extrusion and injection/blow/compression molding); only a few cross-listed entries are terse."
+  },
+  "prerequisiteClarity": {
+   "score": 3,
+   "justification": "The manufacturing chains are explicit and consistent (MNET 405 'ME 215 and MNET 303', MNET 318 'MNET 303', MNET 416/420 'MNET 315'), but two genuine dangling references (CPT 325, ENGR 290) carried over from the shared pool and several instructor-permission/'None' entries reduce overall clarity."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Automation and industrial robotics",
+    "rationale": "Machining and CAD/CAM are well covered (MNET 300/303/405) but automated cells and robotics are absent; IE 449 Industrial Robotics and IE 455 Robotics and PLCs exist in the department and could join the pool."
+   },
+   {
+    "topic": "Additive manufacturing depth (DfAM)",
+    "rationale": "Only CHE 415 Introduction to 3D Printing represents additive; production-scale additive and design-for-AM warrant a dedicated follow-on."
+   },
+   {
+    "topic": "Industry 4.0 / smart manufacturing and IIoT",
+    "rationale": "Production scheduling (MNET 416) and process design (MNET 318) are classical; connected, sensor-driven smart-factory content is missing."
+   },
+   {
+    "topic": "Metrology and GD&T",
+    "rationale": "MNET 215 touches materials/metrology, but a dedicated GD&T/metrology course is a standard manufacturing competency not clearly represented."
+   },
+   {
+    "topic": "Lean manufacturing and value-stream mapping",
+    "rationale": "Quality is covered by MNET 420, but lean/value-stream and continuous-improvement methods are absent from the pool."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Smart manufacturing / Industry 4.0 and digital twin",
+    "rationale": "Connecting the shop floor with sensors and simulating it digitally is the defining manufacturing trend; MNET 318/416 and MNET 303 CAD/CAM are a foundation to build on."
+   },
+   {
+    "trend": "Additive manufacturing at production scale",
+    "rationale": "Metal and polymer additive are moving from prototyping to production; extending CHE 415 toward DfAM would keep the minor current."
+   },
+   {
+    "trend": "Robotics and collaborative automation",
+    "rationale": "Cobots and automated material handling are reshaping production lines; IE 449/455 would position graduates for automation roles."
+   },
+   {
+    "trend": "Data-driven quality and predictive maintenance",
+    "rationale": "Machine data now drives SPC and maintenance decisions; MNET 315/420 with ENGR 301 could anchor a predictive-quality elective."
+   },
+   {
+    "trend": "Sustainable and green manufacturing",
+    "rationale": "Energy and material efficiency are increasingly required in manufacturing operations and would broaden the minor's process-design core."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Differentiate the course pool from the Grand Challenges minor: the two id-650 minors carry an identical sample course list, so the manufacturing minor should drop the off-theme ENTR/MIT-gerontology/ENGR-drone entries.",
+  "Add automation/robotics (IE 449/455) and an Industry 4.0/IIoT-and-digital-twin option (build on MNET 303/318/416) to modernize.",
+  "Publish explicit learning outcomes and a required-vs-elective plan, both absent from the data.",
+  "Deepen additive manufacturing beyond the CHE 415 intro and add lean/metrology-GD&T coverage.",
+  "Resolve the dangling references CPT 325 and ENGR 290."
+ ]
+}
