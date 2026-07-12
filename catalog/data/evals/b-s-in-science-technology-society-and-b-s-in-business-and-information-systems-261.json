@@ -1,0 +1,65 @@
+{
+  "id": "b-s-in-science-technology-society-and-b-s-in-business-and-information-systems-261",
+  "name": "B.S. in Science, Technology & Society and B.S. in Business and Information Systems",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 4,
+      "justification": "The visible course set shows well-layered, logically building sequences: a computing spine (CS 100 -> CS 113 -> CS 114/IT 114) feeds a web/application track (IS 117 -> IS 218/219 -> IS 322/331/373 -> IS 421) and an advanced-IS/analytics tier (IS 390 -> IS 455, IS 344 -> IS 465), alongside a coherent business foundation (ACCT, ECON, FIN, HRM, ENTR). The STS side is represented by ethics/society content (IS 350). A deepest prerequisite chain of 7 confirms genuine multi-year layering rather than a flat catalog. The main limitation is that only a single plan-of-study group (2nd Semester) was parsed, so full term-over-term ordering cannot be directly verified from the data.",
+      "suggestion": "Publish the complete term-by-term plan of study for both degrees so progression, co-requisite timing, and difficulty ramp can be seen across all eight semesters rather than a single term fragment."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is sensible and richly specified: deepestPrereqChain is 7, which is deep but appropriate for a combined four-year degree, and prerequisites use explicit boolean logic and grade conditions (e.g., IS 218 requires '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'; CS 113 'with a grade C or better'). Only 3 of 59 referenced courses are missing from the catalog (missingCoursesSample: YWCC 107, YWCC 207, YWCC 307), roughly 5 percent, and these appear to be YWCC seminar/orientation-type courses rather than technical gateways, so the dangling references are low-impact. The chief watch-item is that several capstone-level courses (IS 333, IS 448, IS 465) sit at depth 7, which can create scheduling bottlenecks.",
+      "suggestion": "Resolve the 3 dangling references (YWCC 107, YWCC 207, YWCC 307) by adding catalog entries or correcting the codes, and document recommended sequencing for the depth-7 courses to avoid senior-year bottlenecks."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives are present anywhere in the provided data. For a catalog-quality page, and especially for a combined degree that must articulate how STS and Business/Information Systems competencies integrate, the absence of stated outcomes is a real deficiency: prospective students and assessors cannot see what graduates are expected to know or be able to do.",
+      "suggestion": "Publish an explicit set of program-level learning outcomes for the combined degree, ideally mapping each outcome to the STS, business, and information-systems course blocks that develop it."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "The plan does not reconcile: summedTermCredits is 12 against a statedTotalCredits of 120, giving a creditReconcileDelta of -108. Per the combined/dual-degree caveat this large negative delta is primarily a data-consistency artifact of only one plan-of-study group (2nd Semester, 12 cr) being parsed and of overlapping plans, not proof of a curriculum defect. Nonetheless, with only a single term captured, the split across general education, major core, and electives cannot be assessed for transparency or balance, and the stated total does not tie out to the visible plan.",
+      "suggestion": "Restore and reconcile the full plan of study so summed term credits equal the stated 120 (delta 0), and present a clear breakdown of general-education vs. major-core vs. elective credits for each of the two degrees, flagging shared/overlapping courses."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The program page is incomplete and partly garbled as captured. Only one requirement group ('2nd Semester') is present, and it contains vague or malformed items: placeholder titles like 'General Elective 5 2' and 'General Elective 6 2', null course codes, a 'Select one of the following:' line with no grouped options, and an 'or IT 491 or IT Capstone Project' alternative rendered as a stray line. IS 491 also shows a null credit value within the group. While the underlying individual course descriptions are strong, the plan-of-study presentation itself is fragmentary, unlabeled beyond one term, and does not read as a finished catalog page.",
+      "suggestion": "Rebuild the plan-of-study display with all terms labeled, real elective titles and credit values, and cleanly grouped 'select one of' alternatives (e.g., IS 491 / IT 491) so the page is legible and complete."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The course inventory reflects current information-systems and business practice well: web and mobile application development (IS 218/219, IS 322), database design (IS 331), cloud-based web systems for startups (IS 421), UX design and usability measurement (IS 247, IS 375, IS 448), social network analysis and web mining/information retrieval (IS 333, IS 392), content management systems (IS 373), e-commerce (IT 310), and data-analysis/data-science foundations (IS 465). The business complement (accounting, finance, fintech restrictions, entrepreneurship) plus STS ethics (IS 350) gives graduates a modern, employable blend. The offering could still be strengthened with more explicit contemporary data science, machine learning, and security content.",
+      "suggestion": "Add or highlight current-practice electives in machine learning/data analytics and information security to keep the technical side aligned with present IS/BIS hiring demand."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Sampled course descriptions are overwhelmingly present, specific, and informative, conveying concrete topics and skills (e.g., IS 331 on relational databases and back-end functionality, IS 421 on cloud-based web systems in a startup context, IS 448 on usability and UX measurement). Restrictions and audience notes are included where relevant. A few entries are thin, notably IS 489 ('Students continue their research in preparation for completing a Research Thesis.'), but these are the exception rather than the norm."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are generally stated unambiguously with explicit boolean logic and grade thresholds (e.g., '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)', 'CS 113 with a grade C or better'). GUR/GER-based prerequisites (IS 333, IS 448, IS 465) enumerate the full list of acceptable courses, which is verbose but internally consistent. The only clarity/consistency drag is the 3 dangling YWCC references (YWCC 107/207/307) elsewhere in the referenced set, though none appears in the sampled prerequisite strings."
+    }
+  },
+  "topSuggestions": [
+    "Publish explicit program-level learning outcomes for the combined degree, mapping each to the STS, business, and information-systems course blocks that develop it (currently none are stated).",
+    "Restore and reconcile the full plan of study so summed term credits equal the stated 120 credits (creditReconcileDelta currently -108, driven by only one parsed term); this fixes both the credit-balance and presentation gaps.",
+    "Clean up the plan-of-study presentation: replace placeholder items ('General Elective 5 2', 'General Elective 6 2'), fill null course codes and the null credit on IS 491, and cleanly group the 'select one of' alternatives (IS 491 / IT 491).",
+    "Resolve the 3 dangling course references (YWCC 107, YWCC 207, YWCC 307) by adding catalog entries or correcting the codes.",
+    "Add or spotlight current-practice electives in machine learning/data analytics and information security, and document sequencing for the depth-7 capstone courses to prevent senior-year bottlenecks."
+  ]
+}

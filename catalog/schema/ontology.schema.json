@@ -1,0 +1,147 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://njit-jc.cc/catalog/ontology.schema.json",
+  "title": "NJIT Catalog Ontology",
+  "description": "Structured representation of the NJIT undergraduate catalog: colleges, departments, subjects, programs, courses, and prerequisite dependency edges.",
+  "type": "object",
+  "required": ["meta", "colleges", "departments", "subjects", "programs", "courses", "prerequisiteEdges"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["source", "generated", "counts"],
+      "properties": {
+        "source": {"type": "string"},
+        "generated": {"type": "string"},
+        "catalogYear": {"type": "string"},
+        "level": {"type": "string"},
+        "counts": {"type": "object"}
+      }
+    },
+    "colleges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "printedPage": {"type": ["integer", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "departments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "collegeId"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "collegeId": {"type": ["string", "null"]},
+          "printedPage": {"type": ["integer", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "subjects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code"],
+        "properties": {
+          "code": {"type": "string"},
+          "name": {"type": ["string", "null"]},
+          "courseCount": {"type": "integer"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "programs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "degree": {"type": ["string", "null"]},
+          "kind": {"type": "string", "enum": ["degree", "minor", "certificate", "option", "other"]},
+          "departmentId": {"type": ["string", "null"]},
+          "collegeId": {"type": ["string", "null"]},
+          "printedPage": {"type": ["integer", "null"]},
+          "totalCredits": {"type": ["number", "null"]},
+          "statedTotalCredits": {"type": ["number", "null"]},
+          "description": {"type": ["string", "null"]},
+          "requirementGroups": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "items"],
+              "properties": {
+                "name": {"type": "string"},
+                "credits": {"type": ["number", "null"]},
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {"type": ["string", "null"]},
+                      "title": {"type": ["string", "null"]},
+                      "credits": {"type": ["number", "null"]},
+                      "raw": {"type": ["string", "null"]}
+                    },
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "courseCodes": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Distinct course codes referenced by this program's requirements."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "courses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "subject", "number", "title"],
+        "properties": {
+          "code": {"type": "string"},
+          "subject": {"type": "string"},
+          "number": {"type": "string"},
+          "title": {"type": "string"},
+          "credits": {"type": ["number", "null"]},
+          "creditsRaw": {"type": ["string", "null"]},
+          "contactHours": {"type": ["string", "null"]},
+          "description": {"type": ["string", "null"]},
+          "prerequisiteRaw": {"type": ["string", "null"]},
+          "prerequisiteAst": {"type": ["object", "null"]},
+          "corequisiteRaw": {"type": ["string", "null"]},
+          "corequisites": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    },
+    "prerequisiteEdges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to"],
+        "properties": {
+          "from": {"type": "string", "description": "course that HAS the prerequisite"},
+          "to": {"type": "string", "description": "the prerequisite course"},
+          "minGrade": {"type": ["string", "null"]},
+          "kind": {"type": "string", "enum": ["prerequisite", "corequisite"]}
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

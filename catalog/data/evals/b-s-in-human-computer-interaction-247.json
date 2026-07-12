@@ -1,0 +1,65 @@
+{
+  "id": "b-s-in-human-computer-interaction-247",
+  "name": "B.S. in Human-Computer Interaction",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 4,
+      "justification": "The eight-term plan builds a clear HCI spine: foundational computing and web work (CS 100, IS 117, IS 218) leads into the UX thread (IS 247 Designing the User Experience -> IS 375 Discovering User Needs for UX -> IS 448 Usability & Measuring UX), reinforced by psychology/cognitive-science and human-factors courses (PSY 210, Cognitive Processes, IE 355) and a senior project (IS 491). Progression is well ordered and the deepestPrereqChain of 7 confirms genuine vertical depth. Coherence is weakened only by unspecified 'HCI Specialization Elective 1/2' slots and several parsed-in cross-listed Rutgers options that make a few term-to-term transitions harder to read.",
+      "suggestion": "Publish explicit course lists for the 'HCI Specialization Elective' slots and annotate the intended UX-research sequence (IS 247 -> IS 375 -> IS 448) so the core progression is unambiguous."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "The prerequisite graph is largely sensible: prerequisites use explicit grade conditions and boolean logic (e.g., IS 218 requires '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'), and intro courses correctly carry none. Of 27 referenced courses only 3 are missing from the catalog (missingCourseCount=3): GER 300 is a general-education placeholder rather than a real course, and YWCC 207 and YWCC 307 are 1-credit professional-development seminars absent from the scraped undergraduate catalog. No core course is dangling. The main caution is the deepestPrereqChain of 7 (IS 448 sits at depth 7), which is on the deep side for an undergraduate elective and risks over-constraining scheduling.",
+      "suggestion": "Resolve the three dangling references — add YWCC 207 and YWCC 307 to the catalog and replace the 'GER 300' placeholder with a linked GER requirement — and audit the depth-7 chain into IS 448 to confirm it is not over-constrained."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives are present anywhere in the provided data, and there is no program description either. For a catalog page this is a real gap: prospective students and assessors cannot see what graduates are expected to know or be able to do, which is especially notable for a professional UX/HCI degree where competency statements (user research, interaction design, usability evaluation) would be expected.",
+      "suggestion": "Publish an explicit, measurable set of program learning outcomes (e.g., conduct user research, design and prototype interfaces, plan and analyze usability studies) on the catalog page."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 4,
+      "justification": "The plan reconciles exactly: summedTermCredits (120) equals statedTotalCredits (120), so creditReconcileDelta is 0.0 — internally consistent. Term loads are evenly distributed across the four years (14-16 credits per semester), and the split spans general education, a substantial HCI/computing core, psychology/design support courses, and electives. The transparency of the elective portion is the only limitation: six 'General Elective' slots plus two unspecified 'HCI Specialization Elective' slots make it hard to see exactly how major-vs-free credits are apportioned.",
+      "suggestion": "Keep the balanced, reconciling term structure but add a summary credit-breakdown (GER vs. major core vs. specialization vs. free electives) and enumerate the elective pools so the distribution is fully transparent."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "Terms are clearly labeled (First Year — 1st Semester ... Fourth Year — 2nd Semester) and per-term credit totals are present, which aids legibility. However, the page lacks any program overview/description, and several plan-of-study lines are garbled artifacts: GER requirements are split across multiple rows with broken URL fragments (e.g., '...general-' / 'education-requirements/natural-science-ger/)'), alternative courses appear as standalone rows ('or MATH 138 or General Calculus I'), and 'Select one of the following:' is rendered as an item with credits. These fragments would surface as noise on a catalog page.",
+      "suggestion": "Add a concise program overview paragraph and clean up the plan so GER links, 'or' alternatives, and 'select one of' groupings render as structured options rather than fragmented separate rows."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The curriculum maps closely to current UX/HCI practitioner roles: dedicated user research (IS 375 Discovering User Needs for UX), interaction/interface design (IS 247), usability testing and UX measurement (IS 448 Usability & Measuring UX), human factors/ergonomics (IE 355), plus supporting cognitive psychology, statistics, database, and web-application skills. This is a modern, coherent UX pipeline. Gaps relative to current practice are the absence of explicit accessibility, contemporary prototyping tooling (e.g., Figma), and any AI/ML-in-UX or data-informed design content.",
+      "suggestion": "Add or flag electives covering accessibility/inclusive design, industry-standard prototyping tools, and AI/ML in UX to keep the degree aligned with current hiring expectations."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "All 24 sample courses carry substantive, specific descriptions rather than thin or placeholder text — e.g., IS 448 explains usability and UX research, IS 375 frames anticipating user needs, and CS 100 details problem-solving and program control flow. None are missing or obviously stub descriptions. Only minor caveats: several AD/IE courses lead with enrollment 'Restrictions' text before the substantive content, and the provided data is excerpt-truncated, so full-length completeness cannot be fully confirmed."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are generally stated unambiguously with explicit grade conditions and boolean structure (e.g., ENGL 102 'with a grade of C or higher', IS 218 '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'), and intro courses correctly list none. Clarity is reduced slightly by a few category-style prerequisites that name broad requirement buckets ('Statistics GUR (MATH 105, ...)', 'Computing Literacy GER course') and by the three peripheral dangling references (GER 300, YWCC 207, YWCC 307), but no contradictions or nonsensical grade conditions appear."
+    }
+  },
+  "topSuggestions": [
+    "Publish explicit, measurable program-level learning outcomes for the HCI degree (user research, interaction design, usability evaluation) — none currently exist on the page.",
+    "Add a program overview description and clean up garbled plan-of-study entries (fragmented GER URL rows, 'or' alternatives, and 'select one of the following' lines).",
+    "Resolve the three dangling course references — add YWCC 207 and YWCC 307 to the catalog and replace the 'GER 300' placeholder with a linked GER requirement.",
+    "Enumerate the 'HCI Specialization Elective' and 'General Elective' pools with concrete course lists and add a GER/core/elective credit-breakdown summary.",
+    "Refresh industry currency by adding explicit accessibility, prototyping-tool, and AI/ML-in-UX coverage to the required or elective offerings."
+  ]
+}
