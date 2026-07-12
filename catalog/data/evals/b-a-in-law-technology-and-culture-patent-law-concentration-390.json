@@ -1,0 +1,111 @@
+{
+  "id": "b-a-in-law-technology-and-culture-patent-law-concentration-390",
+  "name": "B.A. in Law, Technology and Culture (Patent Law Concentration)",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 4,
+      "justification": "Unlike the base major, this concentration has a full 8-term plan that reconciles, and its design is genuinely purposeful for patent-law preparation: a technical spine (MATH 111 Calculus plus repeated Natural Science and Natural-Science-with-Lab requirements, which map to the USPTO patent-bar technical-competency requirement) is layered with a legal core (MGMT 290 Business Law, Legal Foundations and LTC Core electives), and a professional capstone (HSS 404 Senior Seminar, HIST 310 Co-op or HIST 490 Research, HIST 312 Professional Development in Law). The science-for-patent-eligibility logic is a real coherence strength.",
+      "suggestion": "Reduce the reliance on generic 'Legal Foundations/LTC Core/Law-Related Elective' placeholders by naming representative courses so the distinctive science-plus-law progression is explicit rather than implied."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The plan reconciles and the graph is nearly clean: deepestPrereqChain=5 is reasonable, and missingCourseCount=2 involves only a GER 200 placeholder and HIST 312 Professional Development in Law (a real one-credit course that dangles as a reference). The capstone options (HIST 310/490) carry sensible ENGL 102 + 200-level GER prerequisites.",
+      "suggestion": "Add a catalog entry/code mapping for HIST 312 and resolve the GER 200 placeholder so both dangling references clear."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes appear in the data; only the term plan and course descriptions are present. A patent-track concentration especially should state the technical-plus-legal competencies it builds toward (e.g., readiness for the USPTO patent bar).",
+      "suggestion": "Publish outcomes tying the science requirements to patent-practice readiness (technical literacy, patent-eligibility analysis, legal writing, professional development)."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 4,
+      "justification": "The plan reconciles cleanly (statedTotalCredits=120, summedTermCredits=120, creditReconcileDelta=0.0) with a transparent and deliberate split: gen-ed and a real science/math block (Calculus plus multiple natural-science requirements), a legal core, and electives. The balance directly serves the concentration's purpose of technical eligibility for patent practice.",
+      "suggestion": "Where natural-science and 'Free Elective 2' rows carry null credits, assign explicit values so every line item -- not just term subtotals -- is accounted for."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "The full plan is rendered with labeled terms that reconcile, which is a clear improvement over the base major. Presentation is undercut by rough edges: 'Legal Foundations Elective 1' appears in both second-year terms with the same '1' label, HIST 310/312 titles carry trailing footnote digits ('...History I 4', 'Senior Seminar 3'), and HIST 312 dangles.",
+      "suggestion": "Fix the duplicated elective numbering and strip the trailing footnote digits from course titles so the plan reads cleanly."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The concentration is well-aligned with a real and growing career path: patent agents/examiners and patent attorneys need documented technical coursework, and the plan's Calculus-plus-natural-science spine paired with legal foundations and a co-op (HIST 310) is exactly what that pathway requires. The main currency gap is the absence of a named patent/IP course in the visible plan, so the technical eligibility is built but the doctrinal IP content is implied through generic electives.",
+      "suggestion": "Require an explicit patent/IP course (e.g., HIST 384 Invention and Regulation) and encourage engineering/CS technical electives so the concentration delivers named IP doctrine alongside its science spine."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "The coded courses have substantive descriptions (HIST 310 Co-op, HIST 490 Research Seminar, HSS 404 Senior Seminar, MGMT 290 Business Law); the one gap is HIST 312 Professional Development in Law, which dangles and shows no description."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated clearly with grade conditions, and the only dangling references (missingCourseCount=2) are a GER 200 placeholder and HIST 312, so the capstone chain (ENGL 102 -> GER 200 -> upper-level -> HSS 404 -> HIST 490) is unambiguous."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Named patent/IP survey course",
+        "rationale": "The concentration is defined largely by science requirements; no dedicated patent or IP course is visible even though HIST 384 Invention and Regulation exists and would supply the doctrinal core."
+      },
+      {
+        "topic": "Patent drafting, claims, and USPTO practice",
+        "rationale": "There is no course teaching patent-agent skills (claim drafting, prosecution, USPTO procedure), which are the concrete deliverables of a patent-law track."
+      },
+      {
+        "topic": "Deeper engineering/CS technical electives",
+        "rationale": "USPTO patent-bar eligibility rewards substantial engineering/science coursework; the plan provides Calculus and generic natural-science electives but no engineering/CS depth pathway."
+      },
+      {
+        "topic": "Software and biotech patent-eligibility doctrine",
+        "rationale": "Modern patent eligibility turns on Alice/Mayo (software) and biotech questions; no course addresses these decisive doctrines."
+      },
+      {
+        "topic": "IP licensing and technology commercialization",
+        "rationale": "The plan lacks a technology-transfer/licensing course connecting patents to startups and commercialization careers."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI-generated inventions and patent eligibility",
+        "rationale": "Questions like inventorship for AI (the DABUS cases) are reshaping patent law and are a natural signature topic for this concentration."
+      },
+      {
+        "trend": "Biotech/CRISPR and software patent-eligibility (post-Alice/Mayo)",
+        "rationale": "The frontier of patentable subject matter sits in biotech and software; pairing the science spine with these doctrines would be distinctive."
+      },
+      {
+        "trend": "Global IP harmonization and standard-essential patents",
+        "rationale": "Cross-border patent strategy and SEP/FRAND disputes are growing areas the track could address."
+      },
+      {
+        "trend": "AI-assisted prior-art search and patent analytics",
+        "rationale": "Patent search and drafting are being transformed by AI tooling; exposure would modernize the professional-development component (HIST 312)."
+      },
+      {
+        "trend": "Technology transfer and startup commercialization",
+        "rationale": "University and startup IP commercialization is an expanding career destination the co-op (HIST 310) could be oriented toward."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Require a named patent/IP course (e.g., HIST 384 Invention and Regulation) so the concentration delivers explicit IP doctrine, not just technical eligibility.",
+    "Add a defined engineering/CS technical-elective pathway to strengthen USPTO patent-bar readiness beyond Calculus and generic science.",
+    "Resolve the HIST 312 dangling reference and the GER 200 placeholder, and assign credits to the null-credit science/elective rows.",
+    "Publish program learning outcomes that tie the science requirements to patent-practice readiness.",
+    "Clean the plan's presentation (duplicated 'Elective 1' labels, trailing footnote digits in course titles) and name the generic legal-core electives."
+  ]
+}

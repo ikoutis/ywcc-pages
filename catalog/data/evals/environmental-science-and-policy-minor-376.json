@@ -1,0 +1,111 @@
+{
+  "id": "environmental-science-and-policy-minor-376",
+  "name": "Environmental Science and Policy Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "No plan-of-study terms are parsed (requirementGroups=0), so the minor appears as an eligible-course pool. The environmental-science half of that pool is coherent (EVSC 375 Environmental Biology, 385 Microbiology, 416 Toxicology, 484 Environmental Analysis; CHEM 360/361 environmental chemistry; BIOL 375 Conservation), but the 'and Policy' half is barely represented -- EPS 202 Society, Technology, and the Environment is essentially the only policy/society course visible, so the two named halves are unbalanced.",
+      "suggestion": "Curate the pool into an explicit science core plus a required policy/society component (e.g., add environmental law, economics, or governance courses) so the 'and Policy' in the title is actually delivered."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "This minor has the cleanest prerequisite graph of the group: missingCourseCount=0 (no dangling references) and a sensible deepestPrereqChain=6 (e.g., CHEM 126 -> 360 -> 361, and the BIOL 201/205 -> conservation/microbiology chains) with explicit grade conditions.",
+      "suggestion": "Preserve the clean graph while adding the policy courses; ensure any new policy electives carry only realistic humanities/writing prerequisites so accessibility is maintained."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No minor-level learning outcomes appear in the data; only a course pool with descriptions is provided. For an interdisciplinary science-and-policy credential, stated outcomes are especially important to show the integration the title promises.",
+      "suggestion": "Publish outcomes describing what a completer can do across both halves (analyze environmental data/samples and reason about environmental policy and regulation)."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "No credit requirement is stated (statedTotalCredits=null, summedTermCredits=null, creditReconcileDelta=null); for a minor the null delta is an expected data caveat, but the page also shows no credit count or science-vs-policy distribution, so a student cannot see the commitment or how the two halves are weighted.",
+      "suggestion": "State a total credit requirement and specify a minimum number of policy/society credits so the interdisciplinary balance is explicit."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "With no parsed requirement groups and a pool dominated by chemistry and environmental-science courses (plus stray FRSC entries), the page neither reads as a structured minor nor visibly matches its 'Science and Policy' name, since the policy dimension is nearly invisible.",
+      "suggestion": "Render a structured requirement block and surface the policy component prominently so the page communicates the interdisciplinary design at a glance."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The science content is current and applied -- EVSC 416 Principles of Toxicology, EVSC 484 Environmental Analysis, CHEM 360 (air pollution and climate change) and CHEM 361 (water and soil pollution), and BIOL 375 Conservation Biology map well to environmental-consulting and monitoring careers. Currency is weaker on the policy/careers side (no environmental law, GIS/geospatial, or policy-analysis courses visible), which limits the interdisciplinary employability the title implies.",
+      "suggestion": "Add a GIS/geospatial-analysis option and an environmental-policy/law course so graduates can pair defensible science with the regulatory and spatial skills employers request."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and substantive across the environmental-science pool (EVSC 385 Microbiology, EVSC 416 Toxicology, EVSC 484 Environmental Analysis, CHEM 360/361), giving a clear picture of each course's scope."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are unambiguous with explicit grade conditions, and missingCourseCount=0 means there are no dangling references anywhere in the pool -- the healthiest prerequisite signal among these programs."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Environmental policy, law, and governance",
+        "rationale": "The title promises 'Policy' but only EPS 202 represents it; there is no environmental law (e.g., EVSC 335), regulation, or policy-analysis course, leaving half the minor's premise unmet."
+      },
+      {
+        "topic": "GIS and geospatial / remote-sensing analysis",
+        "rationale": "Environmental science now runs on spatial data, yet no GIS or remote-sensing course appears in the pool."
+      },
+      {
+        "topic": "Environmental data science and statistics",
+        "rationale": "EVSC 484 Environmental Analysis covers sample handling, but there is no quantitative environmental data-analysis course (R/Python, time series) for interpreting monitoring data."
+      },
+      {
+        "topic": "Climate systems and modeling",
+        "rationale": "CHEM 360 addresses atmospheric chemistry and climate change chemically, but there is no dedicated climate-systems or modeling course for a program foregrounding the environment."
+      },
+      {
+        "topic": "Sustainability, energy systems, and life-cycle assessment",
+        "rationale": "The pool lacks any sustainability/LCA or energy-systems course that connects environmental science to decarbonization decision-making."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Climate adaptation and environmental justice",
+        "rationale": "Environmental-justice and climate courses already exist in the department (HIST 338, HIST 375); pulling them in would finally deliver the policy half and track a fast-growing field."
+      },
+      {
+        "trend": "Geospatial big data and remote sensing",
+        "rationale": "Satellite and sensor data are central to modern environmental work; a GIS/remote-sensing elective would sharply raise employability."
+      },
+      {
+        "trend": "Nature-based solutions and ecosystem services",
+        "rationale": "BIOL 375 Conservation Biology could anchor content on restoration and ecosystem-service valuation that now drive conservation funding."
+      },
+      {
+        "trend": "ESG and sustainability governance careers",
+        "rationale": "Corporate ESG and environmental-compliance roles are expanding; a policy/governance course would position completers for them."
+      },
+      {
+        "trend": "Circular economy and renewable-energy transition",
+        "rationale": "Linking environmental analysis to circular-economy and clean-energy systems reflects where the sector's jobs are moving."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Deliver the 'and Policy' half by requiring a policy/law/governance course (e.g., EVSC 335 Environmental Law, HIST 338/375) rather than leaving EPS 202 as the lone representative.",
+    "Add GIS/geospatial and quantitative environmental data-analysis options to match modern environmental-science practice.",
+    "Publish a structured requirement block with a stated credit total and a minimum policy-credit requirement so the interdisciplinary balance is transparent.",
+    "State program-level learning outcomes spanning both science and policy.",
+    "Remove stray non-environmental courses (e.g., FRSC entries) from the eligible pool so the page reads coherently."
+  ]
+}

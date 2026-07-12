@@ -1,0 +1,111 @@
+{
+  "id": "b-a-in-history-385",
+  "name": "B.A. in History",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "A capstone spine exists and is well-ordered (ENGL 101/102 -> distribution across American and Global/Comparative History -> R510 315/316 Perspectives in History -> HSS 404 Senior Seminar -> HIST 490 Research Seminar), and the plan sensibly reflects NJIT's identity by including CS 100/103 and MATH 105. However, the middle two years are dominated by generic 'Free Elective' and un-coded 'American/Global History Elective' rows (only 7 courses are actually referenced), so the major's substantive progression is thin between the intro and capstone bookends.",
+      "suggestion": "Name the American, Global/Comparative, and upper-level history electives (or provide representative menus) and reduce the very large free-elective block so the middle years show real disciplinary progression."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "missingCourseCount=0 (no dangling references) and deepestPrereqChain=5 is appropriate for a humanities B.A. The capstone chain is notably well-articulated: HIST 490 requires ENGL 102, a 200-level GER, an upper-level history course, Perspectives (R510 315/316), and HSS 404 -- a genuine scaffold rather than a nominal prerequisite.",
+      "suggestion": "Because so much of the major is expressed as placeholders, ensure the named 'American'/'Global' electives inherit clear, consistent prerequisites when they are added so the clean graph is preserved."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes appear in the data; only the term plan and a handful of course descriptions are present. For a B.A. whose value proposition is research, analysis, and writing, stated outcomes are an expected catalog element.",
+      "suggestion": "Publish explicit history-major outcomes (historical argumentation, primary-source analysis, historiographical reasoning, research writing) on the catalog page."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "The plan reconciles (statedTotalCredits=120, summedTermCredits=120, creditReconcileDelta=0.0) and terms are transparent, but the distribution is heavily skewed toward free electives -- roughly half the degree is generic 'Free Elective' rows -- leaving the required history core comparatively light for a major.",
+      "suggestion": "Rebalance toward a larger named history core (period/region distribution plus methods) so the major's identity is not carried mostly by free electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Terms are labeled and the totals reconcile, but the page leans on generic placeholders and Rutgers-legacy 'R510' rows with null codes (e.g., 'R510 201 Hist Of West Civ', 'or CS 103 or...'), which read as raw catalog fragments rather than finished entries.",
+      "suggestion": "Resolve the 'R510' legacy codes into current course numbers and render 'or' alternatives as clean choice groups so the plan is fully legible."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The plan makes a smart nod to NJIT's technical setting (CS 100/103, MATH 105 statistics) and provides real research training (HSS 404, HIST 490), which supports analytical careers. But it shows no digital-humanities, public-history, or applied-methods course that would let history majors leverage that quantitative/computing exposure, so currency is latent rather than realized.",
+      "suggestion": "Add a digital-humanities or public-history course that connects the required CS 100 and MATH 105 skills to historical practice, giving graduates a demonstrable applied edge."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Among the courses actually coded, descriptions are substantive and specific (HIST 490 Research Seminar and HSS 404 Senior Seminar describe their scaffolded research work in detail); coverage is thin only because most of the major is expressed as placeholders."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are unambiguous and well-specified -- HIST 490's multi-course chain is a model of explicit sequencing -- and missingCourseCount=0 means no dangling references."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Digital humanities and computational text analysis",
+        "rationale": "The plan requires CS 100 Roadmap to Computing but never connects it to history via a digital-history/text-mining course, wasting a natural NJIT advantage."
+      },
+      {
+        "topic": "Historiography and theory/methods depth",
+        "rationale": "R510 315/316 Perspectives in History is the lone methods offering; a stronger historiography/theory requirement would deepen disciplinary training."
+      },
+      {
+        "topic": "Public history, archives, and museum studies",
+        "rationale": "There is no applied-history course preparing students for archives, museums, or public-history careers, a common destination for the major."
+      },
+      {
+        "topic": "Quantitative and GIS historical methods",
+        "rationale": "MATH 105 statistics is required but not applied to history; spatial/quantitative history methods (mapping, datasets) are absent."
+      },
+      {
+        "topic": "Named global/non-Western breadth",
+        "rationale": "The plan uses generic 'Global or Comparative History Elective' placeholders with no named world-history courses, leaving geographic breadth unspecified."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Digital humanities and AI-assisted text mining",
+        "rationale": "Pairing the required CS 100 with a digital-history course would let majors apply LLM/text-analysis tools to primary sources -- a distinctive, employable skill."
+      },
+      {
+        "trend": "Public and applied history / cultural-heritage careers",
+        "rationale": "Growing demand in archives, museums, and heritage management makes an applied-history offering timely."
+      },
+      {
+        "trend": "Data storytelling and GIS mapping for historians",
+        "rationale": "Spatial and data-visualization methods are increasingly standard in historical scholarship and public engagement."
+      },
+      {
+        "trend": "History of science and technology as a signature track",
+        "rationale": "At a technological university, a formal history-of-science-and-technology pathway would differentiate the major and fit its home institution."
+      },
+      {
+        "trend": "Global and transnational history",
+        "rationale": "The field's shift toward transnational framing argues for named world-history courses in place of generic global-elective placeholders."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Name the American/Global/upper-level history electives and enlarge the required history core so the middle years show real progression rather than free electives.",
+    "Add a digital-humanities or public-history course that leverages the already-required CS 100 and MATH 105 skills.",
+    "Publish explicit program learning outcomes for the history major.",
+    "Resolve the Rutgers-legacy 'R510' codes and 'or' rows into clean, current catalog entries.",
+    "Introduce named global/non-Western and historiography courses to guarantee breadth and methods depth."
+  ]
+}

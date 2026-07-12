@@ -1,0 +1,111 @@
+{
+  "id": "forensic-science-minor-376",
+  "name": "Forensic Science Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "No plan-of-study terms are parsed (requirementGroups=0), so the minor is presented as an eligible-course pool rather than an ordered sequence. Within it the forensic offerings are coherent and recognizable (FRSC 201 Intro -> 307 Crime Scene -> 359 Physical Methods, plus 475 Forensic Chemistry, 479 Forensic Biology, 480 Forensic Microscopy, and HIST 320 Law and Evidence), but the pool is also padded with chemistry, environmental, and IT courses that obscure the intended forensic pathway.",
+      "suggestion": "Publish an explicit forensic-minor structure (FRSC 201 core plus a stated number of forensic electives) and trim the unrelated chemistry/environmental entries so the pathway is clear."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "missingCourseCount=0 means no dangling references, and deepestPrereqChain=6 is sensible; the forensic chains are dependency-honest (FRSC 201 -> 307 -> 359; FRSC 479 behind BIOL 352; FRSC 475/480 behind CHEM 221) with explicit grade conditions.",
+      "suggestion": "Keep the graph clean while curating the pool; verify that any forensic electives requiring deep chemistry/biology chains are flagged so minors can plan the prerequisites."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No minor-level learning outcomes are provided -- only a course pool with descriptions. A forensic credential should state the competencies (evidence integrity, analytical exposure, legal context) it certifies.",
+      "suggestion": "Add an outcomes statement describing what the minor certifies (crime-scene/evidence fundamentals, one hands-on forensic analysis area, and legal-context literacy)."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "No credit requirement is stated (statedTotalCredits=null, summedTermCredits=null, creditReconcileDelta=null). The null delta is an expected minor-data caveat, but with no visible credit count or core-vs-elective split a student cannot gauge the commitment.",
+      "suggestion": "State the minor's total credits and how many must be FRSC-designated so the requirement is transparent."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "With no parsed requirement groups and a pool that mixes FRSC courses with chemistry, environmental, and IT offerings, the page does not read as a self-contained forensic minor; the FRSC 498 excerpt also bleeds into an unrelated 'HIST 2**' catalog fragment, indicating scrape noise.",
+      "suggestion": "Present a structured requirement block distinct from adjacent department pools and clean the scrape artifacts (e.g., the FRSC 498 description)."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The forensic pool is broad and current: classical wet-lab forensics (FRSC 307 Crime Scene, 359 Physical Methods, 475 Forensic Chemistry, 479 Forensic Biology, 480 Forensic Microscopy) sit alongside digital forensics (IT 330 Computer Forensic, IT 332 Digital Crime) and legal context (HIST 320 Law and Evidence) -- notably it exposes minors to digital evidence that the B.S. required plan does not.",
+      "suggestion": "Formalize a two-track option (physical/biological forensics and digital forensics) so minors can deliberately pair wet-lab and digital-evidence skills."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and substantive across the forensic offerings (FRSC 307, 359, 475, 479, 480) and supporting courses; the only issue is scrape noise in the FRSC 498 excerpt."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated clearly with grade conditions and missingCourseCount=0 (no dangling references), so the forensic chains are unambiguous; deeper electives like FRSC 479 correctly surface their biology prerequisites."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Forensic statistics and evidence interpretation",
+        "rationale": "The pool includes analytical and pattern courses (FRSC 359, 480) but no treatment of likelihood ratios or error rates, which post-NAS/PCAST practice makes essential to defensible conclusions."
+      },
+      {
+        "topic": "Quality assurance, accreditation, and expert testimony",
+        "rationale": "FRSC 495 Senior Seminar aside, there is no dedicated coverage of ISO 17025/FEPAC quality systems, proficiency testing, or courtroom testimony that crime labs require."
+      },
+      {
+        "topic": "Forensic toxicology integration",
+        "rationale": "FRSC 475 Forensic Chemistry and EVSC 416 Toxicology exist in the catalog but are not framed as a toxicology pathway, despite toxicology's central role in casework."
+      },
+      {
+        "topic": "Breadth disciplines (forensic anthropology/entomology, reconstruction)",
+        "rationale": "The pool is strong on chemistry/biology/microscopy but omits skeletal, entomological, and scene-reconstruction specialties that round out the field."
+      },
+      {
+        "topic": "Cloud and mobile digital evidence",
+        "rationale": "IT 330/332 cover computer and cyber crime, but modern mobile-device and cloud-evidence acquisition is not explicitly represented."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Forensic genetic genealogy and massively parallel sequencing",
+        "rationale": "FRSC 479 Forensic Biology teaches serology/STR DNA; investigative genetic genealogy and next-generation sequencing are reshaping identification and should modernize its content."
+      },
+      {
+        "trend": "Digital, mobile, and AI-assisted forensics",
+        "rationale": "Building on IT 330/332, coverage of mobile/cloud extraction and AI-assisted triage matches where investigative workloads are growing."
+      },
+      {
+        "trend": "Rapid DNA and field-portable instrumentation",
+        "rationale": "Point-of-collection DNA and handheld spectrometers are moving analysis to the scene; FRSC 307/359 could expose students to them."
+      },
+      {
+        "trend": "Validation and error-rate reform of pattern evidence",
+        "rationale": "PCAST-driven scrutiny of fingerprint/firearm/impression evidence calls for empirical validation content in FRSC 359/480."
+      },
+      {
+        "trend": "Deepfake and multimedia authentication",
+        "rationale": "As synthetic media spreads, authentication of images/audio/video is an emerging forensic specialty the minor could position for."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish an explicit forensic-minor structure (FRSC core plus a stated number of forensic electives with a credit total) instead of an undifferentiated eligible-course pool.",
+    "Trim unrelated chemistry/environmental courses and formalize a physical/biological vs. digital forensics track choice.",
+    "Add coverage of forensic statistics/evidence interpretation and laboratory QA/expert testimony to align with post-PCAST practice.",
+    "State program-level learning outcomes for the credential.",
+    "Modernize FRSC 479's DNA content toward next-generation sequencing and forensic genetic genealogy, and clean the FRSC 498 scrape artifact."
+  ]
+}

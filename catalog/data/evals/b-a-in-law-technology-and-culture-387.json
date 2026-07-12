@@ -1,0 +1,111 @@
+{
+  "id": "b-a-in-law-technology-and-culture-387",
+  "name": "B.A. in Law, Technology and Culture",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "No plan-of-study terms are parsed (requirementGroups=0) even though this is a full B.A., so progression cannot be judged from a term sequence. The visible course cluster is, however, thematically tight and well-chosen for the major: a law-and-society history core (HIST 342 Civil Rights, 361 Founding, 362 Sex/Gender/Law, 364 American Law in the World, 369 Law and Society), a legal-reasoning skills course (STS 300 Legal Reasoning, Writing, and Technology), a research-methods course (HIST 395), and a doctrinal anchor (MGMT 290 Business Law I).",
+      "suggestion": "Publish the actual plan of study (the sibling Patent Law concentration has one) so the term-over-term progression from foundations to capstone is visible, not just a thematic course list."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "missingCourseCount=0 (no dangling references) and a shallow deepestPrereqChain=4 is appropriate for a humanities/law major; the law-and-society courses share a clean, uniform prerequisite (ENGL 102 plus a 200-level History/Humanities GER), which is coherent and accessible.",
+      "suggestion": "When the full plan is published, ensure the capstone (HSS 404/HIST 490) sits behind the STS 300 and HIST 395 skills courses so the light chain still scaffolds the research sequence."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes appear in the data; only a course cluster with descriptions is provided. For an interdisciplinary law/technology/culture degree, explicit outcomes are important to show how the three strands integrate.",
+      "suggestion": "Publish outcomes describing what a graduate can do across law, technology, and culture (legal reasoning and writing, analysis of technology's social/legal impact, and research)."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "statedTotalCredits=120 is asserted, but with no parsed terms (summedTermCredits=null, creditReconcileDelta=null) the distribution cannot be verified and no gen-ed/core/elective split is visible. For a degree page this is a genuine gap, not merely a minor-style data caveat.",
+      "suggestion": "Render the full term-by-term plan so the 120 credits reconcile and the balance across gen-ed, legal/STS core, technology, and electives is transparent."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "For a full B.A., the page shows only an eight-course list with no plan of study, no term labels, and no credit accounting, so it reads as incomplete next to peer degree pages (including its own Patent Law concentration).",
+      "suggestion": "Add the complete plan-of-study rendering (terms, credits, required vs. elective) so the degree is presented as thoroughly as the concentration variant."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "Conceptually the major is well-aimed at law-and-technology careers, and STS 300 Legal Reasoning, Writing, and Technology plus MGMT 290 Business Law give real professional grounding. But the eight visible courses are history/law heavy and the 'Technology' strand is under-represented -- privacy, cyberlaw, IP, and AI-governance courses (e.g., IT 331 Privacy and IT, IT 400 IT and the Law) that exist in the catalog do not surface here.",
+      "suggestion": "Surface concrete technology-law courses (privacy/IT 331, IT and the Law/IT 400, IP) in the core so the 'Technology' strand is as visible as the 'Law' and 'Culture' strands."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "The visible course descriptions are substantive and specific (HIST 364 American Law in the World, HIST 369 Law and Society, STS 300 Legal Reasoning), clearly conveying each course's scope."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are unambiguous and uniform (ENGL 102 plus a 200-level GER) with grade conditions, and missingCourseCount=0 means there are no dangling references in the cluster."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Intellectual property and technology-transfer fundamentals",
+        "rationale": "The base major shows MGMT 290 Business Law but no IP survey; HIST 384 Invention and Regulation exists in the catalog and would strengthen the technology-law core."
+      },
+      {
+        "topic": "Privacy, data protection, and cyberlaw",
+        "rationale": "Catalog courses IT 331 Privacy and Information Technology and IT 400 Information Technology and the Law are not surfaced in this major, leaving data/cyber law -- central to 'law and technology' -- underweighted."
+      },
+      {
+        "topic": "AI and algorithmic law and ethics",
+        "rationale": "There is no course on AI governance, automated decision-making, or algorithmic accountability, now a defining area of technology law."
+      },
+      {
+        "topic": "Technology policy and regulation",
+        "rationale": "STS 300 covers legal reasoning, but a broader technology-policy/regulation course is missing for a degree explicitly about law and technology."
+      },
+      {
+        "topic": "Empirical and computational legal studies",
+        "rationale": "HIST 395 Research Methods provides qualitative grounding, but there is no data/empirical-legal-analysis course connecting the major to legal analytics."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI governance and algorithmic accountability",
+        "rationale": "A 'Law, Technology and Culture' degree is ideally positioned to own AI-governance content as regulation (e.g., the EU AI Act) matures."
+      },
+      {
+        "trend": "Data privacy and platform regulation",
+        "rationale": "GDPR/CCPA-style regimes and platform governance make privacy law a high-demand strand; integrating IT 331 would capture it."
+      },
+      {
+        "trend": "Digital IP and generative-AI copyright/patent questions",
+        "rationale": "Generative AI is reshaping copyright and patent doctrine, a natural fit for the major's technology-law core."
+      },
+      {
+        "trend": "Cybersecurity law and digital evidence",
+        "rationale": "Rising cyber-incident regulation and e-discovery create demand the major could serve by adding cyberlaw content."
+      },
+      {
+        "trend": "Computational/legal analytics",
+        "rationale": "Legal-tech and empirical legal studies are growing; a data-oriented methods option would modernize HIST 395's research training."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish the full plan of study (terms, credits, required vs. elective) so the degree reconciles to its stated 120 credits and reads as completely as the Patent Law concentration.",
+    "Strengthen the 'Technology' strand by surfacing concrete technology-law courses (IP/HIST 384, privacy/IT 331, IT and the Law/IT 400) in the core.",
+    "Add AI-governance/algorithmic-accountability content to position the degree for the defining area of contemporary technology law.",
+    "Publish explicit program learning outcomes showing how law, technology, and culture integrate.",
+    "Add an empirical/computational legal-studies option to connect the major to legal analytics."
+  ]
+}

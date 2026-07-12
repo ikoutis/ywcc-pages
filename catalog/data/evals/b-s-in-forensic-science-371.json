@@ -1,0 +1,111 @@
+{
+  "id": "b-s-in-forensic-science-371",
+  "name": "B.S. in Forensic Science",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 4,
+      "justification": "The 8-term plan is well-ordered around three parallel tracks that converge into forensic capstones: a chemistry spine (CHEM 125/126 -> 243/244 Organic -> 221/222 Analytical -> 473/475 Biochemistry), a biology spine (BIOL 200 -> 201/202 -> 205/206 -> 340 Physiology / 352 Genetics), and a forensic spine (FRSC 201 Intro -> 307 Crime Scene -> 359 Physical Methods -> 479 Forensic Biology / 480 Forensic Microscopy), with MATH 111/112/333 supplying quantitative support. Per-course depths climb smoothly from 0 to 6 and FRSC 479 (depth 6) correctly sits behind BIOL 352 Genetics, so the sequencing is genuinely dependency-driven rather than nominal.",
+      "suggestion": "Convert the two '300/400-level Forensics Elective' placeholders in Fourth Year into a named menu (e.g., FRSC 475 Forensic Chemistry, EVSC 416 Toxicology, IT 330 Computer Forensic) so the senior year is as prescribed as the underlying tracks."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "deepestPrereqChain=6 is appropriate for a lab-science B.S., and the graph is dependency-honest: FRSC 307 requires FRSC 201, FRSC 359 requires 201/307, and FRSC 479 requires BIOL 352. The 8 missing references (missingCoursesSample: BIOL 202, BIOL 206, CHEM 125A, CHEM 126A, GER 200, GER 300, PHYS 111A, PHYS 121A) are co-requisite lab sections, physics labs, and GER placeholders rather than genuine forensic prerequisite breaks, so the core chain is intact.",
+      "suggestion": "Add catalog entries (or explicit co-requisite mappings) for the CHEM/BIOL/PHYS lab sections and resolve the GER 200/300 placeholders so no referenced code dangles."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the provided data; only the term-by-term plan and per-course descriptions are present. For a laboratory B.S. that feeds accredited crime-lab careers, the absence of stated competencies (chain-of-custody, evidence integrity, analytical validation, expert reporting) is a real catalog finding.",
+      "suggestion": "Publish explicit program learning outcomes framed around forensic competencies (evidence handling, analytical method validation, interpretation, and courtroom communication), ideally mapped to FEPAC accreditation criteria."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 4,
+      "justification": "The plan reconciles cleanly: statedTotalCredits=120, summedTermCredits=120, and creditReconcileDelta=0.0, with a transparent split across gen-ed (ENGL, MATH, PHYS, GERs), a heavy science core (CHEM/BIOL), and the FRSC major sequence. The only softness is that several rows carry null credits (Computing GER, History/Humanities GERs, the 'Select one of the following' co-op/research/seminar block) even though the term totals still balance.",
+      "suggestion": "Assign explicit credit values to the null-credit GER and 'select one' rows so every line item is accounted for, not just the term subtotals."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Terms are clearly labeled by year and semester and the science sequence is legible, but the page has rough edges: the 'R120 356 Molecular Biology' row carries a null code (a Rutgers-legacy cross-listing), the Fourth-Year 'Select one of the following:' block lists FRSC 490/491/495 with null credits, and generic 'Forensics Elective I/II' placeholders leave the senior path visually open.",
+      "suggestion": "Clean up the legacy 'R120' rows into resolved course codes and render the 'select one' capstone options as a labeled choice group with credits shown."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The required core is strong on classical wet-lab forensics (FRSC 307 Crime Scene, 359 Physical/trace Methods, 479 Forensic Biology covering serology and DNA, 480 Forensic Microscopy) backed by real analytical chemistry (CHEM 221/222). The currency gaps are in the required plan itself: forensic chemistry/drug analysis (FRSC 475), forensic toxicology (EVSC 416), digital/multimedia forensics, and statistical interpretation of evidence are electives-or-absent rather than required, even though these dominate modern casework and post-PCAST scrutiny.",
+      "suggestion": "Require at least one of forensic chemistry/toxicology and one statistics-of-evidence module so every graduate leaves with drug-analysis exposure and defensible interpretation skills."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and substantive across the FRSC spine (307 Crime Scene, 359 Physical Methods, 479 Forensic Biology, 480 Forensic Microscopy) and the CHEM/BIOL core; the main gap is BIOL 352 Genetics, whose descriptionExcerpt is empty despite gating FRSC 479."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated with explicit grade conditions (typically 'C or better') and clear course logic, and the dangling references (missingCourseCount=8) are lab co-requisites, physics labs, and GER placeholders rather than forensic-course breaks; the recurring 'R120' Rutgers-legacy alternatives are the one readability wrinkle."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Forensic statistics and evidence interpretation",
+        "rationale": "The plan has MATH 333 Probability & Statistics but no course on likelihood ratios, error rates, or interpretation of pattern/DNA evidence, which the 2009 NAS and 2016 PCAST reports made foundational to defensible testimony."
+      },
+      {
+        "topic": "Forensic toxicology and controlled-substance analysis",
+        "rationale": "The required core covers biology (FRSC 479) and microscopy (FRSC 480) but leaves drug chemistry/toxicology (FRSC 475, EVSC 416) as unrequired electives, despite toxicology and seized-drug analysis being among the highest-volume crime-lab disciplines."
+      },
+      {
+        "topic": "Digital and multimedia forensics",
+        "rationale": "No digital-evidence course (e.g., IT 330 Computer Forensic) sits in the required plan even though phones, cloud data, and multimedia are now central to nearly every investigation."
+      },
+      {
+        "topic": "Quality assurance, accreditation, and expert testimony",
+        "rationale": "FRSC 495 Senior Seminar touches professional practice, but there is no dedicated treatment of ISO 17025/FEPAC quality systems, proficiency testing, or courtroom testimony that accredited labs require."
+      },
+      {
+        "topic": "Crime-scene reconstruction and pattern evidence breadth",
+        "rationale": "FRSC 307/359 introduce trace and impression evidence, but bloodstain-pattern analysis and shooting/scene reconstruction are not separately developed."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Forensic genetic genealogy and massively parallel sequencing",
+        "rationale": "FRSC 479 Forensic Biology teaches serology and STR DNA; investigative genetic genealogy and next-generation sequencing are now transforming cold-case and identification work and should modernize its DNA content."
+      },
+      {
+        "trend": "Rapid DNA and field-portable instrumentation",
+        "rationale": "Booking-station Rapid DNA and handheld spectrometers are moving analysis out of the lab; FRSC 307/359 should expose students to point-of-collection instrumentation."
+      },
+      {
+        "trend": "Validation and error-rate reform of pattern evidence",
+        "rationale": "Post-PCAST scrutiny of fingerprint, firearm, and impression evidence demands empirical error rates; FRSC 359/480 should incorporate validation studies and uncertainty reporting."
+      },
+      {
+        "trend": "AI-assisted and probabilistic forensic tools",
+        "rationale": "Probabilistic genotyping software and machine-learning triage are entering casework; graduates need to understand, validate, and testify about algorithmic tools."
+      },
+      {
+        "trend": "Toxicology of novel psychoactive substances and the opioid crisis",
+        "rationale": "Fentanyl analogs and designer drugs are reshaping seized-drug and toxicology workloads; a forensic chemistry/toxicology requirement would keep the program current."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Require at least one forensic chemistry/toxicology course and add a statistics-of-evidence module so every graduate has drug-analysis exposure and defensible-interpretation skills.",
+    "Publish explicit, FEPAC-aligned program learning outcomes (evidence handling, method validation, interpretation, courtroom communication).",
+    "Add or require digital/multimedia forensics (e.g., IT 330 Computer Forensic) to reflect the ubiquity of digital evidence.",
+    "Name the two senior Forensics Elective menus and modernize FRSC 479's DNA content toward next-generation sequencing and forensic genetic genealogy.",
+    "Resolve the 8 dangling lab/GER references and assign credits to the null-credit GER and 'select one' capstone rows so the page is fully complete."
+  ]
+}

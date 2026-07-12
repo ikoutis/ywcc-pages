@@ -21,8 +21,14 @@ def main():
     programs = {p["id"]: p for p in ontology["programs"]}
 
     evals = {}
+    malformed = []
     for path in sorted(glob.glob(os.path.join(DATA, "evals", "*.json"))):
-        ev = json.load(open(path))
+        try:
+            ev = json.load(open(path))
+        except Exception as e:
+            malformed.append(os.path.basename(path))
+            print(f"WARN: malformed JSON, skipping {os.path.basename(path)}: {e}")
+            continue
         pid = ev.get("id")
         if pid not in programs:
             print("WARN: evaluation for unknown program id:", pid, os.path.basename(path))
@@ -57,6 +63,7 @@ def main():
             "totalPrograms": len(all_ids),
             "coverageByCollege": coverage,
             "unevaluated": sorted(set(all_ids) - evaluated),
+            "malformedFiles": malformed,
         },
         "programs": evals,
     }
