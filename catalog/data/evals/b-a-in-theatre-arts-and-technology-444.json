@@ -1,0 +1,111 @@
+{
+  "id": "b-a-in-theatre-arts-and-technology-444",
+  "name": "B.A. in Theatre Arts and Technology",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "The eight-term plan reconciles and shows a recognizable theatre-arts spine -- an introduction (THTR 101 Living Theatre, THTR 102 Acting Fundamentals), theatre history, playwriting (THTR 365), special topics and practicum (THTR 411, THTR 480), and an HSS 404 capstone. Two coherence problems stand out. First, Theatre History II (THTR 315) is scheduled in Year 2 before Theatre History I (THTR 310) in Year 3, an ordering inversion. Second, the 'and Technology' half of the degree is delivered mainly through cross-listed Rutgers R088 production courses (Theater Tech I, Production I/II/III, all null-code rows) and a generic CS intro, so NJIT's own required courses are history/acting/playwriting-centered and the technology identity is thin.",
+      "suggestion": "Swap the Theatre History I/II ordering and add NJIT-owned theatre-technology courses (lighting, sound, digital/projection design) so 'and Technology' is delivered by the program rather than outsourced to cross-listed production credits."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "deepestPrereqChain is 4 and every 300-level THTR course resolves to the same 'ENGL 102 + 200-level History/Humanities GER' gate, so the graph is clean but flat with little intra-major sequencing (the History II-before-History I placement confirms the courses are not truly ordered). missingCourseCount is 2, both requirement-category placeholders (GER 200, GER 300); the Rutgers R088 production courses carry null codes and sit outside the prerequisite graph entirely.",
+      "suggestion": "Introduce genuine prerequisites within the theatre sequence (e.g. THTR 310 before THTR 315, a design course before the practicum) and give the R088 cross-listed courses resolvable NJIT-equivalent codes."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives appear in the data. For a degree whose distinctive promise is the fusion of theatre arts with technology, the absence of an outcomes statement leaves the intended arts-plus-technology competency undefined.",
+      "suggestion": "Publish 5-7 learning outcomes spanning performance/production, dramatic literature and history, playwriting, and theatrical technology/design."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "The plan reconciles exactly (statedTotalCredits 120, summedTermCredits 120, creditReconcileDelta 0.0) and terms are steady at 13-17 credits. Transparency is weakened by a large number of unspecified 'Theatre Requirement Elective', 'Theatre Elective', and 'Free Elective' slots plus an embedded '446 Communication Minor' requirement and null-credit cross-listed rows, so a substantial share of the degree is undefined on the page.",
+      "suggestion": "Enumerate the Theatre Requirement vs Theatre Elective lists and specify the credits carried by the embedded Communication Minor so the distribution is legible."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Terms are labeled and the plan reconciles, but readability suffers from many null-code rows: the Rutgers R088 courses (Theater Tech I, Production I/II/III), 'or PHYS 203', 'or THTR 212', 'Select one of the following' blocks, and a '446 Communication Minor' line that references another program by number. The visible Theatre History II-before-I ordering also reads as an error.",
+      "suggestion": "Give the R088 cross-listed courses proper codes/titles, resolve the 'Select one of the following' and 'or ...' rows into single choice lines, and correct the history-course ordering."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The program has real production exposure through the Rutgers R088 courses, a practicum (THTR 480), and a differentiating technology gesture (a required CS intro and an embedded Communication Minor). But the modern theatrical-technology core that the degree name promises -- lighting, sound, projection/digital scenography, stage management -- is largely absent from NJIT's own required courses, and contemporary digital/virtual production is missing entirely, so the 'Technology' brand is under-delivered.",
+      "suggestion": "Build (or require) NJIT theatre-technology courses in lighting, sound, and digital/projection design so the degree's technology promise is met by current, program-owned coursework."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 3,
+      "justification": "NJIT's own THTR courses are well described (THTR 310/315 on Euro-American theatre history, THTR 365 on writing and staging short plays, THTR 480 on leading a mainstage production). Description quality drops for the technology half of the degree, which is carried by cross-listed Rutgers R088 rows that appear with null codes and no description text, so the 'Technology' content is the least documented part of the plan."
+    },
+    "prerequisiteClarity": {
+      "score": 3,
+      "justification": "Prerequisites for the NJIT THTR courses are explicit and consistent (ENGL 102 + a 200-level GER, with THTR 212 showing a concurrent-co-requisite option). Clarity is undercut by the many null-code Rutgers R088 courses whose prerequisites are not surfaced in NJIT terms and by the uniform gate strings that give no sense of relative course level."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Theatrical design core (lighting, sound, scenic/costume)",
+        "rationale": "The degree promises technology but requires no NJIT lighting, sound, or scenic-design course; design is left to cross-listed R088 production credits, leaving the core theatre-tech competency unguaranteed."
+      },
+      {
+        "topic": "Digital and projection/virtual scenography",
+        "rationale": "No course addresses projection mapping, media servers, or virtual/LED-volume production, which is now the leading edge of theatre technology and the natural home for a tech-university theatre degree."
+      },
+      {
+        "topic": "Stage and production management",
+        "rationale": "The plan has a practicum but no stage-management course covering scheduling, calling cues, and running a production -- a standard professional competency."
+      },
+      {
+        "topic": "Dramaturgy and script analysis",
+        "rationale": "Beyond history and playwriting, there is no dramaturgy/script-analysis course to bridge dramatic literature and production practice."
+      },
+      {
+        "topic": "Sound design and spatial audio",
+        "rationale": "COM 241 Sound Communication exists elsewhere in the college but is not required; dedicated sound/audio design is missing from a program branded around technology."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Virtual production and projection mapping (Unreal Engine, LED volumes)",
+        "rationale": "As a technological university's theatre degree, positioning around real-time/virtual production would make the 'and Technology' name distinctive rather than aspirational."
+      },
+      {
+        "trend": "Immersive and interactive theatre",
+        "rationale": "THTR 411 Special Topics could host immersive/interactive performance work, a fast-growing form that blends staging with interactive technology."
+      },
+      {
+        "trend": "Digital media and screen-based performance",
+        "rationale": "The embedded Communication Minor already exposes students to digital video (COM 350) and media design; tightening that link would modernize the production strand."
+      },
+      {
+        "trend": "Motion capture and digital puppetry/performance capture",
+        "rationale": "The CS requirement and cross-listed tech courses give a foundation to add performance-capture work bridging theatre and computing."
+      },
+      {
+        "trend": "Accessibility and inclusive design in performance",
+        "rationale": "Captioning, audio description, and accessible staging are becoming standard practice and would give the technology emphasis a socially relevant application."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Deliver the 'and Technology' promise with NJIT-owned theatre-technology courses (lighting, sound, digital/projection design) instead of outsourcing it to cross-listed Rutgers R088 production credits.",
+    "Correct the Theatre History II-before-History I ordering and introduce real prerequisites so the theatre sequence is genuinely progressive.",
+    "Publish explicit learning outcomes that define the arts-plus-technology competency the degree certifies.",
+    "Clean the plan's presentation: give the R088 cross-listed courses resolvable codes and resolve the 'Select one of the following' / 'or ...' rows.",
+    "Add a modern virtual-production or projection-mapping course to make the technology brand current and distinctive."
+  ]
+}

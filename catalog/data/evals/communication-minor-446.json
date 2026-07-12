@@ -1,0 +1,111 @@
+{
+  "id": "communication-minor-446",
+  "name": "Communication Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "As a minor the entry publishes no plan of study (requirementGroups=0), so the 55 referenced courses read as a menu rather than a sequence. The menu itself is strong and coherent: a foundational intro (COM 201 Introduction to Communication and Media) feeds a genuine ladder into COM 240 New Media Technologies and then COM 241 Sound Communication and COM 336 Multimedia Journalism, alongside broad strands in production (COM 303, COM 350 Digital Video, COM 353/354/355), journalism (COM 337 Photojournalism, COM 338 The Newsroom), analytics (COM 343 Social Media Analytics, COM 371 Social Network Analysis), and theory (COM 318). What is missing is a published required core or grouping to give the menu a defined shape.",
+      "suggestion": "Publish a required foundation (e.g. COM 201 plus one theory course) and organize the remaining courses into labeled tracks (production, journalism, analytics) so the minor reads as a structured credential."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is genuinely laddered for a minor: deepestPrereqChain is 6, built on the COM 201 -> COM 240 -> COM 241 / COM 336 progression, so unlike the Communication majors' flat 300-level clusters the minor encodes real sequencing. missingCourseCount is 2 and both are requirement-category placeholders (GER 200, GER 300) rather than genuine dangling course references.",
+      "suggestion": "Surface the COM 201 -> COM 240 ladder explicitly on the page so students see the intended order rather than a flat list."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives appear in the data. A minor should state the specific competency it certifies (e.g. media production, media analysis, or professional communication), and none is published.",
+      "suggestion": "Publish 4-6 learning outcomes and a short statement of what the Communication Minor is designed to add to a student's major."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "statedTotalCredits is null, there are no requirementGroups, and creditReconcileDelta is null -- expected for a minor and noted as a data-consistency caveat rather than a defect, but the page therefore shows no total credit requirement and no required-vs-elective split, so students cannot see the size or shape of the minor.",
+      "suggestion": "State the minor's total credit requirement and how many credits are required core versus electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Course descriptions are rich and specific, but the entry is a flat inventory of 55 courses with no required core marked and no term/group structure, so the strong content is hard to navigate. The only unresolved rows are the GER 200/300 placeholders.",
+      "suggestion": "Group the courses into labeled tracks with a marked required core so the page communicates a path rather than a long list."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The minor is notably current: COM 343 Social Media Analytics and Management, COM 240 New Media Technologies (social platforms, AR/VR, algorithmic systems), COM 324 Podcast Practicum, COM 350 Digital Video Production, and COM 371 Social Network Analysis give students modern, marketable media skills well beyond a traditional communication survey. The main gap is a guaranteed media-law/ethics course, since law/ethics coverage is only implicit.",
+      "suggestion": "Designate a media-law/ethics course within the minor's core so every student gets the professional-ethics grounding that complements the strong production and analytics offerings."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions across the COM inventory are consistently rich and specific -- COM 240 on emerging media technologies, COM 343 on social-media analytics and management, COM 324 on podcast production, COM 371 on network science in communication. None reads as thin or placeholder; only the GER rows lack course text."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated clearly with grade gates and real course dependencies (COM 240 requires COM 201; COM 241 and COM 336 require COM 240; COM 371 requires STS 304/307), and the ladder is internally consistent. The only unresolved items are the GER 200/300 placeholders, and missingCourseCount is a low 2."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Media law and ethics",
+        "rationale": "A minor this rich in production and analytics has no clearly required law/ethics course, yet legal and ethical literacy is a baseline expectation for communication credentials."
+      },
+      {
+        "topic": "Strategic communication / public relations",
+        "rationale": "COM 370 Strategic Communication exists in the department but the sampled minor pool centers on journalism and production; PR/organizational messaging should be an explicit option."
+      },
+      {
+        "topic": "Communication research methods",
+        "rationale": "The minor offers analytics courses (COM 343, COM 371) but no foundational methods course, leaving students without formal grounding in survey/content-analysis technique."
+      },
+      {
+        "topic": "Intercultural and global communication",
+        "rationale": "COM 346 Race, Gender, and Media addresses representation, but cross-cultural/global communication for diverse audiences is not distinctly represented."
+      },
+      {
+        "topic": "Crisis and risk communication",
+        "rationale": "A practical, high-demand competency (crisis messaging, risk framing) is absent from an otherwise applied, career-oriented menu."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Generative AI in media creation and workflow",
+        "rationale": "COM 240 New Media Technologies and COM 354 Designing Digital Media are the natural hosts for AI content-creation, editing, and disclosure practices now reshaping media work."
+      },
+      {
+        "trend": "Social-media analytics and the creator economy",
+        "rationale": "COM 343 and COM 371 already give the minor a data-and-network spine to position students for platform-native, metrics-driven communication careers."
+      },
+      {
+        "trend": "Disinformation, verification, and media literacy",
+        "rationale": "COM 336 Multimedia Journalism and COM 338 The Newsroom can incorporate source-verification and misinformation-detection skills central to contemporary media."
+      },
+      {
+        "trend": "Podcasting and audio-first storytelling",
+        "rationale": "COM 324 Podcast Practicum and COM 241 Sound Communication give the minor a strong, modern audio strand to build on."
+      },
+      {
+        "trend": "Immersive and interactive media (AR/VR)",
+        "rationale": "COM 240 already introduces AR/VR and algorithmic systems, an on-ramp to immersive storytelling as those formats mature."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish a required core, a total-credit requirement, and learning outcomes so the minor reads as a defined credential rather than a 55-course list.",
+    "Organize the courses into labeled tracks (production, journalism, analytics) that surface the COM 201 -> COM 240 -> COM 241/336 ladder.",
+    "Designate a required media-law/ethics course to guarantee professional-ethics coverage.",
+    "Add strategic-communication/PR and a research-methods course as explicit options to round out the applied menu.",
+    "Introduce a generative-AI-in-media unit leveraging COM 240 and COM 354 to keep the minor current."
+  ]
+}

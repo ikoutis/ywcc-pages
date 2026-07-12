@@ -1,0 +1,111 @@
+{
+  "id": "electronic-creative-writing-minor-447",
+  "name": "Electronic Creative Writing Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "As a minor the entry publishes no plan of study (requirementGroups=0), so its 51 referenced courses read as a menu. The data quality is the best in this group -- missingCourseCount is 0, so every referenced course resolves to the catalog. The coherence weakness is identity: for an 'Electronic Creative Writing' minor, only a few courses are clearly creative-writing craft (COM 390 Electronic Writing Workshop, COM 369 Digital Poetry, COM 317 Advanced Composition, with LIT 230 Introduction to Literature as reading support), while the bulk of the pool is general communication, journalism, and media (COM 336, COM 337, COM 338, COM 343, COM 350, plus a large HIST elective bench), so the creative-writing core is thin relative to the media/journalism content.",
+      "suggestion": "Publish a required creative-writing core (COM 390 and COM 369 plus COM 317) and separate the general communication/journalism and HIST courses into a clearly optional context list so the minor's writing identity is unmistakable."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is well formed and, notably, clean: deepestPrereqChain is 6 (via the COM 201 -> COM 240 -> COM 241/COM 336 ladder) and missingCourseCount is 0, so there are no dangling references at all -- the strongest prerequisite-data health in this batch. The creative-writing anchors (COM 390, COM 369, COM 317) use standard ENGL 102 + GER gates that are consistent and sensible.",
+      "suggestion": "Because the graph is clean, simply mark which of the laddered courses count toward the creative-writing core versus context so students can navigate the sequence."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives appear in the data. For a specialized writing minor, an outcomes statement is needed to distinguish 'electronic creative writing' (screen-based, interactive, multimedia composition) from general composition or communication.",
+      "suggestion": "Publish 4-6 learning outcomes emphasizing creative composition for electronic/interactive formats, and a short statement of the minor's distinctive focus."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "statedTotalCredits is null, there are no requirementGroups, and creditReconcileDelta is null -- expected for a minor and noted as a data-consistency caveat rather than a defect, but the page shows no total credit requirement and no required-vs-elective split, so the minor's size and shape are not visible.",
+      "suggestion": "State the total credits and the required-core-versus-elective breakdown for the minor."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Course descriptions are rich and, uniquely in this group, there are no dangling references (missingCourseCount 0), so the inventory is clean. But the entry is a flat 51-course list with no marked creative-writing core, so a prospective student cannot tell which courses actually constitute the electronic-creative-writing focus.",
+      "suggestion": "Restructure the page to foreground the creative-writing core (COM 390, COM 369, COM 317, LIT 230) and demote the general media/journalism/HIST courses to a labeled elective/context section."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The digital-writing content is reasonably current: COM 390 Electronic Writing Workshop (creative expression for screen and performance), COM 369 Digital Poetry (algorithmic and computer-integrated poetics), and COM 240 New Media Technologies give students exposure to screen-based and computational composition. The gaps are the fast-moving craft forms -- interactive fiction, game/narrative writing, and generative-AI writing -- which the minor does not yet cover.",
+      "suggestion": "Add an interactive-fiction / narrative-design course and a generative-AI-writing unit so the 'electronic' side reflects current digital-writing practice rather than mainly digital poetry and media production."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and specific throughout, and the pool has no missing/dangling courses (missingCourseCount 0). The creative-writing anchors are well described -- COM 390 on creative expression in electronic formats for screen and performance, COM 369 on poets integrating computer technology and algorithmic programming, COM 317 on multi-tool persuasive composition. No description reads as thin."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are explicit, consistent, and fully resolvable (missingCourseCount 0): the COM 201 -> COM 240 -> COM 241/COM 336 ladder is coherent and the creative-writing anchors use standard ENGL 102 + GER gates. The only ambiguity is that the page does not distinguish which prerequisites gate the creative-writing core versus the broader media electives."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Foundational fiction and poetry writing workshops",
+        "rationale": "The minor jumps to electronic/digital forms (COM 390, COM 369) without a traditional prose-fiction or poetry craft workshop to ground students in narrative and poetic technique."
+      },
+      {
+        "topic": "Interactive fiction and hypertext/electronic literature",
+        "rationale": "For an 'electronic creative writing' minor, dedicated interactive-fiction/hypertext authoring (Twine, Ink) is conspicuously absent, though it is the defining genre of the field."
+      },
+      {
+        "topic": "Screenwriting and script for screen/performance",
+        "rationale": "COM 390 gestures at writing for screen and performance, but there is no dedicated screenwriting/scriptwriting course to develop dramatic writing craft."
+      },
+      {
+        "topic": "Game writing and narrative design",
+        "rationale": "Interactive narrative for games is a major professional outlet for digital creative writers and is not represented in the pool."
+      },
+      {
+        "topic": "Editing, publishing, and the digital literary marketplace",
+        "rationale": "No course addresses digital publishing, self-publishing platforms, or editing workflow -- practical competencies that turn creative writing into a career."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Generative-AI and computational creative writing",
+        "rationale": "COM 369 Digital Poetry already engages algorithmic text; extending to LLM-assisted composition, prompt-craft, and human-AI co-writing is the fastest-moving area of electronic creative writing."
+      },
+      {
+        "trend": "Interactive and branching narrative (Twine, Ink)",
+        "rationale": "The minor's 'electronic' promise is best fulfilled by interactive-fiction authoring, an accessible and expanding form for digital storytellers."
+      },
+      {
+        "trend": "Transmedia and social storytelling",
+        "rationale": "COM 240 New Media Technologies and COM 343 Social Media Analytics give context for narratives that span platforms and audiences."
+      },
+      {
+        "trend": "Audio narrative and podcast storytelling",
+        "rationale": "COM 324 Podcast Practicum and COM 241 Sound Communication support a strong audio-fiction/narrative strand within electronic writing."
+      },
+      {
+        "trend": "Immersive and AR/VR narrative",
+        "rationale": "As immersive media matures, COM 240's AR/VR grounding positions the minor to add spatial and immersive storytelling."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Define and publish an explicit creative-writing core (COM 390, COM 369, COM 317, LIT 230) so the minor's writing identity stands out from the general communication/journalism pool it currently shares.",
+    "Publish learning outcomes and a total-credit requirement that distinguish electronic creative writing from general composition.",
+    "Add an interactive-fiction / narrative-design course -- the defining electronic-writing genre currently missing.",
+    "Introduce a generative-AI creative-writing unit building on COM 369's algorithmic-poetry foundation.",
+    "Add a foundational fiction/poetry workshop so students have traditional craft grounding before the electronic forms."
+  ]
+}

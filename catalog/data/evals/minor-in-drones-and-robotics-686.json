@@ -1,0 +1,103 @@
+{
+  "id": "minor-in-drones-and-robotics-686",
+  "name": "Minor in Drones and Robotics",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 2,
+      "justification": "No plan of study or requirement structure is published (requirementGroups is empty), and the 60-course pool is undifferentiated and shared verbatim with the Engineering Innovation Minor. Within that pool the genuinely on-topic courses -- ENGR 423 (Drone Science), ENGR 424 (Robotics Science), ENGR 330 (Microcontrollers/IoT), IE 455 (Robotics & PLCs), CS 440 (Computer Vision), and ECE 431/432 (Feedback Control / Advanced Control & Robotics) -- are buried among clearly unrelated courses (CET 435 temporary structures, BME 472 FDA regulation, CHE 312 chemical process safety), so there is no coherent drone/robotics pathway a student can follow.",
+      "suggestion": "Publish a defined drone/robotics course list and sequence (e.g. required ENGR 330 + ENGR 423 + ENGR 424, with electives from CS 440, ECE 431/432, IE 455) and remove the unrelated construction/biomedical/chemical courses from the minor's pool."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "Only four codes are dangling (ENGR 211, ENGR 312, GER 200, PHYS 231A), and the robotics-relevant chain is sound (ECE 231 -> ECE 232 -> ECE 431 -> ECE 432; ENGR 424 gated by a programming course). However the reported deepestPrereqChain of 8 is inflated by off-topic courses (e.g. CET 435 depth 8, CE 414 depth 7) rather than by drone/robotics prerequisites, so the metric overstates the minor's true depth.",
+      "suggestion": "Once the pool is scoped to drone/robotics courses, document the intended entry prerequisites for non-ECE students (e.g. the control courses' need for ECE 232/MATH 337) so the real gating is visible."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No learning outcomes and no requirement structure are provided at all -- the page offers neither objectives nor a plan. For a catalog minor this is a substantial omission.",
+      "suggestion": "Publish explicit minor-level outcomes (e.g. 'model and control a UAV/ground-robot platform' and 'apply computer vision to a robotic task') together with the required-credit structure."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "Credit balance cannot be assessed: statedTotalCredits is null, summedTermCredits is null, and creditReconcileDelta is null because no plan exists (a data-consistency caveat inherent to how this minor was captured). A minor normally specifies a fixed credit count and required/elective split, none of which is present.",
+      "suggestion": "State the minor's total credit requirement and its required-vs-elective breakdown (typical engineering minors are 15-18 credits) so students can plan it."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "As captured, the page has no plan of study, no stated credits, and a course pool that is both polluted with unrelated subjects and identical to a second minor sharing the 686 id -- a reader cannot tell what the Drones and Robotics minor actually requires.",
+      "suggestion": "Give the minor its own dedicated, curated course list separate from the Engineering Innovation Minor, with a required-credit summary at the top of the page."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The on-topic content that is present is genuinely current: ENGR 423 (Drone Science), ENGR 424 (Robotics Science), CS 440 (Computer Vision), ENGR 330 (IoT/microcontrollers), and ECE 431/432 (control/robotics) map directly to modern autonomous-systems practice. The relevance is real even though it must be extracted from a cluttered pool.",
+      "suggestion": "Feature the autonomy stack -- perception (CS 440), control (ECE 431/432), and platforms (ENGR 423/424) -- as the minor's spine and add an autonomy/motion-planning element to match current UAV/robotics roles."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "The drone/robotics course descriptions are specific and informative -- ENGR 423 (quadrotor kinematics/dynamics, flight control), ENGR 424 (robot sensing, motion control, motion planning), CS 440 (computer-vision methods), ECE 431 (feedback control, Laplace/state-space, stability) -- with no thin text; the pool's non-robotics descriptions are also complete."
+    },
+    "prerequisiteClarity": {
+      "score": 3,
+      "justification": "Prerequisites are clearly and consistently stated where relevant (ECE 431 requires ECE 333 or ECE 232 + MATH 337; ECE 432 requires ECE 431), but because no plan defines which courses count toward the minor, students cannot see which of these prerequisite chains they must actually satisfy."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "A defined feedback-control requirement",
+        "rationale": "ECE 431 (Introduction to Feedback Control Systems) sits in the pool but is not clearly required; control is indispensable to drones and robotics."
+      },
+      {
+        "topic": "Autonomy: motion planning, state estimation, and SLAM",
+        "rationale": "ENGR 424 introduces motion planning, but dedicated planning/estimation/SLAM content -- core to autonomous drones/robots -- is not represented as a requirement."
+      },
+      {
+        "topic": "Embedded/real-time systems for robot platforms",
+        "rationale": "ENGR 330 (microcontrollers/IoT) is a start, but real-time firmware and sensor/actuator integration for flight/ground platforms are not developed."
+      },
+      {
+        "topic": "Sensors and state estimation",
+        "rationale": "Robotic perception (CS 440) and drone control (ENGR 423) presume sensor fusion/estimation that no course in the intended set explicitly covers."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Autonomous systems and AI perception",
+        "rationale": "CS 440 (Computer Vision) and ENGR 424 (Robotics Science) point the minor toward ML-based perception and autonomy, the defining frontier of drones and robotics."
+      },
+      {
+        "trend": "UAV regulation, BVLOS operations, and airspace integration",
+        "rationale": "ENGR 423 (Drone Science) would be strengthened by regulatory/operations content as commercial drone use and BVLOS rules expand rapidly."
+      },
+      {
+        "trend": "Swarm and multi-robot systems",
+        "rationale": "Coordinated multi-agent drone/robot operation is an emerging area the ENGR 423/424 base could extend into."
+      },
+      {
+        "trend": "Sim-to-real and ROS/Gazebo toolchains",
+        "rationale": "Industry-standard simulation-to-hardware workflows would make the minor's projects reflect current robotics engineering practice."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish a curated, dedicated course list and sequence for the minor (required ENGR 330/423/424 plus scoped electives) and remove unrelated construction/biomedical/chemical courses from the pool.",
+    "State the minor's total credit requirement and required-vs-elective split (currently null).",
+    "Separate this minor's course pool from the Engineering Innovation Minor, which currently shares the identical 686 course list.",
+    "Make a feedback-control course (ECE 431) an explicit requirement and add autonomy/motion-planning content.",
+    "Publish explicit minor-level learning outcomes for UAV/robot modeling, control, and perception."
+  ]
+}

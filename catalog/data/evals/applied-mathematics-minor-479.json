@@ -1,0 +1,111 @@
+{
+  "id": "applied-mathematics-minor-479",
+  "name": "Applied Mathematics Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "No plan of study or requirement groups are provided (requirementGroups=0), so term-over-term sequencing cannot be assessed. The referenced MATH pool is a coherent applied-mathematics backbone with sensible depth -- MATH 222 Differential Equations, MATH 226 Discrete Analysis, MATH 244 Probability, MATH 337 Linear Algebra, MATH 340/440 numerical methods, MATH 391 Numerical Linear Algebra, and MATH 448 Stochastic Simulation -- but many biology courses in the same pool appear shared with the mathematical-biology minor rather than curated for applied mathematics.",
+      "suggestion": "Publish an explicit requirement structure (core courses, electives, and a total credit count) so the minor's path is legible rather than a raw course pool."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "missingCourseCount=0 -- there are no dangling references. deepestPrereqChain=7 reflects the catalog depth of the source courses (e.g., MATH 431 at depth 7) rather than an internal requirement of a short minor, so the prerequisite picture is clean.",
+      "suggestion": "State the minor's own entry prerequisite (the calculus sequence) so students see the on-ramp before the 300-level courses."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes appear in the data for this minor.",
+      "suggestion": "Publish concise learning outcomes describing the modeling, numerical, and analytical skills the minor certifies."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "statedTotalCredits is null and there is no term plan or summed credit figure (creditReconcileDelta null), so the minor's size and its core/elective balance cannot be verified. The null values are expected for an unstructured minor record but leave credit accounting unpublished.",
+      "suggestion": "State the total credit requirement (minors of this type are typically ~16-18 credits) and the required-versus-elective split."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The record exposes only a course pool with no requirement groups and no stated total, and it includes off-discipline biology entries, so it does not read as a plan.",
+      "suggestion": "Add a structured plan-of-study table listing the required applied-mathematics core and the curated elective options."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The MATH pool is current and genuinely applied: numerical methods (MATH 340/440), numerical linear algebra (MATH 391), stochastic simulation (MATH 448), regression (MATH 344), and modeling -- all relevant to engineering, quantitative, and scientific-computing careers. The main currency gaps are the absence of an explicit optimization course and of a statistical-/machine-learning elective.",
+      "suggestion": "Add an optimization course and a statistical-/machine-learning elective to connect the numerical core to contemporary applied-mathematics practice."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and substantive across the MATH pool (MATH 340 Applied Numerical Methods, MATH 391 Numerical Linear Algebra, MATH 448 Stochastic Simulation), with no thin or placeholder excerpts among sampled courses."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites carry clear 'grade C or better' conditions and missingCourseCount=0, so there are no dangling references and the prerequisite statements are internally consistent."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Optimization",
+        "rationale": "The pool includes numerical and modeling courses but no linear/nonlinear/convex optimization course -- a core applied-mathematics and operations tool (MATH 334 Operations Research appears in sibling minors' pools but not here)."
+      },
+      {
+        "topic": "Statistical and machine learning",
+        "rationale": "The pool has MATH 344 Regression but no machine-learning or statistical-learning course, now central to applied mathematics."
+      },
+      {
+        "topic": "Partial differential equations and modeling",
+        "rationale": "MATH 222 ODEs is present, but PDEs (MATH 331) and a capstone mathematical-modeling course are absent from this minor's pool."
+      },
+      {
+        "topic": "Scientific programming and computing",
+        "rationale": "MATH 340/391/440/448 are computation-heavy, yet no programming or scientific-computing course is referenced to support them."
+      },
+      {
+        "topic": "Graph and network / combinatorial methods",
+        "rationale": "MATH 226 Discrete Analysis is present but there is no graph-algorithms or combinatorial-optimization follow-on."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Data science and machine learning for applied mathematicians",
+        "rationale": "The regression and numerical courses are a natural launchpad into statistical learning, a dominant destination for applied-math graduates."
+      },
+      {
+        "trend": "Scientific machine learning and physics-informed modeling",
+        "rationale": "Combining MATH 340/440 numerical methods with machine learning is a rapidly growing modeling paradigm."
+      },
+      {
+        "trend": "Large-scale and GPU-accelerated computing",
+        "rationale": "Parallel and GPU numerical linear algebra extends MATH 391 toward modern high-performance practice."
+      },
+      {
+        "trend": "Uncertainty quantification",
+        "rationale": "MATH 448 Stochastic Simulation could anchor an uncertainty-quantification elective now standard in computational modeling."
+      },
+      {
+        "trend": "Network science",
+        "rationale": "Extending MATH 226 discrete analysis toward network/graph-based modeling reflects a broad applied-mathematics trend."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish an explicit requirement structure (core, electives, total credits) -- the record currently exposes only a course pool with no plan or stated total.",
+    "Curate the elective pool to the discipline (many biology courses appear shared with the mathematical-biology minor) and add an optimization and a statistical-/machine-learning course.",
+    "State the total credit requirement and the entry prerequisite (the calculus sequence).",
+    "Add a scientific-computing/programming pathway to support the numerical courses.",
+    "Publish program-level learning outcomes for the minor."
+  ]
+}

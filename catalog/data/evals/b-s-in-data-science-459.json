@@ -1,0 +1,111 @@
+{
+  "id": "b-s-in-data-science-459",
+  "name": "B.S. in Data Science",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 4,
+      "justification": "The plan shows two well-ordered spines that converge: a computing track (CS 100 -> CS 113 -> CS 114 -> CS 241/CS 280 -> CS 288 -> CS 435) and a math/stats track (MATH 111 -> MATH 112 -> MATH 244 Probability, MATH 337 Linear Algebra, MATH 341 Statistical Methods II), feeding the data core (DS 340 Fundamentals of Data Science, CS 331 Databases, CS 370 AI). Progression is smooth term over term. The weakness is that the parsed plan is truncated at Year 3, Semester 2 (only CS 435 plus an elective), so the senior data-science core/capstone is not visible, and two generic 'Data Science Elective 1/2' rows leave the applied upper path open.",
+      "suggestion": "Publish the full four-year plan including the senior data-science core and capstone, and replace the 'Data Science Elective' placeholders with named concentration tracks and example courses."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "deepestPrereqChain=9 is deep but defensible for a quantitative B.S. that stacks calculus, statistics, and a full CS sequence. The 4 dangling references (missingCoursesSample: GER 200, PHYS 111A, PHYS 121A, YWCC 207) are a general-education placeholder, two physics labs, and a one-credit computing seminar rather than genuine data-science prerequisite breaks, so the core chain is intact.",
+      "suggestion": "Add catalog entries or code mappings for YWCC 207 and the PHYS 111A/121A labs and resolve the GER 200 placeholder, and review whether the depth-9 chain can be shortened for on-time completion."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the provided data; only the term plan and per-course descriptions are present. For a flagship quantitative B.S. this absence is a real catalog finding.",
+      "suggestion": "Publish explicit program learning outcomes stating what a graduate can model, analyze, engineer, visualize, and communicate with data."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "The plan does not reconcile: statedTotalCredits is null and creditReconcileDelta is therefore null, while summedTermCredits is only 74.0 across the six parsed terms because the plan is truncated at Year 3. The general-education/major/elective split cannot be verified from what is shown.",
+      "suggestion": "State the total credit requirement (target the ~120 typical of a B.S.) and complete the term listing so summed credits reconcile to that total."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Terms are clearly labeled by year and semester and the required courses and descriptions are legible, but presentation is undercut by the truncated plan (missing fourth year, and a two-item Year 3 Semester 2 with null credits), the null stated total, and repeated generic 'Data Science Elective' placeholders.",
+      "suggestion": "Complete the truncated terms, add a stated total, and list example courses under each elective slot so the plan reads end to end."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The foundation is strong and current: a deep statistics/math track (MATH 244/337/341, with MATH 344 Regression, 391 Numerical Linear Algebra, 444/445/446/447 in the elective pool), the CS spine, DS 340, CS 331 Databases, and CS 370 AI. However, as presented the applied data-science core -- machine learning, data mining, big-data/data engineering, and data visualization -- is not required, appearing only via unnamed electives or the unshown senior year, which weakens the currency of the visible plan.",
+      "suggestion": "Make machine learning, a data-engineering/big-data course, and a data-visualization course explicit required courses, and add deep-learning and generative-AI exposure."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Course descriptions are present and substantive across the program's spine (DS 340 Fundamentals of Data Science, CS 370 Introduction to Artificial Intelligence, CS 331 Database System Design, MATH 341 Statistical Methods II), with no thin or placeholder excerpts among sampled courses."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated with clear course logic and 'grade C or better' conditions, and the only dangling references (missingCourseCount=4) are a GER placeholder, physics labs, and a one-credit seminar rather than data-science course breaks, so the core prerequisite chain is unambiguous."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Dedicated machine learning course",
+        "rationale": "The required plan includes CS 370 Introduction to AI and DS 340 fundamentals but no explicit machine-learning/statistical-learning course; MATH 344 Regression sits only in the elective pool, so predictive modeling is not guaranteed."
+      },
+      {
+        "topic": "Data engineering and big-data pipelines",
+        "rationale": "CS 331 Databases is the only data-infrastructure course in the required plan; there is no ETL/data-pipeline, cloud, or big-data-systems course, the single largest industry data-science skills gap."
+      },
+      {
+        "topic": "Data visualization and communication",
+        "rationale": "COM 312 Oral Presentations covers general communication, but no course turns analysis into visual or interactive data artifacts, a core deliverable of the profession."
+      },
+      {
+        "topic": "Experimental design and causal inference",
+        "rationale": "The required statistics sequence (MATH 244/341) is strong on probability and inference but omits A/B testing and causal inference; MATH 445 Experimental Design and MATH 447 Time Series appear only as electives."
+      },
+      {
+        "topic": "Unstructured data: NLP and computer vision",
+        "rationale": "CS 370 AI touches adjacent ground, but there is no text/NLP or image-analytics course even though most modern data is unstructured."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Generative AI and large language models",
+        "rationale": "AI content is limited to CS 370 introductory AI; a module or course on LLMs, retrieval-augmented generation, and fine-tuning is now essential positioning for data-science graduates."
+      },
+      {
+        "trend": "MLOps and production data science",
+        "rationale": "No deployment, monitoring, or reproducibility course exists; a production-ML capstone would convert the strong analytics foundation into employable engineering skill."
+      },
+      {
+        "trend": "Cloud-native and streaming data",
+        "rationale": "CS 331 is a classic relational-database course; the program should add cloud data platforms and streaming (e.g., Kafka, lakehouse) that dominate current data engineering."
+      },
+      {
+        "trend": "Responsible and trustworthy AI",
+        "rationale": "IS 350 Computers, Society and Ethics is a general ethics course; given the AI/statistics core the program should add algorithmic-fairness, privacy, and interpretability content."
+      },
+      {
+        "trend": "An organized statistical-learning path",
+        "rationale": "The rich MATH stats electives (344 Regression, 445 Experimental Design, 447 Time Series, plus data-science statistics) could be sequenced into a required statistical-learning track that distinguishes this math-department data-science degree."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish the complete four-year plan -- the data stops at Year 3, Semester 2 with only 74 summed credits and no stated total -- and state a ~120-credit total so the plan reconciles.",
+    "Make the applied data-science core (machine learning, data engineering/big data, and data visualization) explicit required courses rather than leaving it to unnamed 'Data Science Elective' slots.",
+    "Add generative-AI/LLM and responsible-AI (fairness, privacy, interpretability) content to modernize CS 370's introductory-AI coverage.",
+    "Publish program-level learning outcomes for the degree.",
+    "Resolve the 4 dangling references (GER 200, PHYS 111A, PHYS 121A, YWCC 207) and review the depth-9 prerequisite chain for on-time completion."
+  ]
+}
