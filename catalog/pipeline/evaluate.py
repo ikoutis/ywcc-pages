@@ -31,6 +31,9 @@ def main():
         missing = [k for k in DIMS if k not in dims]
         if missing:
             print(f"WARN: {pid} missing dimensions: {missing}")
+        fa = ev.get("fieldAnalysis") or {}
+        if not fa.get("missingTopics") and not fa.get("emergingTrends"):
+            print(f"WARN: {pid} has no fieldAnalysis (missing topics / trends)")
         # recompute overall from present program dimensions for consistency
         scores = [d["score"] for d in ev.get("dimensions", []) if isinstance(d.get("score"), (int, float))]
         ev["overallScore"] = round(sum(scores) / len(scores), 2) if scores else None
@@ -38,18 +41,22 @@ def main():
         evals[pid] = ev
 
     evaluated = set(evals)
-    computing = [p["id"] for p in ontology["programs"]
-                 if p["collegeId"] == "ying-wu-college-of-computing"]
+    all_ids = [p["id"] for p in ontology["programs"]]
+    by_college = {}
+    for p in ontology["programs"]:
+        by_college.setdefault(p["collegeId"], []).append(p["id"])
+    coverage = {c: {"total": len(ids), "evaluated": len(set(ids) & evaluated)}
+                for c, ids in by_college.items()}
     out = {
         "meta": {
             "rubric": "schema/rubric.md",
-            "method": "rubric + AI-assisted (Claude), grounded in deterministic metrics",
-            "pilotScope": "Ying Wu College of Computing (degree programs)",
+            "method": "rubric + AI-assisted (Claude), grounded in deterministic metrics; "
+                      "includes field missing-topics and emerging-trends analysis",
+            "scope": "all colleges",
             "evaluatedCount": len(evals),
-            "unevaluated": {
-                "computingRemaining": sorted(set(computing) - evaluated),
-                "note": "Other colleges are a follow-up run of the same pipeline.",
-            },
+            "totalPrograms": len(all_ids),
+            "coverageByCollege": coverage,
+            "unevaluated": sorted(set(all_ids) - evaluated),
         },
         "programs": evals,
     }

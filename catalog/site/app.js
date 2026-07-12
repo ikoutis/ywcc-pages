@@ -152,6 +152,21 @@ function renderProgram() {
       ev.topSuggestions.map((s) => `<li>${esc(s)}</li>`).join("") + `</ol></div>`;
   }
 
+  const fa = ev && ev.fieldAnalysis;
+  if (fa && ((fa.missingTopics && fa.missingTopics.length) || (fa.emergingTrends && fa.emergingTrends.length))) {
+    right += `<div class="panel"><h2>Field gaps &amp; trends</h2>
+      <p class="sub">Topics the discipline expects but this program underweights, and emerging directions it should position for.</p>`;
+    if (fa.missingTopics && fa.missingTopics.length) {
+      right += `<h3 class="fa-h gap">Missing / underweighted topics</h3><ul class="fa-list">` +
+        fa.missingTopics.map((x) => `<li><b>${esc(x.topic || x.name)}</b><span>${esc(x.rationale || x.why || "")}</span></li>`).join("") + `</ul>`;
+    }
+    if (fa.emergingTrends && fa.emergingTrends.length) {
+      right += `<h3 class="fa-h trend">Emerging trends to position for</h3><ul class="fa-list">` +
+        fa.emergingTrends.map((x) => `<li><b>${esc(x.trend || x.name)}</b><span>${esc(x.rationale || x.why || "")}</span></li>`).join("") + `</ul>`;
+    }
+    right += `</div>`;
+  }
+
   right += `<div class="panel"><h2>Prerequisite dependency graph</h2>
     <p class="sub">Courses referenced by this program; arrows point from a prerequisite to the course that requires it.</p>
     <div class="graph-wrap" id="graph"></div>

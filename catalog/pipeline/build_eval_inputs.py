@@ -74,7 +74,7 @@ def build(college_id="ying-wu-college-of-computing", degrees_only=False):
             "sampleCourses": sample,
         }
 
-    out = os.path.join(DATA, "eval_inputs.json")
+    out = os.path.join(DATA, f"eval_inputs_{college_id}.json")
     with open(out, "w") as f:
         json.dump(packets, f, indent=1)
     print(f"Wrote {out}: {len(packets)} program packets for {college_id}")

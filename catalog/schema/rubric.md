@@ -43,8 +43,29 @@ Score scale (all dimensions): **1** = serious problem · **2** = weak · **3** =
 - **Prerequisite clarity** — Are prerequisites stated unambiguously and internally consistent
   (no dangling references, sensible grade conditions)?
 
+## Field gap & trend analysis (not scored — forward-looking suggestions)
+
+Beyond grading what the program *is*, each evaluation identifies what the program is
+*missing relative to its field* and where the field is heading. This is the most
+actionable output for curriculum committees.
+
+- **Missing topics** — Subjects/skills a strong contemporary program in this discipline is
+  expected to cover but that appear absent or underweighted in the required and elective
+  courses (e.g., for a CS program: cloud/distributed systems, applied ML, security
+  engineering, MLOps). Each item pairs a `topic` with a one-line `rationale` grounded in the
+  program's actual course list.
+- **Emerging trends** — Current and near-future directions in the field the program should
+  position for (e.g., generative AI / LLM tooling, data engineering, privacy-by-design,
+  sustainable/green computing, human-AI collaboration). Each pairs a `trend` with a
+  `rationale` explaining why it matters for this specific program.
+
+Ground both in the program's discipline and its parsed course list — name concrete courses
+that could be added or modernized rather than generic advice.
+
 ## Output
 
 Per program: an `overallScore` (mean of program-level dimensions), each dimension's
-`score` + `justification` + `suggestion`, and a ranked `topSuggestions` list (the highest-
-impact, most actionable improvements first). Written to `data/evaluations.json`.
+`score` + `justification` + `suggestion`, a `courseLevel` block, a `fieldAnalysis` block
+(`missingTopics[]` and `emergingTrends[]`, each `{topic|trend, rationale}`), and a ranked
+`topSuggestions` list (highest-impact, most actionable first). Written to
+`data/evaluations.json`.
