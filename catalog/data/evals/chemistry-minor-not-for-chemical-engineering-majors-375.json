@@ -1,0 +1,111 @@
+{
+  "id": "chemistry-minor-not-for-chemical-engineering-majors-375",
+  "name": "Chemistry Minor (not for Chemical Engineering majors)",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "No plan-of-study terms are parsed (requirementGroups=0), so the minor is presented as an eligible-course pool rather than an ordered sequence; the underlying chemistry ladder in that pool is nonetheless coherent (CHEM 125/126 -> 243/244 Organic -> 231/235 Physical -> 336 Quantum, 412 Inorganic, 473/474 Biochemistry, 480 Instrumental). The coherence caveat is a data/presentation gap rather than proof of a broken curriculum, but the pool is also diluted by clearly non-chemistry entries (CS 100/113, EPS 202, EVSC and FRSC courses) that blur what the minor actually requires.",
+      "suggestion": "Publish the minor's actual required/elective structure (e.g., Gen Chem + Organic core plus a stated number of upper-level CHEM electives) and drop the non-chemistry courses that appear to have leaked from adjacent department pools."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "deepestPrereqChain=6 is sensible for a chemistry minor (e.g., CHEM 125 -> 126 -> 243 -> 244 -> 473 -> 474, and 231 -> 235), and the chains are dependency-honest with explicit grade conditions. The 6 missing references (missingCoursesSample: CHEM 125A, CHEM 126A, GER 200, GER 300, PHYS 111A, PHYS 121A) are lab co-requisites and GER placeholders, not chemistry-course breaks.",
+      "suggestion": "Resolve the CHEM 125A/126A lab co-requisite codes and GER placeholders so the prerequisite graph has no dangling entries."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No minor-level learning outcomes appear in the data; only a course pool with per-course descriptions is provided. A catalog minor page should still state what competencies the credential certifies.",
+      "suggestion": "Add a short outcomes statement describing what a chemistry-minor completer can do (e.g., interpret spectra, apply thermodynamic/kinetic reasoning, run standard analytical methods)."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "The page states no credit requirement (statedTotalCredits=null, summedTermCredits=null, creditReconcileDelta=null). For a minor a null delta is an expected data caveat rather than a defect, but here there is also no visible credit count or required-vs-elective split at all, so balance cannot be assessed by a prospective student.",
+      "suggestion": "State the minor's total credit requirement (typically ~18-21) and how many must be upper-level, so the credit commitment is transparent."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "With no parsed requirement groups and a course pool that mixes core chemistry with unrelated CS, environmental, and forensic courses, the page does not read as a self-contained, legible minor. CHEM 336's excerpt also ends in a stray '282 Jordan' page artifact, signaling scrape noise in the source.",
+      "suggestion": "Render the minor as a structured requirement block (core + electives with credits) instead of an undifferentiated eligible-course list, and clean the scrape artifacts."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The chemistry pool is current and employable: CHEM 437 Applications of Computational Chemistry and Molecular Modeling, CHEM 340 Chemistry of Materials (semiconductors, nanoscale), CHEM 360/361 Environmental Chemistry and climate, CHEM 480 Instrumental Analysis, and CHEM 473/474 Biochemistry together cover materials, computational, analytical, and life-science chemistry that industry and graduate programs value.",
+      "suggestion": "Foreground the computational (CHEM 437) and materials (CHEM 340) offerings as a recommended modern elective path so minors can signal in-demand skills."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Course descriptions are generally present and substantive across the pool (CHEM 231/235 Physical, 412 Inorganic, 473/474 Biochemistry, 480 Instrumental Analysis); the only weaknesses are minor scrape artifacts such as CHEM 336's truncated '282 Jordan' text."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated clearly with grade conditions and coherent course logic; the only dangling references (missingCourseCount=6) are lab co-requisites and GER placeholders, so the chemistry chains themselves are unambiguous."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Green and sustainable chemistry",
+        "rationale": "CHEM 360/361 cover environmental chemistry, but there is no dedicated green-chemistry course teaching atom economy, benign solvents, and sustainable synthesis that now shape industrial chemistry."
+      },
+      {
+        "topic": "Cheminformatics and machine learning for molecules",
+        "rationale": "CHEM 437 Computational Chemistry & Molecular Modeling is classical quantum/molecular-mechanics; it omits data-driven property prediction and ML for materials/drug discovery."
+      },
+      {
+        "topic": "Polymer and soft-materials chemistry",
+        "rationale": "CHEM 340 Chemistry of Materials addresses crystalline solids and semiconductors but not polymers, which are among the largest sectors of the chemical industry."
+      },
+      {
+        "topic": "Advanced structure elucidation (NMR/MS interpretation)",
+        "rationale": "CHEM 480 Instrumental Analysis is a methods lab, but there is no dedicated spectroscopic structure-determination course combining multinuclear NMR and mass-spectrometry reasoning."
+      },
+      {
+        "topic": "Chemical safety and laboratory quality practice",
+        "rationale": "The pool has research (CHEM 491) but no formal treatment of chemical hygiene, risk assessment, or QA/QC that employers expect."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI/ML-accelerated molecular and materials discovery",
+        "rationale": "Modernizing CHEM 437 with machine-learning property prediction would align the minor with how discovery chemistry is now done."
+      },
+      {
+        "trend": "Electrochemistry and chemistry for energy (batteries, catalysis, CO2)",
+        "rationale": "CHEM 235 Physical Chemistry and CHEM 340 Materials could anchor content on energy storage and electrocatalysis central to the energy transition."
+      },
+      {
+        "trend": "Sustainable and circular chemistry",
+        "rationale": "Building green-chemistry principles onto CHEM 360/361 positions completers for a decarbonizing chemical sector."
+      },
+      {
+        "trend": "Automated and high-throughput experimentation",
+        "rationale": "Self-driving labs and robotic synthesis are reshaping practice; even an elective module would signal currency."
+      },
+      {
+        "trend": "Biologics and biomanufacturing",
+        "rationale": "Extending CHEM 473/474 Biochemistry toward biologics/bioprocess chemistry tracks a fast-growing pharma segment."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish the minor's actual required-vs-elective structure with a stated credit total instead of an undifferentiated eligible-course pool.",
+    "Remove the non-chemistry courses (CS, EPS, EVSC, FRSC) that appear to have leaked in from adjacent department pools so the page reads as a chemistry minor.",
+    "Add a program-level learning-outcomes statement describing the competencies the minor certifies.",
+    "Modernize the computational (CHEM 437) and materials (CHEM 340) offerings toward data-driven/ML methods and highlight them as a recommended path.",
+    "Introduce green/sustainable chemistry and a polymers option to close the clearest gaps against contemporary industrial chemistry."
+  ]
+}

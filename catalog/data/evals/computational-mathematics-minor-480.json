@@ -1,0 +1,111 @@
+{
+  "id": "computational-mathematics-minor-480",
+  "name": "Computational Mathematics Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "No requirement groups are provided (requirementGroups=0), so sequencing cannot be assessed, and the pool is the shared id-480 pool (identical to the Applied Statistics and Mathematical Biology minors). That said, the raw material is well-suited to the discipline: the pool contains a strong computational spine -- MATH 340 -> MATH 440 numerical methods, MATH 391 Numerical Linear Algebra, MATH 448 Stochastic Simulation, and MATH 337 Linear Algebra -- even though it is diluted by off-topic finance and biology courses.",
+      "suggestion": "Extract the computational core (numerical methods, numerical linear algebra, stochastic simulation) into an explicit, curated requirement structure."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "missingCourseCount=0, so there are no dangling references; deepestPrereqChain=7 reflects the source courses' catalog depth rather than an internal requirement of a short minor. The prerequisite picture is clean.",
+      "suggestion": "State the calculus/linear-algebra entry prerequisite so students see the on-ramp."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes appear in the data for this minor.",
+      "suggestion": "Publish learning outcomes describing the numerical-methods and scientific-computing competencies the minor certifies."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "statedTotalCredits=16.0 is published, but with no term plan or summed credit figure the required-versus-elective split is not shown and creditReconcileDelta is null (a data-consistency caveat expected for an unstructured minor record).",
+      "suggestion": "Show how the stated 16 credits break into a required numerical core versus electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The requirement groups are empty and the pool is undifferentiated from the other id-480 minors, so the page does not read as a curated computational-mathematics plan.",
+      "suggestion": "Publish a structured plan-of-study table centered on the numerical and computing courses."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The computational content in the pool -- numerical methods (MATH 340/440), numerical linear algebra (MATH 391), and stochastic simulation (MATH 448) -- is highly relevant to high-performance-computing, engineering, and quantitative careers. The gap is the absence of an explicit programming/HPC course and of a numerical-optimization course.",
+      "suggestion": "Add a scientific-programming course (C++/Python, parallel computing) and a numerical-optimization course to complete the applied computational skill set."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and substantive across the pool (MATH 340 Applied Numerical Methods, MATH 391 Numerical Linear Algebra, MATH 440 Advanced Applied Numerical Methods), with no thin or placeholder excerpts among sampled courses."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites carry clear 'grade C or better' conditions and missingCourseCount=0, so there are no dangling references and the statements are internally consistent."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Programming and scientific computing (C++/Python)",
+        "rationale": "The pool is numerical-methods-heavy (MATH 340/391/440/448) but references no programming or HPC course, so students may lack the implementation skills the methods assume."
+      },
+      {
+        "topic": "Numerical optimization",
+        "rationale": "No optimization course appears, although optimization is central to computational mathematics and scientific computing."
+      },
+      {
+        "topic": "Numerical solution of PDEs",
+        "rationale": "MATH 440 touches ODE/PDE numerics, but a dedicated finite-element/finite-difference PDE course (building on MATH 331) is a gap."
+      },
+      {
+        "topic": "Parallel and high-performance computing",
+        "rationale": "No GPU or parallel-computing course is present despite the numerical-linear-algebra emphasis (MATH 391)."
+      },
+      {
+        "topic": "Machine learning and data-driven computation",
+        "rationale": "No machine-learning or scientific-ML course is referenced to complement the numerical-methods core."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Scientific machine learning and physics-informed neural networks",
+        "rationale": "Merging MATH 340/440 numerics with machine learning is a fast-growing computational paradigm."
+      },
+      {
+        "trend": "GPU and parallel numerical linear algebra",
+        "rationale": "Modernizing MATH 391 toward parallel hardware reflects current computational practice."
+      },
+      {
+        "trend": "Uncertainty quantification",
+        "rationale": "Building on MATH 448 stochastic simulation, UQ is now standard in large-scale modeling."
+      },
+      {
+        "trend": "Differentiable programming and automatic differentiation",
+        "rationale": "Increasingly central to computational mathematics and to bridging numerical methods with machine learning."
+      },
+      {
+        "trend": "Cloud and HPC-based simulation",
+        "rationale": "Deploying large-scale numerical models to cloud/HPC platforms is a growing employer expectation."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish an explicit computational-mathematics requirement structure -- the record currently shares an identical pool with the Applied Statistics and Mathematical Biology minors (all id 480).",
+    "Add a programming/scientific-computing course and a numerical-optimization course to support the strong numerical-methods pool.",
+    "Add a numerical-PDE course and a parallel/HPC elective to modernize the computational spine.",
+    "State how the 16 credits split into a required numerical core versus electives.",
+    "Publish program-level learning outcomes for the minor."
+  ]
+}

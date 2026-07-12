@@ -1,0 +1,111 @@
+{
+  "id": "applied-statistics-minor-480",
+  "name": "Applied Statistics Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "No requirement groups are provided (requirementGroups=0), so sequencing cannot be assessed, and the referenced pool is the shared id-480 pool -- identical to the Computational Mathematics and Mathematical Biology minors -- so it is not curated to statistics. It mixes finance (MATH 346/347, 432/433), actuarial (MATH 441), and mathematical-biology courses with the genuine statistics courses (MATH 244 Probability, MATH 333 Probability and Statistics, MATH 344 Regression).",
+      "suggestion": "Publish a statistics-specific requirement list (probability, statistical methods, regression, design of experiments) in a plan-of-study table rather than reusing the shared course pool."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "missingCourseCount=0, so there are no dangling references; deepestPrereqChain=7 reflects the source courses' catalog depth rather than an internal requirement of a short minor. The prerequisite picture is clean.",
+      "suggestion": "State the calculus/probability entry prerequisite so students see the on-ramp."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes appear in the data for this minor.",
+      "suggestion": "Publish learning outcomes describing the inference, modeling, and data-analysis competencies the minor certifies."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "statedTotalCredits=16.0 is published, which is better than several peer minors, but with no term plan or summed credit figure the required-versus-elective split is not shown and creditReconcileDelta is null (a data-consistency caveat expected for an unstructured minor record).",
+      "suggestion": "Show how the stated 16 credits break into required core versus elective courses."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The requirement groups are empty and the course pool is undifferentiated from the other id-480 minors, so the page does not read as a curated statistics plan.",
+      "suggestion": "Publish a structured, statistics-specific plan-of-study table."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The core statistics content that is present (probability, statistical methods, regression) is relevant, but the pool omits modern applied-statistics staples that exist elsewhere in the catalog -- time series, design of experiments, and statistical computing -- and references no R/Python statistical-computing course.",
+      "suggestion": "Require regression plus design of experiments and add a statistical-computing course and a machine-learning elective."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and substantive across the pool (MATH 333 Probability and Statistics, MATH 344 Regression Analysis, MATH 244 Introduction to Probability Theory), with no thin or placeholder excerpts among sampled courses."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites carry clear 'grade C or better' conditions and missingCourseCount=0, so there are no dangling references and the statements are internally consistent."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Design of experiments",
+        "rationale": "No experimental-design course appears in this minor's pool, although MATH 445 Introduction to Experimental Design exists in the catalog; it is essential to applied statistics."
+      },
+      {
+        "topic": "Time-series analysis and forecasting",
+        "rationale": "Time series is absent from the pool although MATH 447 Applied Time Series exists elsewhere in the catalog; it is core to analytics and econometrics."
+      },
+      {
+        "topic": "Statistical computing (R/Python)",
+        "rationale": "No computing-for-statistics course is referenced despite the numerical courses in the pool being finance/analysis-oriented, so hands-on data analysis is not guaranteed."
+      },
+      {
+        "topic": "Categorical data and generalized linear models",
+        "rationale": "MATH 344 covers linear regression but not logistic regression or GLMs, which are standard applied-statistics tools."
+      },
+      {
+        "topic": "Bayesian statistics",
+        "rationale": "No Bayesian-methods course is present, even though Bayesian analysis is now a mainstream applied approach."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Statistical and machine learning",
+        "rationale": "Regression (MATH 344) is the natural on-ramp to modern predictive modeling, the dominant growth area in applied statistics."
+      },
+      {
+        "trend": "Causal inference and A/B testing",
+        "rationale": "These high-demand skills are absent from the probability/statistics pair and are central to product and industry analytics."
+      },
+      {
+        "trend": "Reproducible data analysis",
+        "rationale": "Pairing a statistical-computing course with reproducible-workflow practices reflects current professional expectations."
+      },
+      {
+        "trend": "High-dimensional and regularized statistics",
+        "rationale": "Extending regression toward regularization and variable selection addresses modern big-data statistics."
+      },
+      {
+        "trend": "Statistics as a feeder to data science",
+        "rationale": "Positioning the minor to complement the B.S. in Data Science would sharpen its relevance and enrollment."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Curate a statistics-specific course list -- the record shares an identical, finance/biology-heavy pool with the Computational Mathematics and Mathematical Biology minors (all id 480) rather than listing applied-statistics courses.",
+    "Add the applied-statistics staples that already exist in the catalog: design of experiments (MATH 445), time series (MATH 447), and a statistical-computing course.",
+    "Add modern methods -- GLMs/categorical data, Bayesian statistics, and statistical/machine learning.",
+    "Publish a plan-of-study table showing how the stated 16 credits split into required versus elective courses.",
+    "Publish program-level learning outcomes for the minor."
+  ]
+}

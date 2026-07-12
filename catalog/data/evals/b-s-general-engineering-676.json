@@ -1,0 +1,103 @@
+{
+  "id": "b-s-general-engineering-676",
+  "name": "B.S. General Engineering",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "The freshman/sophomore spine is coherent and well-ordered: CHEM 121/122 (or 125/126), MATH 111->112->211->222/333, PHYS 111/121, one of CS 101/106/115, FED 101, and ENGR 330 (Microcontrollers/IoT) build a solid math-science-design foundation that culminates in the ENGR 400 multidisciplinary capstone. The weakness is that essentially the entire junior and senior year is filled with undifferentiated 'General Engineering Elective (200/300/400 level)' and lab-elective placeholders, so there is no defined disciplinary depth or guaranteed upper-division progression beyond the capstone.",
+      "suggestion": "Define one or two named required upper-division threads (e.g. add ENGR 301 Engineering Applications of Data Science and a systems/controls course) so the plan shows genuine 300/400-level progression rather than a wall of generic 'General Engineering Elective' rows."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is shallow but sensible for a broad first-two-years plan: deepestPrereqChain is 4 (MATH 111->112->211/222/333 and PHYS 111->121) with clear grade conditions ('C or better'). The six missingCoursesSample entries (CHEM 125A, ENGR 211, GER 200, GER 300, PHYS 111A, PHYS 121A) are co-requisite lab sections and GER category placeholders rather than genuinely broken chains.",
+      "suggestion": "Register the co-requisite lab codes (CHEM 125A, PHYS 111A/121A) and the ENGR 211 professional-skills course in the catalog, or annotate them as co-reqs, to clear the dangling references."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the data; only a term-by-term plan of study is provided. For a catalog page this absence is a real finding, especially for an ABET-context engineering degree.",
+      "suggestion": "Publish an explicit set of ABET-style student outcomes (the ABET (1)-(7) outcomes) and program educational objectives on the catalog page."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 4,
+      "justification": "The plan reconciles exactly (creditReconcileDelta 0; summedTermCredits 120 vs statedTotalCredits 120) and terms are evenly loaded (12-17 credits). Gen-ed (ENGL 101/102, GER history/humanities/social-science/senior-seminar), the math-science core, and the engineering block are all transparently represented.",
+      "suggestion": "Because the 'major' is largely a flexible elective block, add a note on how many credits must be engineering vs lab vs free electives so students can see the true core-to-elective ratio."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 4,
+      "justification": "The catalog page is well structured: eight clearly labeled terms with credits, named required courses, and legible 'Select one of the following' choice groups. A handful of rows are null-coded placeholders ('Social Science GER', 'General Engineering Elective') but they are understandable in context.",
+      "suggestion": "Give the repeated 'General Engineering Elective' rows footnoted eligibility lists (which subject prefixes/levels qualify) so the placeholder rows are actionable."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "ENGR 330 (Applications of Microcontrollers and IoT devices) and the ENGR 400 multidisciplinary capstone are current and applied, but the degree's identity rests almost entirely on unspecified electives, so currency depends on what those electives happen to be. There is no guaranteed exposure to data/computational methods, controls, or sustainability in the required core.",
+      "suggestion": "Move ENGR 301 (Engineering Applications of Data Science) into the required core so every graduate gains modern computational/data skills regardless of elective choices."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Sample course descriptions (e.g. CHEM 121, MATH 211, PHYS 121, ENGR 400, ENGR 330) are specific and informative, naming concrete topics and deliverables rather than placeholder text; none are thin."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated unambiguously with grade conditions ('C or better') and sensible chains (PHYS 121 requires PHYS 111/111A and MATH 111). The only issues are co-requisite lab codes (CHEM 125A, PHYS 111A/121A) that read as dangling because they are not separately cataloged."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Depth in computing/programming beyond a single intro course",
+        "rationale": "The plan requires only one of CS 101/106/115 and then relies on generic electives; a modern engineer needs more than one semester of computation, yet nothing beyond ENGR 330 is guaranteed."
+      },
+      {
+        "topic": "Engineering statistics and data analysis applied to design",
+        "rationale": "MATH 333 provides theory but the core never guarantees applied data analysis; ENGR 301 exists in the catalog but is only an elective here."
+      },
+      {
+        "topic": "Systems and control fundamentals",
+        "rationale": "No feedback-control or systems course is required, a notable gap for a 'general' engineering degree that should expose students to dynamic-system thinking."
+      },
+      {
+        "topic": "Sustainability, lifecycle and design-for-environment",
+        "rationale": "The required core (chemistry, physics, math, capstone) contains no explicit sustainability or lifecycle-analysis content expected of contemporary engineering programs."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI/ML embedded in engineering practice",
+        "rationale": "With ENGR 330 (IoT/microcontrollers) already required, a required data-science course (ENGR 301) would let students apply ML to sensor/IoT data, matching where general engineering practice is heading."
+      },
+      {
+        "trend": "Digital twins and simulation-driven design",
+        "rationale": "The ENGR 400 capstone would be strengthened by pairing it with simulation/CAE electives so students design against virtual models, now standard in industry."
+      },
+      {
+        "trend": "Cyber-physical and IoT systems",
+        "rationale": "ENGR 330 gives an entry point; positioning a required cyber-physical-systems thread would align the flexible upper division with embedded/edge-computing growth."
+      },
+      {
+        "trend": "Interdisciplinary sustainability and energy",
+        "rationale": "A general-engineering identity is a natural home for cross-cutting energy-transition and sustainable-design content that employers increasingly expect."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Replace part of the generic 300/400-level 'General Engineering Elective' wall with 2-3 named required courses (e.g. ENGR 301 Data Science, a controls/systems course) to create real upper-division progression.",
+    "Publish explicit ABET-style student outcomes and program educational objectives on the catalog page.",
+    "Add a required computational/data-science course (ENGR 301) so all graduates gain modern data skills.",
+    "Clear dangling references by cataloging the co-req labs (CHEM 125A, PHYS 111A/121A) and ENGR 211.",
+    "Footnote which subject prefixes/levels satisfy each 'General Engineering Elective' slot."
+  ]
+}

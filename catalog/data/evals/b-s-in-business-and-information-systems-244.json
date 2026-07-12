@@ -1,1 +1,111 @@
-{"id":"b-s-in-business-and-information-systems-244","name":"B.S. in Business and Information Systems","dimensions":[{"key":"curriculum_coherence","name":"Curriculum coherence & progression","score":4,"justification":"The eight-term plan builds logically from foundations (CS 100, IS 117, IS 265) through core IS competencies (IS 218 web apps, IS 331 databases, IS 390 requirements analysis) to advanced/management courses (IS 455 IS Management & Business Processes, IS 465 Advanced Information Systems) and a senior capstone (IS 491/IT 491). Business fundamentals (ACCT, ECON, FIN, MGMT, MRKT, HRM) interleave sensibly with the IS track, and a deepest prerequisite chain of 7 confirms genuine vertical progression. The blend is well-ordered with no abrupt jumps; the only softness is a few unlabeled general-elective and GER slots.","suggestion":"Annotate the general-elective and GER placeholder slots with recommended course options so students see how those choices reinforce the business-plus-IS progression rather than appearing as generic filler."},{"key":"prereq_structure","name":"Prerequisite structure health","score":3,"justification":"The prerequisite graph is real and well-formed, with per-course depths spanning 0 to 7 and a deepestPrereqChain of 7 that reflects a coherent path into advanced IS (IS 465 at depth 7). However, metrics.missingCourseCount is 4, with missingCoursesSample listing GER 200, GER 300, YWCC 207, and YWCC 307 as dangling references not resolvable in the undergraduate catalog. GER 200/GER 300 are general-education placeholders rather than true course codes, while YWCC 207 and YWCC 307 are one-credit seminars that appear in the plan but do not resolve; none break the core IS chain, but they are genuine dangling references, and a chain depth of 7 is on the deep side and worth auditing for over-constraint.","suggestion":"Resolve the four dangling references by mapping GER 200 and GER 300 to their canonical general-education requirement pages and confirming YWCC 207 and YWCC 307 are cataloged, then verify the depth-7 chain into IS 465 does not over-constrain scheduling."},{"key":"learning_outcomes","name":"Learning outcomes & objectives","score":2,"justification":"The program data contains no learning-outcomes, objectives, or overview field of any kind; only the structured plan of study and course list are present. For a catalog-quality page, the absence of explicit program-level learning outcomes is a real deficiency because prospective students and assessors cannot see what graduates are expected to know or be able to do.","suggestion":"Publish an explicit set of program-level learning outcomes (for example, four to six statements covering IS analysis and design, database and web application development, business process management, and data-driven decision making) directly on the catalog page."},{"key":"credit_balance","name":"Credit distribution & balance","score":4,"justification":"The plan reconciles exactly: metrics.creditReconcileDelta is 0.0 and summedTermCredits (120.0) equals statedTotalCredits (120.0), so there is no internal inconsistency. Term loads are well balanced, ranging from 12 to 16 credits with most terms at 15-16, and the mix spans general education (ENGL, MATH, science GER, HSS), a business core (ACCT/ECON/FIN/MGMT/MRKT/HRM), an IS core, and general electives. The one point held back reflects that the gen-ed versus major versus elective totals are not summarized explicitly for the reader.","suggestion":"Add a short credit-distribution summary (e.g., general education X, business core Y, IS core Z, electives W) so the transparent 120-credit total is visible at a glance rather than only inferable from the term-by-term plan."},{"key":"presentation","name":"Presentation & clarity","score":3,"justification":"The plan is organized into clearly labeled terms (First Year 1st Semester through Fourth Year 2nd Semester) with per-term credit totals, which aids readability. However, several parsing artifacts degrade the page: GER entries are split across multiple rows with raw catalog URL fragments (e.g., 'Science Literacy GER (http://...' followed by 'education-requirements/natural-science-ger/)'), alternative options render as bare 'or ACCT 115 or...' lines, and many rows carry null codes. There is also no program description or narrative overview.","suggestion":"Clean the plan-of-study parsing so GER requirements render as single labeled rows without embedded URLs, collapse the 'or' alternatives into clear either/or pairs, and add a brief program overview paragraph at the top of the page."},{"key":"industry_relevance","name":"Industry & currency relevance","score":4,"justification":"The curriculum reflects current information-systems and business practice: IT 310 E-Commerce Technology, MGMT 216 Business Data Analytics, IS 247 and IS 375 user-experience and user-needs courses, IS 218 Building Web Applications, IS 331 database design, IS 390 requirements analysis, IS 455 IS management and business processes, and IT 120 networking, all grounded in a solid business core (marketing, corporate finance, organizational behavior, international business). This is a modern, employable blend. Notable gaps are the absence of dedicated cybersecurity, cloud, or explicit data-science/AI coursework beyond introductory analytics.","suggestion":"Add or list an elective option in cybersecurity, cloud computing, or applied machine learning/data science to close the most visible modern gap and keep the analytics thread current."}],"courseLevel":{"descriptionQuality":{"score":1,"justification":"Every one of the 33 sampled courses (ACCT 115 through MRKT 330) has a null description, so no course on the page provides any explanatory text about content, topics, or scope. This is a uniform and serious presentation gap: titles alone must carry all meaning, and several are cryptic abbreviations (e.g., 'Principles Of Fin Accountng', 'IS Mgmt & Business Processes')."},"prerequisiteClarity":{"score":2,"justification":"Prerequisite relationships exist and were parsed into a depth graph (course depths range 0 to 7), but no course exposes explicit, human-readable prerequisite text, and metrics.missingCourseCount is 4 with GER 200, GER 300, YWCC 207, and YWCC 307 dangling. The combination of unstated prerequisite text and dangling references means students cannot reliably see or verify what is required before each course."}},"topSuggestions":["Publish course descriptions for all courses; every one of the 33 sampled courses currently has no description, which is the single largest gap on the page.","Add explicit program-level learning outcomes/objectives, which are entirely absent from the program data.","Resolve the four dangling course references (GER 200, GER 300, YWCC 207, YWCC 307) so prerequisite and requirement links all point to cataloged entries.","Fix plan-of-study parsing artifacts so GER requirements render as single clean rows without embedded URLs and 'or' alternatives display as clear either/or choices.","Add a program overview and a credit-distribution summary (gen-ed vs. business core vs. IS core vs. electives) to frame the transparent, reconciled 120-credit plan."]}
+{
+  "id": "b-s-in-business-and-information-systems-244",
+  "name": "B.S. in Business and Information Systems",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 4,
+      "justification": "The eight-term plan interleaves a coherent IS spine (CS 100 -> IS 117 -> IS 218 -> IS 331 database; IS 265 -> IS 344 -> IS 465 Advanced IS; IS 247/IS 375 UX; IS 390 requirements analysis; IS 455 IS management & business processes) with a well-sequenced business core (ECON 201, ACCT 117, FIN 218, FIN 315, MGMT 216 Business Data Analytics, MRKT 330, MGMT 391, HRM 301). Term loads are steady at 12-16 credits and culminate in an IS 491/IT 491 capstone, so difficulty ramps smoothly. The main weakness is that the two disciplines run largely in parallel with only IS 344/IS 455/MGMT 216 explicitly bridging them.",
+      "suggestion": "Add an explicit integrative course or capstone theme that forces the business and IS threads together (e.g., an analytics-for-business-decisions project spanning IS 465 and MGMT 216) so the two spines converge rather than run side by side."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is sensible: deepestPrereqChain is 7 (IS 465 Advanced IS, a terminal course gated on a statistical GER plus IS 265/IS 344 and IS 331), which is appropriate depth for a senior course and not over-constraining, while foundational courses sit at shallow depths. missingCourseCount is 4 and every dangling reference is peripheral -- GER 200 and GER 300 are general-education level placeholders, and YWCC 207/YWCC 307 are the one-credit professional-development seminars that appear in the plan but are not catalogued as course entries.",
+      "suggestion": "Resolve the four dangling references by linking YWCC 207/YWCC 307 to their catalog entries and re-tagging GER 200/GER 300 as requirement categories rather than course codes."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "The program data contains no program-level learning outcomes, educational objectives, or program overview. A prospective student can only infer the intended competencies by reading the course list, with no explicit statement of what a Business & IS graduate will know or be able to do -- a genuine gap for a catalog page.",
+      "suggestion": "Publish 5-8 program-level learning outcomes spanning IS analysis/design, database and web systems, business analytics, and professional communication, alongside a short program overview."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 4,
+      "justification": "Credit accounting reconciles cleanly: statedTotalCredits is 120, summedTermCredits is 120, and creditReconcileDelta is 0.0. The split is transparent and balanced across general education, a substantial business core, and the IS core, with roughly five general-elective slots providing flexibility. The only caveat is that the business load is heavy enough that quantitative/technical IS depth (programming, analytics) competes for limited room.",
+      "suggestion": "Publish a one-line credit summary (gen-ed vs. business core vs. IS core vs. electives) so the ~120-credit split is visible at a glance and the business/IS balance is explicit."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Terms are clearly labeled and most rows carry code, title, and credits, but several presentation defects remain: general-education rows are split and carry null credits (e.g., 'Science Literacy GER', 'History and Humanities GER 200 level'), alternative options render as separate null-code lines ('or ACCT 115 or Fundamentals of Financial Accounting', 'or COM 313 or Technical Writing'), and multiple titles are abbreviated ('Principles Of Fin Accountng', 'IS Mgmt & Business Processes', 'Computing & Effective Com').",
+      "suggestion": "Merge each split GER row and each 'or ...' alternative into a single readable line, and restore full course titles in place of the truncated registrar abbreviations."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The program reflects real business-IS practice via database design (IS 331), e-commerce technology (IT 310), business data analytics (MGMT 216), UX (IS 247/IS 375), and IS management (IS 455/IS 465). However, for a contemporary Business & IS degree the analytics footprint is thin (essentially MGMT 216 plus the statistics touched in IS 465), there is no information-security/governance course, no enterprise-systems/ERP exposure, and the only programming is web development -- leaving a graduate short of the Python/SQL analytics fluency employers now expect.",
+      "suggestion": "Add a required data-analytics course using Python/SQL and a BI visualization tool (Tableau/Power BI), and a business information-security & governance elective, to align with current analyst and IS-management hiring."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "All 33 sampled courses carry present, specific descriptions with no missing or placeholder entries; excerpts convey real topical content (e.g., IS 218 'critical, hands-on introduction to the design of Web-based Information Systems', IS 331 databases for analysis/decision-making, IS 465 data analysis and statistics from an IS perspective). A few registrar titles are terse, but the descriptive text itself is informative rather than thin."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated with explicit grade gates ('with a grade of C or better') and sensible boolean alternatives (IS 218: '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'; IS 465 lists an explicit statistical-GER set). Intro courses correctly show no prerequisite. Minor blemishes -- GER-set placeholders inside prerequisite text (IS 350) and slight phrasing variance ('C or better' vs 'C or higher') -- keep it from a 5."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Hands-on business/data analytics (Python, SQL, BI dashboards)",
+        "rationale": "Analytics is limited to MGMT 216 and the statistics in IS 465; a modern Business & IS graduate needs applied Python/SQL and a dashboarding tool -- add a dedicated analytics course rather than relying on a single survey."
+      },
+      {
+        "topic": "Information security, risk & IT governance (GRC, SOX/GDPR)",
+        "rationale": "No course addresses security or compliance despite IT 310 e-commerce and IS 455 business processes; business IS professionals are routinely responsible for data-protection and regulatory risk."
+      },
+      {
+        "topic": "Enterprise systems / ERP and process integration",
+        "rationale": "IS 455 covers business processes conceptually but there is no hands-on ERP (SAP/Oracle) or process-integration experience that business-IS roles rely on."
+      },
+      {
+        "topic": "IT project management & Agile/Scrum",
+        "rationale": "IE 492 Engineering Management is generic; a dedicated Agile/PM course would match how IS projects (IS 390 requirements, IS 491 capstone) are actually delivered in industry."
+      },
+      {
+        "topic": "Data warehousing & modern BI architecture",
+        "rationale": "Given the FIN/ACCT/MRKT reporting context, students would benefit from dimensional modeling and warehouse/BI pipeline concepts beyond the transactional focus of IS 331."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Generative AI for business productivity and analytics",
+        "rationale": "LLM copilots are reshaping accounting, marketing, and analyst workflows this program feeds; an 'AI for business' elective would build on MGMT 216 and IS 465."
+      },
+      {
+        "trend": "Cloud SaaS and low-code/no-code platforms",
+        "rationale": "Business systems increasingly run on Salesforce/ServiceNow/Power Platform; IS 344/IS 455 could be modernized to teach configuration and low-code app building."
+      },
+      {
+        "trend": "Process mining and robotic process automation (RPA)",
+        "rationale": "IS 455 business-process content is a natural home for process mining and RPA, which are now central to operational-efficiency roles."
+      },
+      {
+        "trend": "FinTech and digital payments",
+        "rationale": "With FIN 218/FIN 315 and IT 310 e-commerce already present, the program is well positioned to add a FinTech elective covering digital payments and platform finance."
+      },
+      {
+        "trend": "Data privacy and responsible data governance",
+        "rationale": "Building on IS 350 ethics, GDPR/CCPA-style governance is now a core expectation for anyone managing business information systems."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish explicit program-level learning outcomes and a short overview; the data currently contains none.",
+    "Add a required applied-analytics course (Python/SQL + BI dashboards) to deepen the thin analytics footprint beyond MGMT 216.",
+    "Introduce an information-security/IT-governance course and an enterprise-systems/ERP experience to close the two largest industry gaps.",
+    "Add an Agile/project-management course to support IS 390 and the IS 491 capstone with real delivery practice.",
+    "Clean the plan-of-study presentation: merge split GER and 'or ...' rows and restore truncated course titles."
+  ]
+}

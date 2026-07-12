@@ -1,0 +1,111 @@
+{
+  "id": "b-a-in-communication-and-media-437",
+  "name": "B.A. in Communication and Media",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "The eight-term plan is complete and lays out a recognizable media-studies path -- a production strand (COM 303 Video Narrative, COM 353 Applied Visual Communication, COM 354 Designing Digital Media), a journalism/oral strand (COM 339 Practical Journalism, COM 312 Oral Presentations), a theory/history anchor (COM 318 Communication Theory and Practice, HIST 345 Communication through the Ages, COM 355 Digital Media Futures), and a co-op-plus-capstone finish (COM 490/491, COM 496 Senior Project). Progression is weak, however, because there is no 200-level introduction to the major (COM 201, which the department offers, is absent from the required plan) and every required COM course sits at the same prerequisite depth, so students meet the major's content as a flat cluster of parallel 300-level courses rather than a built sequence.",
+      "suggestion": "Add COM 201 Introduction to Communication and Media as the gateway course and designate a mid-level methods or theory prerequisite so the 300-level COM courses form a genuine ladder instead of a same-depth cluster."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "deepestPrereqChain is only 4 and every required COM course resolves to the same gate ('ENGL 102 + one 200-level History/Humanities GER'), so the prerequisite graph is clean but essentially flat -- it enforces writing readiness but encodes no progression within the major. missingCourseCount is 3: GER 200 and GER 300 are requirement-category placeholders, while STS 349 is a genuine dangling reference appearing as a null-code plan row.",
+      "suggestion": "Resolve the STS 349 dangling reference and introduce at least one intra-major prerequisite (e.g. COM 201 before the 300-level production courses) so the graph reflects real sequencing."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear in the data. For a communication major whose graduates market specific competencies (writing, production, analysis), the absence of a published outcomes statement is a real catalog gap.",
+      "suggestion": "Publish 5-7 learning outcomes spanning media writing, visual/video production, communication theory, and critical media analysis, with a short program overview."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "The plan reconciles exactly (statedTotalCredits 121, summedTermCredits 121, creditReconcileDelta 0.0) and terms are a steady 15-16 credits, which is a real strength. Transparency is the weakness: roughly sixteen slots are unspecified placeholders (eight Free Electives, six Track Option Electives, two Technology Electives) against only about eleven named COM/HIST courses, so more than a third of the degree is undefined on the page.",
+      "suggestion": "Enumerate the Track Option and Technology electives (or link approved lists) so students can see how much of the 121 credits is genuinely major content versus open choice."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Terms are labeled, the plan is legible, and it reconciles to the stated total. Readability is dinged by the STS 349 row rendering with a null course code, an unresolved 'Select one of the following' block in the first term, and the GER 200/300 placeholder rows that carry null credits.",
+      "suggestion": "Give STS 349 a real code/title (or replace it), and collapse the 'Select one of the following' options into a single readable choice line."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The required core reflects solid contemporary media practice -- digital media design, video narrative, visual communication, a forward-looking Digital Media Futures course, journalism, and a required co-op -- which gives graduates real portfolio and workplace exposure. The currency gap is that the department's most modern offerings (COM 343 Social Media Analytics and Management, COM 240 New Media Technologies, COM 371 Social Network Analysis) sit only in the elective pool, so analytics, platform, and strategic-communication skills are optional rather than guaranteed.",
+      "suggestion": "Elevate COM 343 Social Media Analytics and a strategic-/public-communication course from electives into the required core so every graduate leaves with data and platform literacy."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "The named COM courses carry rich, specific descriptions (COM 303 on multimedia reading/writing, COM 354 on web media platforms, COM 355 on print-and-digital futures, COM 339 on news systems), and the foundational ENGL/MATH courses are well described. No sampled description is thin; the only empty rows are GER and STS 349 placeholders that lack any course text."
+    },
+    "prerequisiteClarity": {
+      "score": 3,
+      "justification": "Prerequisites are stated consistently and unambiguously for the COM courses, all using explicit grade gates. Clarity is reduced by the uniformity itself (nearly identical prerequisite strings give no signal of relative readiness) and by the STS 349 and GER placeholders that appear in the plan without resolvable course codes."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Media law and ethics",
+        "rationale": "A communication major routinely requires a media-law/ethics course; here ethics/law appears only via the missing STS 349 placeholder and an optional HIST media-law elective, leaving no guaranteed coverage."
+      },
+      {
+        "topic": "Strategic communication and public relations",
+        "rationale": "The required plan is production- and journalism-heavy; COM 370 Strategic Communication exists in the department but is not required, so PR/organizational messaging is not assured for graduates."
+      },
+      {
+        "topic": "Communication research methods",
+        "rationale": "There is no required quantitative or qualitative methods course, yet media analysis and audience research are core to the discipline and to the senior project (COM 496)."
+      },
+      {
+        "topic": "Data and social-media analytics",
+        "rationale": "COM 343 Social Media Analytics and Management sits only in the elective pool; analytics is now a baseline hiring expectation the required core does not secure."
+      },
+      {
+        "topic": "Intercultural and identity-in-media study",
+        "rationale": "COM 346 Race, Gender, and Media exists in the catalog but is not in the required plan, leaving representation and audience-diversity competencies optional."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Generative AI in media production and writing",
+        "rationale": "With COM 354 Designing Digital Media and COM 355 Digital Media Futures already in the core, the program is positioned to add generative-AI content creation, verification, and disclosure practices."
+      },
+      {
+        "trend": "Disinformation, verification, and media literacy",
+        "rationale": "COM 339 Practical Journalism is the natural host for training in source verification and misinformation, now central to media work."
+      },
+      {
+        "trend": "Data journalism and computational storytelling",
+        "rationale": "The degree requires a CS intro and MATH 105 statistics but never connects them to COM courses; a data-journalism offering would exploit that latent quantitative base."
+      },
+      {
+        "trend": "Podcasting and audio storytelling",
+        "rationale": "COM 324 Podcast Practicum exists as an elective; audio/podcast production is a fast-growing media format that could strengthen the required production strand."
+      },
+      {
+        "trend": "Social-platform analytics and the creator economy",
+        "rationale": "COM 343 and COM 371 Social Network Analysis give the department the pieces to position graduates for platform-native, metrics-driven communication careers."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish explicit program learning outcomes and a program overview.",
+    "Add COM 201 as a required gateway and one mid-level methods course so the 300-level COM courses form a real sequence rather than a same-depth cluster.",
+    "Elevate analytics (COM 343) and a strategic-/public-communication course from electives into the required core.",
+    "Guarantee media law/ethics coverage by replacing the dangling STS 349 slot with a catalogued ethics or media-law course.",
+    "Enumerate the sixteen Track/Technology/Free elective slots so students can see how much of the 121 credits is defined major content."
+  ]
+}

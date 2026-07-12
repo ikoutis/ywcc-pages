@@ -1,0 +1,103 @@
+{
+  "id": "b-s-general-engineering-concentration-in-chemical-processing-678",
+  "name": "B.S. General Engineering - Concentration in Chemical Processing",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 4,
+      "justification": "This concentration has a genuine chemical-engineering spine that progresses cleanly: CHE 101 (intro) -> CHE 201 (Material & Energy Balances) -> CHE 230 (Thermo I) -> CHE 260 (Fluid Flow) -> CHE 342 (Thermo II), supported by CHEM 125/126, CHEM 243/244A (Organic), CHEM 236/339 (Physical Chemistry), and MTEN 201 (materials), then wrapped with a manufacturing/quality layer (IE 331, IE 461, IE 459, ENGR 430) and the ENGR 400 capstone. The main gap is the absence of the two classic chemE completions -- reaction engineering/kinetics and separations/mass-transfer -- so the transport/thermo sequence ends without reactor or unit-operations design.",
+      "suggestion": "Add a reaction-engineering/kinetics course and a separations (mass-transfer/unit-operations) course to complete the CHE 201->230->260->342 sequence, which currently ends at thermodynamics without reactor or separations design."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is deep and healthy for a technical track: deepestPrereqChain is 6 (e.g. CHEM 125/126 -> CHE 201/230 -> CHE 260 -> CHE 342; CHEM 236 -> CHEM 339) with explicit grade and co-requisite conditions. The seven missingCoursesSample entries (CHE 101, CHEM 125A, ENGR 211, GER 200, GER 300, PHYS 111A, PHYS 121A) are the intro CHE seminar, co-req labs, and GER placeholders rather than broken technical chains.",
+      "suggestion": "Catalog CHE 101, CHEM 125A, and ENGR 211 (or mark them as co-reqs/1-credit seminars) so the dangling references clear and the strong CHE chain reads cleanly."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives are present in the data; only the plan of study is given. This is a real omission for a technical concentration whose graduates target the process industries.",
+      "suggestion": "Publish concentration-specific learning outcomes (e.g. ability to perform material/energy balances, analyze fluid/thermal systems, and apply statistical quality methods) alongside the general-engineering outcomes."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 4,
+      "justification": "The plan reconciles exactly (creditReconcileDelta 0; 120 summed vs 120 stated) with well-loaded 12-17 credit terms, and it transparently balances a heavy chemistry/CHE technical core against IE quality/economics courses and GER requirements.",
+      "suggestion": "State the credit split among the chemistry core, the CHE process core, and the IE manufacturing/quality layer so students see how 'chemical processing' is weighted against 'general engineering'."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 4,
+      "justification": "The eight-term plan is clean, labeled, and legible, with credits on nearly every row and clear substitution notes (e.g. 'or CS 106'). Only the usual GER category rows are null-coded.",
+      "suggestion": "Add a one-line concentration overview describing the process-industries career target, since the course list alone must currently carry that message."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The concentration aligns well with modern process/manufacturing practice: ENGR 301 (Engineering Applications of Data Science), IE 331/461 (applied statistics, product quality assurance), IE 459 (supply chain), ENGR 320 (Prototyping), and ENGR 430 (Quality & Reliability) reflect data-driven, quality-focused process engineering. It nonetheless lacks explicit process-control/automation and process-safety content that industry now treats as essential.",
+      "suggestion": "Add CHE 312 (Chemical Process Safety) and a process-control/instrumentation course to cover the safety and automation competencies process employers require."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions for the CHE and CHEM courses (CHE 201 material/energy balances, CHE 260 fluid flow, CHE 342 thermodynamics II, CHEM 236 physical chemistry) are specific and topic-rich; supporting IE and ENGR descriptions are likewise informative with no thin/placeholder text."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are detailed and internally consistent, including multi-course conjunctions and co-requisites (e.g. CHE 342 requires CHE 230, MATH 211/213, CHEM 236; CHE 230 lists a MATH 211 co-requisite). Only the intro CHE 101 and lab co-reqs read as dangling because they are not separately cataloged."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Reaction engineering and kinetics / reactor design",
+        "rationale": "The CHE sequence covers balances, fluids, and thermodynamics but no kinetics/reactor course, the core design capstone of chemical processing."
+      },
+      {
+        "topic": "Separations and mass-transfer unit operations",
+        "rationale": "Distillation/absorption/extraction unit operations are absent, leaving the transport thread (CHE 260 fluid flow) without its mass-transfer counterpart."
+      },
+      {
+        "topic": "Process control and instrumentation",
+        "rationale": "No control/automation course appears; modern process plants are defined by their control and instrumentation layer."
+      },
+      {
+        "topic": "Process safety and risk management",
+        "rationale": "CHE 312 (Chemical Process Safety) exists in the catalog but is not in the plan; process safety is now a baseline expectation in the process industries."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Data-driven process optimization and digital plants",
+        "rationale": "ENGR 301 is already included; extending it toward process analytics, soft sensors, and model-based optimization matches the industry shift to digital/smart plants."
+      },
+      {
+        "trend": "Sustainable and decarbonized process engineering",
+        "rationale": "Green chemistry, electrification, and carbon-capture-ready process design are reshaping the field and are absent from the current chemistry/CHE core."
+      },
+      {
+        "trend": "Bioprocessing and pharmaceutical manufacturing",
+        "rationale": "New Jersey's pharma/biotech corridor makes bioprocess unit operations a high-value addition to a chemical-processing track built on CHE 201/230/260."
+      },
+      {
+        "trend": "Inherently safer and quantitative process safety",
+        "rationale": "Pairing CHE 312-style safety with data methods reflects the field's move toward quantitative, sensor-driven risk management."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Complete the chemE core by adding reaction-engineering/kinetics and separations/mass-transfer courses to finish the CHE 201->230->260->342 sequence.",
+    "Add CHE 312 (Chemical Process Safety) and a process-control course to close the safety and automation gaps industry expects.",
+    "Publish explicit concentration-level learning outcomes alongside the general-engineering outcomes.",
+    "Catalog the dangling co-req/intro codes (CHE 101, CHEM 125A, ENGR 211) to clean the prerequisite references.",
+    "Extend ENGR 301 toward process analytics/optimization to position graduates for digital-plant roles."
+  ]
+}

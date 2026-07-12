@@ -1,0 +1,111 @@
+{
+ "id": "industrial-engineering-minor-633",
+ "name": "Industrial Engineering Minor",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 3,
+   "justification": "No plan-of-study terms are parsed (requirementGroups 0), which is normal for a minor, so term-over-term progression cannot be assessed; the 15-credit minor instead presents a course pool. The core industrial-engineering options are coherent (IE 331 statistics, IE 335 cost analysis, IE 339 work measurement, IE 355 human factors, IE 439 deterministic OR, IE 461 quality, IE 466 facilities), but the pool also mixes in far-afield entries (MATH 371 Physiology, MATH 372 Population Biology, ME 432 Air Conditioning) that blur the minor's identity.",
+   "suggestion": "Declare a required IE core and a curated elective list (with a term/credit structure) so students see an intentional path rather than an undifferentiated menu."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 5,
+   "justification": "This is the cleanest prerequisite graph of the group: missingCourseCount is 0 (no dangling references) with good depth, deepestPrereqChain 8 and well-formed chains such as IE 461 (depth 6, on IE 331), IE 466 (depth 5, on IE 439) and ECET 205 (depth 6).",
+   "suggestion": "Maintain the zero-dangling status as courses are revised, and document any co-requisites explicitly."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No minor-level learning outcomes appear in the provided data; only the course pool and a 15-credit total are present.",
+   "suggestion": "Publish explicit learning outcomes for the minor (what an IE-minor completer should be able to analyze, model and optimize)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 3,
+   "justification": "The stated total is 15 credits, but with no parsed terms creditReconcileDelta is null, so the split between required and elective credit cannot be verified from the data; the null delta is a data-consistency caveat rather than a defect for a minor.",
+   "suggestion": "Publish the required-vs-elective credit breakdown so the 15 credits reconcile transparently."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 3,
+   "justification": "The course pool is legible and the 15-credit total is stated, but the page shows no required/elective structure and includes probable parsing artifacts (MATH 371 Physiology, MATH 372 Population Biology, ME 432 HVAC) that read as noise against an IE minor.",
+   "suggestion": "Present the minor as a short structured list (core + electives) and remove off-topic pool entries."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 4,
+   "justification": "The pool reflects solid, current industrial-engineering practice: operations research (IE 439), applied statistics (IE 331), quality (IE 461), human factors (IE 355), facilities/material handling (IE 466), industrial robotics (IE 449), CIM (IE 453) and PLCs (IE 455). The main currency gap is the absence of a data-analytics/ML-for-operations option.",
+   "suggestion": "Add a data-analytics/optimization option (e.g., building on ENGR 301 Engineering Applications of Data Science) to the elective pool."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "Descriptions are present and specific (IE 439 on linear/nonlinear/integer/dynamic programming and network flows, IE 461 on process capability and inspection data, IE 466 on facility location/layout and material handling); only a handful of cross-listed math/economics entries are terse topic lists."
+  },
+  "prerequisiteClarity": {
+   "score": 4,
+   "justification": "Prerequisites are explicit and internally consistent (IE 461 'IE 331', IE 466 'IE 439', IE 339 'IE 203, IE 224') and missingCourseCount is 0, though several courses list 'None' while their text imposes a 'junior standing' restriction that is not captured as a formal prerequisite."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Data analytics and statistical learning for operations",
+    "rationale": "The pool's quantitative content stops at IE 331 Applied Statistical Methods; a modern IE minor should expose students to regression/ML-based analytics for process and demand data."
+   },
+   {
+    "topic": "Lean and Six Sigma methodology",
+    "rationale": "Quality is represented only by IE 461 Product Quality Assurance; explicit lean/Six Sigma and DMAIC content is a standard IE expectation and is absent."
+   },
+   {
+    "topic": "Supply chain and logistics",
+    "rationale": "IE 466 covers facilities and material handling, but there is no supply-chain/production-planning option (IE 459 is not in the pool), a core IE competency."
+   },
+   {
+    "topic": "Discrete-event simulation",
+    "rationale": "Systems modeling leans analytical (IE 439 deterministic OR); IE 445 Industrial Simulation is not in this pool, leaving simulation underrepresented."
+   },
+   {
+    "topic": "Sustainability and safety in systems design",
+    "rationale": "IE 473 Safety Engineering exists in the department but is not in this pool; sustainability/ergonomic-risk topics are also absent."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Industry 4.0 and smart operations",
+    "rationale": "IIoT-instrumented factories are redefining IE work; the minor's CIM (IE 453) and PLC (IE 455) courses are a foundation to extend toward connected, data-rich operations."
+   },
+   {
+    "trend": "Data science and ML for operations",
+    "rationale": "Prescriptive analytics and ML forecasting are now central to operations research; ENGR 301 could anchor a data-driven IE elective."
+   },
+   {
+    "trend": "Digital supply chains and resilience",
+    "rationale": "Post-pandemic supply-chain resilience and digital logistics are high-demand skills that the facilities/OR core (IE 466/IE 439) could grow into."
+   },
+   {
+    "trend": "Human-automation collaboration and cobots",
+    "rationale": "IE 449 Industrial Robotics positions the minor to address collaborative-robot ergonomics and safety, an active industrial-engineering frontier."
+   },
+   {
+    "trend": "AI-driven optimization / prescriptive analytics",
+    "rationale": "Optimization is moving from batch OR (IE 439) toward real-time, AI-assisted decision support, a trend the minor should signal."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish explicit learning outcomes for the minor, which are absent from the data.",
+  "Declare a required IE core plus a curated elective list with a credit/term structure so the 15 credits reconcile transparently (creditReconcileDelta is null).",
+  "Add a data-analytics/ML-for-operations elective (e.g., leveraging ENGR 301) to modernize the pool.",
+  "Curate the elective pool by removing off-topic artifacts (MATH 371 Physiology, MATH 372 Population Biology, ME 432 HVAC) that dilute the IE identity.",
+  "Preserve the clean prerequisite graph (missingCourseCount 0) as courses are revised."
+ ]
+}

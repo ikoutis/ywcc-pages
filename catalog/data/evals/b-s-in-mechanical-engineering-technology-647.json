@@ -1,0 +1,111 @@
+{
+ "id": "b-s-in-mechanical-engineering-technology-647",
+ "name": "B.S. in Mechanical Engineering Technology",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 4,
+   "justification": "The 8-term plan builds a clean, well-ordered MET spine: CAD (MET 103 -> 105), mechanics (MET 235 Statics -> MET 236 Dynamics and MET 237 Strength), machine design (MET 301 -> 302), thermal-fluids (MET 303 Thermodynamics, MET 304 Fluid Mechanics), MET 314 Dynamics of Machinery, MET 415 Automatic Control Systems and the MET 450 capstone (depth 7). Prerequisite depths rise smoothly and the sequence is genuinely mechanical.",
+   "suggestion": "Add a required heat-transfer course (MET 404 exists as an elective) so the thermal-fluids sequence is complete."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 4,
+   "justification": "The prerequisite graph is healthy: deepestPrereqChain 7 with well-formed chains (MET 301 depth 6, MET 302 depth 7, MET 314 depth 6, MET 450 depth 7). All 4 dangling references (missingCourseCount 4: GER 200, GER 300, PHYS 102A, PHYS 103A) are GER placeholders and physics-lab co-requisites, not real broken links.",
+   "suggestion": "Resolve the PHYS 102A/103A lab and GER 200/300 catalog entries so the metrics show zero dangling references."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or ABET student outcomes appear in the provided data; only the plan of study and course descriptions are present, a real finding for an accredited-track technology B.S.",
+   "suggestion": "Publish explicit ETAC/ABET-style student outcomes (analysis, design, testing, teamwork, communication)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 4,
+   "justification": "The plan reconciles exactly: summedTermCredits 120 equals statedTotalCredits 120 (creditReconcileDelta 0.0), with even 14-16 credit terms and a transparent split across GER, math/science and the MET core.",
+   "suggestion": "Add a credit-summary table (major core vs. math/science vs. GER vs. technical/free electives) to make the balanced split visible."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 4,
+   "justification": "Terms are labeled and legible, but the plan carries minor artifacts: several null-code 'Select one of the following' and duplicated 'Technical Elective' rows, and it lists SDET 341 Visual Basic.NET as a computing option.",
+   "suggestion": "Collapse the 'select one' alternatives into single rows, de-duplicate elective labels, and replace the dated Visual Basic.NET option."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 3,
+   "justification": "The required plan covers solid, durable MET content (machine-element design MET 301/302, thermodynamics MET 303, fluid mechanics MET 304, dynamics of machinery MET 314, PLC-based controls MET 415, materials ME 215). Currency gaps: heat transfer is only an elective, there is no FEA/CAE or CNC/CAM in the required plan, and the SDET 341 Visual Basic.NET computing option is dated.",
+   "suggestion": "Modernize the computing and manufacturing content: replace SDET 341 Visual Basic.NET with Python/MATLAB and require CAD/CAM-CNC and additive manufacturing."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "Descriptions are present, specific and outcome-oriented (MET 301 on failure theory, stress concentration and fatigue; MET 303 on the first and second laws of thermodynamics; MET 304 on fluid statics and conservation laws; MET 314 on velocities/accelerations in linkages and cams); only a few GER entries are terse."
+  },
+  "prerequisiteClarity": {
+   "score": 4,
+   "justification": "Prerequisites are explicit with sensible compound logic and grade conditions (MET 314 'MET 236 or MECH 236, and MATH 238 or MATH 112, and MET 105 or FED 101', MET 450 listing MET 303/304/314/ECET 329 and COM 312/313); the only detractors are the GER/PHYS-lab placeholders."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Heat transfer",
+    "rationale": "The thermal-fluids sequence stops at MET 303 Thermodynamics and MET 304 Fluid Mechanics; MET 404 Applied Heat Transfer exists in the department but is not in the required plan, leaving the third pillar of thermal-fluids optional."
+   },
+   {
+    "topic": "Finite element analysis / CAE",
+    "rationale": "Machine design is taught analytically in MET 301/302 with no computational-mechanics/FEA course, now a baseline expectation for mechanical technologists."
+   },
+   {
+    "topic": "CNC/CAM and additive manufacturing",
+    "rationale": "CAD is covered (MET 103/105) but the required plan has no CNC/CAM or additive manufacturing; the department's MNET 303/MNET 405 and CHE 415 could fill this."
+   },
+   {
+    "topic": "Mechatronics and robotics",
+    "rationale": "MET 415 Automatic Control Systems is limited to PLC ladder logic; there is no mechatronics/robotics/sensors course integrating actuation and control."
+   },
+   {
+    "topic": "GD&T, metrology and quality",
+    "rationale": "Beyond ME 215 materials there is no metrology/GD&T or quality course (MNET 215/420 are available in the department) despite their importance to manufacturing practice."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Additive manufacturing and design for AM",
+    "rationale": "3D printing is now central to mechanical prototyping and tooling; CHE 415 Introduction to 3D Printing could be adopted as a required MET elective."
+   },
+   {
+    "trend": "Digital twin and simulation-driven design",
+    "rationale": "Coupling MET 301/302 design and MET 314 machinery dynamics with simulation/FEA reflects how mechanical products are now developed."
+   },
+   {
+    "trend": "Mechatronics and industrial robotics",
+    "rationale": "Extending MET 415 beyond PLCs to sensors, actuators and robotics matches the mechatronics direction of manufacturing employers."
+   },
+   {
+    "trend": "Modern engineering programming",
+    "rationale": "Replacing SDET 341 Visual Basic.NET with Python/MATLAB aligns the computing requirement with current analysis and automation practice."
+   },
+   {
+    "trend": "Sustainable and energy-efficient thermal systems",
+    "rationale": "Building on MET 303/304/409 toward energy efficiency and refrigerant transitions matches decarbonization pressures in HVAC/energy fields."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish explicit ETAC/ABET-style program learning outcomes, which are absent from the data.",
+  "Require heat transfer (MET 404 exists as an elective) and add an FEA/CAE course to complete the analysis core.",
+  "Modernize computing and manufacturing: replace SDET 341 Visual Basic.NET with Python/MATLAB and require CAD/CAM-CNC (MNET 303/405) and additive manufacturing (CHE 415).",
+  "Broaden MET 415 controls beyond PLC ladder logic toward mechatronics, sensors and robotics.",
+  "Resolve dangling references (GER 200/300, PHYS 102A/103A labs) and clean the duplicated elective rows."
+ ]
+}

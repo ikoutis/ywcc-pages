@@ -1,0 +1,111 @@
+{
+  "id": "history-minor-418",
+  "name": "History Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "No plan-of-study terms are parsed (requirementGroups=0), so the minor is an eligible-course pool rather than an ordered sequence, and the listed home department ('forensic-science-law-technology-and-culture-b-s') is itself a data-consistency quirk for a history minor. The history offerings in the pool are thematically rich and coherent around law-and-society and technology history (HIST 342 Civil Rights, 361 Founding, 364 American Law in the World, 369 Law and Society, 370 Media Law, 375 Environmental Legal Issues, 378 Health Law, 384 Invention and Regulation), but the pool is padded with many non-history IT/forensic/chemistry courses that blur the minor's identity.",
+      "suggestion": "Publish an explicit history-minor structure (a stated number of HIST credits with a distribution rule) and separate the genuine history requirement from the cross-listed IT/forensic electives."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "deepestPrereqChain=6 is reasonable and the HIST courses share a clean, uniform prerequisite (ENGL 102 plus a 200-level History/Humanities GER). missingCourseCount=2 involves only a GER 200 placeholder and HIST 312, so the history offerings themselves have essentially no dangling references.",
+      "suggestion": "Resolve the GER 200 placeholder and the HIST 312 reference so the graph is fully clean."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No minor-level learning outcomes appear in the data; only a course pool with descriptions is provided. A history minor should still state the analytical and writing competencies it certifies.",
+      "suggestion": "Add an outcomes statement (historical analysis, primary-source interpretation, argumentative writing) appropriate to a minor's scope."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "No credit requirement is stated (statedTotalCredits=null, summedTermCredits=null, creditReconcileDelta=null). For a minor the null delta is an expected data caveat, but the page shows no credit count or distribution rule, so the commitment and how many credits must be history (versus cross-listed IT/forensic courses) are invisible.",
+      "suggestion": "State the minor's total credits and require a minimum number of HIST-designated credits so the credential is genuinely a history minor."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "With no parsed requirement groups, a home-department tag that points at a forensic/law B.S., and a pool mixing HIST courses with a large set of IT, forensic, and chemistry courses, the page does not read as a self-contained history minor.",
+      "suggestion": "Correct the department attribution and render a structured HIST requirement block distinct from the cross-listed technical electives."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "For a technological university, the pool is unusually current and career-relevant: it foregrounds law-and-technology history (HIST 384 Invention and Regulation, HIST 370 Legal Issues in the History of Media, HIST 378 Medicine and Health Law, HIST 338 Environmental Justice and Climate Change) and even cross-lists contemporary technology-law/security courses (IT 331 Privacy, IT 400 IT and the Law, IT 332 Digital Crime), giving the minor a distinctive modern profile.",
+      "suggestion": "Formalize the law-and-technology history strength as a named theme so students can intentionally build a contemporary, employable history minor."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions across the history pool are substantive and specific (HIST 369 Law and Society, HIST 384 Invention and Regulation, HIST 378 Medicine and Health Law, HIST 370 Media Law), clearly conveying scope."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are unambiguous and uniform for the HIST courses (ENGL 102 plus a 200-level GER) with grade conditions, and only 2 references dangle (GER 200 placeholder and HIST 312), so the history offerings are clear."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Chronological and geographic breadth",
+        "rationale": "The pool is almost entirely modern US law-and-society and technology history; pre-modern, European, and non-Western coverage is thin for a general 'History Minor.'"
+      },
+      {
+        "topic": "Historiography and historical methods",
+        "rationale": "HIST 395 Research Methods in Law and Society is topical; a general historical-methods/historiography course would better serve minors sampling the discipline."
+      },
+      {
+        "topic": "Digital humanities",
+        "rationale": "Despite many IT crossovers in the pool, there is no digital-history or computational text-analysis course connecting technical tools to historical inquiry."
+      },
+      {
+        "topic": "Public history and archives",
+        "rationale": "No applied public-history/archives course appears, a common bridge from a history minor to careers."
+      },
+      {
+        "topic": "Economic and social history breadth",
+        "rationale": "The offerings concentrate on legal history; broader economic/social-history topics are underrepresented."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Law-and-technology history as a signature strength",
+        "rationale": "The pool (HIST 384 Invention and Regulation, HIST 370 Media Law, plus IT 400 IT and the Law) already positions this; naming it as a formal theme would differentiate the minor."
+      },
+      {
+        "trend": "Digital humanities and computational history",
+        "rationale": "The cross-listed IT courses make this minor a natural home for text-mining/AI-assisted historical analysis."
+      },
+      {
+        "trend": "Environmental and climate history",
+        "rationale": "HIST 338 Environmental Justice and HIST 375 Environmental Legal Issues track a fast-growing subfield with strong student interest."
+      },
+      {
+        "trend": "History of medicine, health, and bioethics",
+        "rationale": "HIST 378 Medicine and Health Law gives the minor post-pandemic salience the department could build on."
+      },
+      {
+        "trend": "Public and digital public history careers",
+        "rationale": "Applied and digital public-history work is expanding; an offering would connect the minor to concrete outcomes."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish an explicit history-minor structure with a stated credit total and a minimum number of required HIST credits, distinct from the cross-listed IT/forensic electives.",
+    "Correct the minor's department attribution (currently tagged to a forensic/law B.S.) so the page is accurate.",
+    "Ensure chronological/geographic breadth and a historiography/methods option so the minor represents the discipline, not only modern legal history.",
+    "Formalize the law-and-technology history strength (and a digital-humanities option) as a named, contemporary theme.",
+    "State program-level learning outcomes and resolve the GER 200 and HIST 312 dangling references."
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "b-s-in-applied-physics-488",
+  "name": "B.S. in Applied Physics",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 5,
+      "justification": "The eight-term plan is a model of ordered progression: an introductory physics and calculus spine (PHYS 111 -> 121 -> 234 with MATH 111 -> 112 -> 213 -> 222 -> 328) feeds the upper-level theory core (PHYS 335 Thermodynamics, PHYS 430 Classical Mechanics, PHYS 432/433 Electromagnetism I/II, PHYS 442 Quantum Mechanics) and a coherent astrophysics thread (PHYS 320 -> 321 -> 322 Astronomy and Astrophysics, PHYS 420 Special and 421 General Relativity), capped by PHYS 450 Advanced Physics Lab. Prerequisite depths climb smoothly to 7 with no abrupt jumps.",
+      "suggestion": "Label the astrophysics-heavy upper-level courses (PHYS 320/321/322, 420/421) as a named concentration so students can see it as one of several possible applied-physics paths."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "deepestPrereqChain=7 is appropriate for a four-year physics degree, and the 7 dangling references (missingCoursesSample: CHEM 125A, GER 200, GER 300, MATH 225, PHYS 111A, PHYS 121A, PHYS 231A) are co-requisite chemistry and physics labs, a one-credit statistics survey, and general-education placeholders rather than physics-core breaks, so the core chain is intact.",
+      "suggestion": "Add catalog entries or code mappings for the physics/chemistry labs (PHYS 111A/121A/231A, CHEM 125A) and MATH 225, and resolve the GER 200/300 placeholders so no referenced code dangles."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear in the provided data; only the term plan and per-course descriptions are present. For a full B.S. this absence is a real catalog finding.",
+      "suggestion": "Publish explicit program learning outcomes stating what a graduate can model, measure, compute, and analyze in physics."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 5,
+      "justification": "creditReconcileDelta=0.0 -- summedTermCredits (120.0) matches statedTotalCredits (120.0) exactly across eight well-balanced ~15-credit terms with a clear mix of general-education, major, and elective slots. This is exemplary internal consistency.",
+      "suggestion": "Keep the reconciliation and optionally add a credit-category summary (major versus general-education versus electives) so the balance is explicit at a glance."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 4,
+      "justification": "The plan is complete and legible: eight terms labeled by year and semester, reconciled credits, and substantive course descriptions. It is lightly blemished by several 'or'-alternative rows with null codes and by general-education placeholders.",
+      "suggestion": "Render the 'or'-alternative course rows and the GER placeholders more explicitly so every line resolves to a concrete option."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The theory core (mechanics, electromagnetism, quantum, thermodynamics, optics, advanced lab) is solid and durable, but for an 'Applied' physics degree the required upper level is dominated by astronomy/astrophysics and relativity rather than industrial/applied physics; there is no required computational-physics, condensed-matter/materials, modern-electronics, or photonics/semiconductor course.",
+      "suggestion": "Add or require computational physics, condensed-matter/materials, and modern electronics/instrumentation to strengthen the degree's applied identity."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Course descriptions are present and substantive across the physics and math spine (PHYS 430 Classical Mechanics I, PHYS 432 Electromagnetism I, PHYS 442 Introduction to Quantum Mechanics, PHYS 450 Advanced Physics Lab), with no thin or placeholder excerpts among sampled courses."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated with clear course logic and 'grade C or better' conditions, and the only dangling references (missingCourseCount=7) are co-requisite labs, a one-credit statistics survey, and GER placeholders rather than physics-course breaks, so the core chain is unambiguous."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Computational physics",
+        "rationale": "The plan has MATH 328 mathematical methods and PHYS 114 data reduction but no dedicated computational-physics/simulation course, now standard in applied physics."
+      },
+      {
+        "topic": "Condensed-matter, materials, and semiconductor physics",
+        "rationale": "Solid-state physics (PHYS 446) exists in the catalog but is not required; condensed-matter/materials is central to applied and industrial physics and is absent from the required plan."
+      },
+      {
+        "topic": "Modern electronics and instrumentation",
+        "rationale": "PHYS 450 Advanced Physics Lab touches electronics, but there is no standalone electronics/instrumentation course despite its importance for applied-physics employment."
+      },
+      {
+        "topic": "Statistical mechanics beyond introductory thermodynamics",
+        "rationale": "PHYS 335 is introductory; a fuller statistical-mechanics course would support condensed-matter and modern-physics topics."
+      },
+      {
+        "topic": "Photonics and laser/optical engineering",
+        "rationale": "PHYS 418 Fundamentals of Optical Imaging is a start, but applied optics/photonics (e.g., OPSE 402 high-power laser applications) is a growth-area gap in the required plan."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Quantum information and quantum technologies",
+        "rationale": "PHYS 442 Quantum Mechanics is the natural springboard; quantum computing and sensing are the fastest-growing applied-physics areas."
+      },
+      {
+        "trend": "Computational and data-driven physics",
+        "rationale": "Pairing PHYS 114 data reduction and MATH 328 with modern simulation and machine-learning methods reflects current physics practice."
+      },
+      {
+        "trend": "Photonics and semiconductor/quantum-materials industry demand",
+        "rationale": "Extending PHYS 418/446 toward device physics addresses strong employer demand."
+      },
+      {
+        "trend": "Renewable-energy and materials physics",
+        "rationale": "Applied physics is increasingly tied to energy technologies, a direction not represented in the required plan."
+      },
+      {
+        "trend": "Space science and modern instrumentation",
+        "rationale": "Given the astrophysics thread (PHYS 320-322), connecting it to modern detectors, instrumentation, and data pipelines matches contemporary practice."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Strengthen the 'applied' identity by adding or requiring computational physics, condensed-matter/materials, and modern electronics/instrumentation -- the required upper level is currently astrophysics/relativity-heavy.",
+    "Add quantum-information/quantum-technology content building on PHYS 442 to position graduates for the fastest-growing applied-physics sector.",
+    "Name the astrophysics upper-level courses (PHYS 320/321/322, 420/421) as a formal concentration so alternative applied tracks are visible.",
+    "Publish program-level learning outcomes for the degree.",
+    "Resolve the 7 dangling lab/GER/MATH-225 references so the otherwise fully reconciled 120-credit plan is complete."
+  ]
+}

@@ -1,1 +1,111 @@
-{"id":"b-s-in-web-information-systems-258","name":"B.S. in Web & Information Systems","dimensions":[{"key":"curriculum_coherence","name":"Curriculum coherence & progression","score":4,"justification":"The plan of study is well sequenced term over term with a clear web/IS spine: CS 100 -> CS 113 -> CS 114/IT 114 for programming, and IS 117 (Intro Website Development) -> IS 218 (Building Web Applications) -> IS 219 (Adv Website Development) -> IS 421 (Advanced Web Applications) for the web track, plus a coherent UX progression (IS 247 -> IS 375 -> IS 448 Usability & Measuring UX). Foundations (calculus, statistics, ENGL 101/102) land early and advanced electives (IS 322, IS 333, IS 373, IS 392) in later years. The main weakness is that only 7 of the expected 8 semesters are present — the Fourth Year 2nd (final) semester is absent from the data — leaving the capstone term of the progression unverifiable.","suggestion":"Restore the missing Fourth Year 2nd (final) semester so the full eight-term progression, including any senior capstone, is visible and can be checked end to end."},{"key":"prereq_structure","name":"Prerequisite structure health","score":3,"justification":"The prerequisite graph is mostly sensible and uses explicit boolean structure (e.g., IS 218: '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)') with grade thresholds, and foundational courses correctly show no prerequisites. However metrics.deepestPrereqChain is 7 (IS 333 sits at depth 7), which is on the deep side and partly inflated by long GUR-style prerequisite lists, and metrics.missingCourseCount is 4 with missingCoursesSample [GER 200, GER 300, YWCC 207, YWCC 307]: GER 200/GER 300 are General-Education-Requirement placeholders mis-read as course codes, while YWCC 207 and YWCC 307 are real required 1-credit professional-development courses that dangle because they are absent from the undergraduate catalog.","suggestion":"Add catalog entries for YWCC 207 and YWCC 307 (or link the correct codes) and treat GER 200/GER 300 as GER placeholders rather than course codes, then re-check whether the depth-7 chain reflects genuine sequencing or over-constraint from bundled GUR lists."},{"key":"learning_outcomes","name":"Learning outcomes & objectives","score":2,"justification":"The provided data contains no program-level learning outcomes or educational objectives — only the plan-of-study term structure and course descriptions. For a catalog-quality page, the absence of stated outcomes is a real gap: a prospective student cannot see what graduates are expected to know or be able to do.","suggestion":"Publish an explicit, numbered list of program-level learning outcomes / educational objectives (e.g., design and build web-based information systems, apply UX research and usability evaluation, manage databases) so the page states measurable expected competencies."},{"key":"credit_balance","name":"Credit distribution & balance","score":2,"justification":"Credit transparency is compromised: statedTotalCredits is null (the plan-of-study total did not parse cleanly) and metrics.creditReconcileDelta is null, so the plan cannot be reconciled to a stated total. The seven visible terms sum to only 108 credits (metrics.summedTermCredits = 108) — well short of a typical ~120-124 credit B.S. — consistent with the missing final semester. Per-term loads among the visible terms are balanced (15-16 credits each) and the major/GER/elective mix looks reasonable, but the missing total and missing term make overall balance impossible to confirm.","suggestion":"Parse and display the official stated total credits and include the final term so summedTermCredits reconciles to that total (delta = 0), giving a transparent, verifiable credit distribution."},{"key":"presentation","name":"Presentation & clarity","score":2,"justification":"The core course rows are clean, but the plan-of-study parsing introduces noticeable garbling: General-Education-Requirement rows are split across multiple items with catalog URLs bleeding into the course list (e.g., 'Science Literacy GER (http://catalog.njit.edu/...' followed by a stray 'education-requirements/natural-science-ger/)' row), alternative-course lines appear as orphan items ('or CS 114 or Introduction to Computer Science II'), and several titles are abbreviated ('Adv Website Development', 'Computing & Effective Com'). Combined with the null total credits and the missing final semester, the page reads as incompletely cleaned.","suggestion":"Post-process the plan of study to collapse split GER/URL fragments into single labeled placeholder rows, fold 'or ...' alternatives into their parent course, and expand truncated titles for a clean, readable table."},{"key":"industry_relevance","name":"Industry & currency relevance","score":5,"justification":"The curriculum is strongly current and industry-aligned. It covers modern web engineering (Building Web Applications, Advanced Web Applications, Content Management Systems), mobile (IS 322 Mobile Applications), data-facing skills (IS 331 Database Design, IS 392 Web Mining and Information Retrieval, IS 333 Social Network Analysis), a full UX arc (Designing the User Experience, Discovering User Needs for UX, Usability & Measuring UX), plus E-Commerce Technology and professional/ethics content (IS 350, COM 312/313, ENTR/IE management). This maps directly to real web, UX, and information-systems roles.","suggestion":"Keep the strong UX and web-engineering core and consider surfacing current stack/tooling (e.g., cloud deployment, APIs, front-end frameworks) explicitly in course descriptions to signal currency to prospective students."}],"courseLevel":{"descriptionQuality":{"score":4,"justification":"Across the 38 sampled courses, descriptions are consistently present and substantive — the shown excerpts run the full ~220-character sample window with concrete, informative content (e.g., IS 218 'a critical, hands-on introduction to the design of Web-based Information Systems', IS 392 covering 'design, implementation and evaluation of search engines and web mining applications'). No missing or stub descriptions were observed; a minor deduction is that some entries lead with restriction/prerequisite prose before describing the course."},"prerequisiteClarity":{"score":4,"justification":"Prerequisite text is generally clear and machine-parseable, with explicit boolean structure and grade thresholds (e.g., IS 218/IS 219 '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)', CS 113 'CS 100 or CS 103 with a grade C or better'), and true foundation courses correctly carry no prerequisite. Clarity dips only where GUR requirements are inlined as long alternation lists (IS 333, IS 350), which are accurate but verbose and harder to read at a glance."}},"topSuggestions":["Publish explicit program-level learning outcomes / educational objectives — none are present in the data.","Fix credit transparency: parse and show the official stated total credits and add the missing Fourth Year 2nd (final) semester so the 108 summed credits reconcile to the real total (delta = 0).","Clean up plan-of-study presentation: collapse split GER rows and bleeding catalog URLs, fold 'or ...' alternatives into their parent course, and expand truncated course titles.","Resolve the 4 dangling references — add catalog entries for the required YWCC 207 and YWCC 307 professional-development courses, and treat GER 200 / GER 300 as GER placeholders rather than course codes.","Review the depth-7 prerequisite chain (e.g., IS 333) to confirm it reflects genuine sequencing rather than over-constraint from bundled GUR prerequisite lists."]}
+{
+  "id": "b-s-in-web-information-systems-258",
+  "name": "B.S. in Web & Information Systems",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "The web-development spine is genuinely strong and well-sequenced (IS 117 -> IS 218 -> IS 219 Advanced Website Development -> IS 421 Advanced Web Applications), reinforced by a CS base (CS 100 -> CS 113 -> CS 114/IT 114), a UX thread (IS 247/IS 375/IS 448), database (IS 331), and a rich set of web-relevant courses (IS 322 Mobile Apps, IS 373 Content Management Systems, IS 392 Web Mining & IR, IS 333 Social Network Analysis). Coherence is materially hurt, however, by the plan being truncated: only 7 requirement groups parsed and the Fourth Year 2nd Semester -- the culminating term and any capstone (IS 491) -- is entirely absent, so the progression does not visibly finish.",
+      "suggestion": "Restore the missing Fourth Year 2nd Semester, including the capstone, so the strong web-development sequence reads as a completed four-year progression rather than stopping mid-senior-year."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is sensible and notably rich (75 referenced courses): deepestPrereqChain is 7 (IS 333 Social Network Analysis, gated on computing and statistical GERs), with the web sequence forming clean intermediate chains (IS 322: 'IS 218, IS 219, or IT 202'; IS 421 advanced web on the IS 218/219 base). missingCourseCount is 4 and all are peripheral -- GER 200/GER 300 placeholders and the one-credit YWCC 207/YWCC 307 seminars.",
+      "suggestion": "Resolve the four dangling references (catalog YWCC 207/YWCC 307; re-tag GER 200/GER 300 as requirement categories) so the deep, well-formed web/IS graph has no loose ends."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes, objectives, or overview are present in the data, so a prospective student cannot see what distinguishes 'Web & Information Systems' from the general IS degree beyond the course titles themselves.",
+      "suggestion": "Publish learning outcomes emphasizing full-stack web development, content/data-driven web systems, UX, and web analytics, plus a short overview positioning the degree against the general B.S./B.A. in IS."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "Credit accounting cannot be reconciled: statedTotalCredits is null, creditReconcileDelta is null, and summedTermCredits is only 108 -- roughly a full term (~12 credits) short of a typical 120-credit B.S. This directly reflects the missing Fourth Year 2nd Semester, so both the program total and the final-term credits are unaccounted for. This is a genuine credit-transparency defect and a data-consistency caveat, not merely a rounding issue.",
+      "suggestion": "Parse and display a single stated total credit count and restore the missing final term so the summed term credits reconcile to it (currently null total and only 108 summed credits)."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The most serious presentation defect is the truncated plan -- only seven terms render and the final semester is missing entirely -- which alone undermines completeness. On top of that, GER rows are split with null credits, alternatives render as null-code 'or COM 313 or Technical Writing' lines, footnote numbers bleed into titles ('General Elective 3 2'), and several titles are abbreviated ('IS 219 Adv Website Development', 'Computing & Effective Com'), so the page reads as incomplete and noisy.",
+      "suggestion": "Restore the missing final term first, then merge split GER and 'or ...' rows, strip footnote numbers from titles, and expand truncated course titles."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "This is the most web-current of the informatics degrees: a genuine full web progression (IS 117/218/219/421) plus mobile applications (IS 322), content management systems (IS 373), web mining and information retrieval (IS 392), and social network analysis (IS 333) map well onto contemporary web-engineering and web-data roles. The gaps are modern-stack specifics rather than concept: no explicit modern JavaScript-framework/API course, no web/application security, and no cloud/serverless deployment, so graduates may be strong on breadth but light on the exact production stack.",
+      "suggestion": "Add a modern full-stack course (JavaScript framework + REST/GraphQL APIs) and a web-application-security course, and update IS 219/IS 421 to reflect current framework and deployment practice."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "All 38 sampled courses carry present, specific descriptions with no missing/placeholder entries across a broad set (IS web courses, CS foundations, DD design, COM communication, IS 333 social-network analysis, IS 392 web mining). The breadth of well-described electives is a strength; only a few registrar titles are terse."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated with explicit grade gates and coherent alternatives across the web sequence (IS 218/IS 219: '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'; IS 322: 'IS 218, IS 219, or IT 202'; CS 114: 'CS 113 with a grade C or better'), and intro courses correctly show none. Minor issues -- GER-set placeholders inside some prerequisites (IS 333/IS 350) and phrasing variance -- keep it from a 5."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Web and application security (OWASP, authentication, secure coding)",
+        "rationale": "A web-development-heavy program (IS 218/219/421, IS 373) with no security course is a notable gap; secure web coding is a baseline expectation for any web engineer."
+      },
+      {
+        "topic": "Modern JavaScript frameworks and full-stack APIs (React/Node, REST/GraphQL)",
+        "rationale": "The web sequence should explicitly teach current front-end frameworks and API design rather than leaving IS 218/219/421 to generic 'web application' framing."
+      },
+      {
+        "topic": "Cloud/serverless deployment and web DevOps (CI/CD, containers, CDN)",
+        "rationale": "Building web apps without teaching how to deploy and operate them (IS 421 stops at 'advanced web applications') leaves a real production gap."
+      },
+      {
+        "topic": "Accessibility and responsive/inclusive web design (WCAG)",
+        "rationale": "Despite a UX thread (IS 247/IS 375/IS 448), no course covers accessibility, which is a legal and professional requirement for modern web work."
+      },
+      {
+        "topic": "Web data engineering (NoSQL, caching, APIs at scale)",
+        "rationale": "IS 331 covers relational databases only; web systems increasingly rely on NoSQL, caching, and API-driven data layers not represented here."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Generative AI in web systems (LLM features, RAG, AI-assisted content)",
+        "rationale": "AI-powered search, content, and personalization build directly on IS 373 (CMS) and IS 392 (web mining/IR), positioning graduates for the fastest-growing web capability."
+      },
+      {
+        "trend": "API-first / headless CMS and JAMstack architectures",
+        "rationale": "IS 373 Content Management Systems should modernize toward headless/API-first delivery, the dominant contemporary web-content pattern."
+      },
+      {
+        "trend": "Progressive and cross-platform mobile web (PWAs)",
+        "rationale": "IS 322 mobile applications is well placed to cover PWAs and cross-platform frameworks as web and mobile converge."
+      },
+      {
+        "trend": "Social and graph analytics with recommendation systems",
+        "rationale": "IS 333 (social network analysis) and IS 392 (web mining) give the program a strong base to teach recommendation and graph-analytics at scale, a core web-data direction."
+      },
+      {
+        "trend": "Privacy-first and decentralized web (Web3, consent-driven data)",
+        "rationale": "With IT 310 e-commerce and IS 333 present, the program can address privacy-by-design and emerging decentralized-web patterns reshaping web data practice."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Restore the missing Fourth Year 2nd Semester (including the capstone) and fix credit accounting: statedTotalCredits and creditReconcileDelta are null and summed credits are only 108.",
+    "Add a web/application-security course -- the clearest gap in a web-development-focused degree.",
+    "Add a modern full-stack course (JavaScript framework + REST/GraphQL APIs) and update IS 219/IS 421 to current framework and deployment practice.",
+    "Publish program-level learning outcomes and an overview that positions Web & IS against the general IS degrees.",
+    "Add accessibility and cloud/serverless deployment content, then clean the split GER/'or ...' rows and footnote-laden titles."
+  ]
+}

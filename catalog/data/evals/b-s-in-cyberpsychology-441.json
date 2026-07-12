@@ -1,0 +1,111 @@
+{
+  "id": "b-s-in-cyberpsychology-441",
+  "name": "B.S. in Cyberpsychology",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "The course inventory is genuinely well designed for cyberpsychology: a psychology foundation (PSY 210 Introduction, PSY 215 Biology of Behavior, PSY 321 Social Psychology), the discipline-defining sequence PSY 359 Foundations of Cyberpsychology -> PSY 361 Foundations of Cyberpsychology II, a measurement/methods strand (PSY 333 Psychometrics, STS 304/307 research methods), applied HCI/UX (IS 247, IS 375, IS 448), and a mind-and-machine pair (STS 351 Minds and Machines, STS 375 AI and the Human Mind). The serious problem is that the published plan of study does not match: the requirementGroups render the Communication and Media term plan (COM 303, COM 355, COM 496 Senior Project-Communication and Media, Track Option Electives), and none of the cyberpsychology courses appear in the term-by-term plan at all, so a student cannot read the intended progression from the catalog page.",
+      "suggestion": "Replace the mis-attached Communication and Media plan with the correct cyberpsychology plan of study so the strong PSY/IS/STS course design is actually visible term by term."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The real prerequisite graph among the program's courses is healthy: deepestPrereqChain is 7, anchored by IS 448 Usability & Measuring UX and IS 333 Social Network Analysis (both gated on statistics and computing GURs) and by the PSY 359 -> PSY 361 and PSY 210 -> PSY 333 chains, giving sensible depth without over-constraining. missingCourseCount is 4: GER 300 is a placeholder, STS 304A/STS 307A are the one-credit research-method labs not separately catalogued, and STS 349 is a dangling reference inherited from the mis-attached Communication plan.",
+      "suggestion": "Catalog the STS 304A/307A lab co-requisites and remove the STS 349 reference that only appears because the wrong plan is attached."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives appear in the data. For a young, interdisciplinary degree blending psychology, HCI, and technology studies, the absence of an explicit competency statement is especially costly because students cannot see how the psychology, methods, and technology strands are meant to integrate.",
+      "suggestion": "Publish 6-8 learning outcomes covering behavioral science foundations, online behavior and cyberpsychology theory, research methods/measurement, and human-technology interaction."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "The plan does not reconcile: statedTotalCredits is 121 but summedTermCredits is 90, a creditReconcileDelta of -31.0. This is driven by the mis-attached plan of study, which is both the wrong program and only partially captured, so the published credit total is neither correct nor internally consistent -- a genuine data-integrity problem rather than a mere minor caveat.",
+      "suggestion": "Once the correct plan is attached, verify that summed term credits equal the stated 121 and that the balance of psychology, methods, HCI, and electives is transparent."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The catalog page shows a plan of study belonging to a different program (Communication and Media), so the single most important element of the page is wrong; the cyberpsychology courses exist only in the course inventory, not the term plan. Individual course descriptions are strong, but the structural presentation is not usable as published.",
+      "suggestion": "Correct the attached plan and confirm each term lists the intended cyberpsychology courses with resolvable codes."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The course inventory is strikingly current for the field: PSY 359/361 Foundations of Cyberpsychology I/II, STS 375 AI and the Human Mind, STS 351 Minds and Machines, IS 333 Social Network Analysis, and the UX research sequence (IS 375, IS 448) give graduates a modern toolkit spanning online behavior, AI-and-mind questions, network data, and usability research. The main gap is hands-on behavioral-data analysis/programming to complement the conceptual and psychometric coverage.",
+      "suggestion": "Add a behavioral-data-analysis course (e.g. R or Python for psychological data) so students can operationalize the strong theory and psychometrics with real analytic skills."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "The cyberpsychology course descriptions are rich and specific -- PSY 359 on online identity and relationships, PSY 361 on ICT effects, STS 375 on what it means for a machine to know, IS 448 on usability research, IS 333 on programmatic social-network data. None reads as thin. The weakness is not description quality but that these well-described courses do not appear in the attached plan."
+    },
+    "prerequisiteClarity": {
+      "score": 3,
+      "justification": "Prerequisites for the actual cyberpsychology courses are explicit and sensible (PSY 361 requires PSY 359; IS 448 gated on a statistics GUR; IS 333 gated on computing and statistics GURs). Clarity is reduced by the uncatalogued STS 304A/307A lab co-requisites and by the STS 349 dangling reference imported from the mismatched plan."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Behavioral-data analysis and programming",
+        "rationale": "The degree teaches psychometrics (PSY 333) and social-network analysis (IS 333) but has no dedicated statistics-computing course to give students hands-on analysis of digital behavioral data."
+      },
+      {
+        "topic": "Digital wellbeing, technology addiction, and clinical applications",
+        "rationale": "PSY 389 Psychopathology and PSY 361 touch effects of technology, but there is no focused course on problematic technology use, screen-time, or digital mental-health intervention -- a defining applied area of cyberpsychology."
+      },
+      {
+        "topic": "Human factors and cognitive engineering",
+        "rationale": "The program has UX (IS 247/375/448) and social psychology but no explicit human-factors/cognitive-ergonomics course connecting cognition to system design."
+      },
+      {
+        "topic": "Online safety, harassment, and trust & safety",
+        "rationale": "Cyberpsychology increasingly feeds trust-and-safety and content-moderation careers; nothing in the inventory addresses online harm, moderation, or platform safety directly."
+      },
+      {
+        "topic": "Neuroscience of digital experience",
+        "rationale": "PSY 215 Biology of Behavior is the only biological anchor; a course on attention, reward, and the neuroscience of persuasive technology would deepen the science base."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Human-AI relationships and companion/agent psychology",
+        "rationale": "STS 375 AI and the Human Mind and PSY 361 already engage AI and ICTs; the psychology of chatbots, companions, and AI trust is the fastest-growing cyberpsychology topic."
+      },
+      {
+        "trend": "Social media and adolescent mental health",
+        "rationale": "PSY 359/361 and PSY 389 provide the base for a focused, evidence-driven course on platform use and wellbeing, a major public and research priority."
+      },
+      {
+        "trend": "Persuasive technology, dark patterns, and algorithmic influence",
+        "rationale": "IS 350 Computers, Society and Ethics and IS 333 position the program to study attention-capture design and algorithmic manipulation of behavior."
+      },
+      {
+        "trend": "Immersive-technology psychology (VR/AR, presence)",
+        "rationale": "With IS 247/375 UX courses in place, a VR/AR-and-presence offering would extend cyberpsychology into embodied and spatial computing."
+      },
+      {
+        "trend": "Privacy behavior and the psychology of surveillance",
+        "rationale": "IS 350 ethics plus the research-methods sequence let students study how people reason about privacy and data disclosure online."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Attach the correct cyberpsychology plan of study -- the current page shows the Communication and Media plan, so no term lists the program's own courses and the credits total does not reconcile (delta -31).",
+    "Verify the corrected plan reconciles to the stated 121 credits and catalog the STS 304A/307A research-method labs.",
+    "Publish explicit cyberpsychology learning outcomes that show how psychology, methods, HCI, and technology-studies strands integrate.",
+    "Add a hands-on behavioral-data-analysis course to convert the strong theory and psychometrics into applied analytic skill.",
+    "Introduce a digital-wellbeing / problematic-technology-use course, a defining applied area currently unrepresented."
+  ]
+}

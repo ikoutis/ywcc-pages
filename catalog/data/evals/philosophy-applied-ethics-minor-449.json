@@ -1,0 +1,111 @@
+{
+  "id": "philosophy-applied-ethics-minor-449",
+  "name": "Philosophy Applied Ethics Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "There is a genuinely coherent applied-ethics backbone: PHIL 333 Moral Philosophy, PHIL 334 Engineering Ethics, PHIL 351 Biomedical Ethics, PHIL 310 Logic, and PHIL 355 The Philosophy of Science form a strong, well-matched cluster for a technical university. Coherence is limited chiefly by dilution - many COM/PSY/LIT electives sit in the same menu - and by an empty requirementGroups with no declared required core.",
+      "suggestion": "Declare a required ethics core (Moral Philosophy + Logic + one applied ethics) and mark cross-disciplinary courses as supporting electives."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is clean: missingCourseCount is 0 (no dangling references), and chains carry consistent, explicit grade conditions. Most PHIL courses sit behind the ENGL 102 + 200-level GER gateway (depth 4); the deepest chain (6) comes from the broader pool, not from philosophy-internal stacking, which is appropriate for a minor.",
+      "suggestion": "Ensure at least one gateway ethics course is reachable directly after ENGL 102 so students can enter the minor early."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the parsed data (the page carries only a name and a course menu, with an empty requirementGroups). For a catalog page this absence is itself a real finding.",
+      "suggestion": "Publish 3-5 explicit, measurable program learning outcomes stating what a completer of the minor should know and be able to do."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "statedTotalCredits is null, so the required credit count is not published, and creditReconcileDelta is null (an expected data caveat for a menu-style minor with no term plan). Courses are uniformly 3 credits, so distribution within the menu is even, but the total is opaque.",
+      "suggestion": "Publish the total credit requirement and the split between a required ethics core and electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Course descriptions are present and substantive, but the program page carries no description, no requirementGroups, and no stated credits, so the strong ethics core is not visible as a structured pathway.",
+      "suggestion": "Add a program description and group the strong PHIL ethics core visibly ahead of the cross-listed electives."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "Applied ethics is highly current and this menu is well-aimed for NJIT: PHIL 334 Engineering Ethics and PHIL 351 Biomedical Ethics speak directly to engineering and health students, and PHIL 355 Philosophy of Science supports research integrity. The clearest gap is a dedicated AI/data-ethics course as the field's fastest-growing area.",
+      "suggestion": "Add an AI and data ethics course connecting PHIL 334 with STS 375 AI and the Human Mind and STS 350 Computers and Society."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Sampled PHIL/PSY/LIT descriptions are present and substantive; none are flagged thin or missing (PSY 361 carries an abbreviated title, 'Found of Cyberpsychology II')."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "prerequisiteRaw is present with consistent 'C or higher' conditions and 0 dangling references; internal chains such as PSY 361 -> PSY 359 are sensible. One inconsistency: PHIL 331 lists 'HUM 102' where sibling courses list 'ENGL 102', and most courses cite a GER category rather than a specific course."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "AI & data ethics",
+        "rationale": "There is no dedicated course on algorithmic bias, privacy, and autonomous systems; PHIL 334 Engineering Ethics is adjacent but general."
+      },
+      {
+        "topic": "Environmental / climate ethics",
+        "rationale": "STS 360 Ethics and the Environment exists in the catalog but is not surfaced in the visible ethics core; it should be cross-listed."
+      },
+      {
+        "topic": "Business & professional ethics",
+        "rationale": "Organizational and corporate ethics are absent; HRM 310 is management practice, not normative ethics."
+      },
+      {
+        "topic": "Neuroethics & emerging-biotech ethics",
+        "rationale": "PHIL 351 Biomedical Ethics is a start, but CRISPR, neurotech, and genome-editing questions are not covered."
+      },
+      {
+        "topic": "Political philosophy / theories of justice",
+        "rationale": "Rights, justice, and distributive theory - the backbone of policy ethics - are not represented."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Ethics of AI & algorithmic accountability",
+        "rationale": "The fastest-growing applied-ethics area; bridge PHIL 334 Engineering Ethics with STS 375 AI and the Human Mind."
+      },
+      {
+        "trend": "Data privacy & surveillance ethics",
+        "rationale": "Connect to PSY 359 Foundations of Cyberpsychology and STS 350 Computers and Society for a technically grounded treatment."
+      },
+      {
+        "trend": "Bioethics of emerging biotechnology",
+        "rationale": "Extend PHIL 351 Biomedical Ethics into gene editing, neurotech, and human enhancement."
+      },
+      {
+        "trend": "Climate & sustainability ethics",
+        "rationale": "Link the ethics core to STS 360 Ethics and the Environment and STS 363 Sustainability Studies."
+      },
+      {
+        "trend": "Ethics of automation & the future of work",
+        "rationale": "A professional-responsibility angle increasingly central to engineering and business practice."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Add a dedicated AI/data-ethics course bridging PHIL 334, STS 375, and STS 350.",
+    "Cross-list environmental ethics (STS 360) and add business/professional ethics.",
+    "Publish explicit learning outcomes and define a required ethics core vs. electives.",
+    "State the total credit requirement.",
+    "Modernize PHIL 351 Biomedical Ethics to include neuroethics and genome-editing."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "b-s-general-engineering-concentration-in-materials-manufacturing-systems-681",
+  "name": "B.S. General Engineering - Concentration in Materials Manufacturing Systems",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 2,
+      "justification": "There is a title-to-content mismatch: for a 'Materials Manufacturing Systems' concentration the plan is dominated by innovation/business/legal courses -- ENTR 210/330/440, ENGR 350 (IP), IE 447 (Legal Aspects), IE 463, IE 492 (Engineering Management), MGMT 290 (Business Law), HIST 320 (Law and Evidence), PHIL 310/334 -- while the materials-science spine is thin. The plan carries mechanics (MECH 234/237), CAD (ME 430), circuits (ECE 231), and ENGR 330 (IoT), but no dedicated materials-science course (MTEN 201 is only referenced/missing as MTEN 101) and no manufacturing-processes course, so the sequence does not build materials or manufacturing depth term over term.",
+      "suggestion": "Add a materials-science foundation (e.g. MTEN 201 or CHE 375 Structure/Properties/Processing) and a manufacturing-processes course, and trim the heavy legal/entrepreneurship load, so the curriculum actually progresses through materials and manufacturing systems."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "The technical prerequisites that exist are reasonable (deepestPrereqChain 6; MECH 234 -> MECH 237; ECE 231 with PHYS 122/MATH 112), but eight codes are missing (CHEM 125A, ENGR 211, ENGR 312, GER 200, GER 300, MTEN 101, PHYS 111A, PHYS 121A) -- and the missing MTEN 101 is significant because it is the materials-science entry point the concentration should be built on.",
+      "suggestion": "Catalog MTEN 101/201 and the co-req/prof-skills codes (CHEM 125A, ENGR 211/312, PHYS 111A/121A) so the materials-science prerequisite chain is present and the dangling references clear."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear in the data; only the plan of study is given. This is a real gap for a concentration that should certify materials-selection and manufacturing competencies.",
+      "suggestion": "Publish explicit outcomes (e.g. 'select materials from structure-property-processing relationships' and 'plan and control a manufacturing process') to define the concentration's technical claims."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "The plan reconciles exactly (creditReconcileDelta 0; 120 vs 120) and terms are well loaded, so numerically it is balanced. However the mix is skewed: a large share of upper-division credits goes to entrepreneurship/legal/management courses rather than materials or manufacturing technical content, which is imbalanced for the stated concentration.",
+      "suggestion": "Rebalance upper-division credits toward materials/manufacturing technical courses (characterization, processing, metrology) relative to the current heavy business/legal elective load."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 4,
+      "justification": "The eight-term plan is complete, clearly labeled, and legible, with credits on nearly every row; only standard GER category rows are null-coded. As a page it reads cleanly even though its content raises coherence questions.",
+      "suggestion": "Add a concentration overview stating the materials/manufacturing career target so readers can reconcile the many business/legal courses with the concentration's stated purpose."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "Some modern manufacturing elements are present -- ME 430 (CAD), IE 455 (Robotics & PLCs), ENGR 330 (IoT), and ENGR 301 (Data Science) -- but for a materials-manufacturing track the plan omits materials characterization (MTEN 305), advanced/additive manufacturing (ENGR 425 exists in the catalog), and metrology (ENGR 360), so it under-represents current materials-manufacturing practice.",
+      "suggestion": "Bring MTEN 305 (Materials Characterization), ENGR 425 (Advanced Manufacturing Rotation), and ENGR 360 (GD&T & Applied Metrology) into the plan to reflect contemporary manufacturing systems."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are specific and informative across the mix -- MECH 237 (stress/deformation), ME 430 (geometric modeling/optimization), ENGR 360 (GD&T and applied metrology), and ENTR 210 (opportunity recognition, business-model validation) all carry concrete content with no thin/placeholder text."
+    },
+    "prerequisiteClarity": {
+      "score": 3,
+      "justification": "Prerequisites are generally clear and consistent where present (MECH 237 requires MECH 234 and MATH 112/PHYS; ENGR 360 requires FED 101 or MET 103), but the many junior/senior business/legal courses list no prerequisites and the materials entry course (MTEN 101) is missing, which weakens the overall prerequisite picture for a technical concentration."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Foundational materials science (structure-property-processing)",
+        "rationale": "No dedicated materials-science course sits in the plan; MTEN 201/CHE 375 exist in the catalog but MTEN 101 is only a dangling reference, leaving the concentration without its core subject."
+      },
+      {
+        "topic": "Manufacturing processes (machining, forming, joining, casting)",
+        "rationale": "The plan has CAD (ME 430) and robotics/PLC (IE 455) but no processes course covering how materials are actually shaped into products."
+      },
+      {
+        "topic": "Materials characterization and testing",
+        "rationale": "MTEN 305 (Materials Characterization Methods) exists in the catalog yet is absent from the plan, so students never systematically learn to measure material structure/properties."
+      },
+      {
+        "topic": "Additive and advanced manufacturing",
+        "rationale": "ENGR 425 (Advanced Manufacturing Rotation) is available but not in the plan; additive/advanced manufacturing is now central to materials-manufacturing systems."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Digital manufacturing and Industry 4.0",
+        "rationale": "ENGR 330 (IoT) and IE 455 (PLCs) provide a base to build toward connected, sensor-instrumented smart factories, the direction of modern manufacturing systems."
+      },
+      {
+        "trend": "Materials informatics and ML for materials",
+        "rationale": "With ENGR 301 (Data Science) present, data-driven materials discovery and process optimization would modernize a materials concentration."
+      },
+      {
+        "trend": "Sustainable materials and circular manufacturing",
+        "rationale": "Recyclability, remanufacturing, and lifecycle-aware materials selection are fast-growing expectations absent from the current plan."
+      },
+      {
+        "trend": "Metrology-driven, tolerance-aware digital design",
+        "rationale": "ENGR 360 (GD&T & Applied Metrology) would connect design intent to inspection, reflecting the shift to model-based definition and digital metrology."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Add a materials-science foundation (MTEN 201 / CHE 375) plus a manufacturing-processes course so the concentration actually builds materials and manufacturing depth.",
+    "Bring MTEN 305 (characterization), ENGR 425 (advanced manufacturing), and ENGR 360 (metrology) into the plan and reduce the heavy legal/entrepreneurship load.",
+    "Publish explicit materials/manufacturing learning outcomes.",
+    "Catalog MTEN 101/201 and the co-req/prof-skills codes to clear the dangling references.",
+    "Leverage ENGR 301 toward materials informatics / manufacturing analytics for currency."
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "b-s-in-communication-and-media-439",
+  "name": "B.S. in Communication and Media",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "The B.S. shares the same media-studies design as the B.A. -- production (COM 303, COM 353, COM 354), journalism/oral (COM 339, COM 312), theory/history (COM 318, HIST 345, COM 355), and co-op-plus-capstone (COM 490/491, COM 496) -- but the captured plan begins at the second semester (requirementGroups=7), so the first-year first term is missing and the sequence cannot be fully read. As with the B.A., there is no 200-level gateway COM course and the required COM courses all sit at one prerequisite depth, giving a flat rather than built progression. A B.S. label also implies a heavier quantitative/technical spine than the parsed plan visibly delivers.",
+      "suggestion": "Restore the missing first term to the published plan and, given the B.S. designation, define a required computational or data-methods sequence that distinguishes it from the B.A."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "deepestPrereqChain is 4 and, exactly as in the B.A., every required COM course resolves to the same 'ENGL 102 + 200-level GER' gate, so the graph is clean but flat with no intra-major sequencing. missingCourseCount is 3: GER 200 and GER 300 are requirement-category placeholders and STS 349 is a genuine dangling reference.",
+      "suggestion": "Resolve STS 349 and add at least one intra-major prerequisite so the B.S. encodes real progression rather than parallel same-depth courses."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives appear in the data, and there is no statement of how the B.S. differs in competencies from the B.A. -- a meaningful omission when two same-named degrees coexist.",
+      "suggestion": "Publish B.S.-specific learning outcomes that make its technical/quantitative emphasis explicit and distinct from the B.A."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "The plan does not reconcile: statedTotalCredits is 121 but summedTermCredits is 105, a creditReconcileDelta of -16.0. The gap corresponds almost exactly to the missing first-year first semester (16 credits in the B.A.), so it is most likely a parsing/data-capture artifact rather than a true 16-credit shortfall -- but as published the plan does not add up to the stated total, which students cannot reconcile on their own.",
+      "suggestion": "Re-import or republish the full plan so summed term credits equal the stated 121, eliminating the -16 delta."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The captured page is missing an entire term, so it is structurally incomplete; the remaining seven terms are labeled and legible but the reader cannot see the first-year foundation. STS 349 renders with a null code and GER placeholders carry null credits, as in the B.A.",
+      "suggestion": "Publish the complete eight-term plan and give STS 349 a resolvable code/title."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "As in the B.A., the required core covers current media practice (digital media design, video, visual communication, Digital Media Futures, journalism, required co-op), but the department's analytics and new-media courses (COM 343, COM 240, COM 371) remain electives. The B.S. designation raises the expectation of embedded computational/data skills that the visible required plan does not yet guarantee.",
+      "suggestion": "Use the B.S. track to require analytics and computational media (e.g. COM 343 Social Media Analytics plus a data-methods course) as the technical differentiator from the B.A."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "The named COM courses carry the same rich, specific descriptions as the B.A. (COM 354 on web media platforms, COM 355 on print-and-digital futures, COM 339 on news systems); none is thin. The only empty rows are the GER and STS 349 placeholders, which have no course text."
+    },
+    "prerequisiteClarity": {
+      "score": 3,
+      "justification": "Prerequisites are explicit and consistent for the COM courses, but their near-identical gate strings convey no relative readiness, and STS 349 plus the GER placeholders appear without resolvable codes. The missing first term also hides the entry prerequisites (ENGL 101, initial CS/MATH choices) that the B.A. shows."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Computational / data methods distinguishing the B.S.",
+        "rationale": "A B.S. in the field is expected to carry a quantitative spine; the parsed plan shows only MATH 105 and an intro CS choice with no required data-analysis course tying computation to communication."
+      },
+      {
+        "topic": "Media law and ethics",
+        "rationale": "As in the B.A., law/ethics appears only through the missing STS 349 placeholder, leaving no guaranteed coverage of a core disciplinary competency."
+      },
+      {
+        "topic": "Data and social-media analytics",
+        "rationale": "COM 343 Social Media Analytics and Management is elective-only; for a B.S. especially, analytics should be required rather than optional."
+      },
+      {
+        "topic": "Communication research methods",
+        "rationale": "No required quantitative/qualitative methods course supports the senior project (COM 496), despite the B.S. framing implying methodological rigor."
+      },
+      {
+        "topic": "Interaction/interface or web media production depth",
+        "rationale": "The technical build stops at COM 354 Designing Digital Media; a B.S. could add front-end or interactive-media production to justify the science designation."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Generative AI in content creation and verification",
+        "rationale": "COM 354/COM 355 provide the hook for a required unit on AI-assisted production and provenance, apt for a technically framed B.S."
+      },
+      {
+        "trend": "Data journalism and computational storytelling",
+        "rationale": "The B.S. already mandates statistics and a CS intro; connecting them to COM courses would give the degree a data-driven media identity the B.A. lacks."
+      },
+      {
+        "trend": "Social-platform analytics and network science",
+        "rationale": "COM 343 and COM 371 Social Network Analysis let the B.S. brand around metrics- and network-driven communication."
+      },
+      {
+        "trend": "Disinformation and computational verification",
+        "rationale": "COM 339 Practical Journalism can host verification and detection techniques that increasingly require quantitative tooling."
+      },
+      {
+        "trend": "Immersive and new-media formats (AR/VR, interactive)",
+        "rationale": "COM 240 New Media Technologies (currently elective) covers AR/VR and algorithmic systems that a technical B.S. is well suited to require."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Republish the complete eight-term plan so it reconciles to 121 credits and eliminates the -16 credit delta caused by the missing first term.",
+    "Define a required computational/data-methods spine that distinguishes the B.S. from the B.A.",
+    "Publish B.S.-specific learning outcomes emphasizing its technical/quantitative focus.",
+    "Require analytics (COM 343) and guarantee media-law/ethics coverage instead of the dangling STS 349 slot.",
+    "Add a 200-level gateway and one intra-major prerequisite so the COM courses form a real ladder."
+  ]
+}

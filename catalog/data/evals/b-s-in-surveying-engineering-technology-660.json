@@ -1,0 +1,111 @@
+{
+ "id": "b-s-in-surveying-engineering-technology-660",
+ "name": "B.S. in Surveying Engineering Technology",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 4,
+   "justification": "The plan builds a coherent geomatics/surveying spine: SET 200 (Introduction to Geomatics) -> 207 evidence/procedures and 301 route surveying -> 303 photogrammetry, 304 adjustment computations, 307 boundaries, 360 digital surveying -> 401 geodesy, 405 reality capture, 407 boundary-line analysis, 420 GIS/LIS, 440 land development, 480 hydrographic, culminating in SET 490 Senior Project. Supporting math/stats (MATH 138/238/305), law/business (MGMT 290, ACCT, MIS 245) and CET 317/413 are well placed for a licensure-oriented surveying track.",
+   "suggestion": "Cluster the 'None' elective/GER rows into named requirement groups so the licensure-focused SET sequence is visually distinct from support courses."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 4,
+   "justification": "The prerequisite graph is healthy (deepest chain 6, e.g., SET 440 <- SET 307 <- SET 207) with a mix of prerequisites and co-requisites appropriate to field surveying. The 4 dangling references (GER 200/300, PHYS 102A, SET 200A) are placeholders/labs. One internal reference to check is SET 401 <- 'SET 302', a course not shown in the plan of study.",
+   "suggestion": "Verify and expose the SET 401 <- SET 302 (Adjustment Computations II) prerequisite and resolve the GER/lab placeholders so the chain is fully traceable."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or objectives appear in the data; only the plan and course descriptions are present. For a program aligned to professional-surveyor licensure this omission is a real finding.",
+   "suggestion": "Publish explicit outcomes mapped to surveying-licensure competencies (boundary law, measurement science and adjustment, geodesy/GNSS, mapping and GIS)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 5,
+   "justification": "The plan reconciles exactly (summedTermCredits 120 = statedTotalCredits 120, delta 0.0), terms are loaded at 14-16 credits, and SET 407 is correctly weighted at 4 credits. The balance across measurement science, boundary/legal, mapping/GIS, and support courses is transparent.",
+   "suggestion": "Add a short credit-summary table separating the SET professional core from math-science and business/legal support so the distribution is visible at a glance."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 3,
+   "justification": "Terms are labeled and descriptions are complete and specific, but several unlabeled 'None' rows appear and a few prerequisite/co-requisite notes carry parsing noise (SET 207 'Co-rerequisites' typo; SET 301 co-requisite phrasing), leaving minor rough edges.",
+   "suggestion": "Label the blank elective/GER rows and clean the co-requisite typos so the plan reads cleanly."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 4,
+   "justification": "The curriculum is notably current for geomatics: reality capture and point clouds (SET 405), digital surveying with robotic total stations (SET 360), GIS/LIS (SET 420), photogrammetry (SET 303), hydrographic mapping (SET 480), geodesy and GNSS (SET 401, with GPS in SET 200). The main gaps are a dedicated UAS/drone-mapping course and deeper LiDAR and geospatial-programming content.",
+   "suggestion": "Add or require a UAS/drone-surveying course (NJIT already offers ENGR 423 Drone Science) and deepen LiDAR within SET 405."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "All 33 sampled courses carry descriptions and the SET entries are specific and modern (SET 405 on collecting 3D point clouds and reality-capture technologies; SET 420 on vector-vs-raster GIS data models and cadastres; SET 304 on reducing and adjusting survey observations). Descriptions clearly convey scope and skills."
+  },
+  "prerequisiteClarity": {
+   "score": 4,
+   "justification": "Prerequisites are generally explicit with grade/consent conditions and sensible depth (SET 407 <- SET 307; SET 440 <- 'SET 207 and CE 321'). Detractors are the SET 401 <- SET 302 reference not shown in the plan and a few co-requisite phrasing artifacts, plus the standard GER/lab placeholders."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "UAS/drone-based surveying and mapping",
+    "rationale": "SET 303 covers aerial photography but there is no dedicated unmanned-aircraft mapping course, now standard practice; ENGR 423 Drone Science could be adopted."
+   },
+   {
+    "topic": "LiDAR and laser-scanning depth",
+    "rationale": "SET 405 introduces point clouds/reality capture; a dedicated terrestrial/mobile LiDAR course would deepen this fast-growing competency."
+   },
+   {
+    "topic": "Advanced GNSS positioning (RTK, network corrections, PPP)",
+    "rationale": "SET 401 geodesy touches GNSS, but there is no course focused on real-time/precise satellite positioning workflows."
+   },
+   {
+    "topic": "Geospatial programming and spatial databases",
+    "rationale": "CS 106 and CET 317 provide only general computing; Python-for-GIS and spatial SQL are absent from the SET sequence."
+   },
+   {
+    "topic": "Scan-to-BIM integration for surveyors",
+    "rationale": "SET 405 reality capture stops short of converting point clouds into BIM models, an increasingly required deliverable."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Reality capture and digital twins",
+    "rationale": "SET 405 positions the program to lead on point-cloud-to-digital-twin workflows for the built environment."
+   },
+   {
+    "trend": "UAS/drone mapping and autonomous survey",
+    "rationale": "Drone photogrammetry and autonomous data collection are becoming baseline surveying skills."
+   },
+   {
+    "trend": "Cloud GIS and geospatial big data",
+    "rationale": "SET 420 could extend to cloud GIS and large-scale spatial analytics/geospatial AI."
+   },
+   {
+    "trend": "Machine learning for point-cloud and feature extraction",
+    "rationale": "Automated classification of LiDAR/point-cloud data is a rising need connected to SET 405/433-style content."
+   },
+   {
+    "trend": "Precise real-time positioning for autonomous systems",
+    "rationale": "RTK networks and PPP underpin autonomous vehicles and machine control, extending SET 401."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish explicit program learning outcomes mapped to surveying-licensure competencies.",
+  "Add/require a UAS/drone-surveying course and deepen LiDAR within SET 405.",
+  "Introduce geospatial programming (Python for GIS) and spatial databases.",
+  "Verify and expose the SET 401 <- SET 302 prerequisite and clean the co-requisite typos.",
+  "Modernize SET 420 toward cloud GIS and geospatial AI, and resolve GER/lab placeholders."
+ ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "b-s-in-science-technology-and-society-442",
+  "name": "B.S. in Science, Technology and Society",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 4,
+      "justification": "The eight-term plan is complete, well ordered, and reconciles exactly. It builds a coherent behavioral-and-social-science-of-technology path: a psychology/social-science foundation (PSY 201/210, PSY 215, PSY 321, EPS 202 Society, Technology and the Environment), a paired research-methods spine with labs (STS 304 Qualitative + STS 304A, then STS 307 Quantitative + STS 307A, plus PSY 333 Psychometrics), technology-and-mind courses (STS 351 Minds and Machines, STS 375 AI and the Human Mind, IS 333 Social Network Analysis), applied HCI (IS 247, IS 375, IS 448), and a capstone term (HSS 404 Senior Seminar plus a PSY 49X capstone). The weakness is identity dilution: the degree leans heavily on psychology and reserves roughly twelve free-elective slots (about 36 credits), so classic STS content (policy, sociology of science) is thinner than the program name implies.",
+      "suggestion": "Convert a few of the twelve free-elective slots into required STS-core courses (e.g. STS 308 Globalization, STS 310 Technology and Human Values) so the STS identity is as strong as the behavioral-science spine."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "deepestPrereqChain is 7, anchored by IS 448 and IS 333 (gated on statistics and computing GURs) and supported by the PSY 359 -> PSY 361 and PSY 210 -> PSY 333 chains, giving sensible depth without over-constraining. missingCourseCount is 3: GER 300 is a requirement-category placeholder and STS 304A/STS 307A are the one-credit research-method labs that are not separately catalogued but are clearly co-scheduled with their parent courses.",
+      "suggestion": "Catalog the STS 304A/307A lab co-requisites as their own entries so the plan has no unresolved course codes."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives appear in the data. For an interdisciplinary STS degree spanning psychology, research methods, and technology studies, an explicit outcomes statement is needed to show what integrative competency the program certifies.",
+      "suggestion": "Publish 6-8 learning outcomes covering social/behavioral analysis of technology, empirical research methods, science-and-technology ethics/policy, and human-technology interaction."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "The plan reconciles exactly (statedTotalCredits 120, summedTermCredits 120, creditReconcileDelta 0.0) and term loads are steady at 12-16 credits, which is a genuine strength. Balance is the concern: roughly twelve free-elective slots (about 36 credits, ~30% of the degree) sit against a relatively small set of named STS-specific requirements, so a large share of the degree is undefined and the required STS content is light.",
+      "suggestion": "Reduce the free-elective count and redirect those credits into named STS core and STS-elective lists so the distribution reflects the major's subject."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 4,
+      "justification": "This is the best-presented program in the group: all eight terms are labeled, the plan is legible, it reconciles to the stated total, and the research-method labs appear as clear one-credit rows. Minor blemishes are the GER 300 and PSY 49X capstone placeholder rows rendered with null codes.",
+      "suggestion": "Give the PSY 49X capstone and GER 300 rows resolvable codes/labels to finish an otherwise clean plan."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The curriculum is current and technology-facing: STS 375 AI and the Human Mind, STS 351 Minds and Machines, IS 333 Social Network Analysis, IS 350 Computers Society and Ethics, and the UX research sequence give graduates a modern read on AI, networks, and human-technology interaction, backed by real empirical methods. The gap is the classic STS policy/governance dimension -- science and technology policy, regulation, and innovation studies are underrepresented relative to the behavioral emphasis.",
+      "suggestion": "Add a science-and-technology-policy course so graduates can connect their strong empirical and ethical training to regulation and governance careers."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions across the plan are present and substantive -- STS 304/307 on qualitative and quantitative social-science methods, STS 375 on AI and knowledge, IS 333 on programmatic social-network data, EPS 202 on technology-environment-society case studies. None is thin; only the GER and PSY 49X placeholders lack course text."
+    },
+    "prerequisiteClarity": {
+      "score": 3,
+      "justification": "Prerequisites are explicit and sensible (IS 448 and IS 333 gated on statistics/computing GURs; PSY 361 requires PSY 359). Clarity is reduced by the STS 304A/307A labs, which are co-required but not separately catalogued, and by the many 300-level STS/PSY courses sharing the identical 'ENGL 102 + 200-level GER' gate, which does not distinguish their readiness levels."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Science and technology policy / governance",
+        "rationale": "The degree is rich in behavioral method and ethics (IS 350, STS 310) but has no required policy or regulation course, a core STS competency for careers in tech governance."
+      },
+      {
+        "topic": "Sociology of science and technology",
+        "rationale": "STS 221 Introduction to Sociology exists in the catalog but is not required; a sociology-of-science course would give the program the social-theory backbone STS is known for."
+      },
+      {
+        "topic": "History of technology / innovation studies",
+        "rationale": "The plan covers minds, networks, and ethics but not the historical development of technologies, leaving students without a diachronic frame for technological change."
+      },
+      {
+        "topic": "Environmental and sustainability studies",
+        "rationale": "EPS 202 touches technology and environment, but with climate and energy central to modern STS a dedicated environmental-policy/sustainability course is warranted."
+      },
+      {
+        "topic": "Data ethics and algorithmic accountability as a distinct course",
+        "rationale": "IS 350 covers general computing ethics; the program's strong methods and AI courses justify a focused data-ethics/algorithmic-fairness offering."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI ethics and governance",
+        "rationale": "STS 375 AI and the Human Mind and STS 351 Minds and Machines already engage AI conceptually; extending to AI governance and accountability matches where STS careers are heading."
+      },
+      {
+        "trend": "Data justice and algorithmic bias",
+        "rationale": "The paired methods sequence (STS 304/307) and IS 333 give students the analytic base to study fairness, bias, and data justice empirically."
+      },
+      {
+        "trend": "Climate, energy, and sustainability transitions",
+        "rationale": "EPS 202 provides a hook for a sustainability-transitions course as environmental technology becomes a dominant STS theme."
+      },
+      {
+        "trend": "Science communication and misinformation",
+        "rationale": "The strong writing and methods training positions graduates for research on public understanding of science and misinformation."
+      },
+      {
+        "trend": "Human-AI collaboration and the future of work",
+        "rationale": "PSY/UX courses plus STS 375 let the program study how AI reshapes work, cognition, and organizations -- a growing STS focus."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish explicit STS learning outcomes that make the psychology/methods/technology-studies integration legible.",
+    "Strengthen the STS identity by requiring policy, sociology-of-science, or history-of-technology courses in place of some of the ~36 free-elective credits.",
+    "Add a science-and-technology-policy/governance course to connect the strong empirical training to regulation careers.",
+    "Catalog the STS 304A/307A research-method labs so the plan has no unresolved codes.",
+    "Introduce a focused data-ethics/algorithmic-accountability course leveraging the existing methods and AI offerings."
+  ]
+}

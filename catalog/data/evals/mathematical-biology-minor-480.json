@@ -1,0 +1,111 @@
+{
+  "id": "mathematical-biology-minor-480",
+  "name": "Mathematical Biology Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 4,
+      "justification": "No formal requirement groups are provided (requirementGroups=0), but here the shared id-480 course pool is genuinely well-matched to the discipline: a modeling core (MATH 372 Population Biology, MATH 373 Introduction to Mathematical Biology, MATH 374 Stochastic and Discrete Models in Biology, MATH 430/431 Computational Neuroscience) is supported by probability, linear algebra, and numerical methods and a broad biology electives set, so the referenced courses cohere around mathematical biology. The main incoherence is that the pool is shared verbatim with the Applied Statistics and Computational Mathematics minors, so off-topic finance/actuarial courses (MATH 346/347, 432/433, 441) are mixed in.",
+      "suggestion": "Publish a curated plan that separates the mathematical-biology modeling core from the biology electives and drops the shared finance/actuarial courses."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "missingCourseCount=0, so there are no dangling references; deepestPrereqChain=7 reflects the source courses' catalog depth rather than an internal requirement of a short minor. The prerequisite picture is clean.",
+      "suggestion": "State the calculus and introductory-biology entry prerequisites so students see the on-ramp."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes appear in the data for this minor.",
+      "suggestion": "Publish learning outcomes describing the biological-modeling and quantitative competencies the minor certifies."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "statedTotalCredits=16.0 is published, but with no term plan or summed credit figure the required-versus-elective split is not shown and creditReconcileDelta is null (a data-consistency caveat expected for an unstructured minor record).",
+      "suggestion": "Show how the stated 16 credits split into a mathematical-biology modeling core versus biology electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "The pool is on-topic and rich for this minor, which aids readability, but there are still no requirement groups or stated plan, and the shared finance/actuarial courses in the pool are noise for a biology-focused minor.",
+      "suggestion": "Publish a structured plan-of-study table and remove the off-discipline finance courses inherited from the shared id-480 pool."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The content is current and distinctive: computational neuroscience (MATH 430/431), stochastic and discrete disease/evolution modeling (MATH 374), population biology (MATH 372), and disease ecology (BIOL 468) map to biotech, computational-biology, and neuroscience careers. The gaps are the absence of a bioinformatics/genomics course and of a biostatistics course.",
+      "suggestion": "Add a bioinformatics/genomics course and a biostatistics course to complement the strong modeling core."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and substantive across the modeling core (MATH 374 Stochastic and Discrete Models in Biology, MATH 430 Analytical and Computational Neuroscience, MATH 373 Introduction to Mathematical Biology), with no thin or placeholder excerpts among sampled courses."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites carry clear 'grade C or better' conditions and missingCourseCount=0, so there are no dangling references and the statements are internally consistent."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Bioinformatics and computational genomics",
+        "rationale": "The modeling courses (MATH 372/373/374) cover populations and evolution but no sequence-analysis or genomics course is present, a major branch of quantitative biology."
+      },
+      {
+        "topic": "Biostatistics",
+        "rationale": "The pool has MATH 333 Probability and Statistics but no biostatistics or regression-for-biology course (e.g., MATH 344/446)."
+      },
+      {
+        "topic": "Systems biology and biochemical-network modeling",
+        "rationale": "Neuroscience is covered by MATH 430/431, but gene-regulatory and metabolic-network dynamics are absent."
+      },
+      {
+        "topic": "Scientific programming for biology",
+        "rationale": "MATH 374/430 are computational, yet no programming course is referenced to support implementation."
+      },
+      {
+        "topic": "Dedicated epidemiological modeling",
+        "rationale": "MATH 374 includes infectious-disease modeling within a broader course; a standalone epidemic/compartmental-modeling course is a natural addition."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Machine learning in biology and computational neuroscience",
+        "rationale": "Extending MATH 430/431 toward data-driven neural modeling reflects a major research direction."
+      },
+      {
+        "trend": "Genomics and single-cell data analysis",
+        "rationale": "A fast-growing quantitative-biology area currently absent from the pool."
+      },
+      {
+        "trend": "Epidemic modeling and public-health analytics",
+        "rationale": "MATH 374 positions the minor well for the post-pandemic surge in demand for infectious-disease modeling."
+      },
+      {
+        "trend": "Network and systems biology",
+        "rationale": "Dynamics on biological networks is an expanding modeling frontier that builds on the existing courses."
+      },
+      {
+        "trend": "Quantitative bioimaging",
+        "rationale": "Connecting BIOL 451 Cell Physiology and Imaging to quantitative image-analysis methods matches a growing life-science need."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish a curated mathematical-biology plan -- the record shares an identical pool with the Applied Statistics and Computational Mathematics minors (all id 480), so off-topic finance/actuarial courses are mixed in.",
+    "Add a bioinformatics/genomics course and a biostatistics course to complement the strong modeling core (MATH 372/373/374/430/431).",
+    "Add a scientific-programming pathway to support the computational courses.",
+    "State how the 16 credits split into a modeling core versus biology electives.",
+    "Publish program-level learning outcomes for the minor."
+  ]
+}

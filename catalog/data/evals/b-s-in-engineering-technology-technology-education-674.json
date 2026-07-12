@@ -1,0 +1,111 @@
+{
+ "id": "b-s-in-engineering-technology-technology-education-674",
+ "name": "B.S. in Engineering Technology, Technology Education",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 3,
+   "justification": "As a teacher-preparation degree the plan sensibly interleaves an engineering-technology breadth (ECET 201 circuits, MET 103/105 CAD, MNET 300 machining, CET 317 computing, ENGR 320 prototyping, ENGR 330 microcontrollers/IoT, ET 450 multidisciplinary capstone, ENGR 425 advanced-manufacturing rotation) with a professional-education sequence (R300 social foundations and child/adolescent psychology -> methods R300 454/455 -> Clinical Practice I and II student teaching). The progression toward licensure is logical, but the technology content is broad-and-shallow (a survey across many areas) and the education courses are all uncoded.",
+   "suggestion": "Add a coherent depth strand within the technology breadth (for example a two-course computing/robotics-for-educators sequence) so the major is not only a survey."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 3,
+   "justification": "The prerequisite graph is shallow (deepest chain 4): the technical courses are mostly introductory (MNET 300 <- MET 103; MIT 231 <- a programming course and IT 120) and the entire professional-education half is uncoded with no parsed prerequisites, so the structure is only partially represented. Only 3 placeholder references (GER 300, PHYS 102A/103A) are missing.",
+   "suggestion": "Assign catalog codes and prerequisites to the R300 education-sequence courses so the licensure progression (foundations -> methods -> clinical practice) is visible in the prerequisite structure."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes appear in the data. For a licensure program this is especially notable, since teaching standards and candidate outcomes are normally central to the page.",
+   "suggestion": "Publish explicit candidate outcomes mapped to teaching standards (ITEEA Standards for Technological and Engineering Literacy and state licensure competencies)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 4,
+   "justification": "The plan reconciles exactly (summedTermCredits 120 = statedTotalCredits 120, delta 0.0) and per-row credits are shown even for the uncoded education courses, including the 9-credit Clinical Practice II student-teaching block, so the technology/education/gen-ed split is arithmetically transparent. Some terms are heavy (Third Year 2nd Semester at 18 credits) and the final term is light at 12.",
+   "suggestion": "Smooth the 18-credit and 12-credit terms and add a summary of the technology-content vs. professional-education vs. gen-ed credit split."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 3,
+   "justification": "Terms are labeled and titles are present throughout, so the plan is readable, but a large share of rows are uncoded 'None' entries (the entire R300 education sequence, technical/free electives) and there is a cryptic '676 B.S. General Engineering' row and a bare 'R300 378 Seminar in Critical Writing' at 1 credit, which read as artifacts.",
+   "suggestion": "Resolve the uncoded education-course rows and the cryptic '676 B.S. General Engineering' entry so every requirement row has a code, title and credit value."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 3,
+   "justification": "The technology content is reasonably current for a STEM teacher-prep program: microcontrollers/IoT (ENGR 330), prototyping (ENGR 320), medical-device cybersecurity (MIT 231), advanced manufacturing (ENGR 425) and a multidisciplinary capstone (ET 450). The notable gaps for contemporary technology education are computer-science/coding pedagogy (CS 106 is the only computing course) and educational-robotics/maker methods, both now national K-12 priorities.",
+   "suggestion": "Add a computer-science-for-educators course and an educational-robotics/maker-pedagogy course to match K-12 CS and integrated-STEM mandates."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 3,
+   "justification": "The 20 coded, sampled courses have specific, informative descriptions (MIT 231 on why medical devices are uniquely vulnerable to intrusion; ENGR 330 on microcontrollers and IoT applications; ET 450 on the multidisciplinary capstone). However, the professional-education half of the program (the R300 sequence and student teaching) is entirely uncoded with no descriptions, so roughly half the program's courses have no catalog detail."
+  },
+  "prerequisiteClarity": {
+   "score": 3,
+   "justification": "Prerequisites for the technical courses are clear and sensible (MNET 300 <- MET 103; ENGR 320 <- a calculus course), but MIT 231's prerequisite runs into its description text ('An introductory Computer Programming Course: CS 100 or CS 106 and IT 120'), and the education-course prerequisites/co-requisites are absent, leaving the licensure sequence's ordering unspecified."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Computer-science and coding pedagogy",
+    "rationale": "CS 106 is the only computing course, yet K-12 computer-science education is now a licensure priority; a CS-for-educators course is needed."
+   },
+   {
+    "topic": "Engineering-design and project-based-learning pedagogy",
+    "rationale": "The methods courses (R300 454/455) are generic; a technology-education-specific engineering-design/PBL methods course tied to ITEEA STEL standards is warranted."
+   },
+   {
+    "topic": "Educational robotics and maker/FabLab pedagogy",
+    "rationale": "ENGR 320/330 give prototyping and IoT skills but not the classroom integration of robotics and maker spaces that technology teachers must lead."
+   },
+   {
+    "topic": "Data and AI literacy for K-12",
+    "rationale": "No coursework addresses teaching data or AI literacy, a rapidly emerging curriculum standard for technology educators."
+   },
+   {
+    "topic": "Assessment and Universal Design for Learning in technical subjects",
+    "rationale": "R300 390 covers assessment generally; a technology-specific assessment/UDL component would strengthen classroom readiness."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "K-12 computer science and computational-thinking mandates",
+    "rationale": "States are adding CS graduation requirements, so technology teachers increasingly must teach coding, extending CS 106."
+   },
+   {
+    "trend": "AI literacy and generative AI in the classroom",
+    "rationale": "Preparing teachers to use and teach responsible AI is an immediate need across STEM education."
+   },
+   {
+    "trend": "Integrated STEM and engineering design (ITEEA STEL)",
+    "rationale": "Standards-based integrated-STEM and engineering-design teaching is the field's central framework and could anchor the methods sequence."
+   },
+   {
+    "trend": "Maker education, robotics and FabLabs",
+    "rationale": "Hands-on maker and robotics pedagogy is expanding in secondary schools and connects to ENGR 320/330."
+   },
+   {
+    "trend": "Culturally responsive, equity-focused STEM teaching",
+    "rationale": "The R300 urban-education sequence positions the program to lead on equity-centered technology instruction."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish explicit program/candidate learning outcomes mapped to teaching standards (ITEEA STEL and state licensure).",
+  "Strengthen computing by adding a CS/coding-pedagogy course beyond CS 106 to meet K-12 computer-science licensure demand.",
+  "Add engineering-design and educational-robotics/maker pedagogy tailored to technology education.",
+  "Resolve the uncoded R300 education-sequence rows and the cryptic '676 B.S. General Engineering' entry, and fix the MIT 231 prerequisite/description artifact.",
+  "Add AI-literacy content for future teachers and smooth the 18-credit and 12-credit terms."
+ ]
+}

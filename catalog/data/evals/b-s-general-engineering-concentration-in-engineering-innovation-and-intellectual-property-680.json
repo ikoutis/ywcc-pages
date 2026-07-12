@@ -1,0 +1,103 @@
+{
+  "id": "b-s-general-engineering-concentration-in-engineering-innovation-and-intellectual-property-680",
+  "name": "B.S. General Engineering - Concentration in Engineering Innovation and Intellectual Property",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 2,
+      "justification": "The concentration's identity -- ENGR 350 (Intellectual Property for Engineers), ENTR 210/330/440 (entrepreneurship, strategy, lean startup), IE 447 (Legal Aspects of Engineering), IE 463 (Invention and Entrepreneurship), and HIST 320 (Law and Evidence) -- is visible only in the referenced sampleCourses, not in the displayed plan of study. The parsed plan instead shows a chemistry/CHE/materials/IE sequence (CHEM 243/236/339, CHE 260/342, MTEN 201/305) that belongs to other concentrations, so what a reader sees does not cohere with an innovation/IP theme.",
+      "suggestion": "Republish the plan of study so the innovation/IP courses (ENGR 350, ENTR 210/330/440, IE 447/463) form the visible required thread rather than a chemical-processing sequence that appears mismatched to the concentration name."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "Where technical courses appear the chains are sensible (deepestPrereqChain 6, e.g. CHEM 126 -> CHE 230/CHEM 236 -> CHE 342), and the innovation courses appropriately carry light prerequisites (ENTR 210/440 have none; ENTR 330 requires ENTR 210). However eight codes are missing (CHEM 125A, ENGR 211, ENGR 312, GER 200, GER 300, MTEN 101, PHYS 111A, PHYS 121A), and the truncated plan makes the overall structure hard to verify.",
+      "suggestion": "Catalog the missing prerequisite/co-req codes (notably ENGR 350's own prerequisite path and MTEN 101) and restore the full plan so the prerequisite graph can be validated end to end."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives are stated; the data provides only a (truncated) plan of study. This is a real omission for a concentration whose value proposition is commercialization/IP competency.",
+      "suggestion": "Publish explicit outcomes such as 'evaluate patentability and freedom-to-operate' and 'develop and validate a technology business model' so the concentration's distinctive skills are documented."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "The plan does not reconcile: creditReconcileDelta is -49 with only summedTermCredits 71 against a stated 120, because only five terms were parsed and the sequence begins mid-program at '2nd Semester'. Balance across gen-ed, technical core, and the innovation/IP block therefore cannot be verified from the data -- a data-consistency caveat as much as a design finding.",
+      "suggestion": "Restore the missing first-year and any dropped terms so the plan sums to 120 credits and the innovation/IP vs technical-core balance becomes transparent."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The catalog page as captured is incomplete: it starts at '2nd Semester', shows only five requirement groups, and displays a course sequence that does not match the concentration title. A prospective student could not follow a coherent four-year path from this page.",
+      "suggestion": "Fix the page so all eight terms render in order from the first semester, and confirm the displayed courses correspond to Engineering Innovation & IP rather than to chemical processing."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The concentration's actual course set is highly current for a commercialization track: ENGR 350 (IP for Engineers), ENTR 210/330/440 (entrepreneurship, strategy, lean startup), IE 463 (Invention & Entrepreneurship), IE 447 (Legal Aspects), and ENGR 301 (Data Science) map directly to how engineers bring technology to market today.",
+      "suggestion": "Foreground ENTR 320 (Financing New Venture) and a design-thinking course so the innovation pipeline (ideation -> IP -> venture funding) is complete and visibly modern."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "The referenced course descriptions are specific and informative -- ENGR 350 (patents/IP realization), ENTR 210/440 (opportunity recognition, lean-startup customer discovery), IE 463 (creativity through product design), and HIST 320 (evidence in the legal system) each convey concrete content with no thin text."
+    },
+    "prerequisiteClarity": {
+      "score": 3,
+      "justification": "Prerequisites are clearly stated where present and internally consistent (ENGR 350 lists FED 101 or MET 103; ENTR 330 requires ENTR 410 or 210). Clarity is nonetheless weakened by the eight dangling codes and by the truncated plan, which leaves the intended prerequisite sequencing partly unverifiable."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Technology transfer and licensing mechanics",
+        "rationale": "ENGR 350 covers IP fundamentals but the plan lacks explicit tech-transfer/licensing and commercialization-agreement content that turns a patent into revenue."
+      },
+      {
+        "topic": "Design thinking / human-centered design",
+        "rationale": "The pipeline jumps from IP to entrepreneurship (ENTR 210/440) without a structured front-end innovation/ideation method course."
+      },
+      {
+        "topic": "Product management and roadmapping",
+        "rationale": "IE 463 addresses invention and product design, but ongoing product-lifecycle and roadmap management is absent."
+      },
+      {
+        "topic": "Engineering finance and venture economics depth",
+        "rationale": "ENTR 320 (Financing New Venture) exists in the catalog yet is not surfaced in the plan; financial modeling of a venture is core to the concentration's promise."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI-assisted IP analytics and patent search",
+        "rationale": "As ENGR 350 teaches IP, generative-AI patent search, prior-art analytics, and drafting tools are rapidly changing IP practice and would modernize the concentration."
+      },
+      {
+        "trend": "Lean/agile startup methods and evidence-based venture building",
+        "rationale": "ENTR 440 (Lean Startup Accelerator) already anchors this; deepening customer-discovery and metrics-driven venture building matches current startup practice."
+      },
+      {
+        "trend": "Venture financing and alternative capital models",
+        "rationale": "Surfacing ENTR 320 (Financing New Venture) aligns the track with today's crowdfunding, SAFE/venture, and grant-funding landscape."
+      },
+      {
+        "trend": "Sustainable and impact-driven innovation",
+        "rationale": "ESG-oriented and mission-driven venture design is a growing expectation that pairs naturally with the ENTR strategy sequence."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Fix the data/page so the full eight-term plan renders and the displayed courses match the Innovation & IP theme rather than a chemical-processing sequence (creditReconcileDelta -49 signals the plan is truncated).",
+    "Make ENGR 350, ENTR 210/330/440, and IE 447/463 the visible required thread of the plan of study.",
+    "Publish explicit innovation/IP learning outcomes (patentability analysis, business-model validation).",
+    "Add ENTR 320 (Financing New Venture) and a design-thinking course to complete the ideation-to-funding pipeline.",
+    "Catalog the missing prerequisite codes (ENGR 350's path, MTEN 101, co-req labs) to clear dangling references."
+  ]
+}

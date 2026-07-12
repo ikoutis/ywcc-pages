@@ -1,0 +1,111 @@
+{
+  "id": "b-s-in-applied-physics-b-s-in-mathematical-sciences-applied-mathematics-475",
+  "name": "B.S. in Applied Physics & B.S. in Mathematical Sciences, Applied Mathematics",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "Within the shown terms the sequence builds logically -- an applied-math spine (MATH 222 -> MATH 331/337/340 -> MATH 332/450 -> MATH 451 research) runs alongside a life-science spine (BIOL 201 -> CHEM 243/244 -> CHEM 473 Biochemistry) and a mathematical-biology thread (MATH 374 Stochastic and Discrete Models in Biology, MATH 430 Analytical and Computational Neuroscience). However, the parsed plan starts at 'Summer / Second Year' with the entire first year missing, and the biology/organic-chemistry/computational-neuroscience emphasis shown does not match the 'Applied Physics' half of the program title (only introductory PHYS 111/114/121 appear), so the combined structure is hard to read as titled.",
+      "suggestion": "Present both degrees' full four-year sequences and reconcile the title with the actual content -- either surface the upper-level physics core or relabel the record to reflect its applied-math/mathematical-biology (pre-health) emphasis."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "deepestPrereqChain=7 is reasonable, but there are 8 dangling references (missingCoursesSample: BIOL 202, BIOL 206, CHEM 125A, GER 200, GER 300, PHYS 111A, PHYS 121A, PHYS 231A) -- co-requisite biology and chemistry labs, physics labs, and general-education placeholders. These are support/lab items rather than core breaks, but they are more numerous than in peer programs.",
+      "suggestion": "Add catalog entries or code mappings for the paired labs (BIOL 202/206, CHEM 125A, PHYS 111A/121A/231A) and resolve the GER 200/300 placeholders so no referenced code dangles."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives appear in the data; only a partial term plan and course descriptions are present.",
+      "suggestion": "Publish explicit learning outcomes, especially clarifying how the combined applied-physics and applied-mathematics degrees serve the accelerated pre-health pathway this record is filed under."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "creditReconcileDelta=-38.0 (summedTermCredits 71.0 against statedTotalCredits 109.0). Because this is a combined-degree record whose first year is not shown, the gap is largely a data-consistency artifact rather than a designed shortfall, but as presented the plan does not reconcile and the full credit distribution cannot be read.",
+      "suggestion": "Publish the complete combined plan so credits sum to the stated 109 (and confirm 109 is the correct total for a genuine dual B.S.)."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The record is hard to read end to end: the plan begins at Summer of Year 2 with the first year absent, the title conflicts with the biology/chemistry-heavy content shown, and general-education placeholders plus 8 dangling references clutter the listing.",
+      "suggestion": "Show the complete term-by-term plan for both degrees with all years labeled, and align the program title with the courses actually required."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The courses shown are current and strong for a computational and mathematical-biology / pre-health track: MATH 374 Stochastic and Discrete Models in Biology, MATH 430 Analytical and Computational Neuroscience, MATH 450/451 applied-mathematics research, and CHEM 473 Biochemistry connect quantitative methods to modern life-science problems. The gap is on the physics side -- upper-level mechanics, electromagnetism, and quantum mechanics are absent from the shown plan despite the 'Applied Physics' title.",
+      "suggestion": "If the applied-physics degree is genuine, surface its upper-level physics core (mechanics, E&M, quantum); if the record is really the accelerated math-biology pre-health track, relabel it accordingly."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Course descriptions are substantive across the shown spine (CHEM 473 Biochemistry, MATH 374 Stochastic and Discrete Models in Biology, MATH 430 Analytical and Computational Neuroscience, MATH 450 Methods of Applied Mathematics), with no thin or placeholder excerpts among sampled courses."
+    },
+    "prerequisiteClarity": {
+      "score": 3,
+      "justification": "Prerequisites carry clear 'grade C or better' conditions, but the 8 dangling references (co-requisite BIOL/CHEM/PHYS labs and GER 200/300 placeholders) reduce internal consistency more than in peer programs, so clarity is only adequate."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Core upper-level physics",
+        "rationale": "For an 'Applied Physics' degree, classical mechanics, electromagnetism, and quantum mechanics (PHYS 430/432/442) do not appear in the shown plan; only introductory PHYS 111/114/121 are present."
+      },
+      {
+        "topic": "Statistics and biostatistics for the life sciences",
+        "rationale": "The plan includes MATH 333 Probability and Statistics but no regression or biostatistics course (e.g., MATH 344 Regression Analysis) despite its heavy biology emphasis."
+      },
+      {
+        "topic": "Bioinformatics and computational genomics",
+        "rationale": "With BIOL 201 cell/molecular biology, CHEM 473 Biochemistry, and MATH 374 molecular-evolution modeling present, a bioinformatics/sequence-analysis course is a natural but absent complement."
+      },
+      {
+        "topic": "Scientific programming beyond CS 100",
+        "rationale": "CS 100 Roadmap to Computing is the only computing course, yet MATH 340, 430, and 450 are computation-heavy; a fuller scientific-programming/numerical-computing course is needed."
+      },
+      {
+        "topic": "Optimization or nonlinear dynamics",
+        "rationale": "MATH 450/451 applied-methods research is present, but an explicit optimization or dynamical-systems/chaos course (e.g., MATH 473) would round out the applied-mathematics core."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Computational neuroscience and systems biology",
+        "rationale": "MATH 430/431 already anchor computational neuroscience; extending toward neural networks and systems dynamics matches a fast-growing research area."
+      },
+      {
+        "trend": "Machine learning in biology and medicine",
+        "rationale": "The math-biology and pre-health framing calls for machine learning applied to genomics and medical imaging, none of which appears in the shown plan."
+      },
+      {
+        "trend": "Infectious-disease and epidemic modeling",
+        "rationale": "MATH 374 already covers infectious-disease modeling; recent demand makes a dedicated epidemiological-modeling course timely."
+      },
+      {
+        "trend": "Physics-informed and data-driven modeling",
+        "rationale": "Bridging the physics and applied-math halves via physics-informed machine learning or simulation would unify the dual degree around a modern method."
+      },
+      {
+        "trend": "Reproducible computational science",
+        "rationale": "With heavy modeling coursework (MATH 340/430/450), training in reproducible workflows and version control is increasingly expected of quantitative graduates."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Reconcile the program record: the title says 'Applied Physics & Applied Mathematics' but the shown plan and department are a biology/chemistry-heavy pre-health, mathematical-biology track with no upper-level physics -- relabel it or restore the missing physics and first-year content.",
+    "Publish the complete combined plan so credits reconcile to the stated 109 (only 71 are currently shown, a -38 delta).",
+    "Resolve the 8 dangling references (BIOL 202/206, CHEM 125A, GER 200/300, PHYS 111A/121A/231A).",
+    "Add a statistics/biostatistics course and a bioinformatics or scientific-computing course to match the biology emphasis.",
+    "Publish program-level learning outcomes clarifying the dual-degree and pre-health goals."
+  ]
+}

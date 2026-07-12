@@ -6,60 +6,106 @@
       "key": "curriculum_coherence",
       "name": "Curriculum coherence & progression",
       "score": 4,
-      "justification": "The eight-term plan follows a clear, well-ordered IT progression: foundations (IT 101, CS 100, IT 120) lead into programming (CS 113, IT 114), then design/web (IT 201, IT 202), then systems and networks (IT 340, IT 420, IS 331), and finally integration and a capstone (IT 490 Systems Integration, IT 491 IT Capstone Project). Difficulty ramps sensibly term over term with no abrupt jumps, and professional-skills and ethics courses (YWCC 207/307, COM 313, IS 350) are threaded in appropriately. The main weakness is that eight 'Specialization Course' slots and seven 'General Elective' slots are unresolved placeholders, so the specialization pathway that gives the degree its shape is not visible on the page.",
-      "suggestion": "Name the concrete specialization tracks and the courses each contains (with any track-internal prerequisites) so the 24 credits of specialization coursework read as a coherent pathway rather than generic placeholders."
+      "justification": "This is the most technically coherent of the informatics degrees: a programming arc (CS 100 -> CS 113 -> IT 114 Advanced Programming), a networking/systems arc (IT 120 -> IT 340 System Administration and IT 420 Computer Systems & Networks -> IT 490 Systems Integration), a data arc (IS 331 database), and design/apps (IT 201, IT 202) all converge on an IT 491 capstone. Term loads are steady at 13-16 credits and difficulty ramps sensibly. The only softness is the large block of eight generic 'Specialization Course' slots whose sequencing/content is not shown, so the concentration's internal progression is invisible.",
+      "suggestion": "Publish the named specialization tracks with their ordered course lists so the eight 'Specialization Course' slots read as a coherent concentration rather than interchangeable placeholders."
     },
     {
       "key": "prereq_structure",
       "name": "Prerequisite structure health",
       "score": 4,
-      "justification": "The prerequisite graph is sensible and well-formed: the deepest chain is 6 (culminating in IT 490 Systems Integration, which requires CS 113/115, IS 331/CS 331, and IT 340), a reasonable depth for a four-year program that shows genuine layering without over-constraining. Prerequisites throughout carry explicit grade conditions and clear OR-alternatives (e.g., IT 114 requires CS 113 or CS 115). missingCourseCount is 4, but the dangling references (GER 200, GER 300, YWCC 207, YWCC 307) are general-education placeholders and 1-credit YWCC professional-development seminars rather than core IT prerequisites, so they do not break the technical dependency chain.",
-      "suggestion": "Resolve the four dangling references (GER 200, GER 300, YWCC 207, YWCC 307) by linking the GER placeholders to their category pages and ensuring the YWCC 207/307 seminar codes match catalog entries, so the prerequisite graph has zero unresolved references."
+      "justification": "The prerequisite graph is well-formed and slightly shallower than its IS siblings: deepestPrereqChain is 6 (IT 490 Systems Integration, gated on CS 113/115, IS 331/CS 331, and IT 340 -- a sensible terminal), with clear intermediate chains (IT 340/IT 420 on IT 120 or CS 356). missingCourseCount is 4 and all are peripheral -- GER 200/GER 300 placeholders and the one-credit YWCC 207/YWCC 307 seminars.",
+      "suggestion": "Resolve the four dangling references (catalog YWCC 207/YWCC 307; re-tag GER 200/GER 300 as requirement categories) so the otherwise clean IT prerequisite graph has no loose ends."
     },
     {
       "key": "learning_outcomes",
       "name": "Learning outcomes & objectives",
       "score": 2,
-      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the provided data. The plan lists courses and credits but never states what a graduate should know or be able to do (e.g., competencies in networking, system administration, database design, or web application development). For a catalog page, the absence of explicit outcomes is a real deficiency that prevents students, accreditors, and employers from understanding the program's intended competencies.",
-      "suggestion": "Publish a short set of explicit, measurable program learning outcomes (e.g., 'design and administer networked systems', 'build multi-tier web applications', 'apply computing ethics') mapped to the core IT course sequence."
+      "justification": "No program-level learning outcomes, objectives, or overview are present in the data. Given IT's ABET-style emphasis on applied competencies, the absence of a stated outcomes list is a meaningful catalog gap.",
+      "suggestion": "Publish 5-8 learning outcomes covering programming, networking/system administration, database, systems integration, and professional practice, plus a short program overview."
     },
     {
       "key": "credit_balance",
       "name": "Credit distribution & balance",
-      "score": 5,
-      "justification": "Credits reconcile exactly: summedTermCredits is 120 against a stated total of 120, giving a creditReconcileDelta of 0.0 (internally consistent). The per-term load is well balanced (15, 16, 15, 13, 15, 16, 15, 15), staying within a normal full-time range with no overloaded or underweight semester. The split across general-education (ENGL, MATH, science, HSS/GER), IT major core, specialization courses, and general electives is transparent and appropriately proportioned across the four years.",
-      "suggestion": "Add a one-line credit-category summary (e.g., major core vs. specialization vs. GER vs. free electives) so the already-balanced distribution is visible at a glance without summing the term tables."
+      "score": 4,
+      "justification": "Credit accounting reconciles cleanly (statedTotalCredits 120, summedTermCredits 120, creditReconcileDelta 0.0), and the required IT core is substantial and well-defined (IT 101/114/120/201/202/340/420/490 plus CS 100/113, IS 331/350). The transparency caveat is the large open block -- eight 'Specialization Courses' plus roughly seven 'General Electives' -- which is a lot of undefined credit even though the core anchors the degree.",
+      "suggestion": "Show a credit-distribution summary and label the specialization block's credit total so the split between the defined IT core and the ~24 credits of specialization/free electives is explicit."
     },
     {
       "key": "presentation",
       "name": "Presentation & clarity",
       "score": 3,
-      "justification": "The overall structure is legible: terms are clearly labeled by year and semester, credits are shown per item and per term, and core courses carry codes and titles. However, there are notable parsing/presentation artifacts: general-education requirements are broken across multiple rows with catalog URLs bleeding into the title text (e.g., 'Science Literacy GER (http://catalog.njit.edu/...' followed by a stray 'education-requirements/natural-science-ger/)' row with a null credit), several items have null course codes, and at least one title is truncated ('Computing & Effective Com'). These flaws hurt readability even though the plan is followable.",
-      "suggestion": "Clean the GER rows so each requirement is a single line with a proper hyperlinked label (not raw URL fragments split across rows), and expand truncated titles like 'Computing & Effective Com' to their full names."
+      "justification": "Cleaner than the IS B.A. -- fewer footnote artifacts -- but the same class of defects remains: GER rows are split with null credits ('Science Literacy GER', 'History and Humanities GER 300+ level'), the COM alternative renders as a null-code 'or COM 312 or Oral Presentations' line, eight identical 'Specialization Course' placeholders carry no content, and YWCC titles are abbreviated ('Computing & Effective Com').",
+      "suggestion": "Collapse the GER and 'or ...' rows into single readable lines and either name or link the eight specialization slots so the plan is not dominated by identical placeholders."
     },
     {
       "key": "industry_relevance",
       "name": "Industry & currency relevance",
-      "score": 4,
-      "justification": "The required coursework maps well to current IT practice: networking (IT 120, IT 420 Computer Systems and Networks), Linux system administration (IT 340), database design and management (IS 331), modern web/internet applications (IT 202), systems integration across platforms and e-commerce (IT 490), computing ethics and society (IS 350), and a team-based capstone (IT 491). Professional communication (COM 313 Technical Writing) and YWCC professional-development seminars add employability value. The emphasis is contemporary and job-aligned; the main uncertainty is that cloud, security, and data-analytics currency depends on the unspecified specialization tracks, which are not shown.",
-      "suggestion": "Surface the specialization-track catalog so modern in-demand areas (cloud/DevOps, cybersecurity, data analytics) are explicitly represented and clearly current rather than hidden behind generic 'Specialization Course' placeholders."
+      "score": 3,
+      "justification": "The core covers durable IT skills -- programming (IT 114), networking (IT 120/IT 420), system administration (IT 340), internet applications (IT 202), systems integration (IT 490), and database (IS 331) -- but it reads as traditional on-premises IT. The single most conspicuous gap is the absence of any cybersecurity course despite a networking-and-sysadmin backbone that is the ideal foundation for it; there is also no cloud/DevOps, virtualization/containers, or infrastructure-automation content, all now central to IT roles.",
+      "suggestion": "Add a required cybersecurity course (network/systems security) and a cloud-computing/DevOps course, so the networking + sysadmin base leads into the security and cloud skills employers now demand."
     }
   ],
   "courseLevel": {
     "descriptionQuality": {
       "score": 4,
-      "justification": "The sampled course descriptions are present, specific, and informative rather than thin or placeholder. Each conveys concrete topics and scope, e.g., IT 340 lists Linux booting, process control, file systems, and user/resource management; IT 202 covers multi-tier web architecture with hands-on modern web languages; IS 331 explains database back-end functionality for analysis and decision-making. Excerpts are truncated (a display artifact) and a couple carry minor stray text (MATH 138 ends with '298 Jordan'), but substance and specificity are consistently strong."
+      "justification": "All 19 sampled courses carry present, specific descriptions with no missing/placeholder entries (e.g., IT 340 system administration, IT 420 computer systems and networks, IT 490 systems integration, IS 331 database design). Content is informative and course-appropriate; only a few registrar titles are terse."
     },
     "prerequisiteClarity": {
       "score": 4,
-      "justification": "Prerequisites are stated unambiguously and are internally consistent. Grade conditions are explicit (e.g., CS 113 requires 'CS 100 or CS 103 with a grade C or better'), alternative paths are spelled out with OR logic (IT 114: 'CS 113 or CS 115'; IT 202 allows a department-approved high-level-language course), and true entry-level courses correctly show no prerequisite (CS 100, IT 101, IT 120, MATH 105). Deductions are minor: some prerequisites reference GER-category placeholders (e.g., COM 313/312 require a 'History and Humanities GER 200 level' course) that tie into the four dangling references rather than concrete course codes."
+      "justification": "Prerequisites are stated with explicit grade gates and clean alternatives (IT 114: 'CS 113 or CS 115'; IT 202: 'CS 100 or CS 113 or CS 115 or a course in a high-level programming language as approved by department'; IT 490: 'CS 113 or CS 115, IS 331 or CS 331, and IT 340'), and intro courses correctly show none. The consistent, well-formed chains make this the clearest prerequisite set among the informatics degrees; minor phrasing variance keeps it from a 5."
     }
   },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Cybersecurity (network, systems, and defensive security)",
+        "rationale": "A program built on networking (IT 120/IT 420) and system administration (IT 340) with no security course has a glaring gap; security is now inseparable from every IT operations role and should be a required course."
+      },
+      {
+        "topic": "Cloud computing and virtualization (AWS/Azure, containers, Kubernetes)",
+        "rationale": "IT 340/IT 420/IT 490 are on-premises-centric; modern IT infrastructure is cloud and container based, so a cloud/virtualization course is essential currency."
+      },
+      {
+        "topic": "Automation, scripting & DevOps (Python/Bash, CI/CD, IaC)",
+        "rationale": "IT 114 teaches application programming, but operational automation (infrastructure-as-code, pipelines) that defines contemporary IT work is absent."
+      },
+      {
+        "topic": "IT service management & observability/monitoring",
+        "rationale": "Systems integration (IT 490) would benefit from ITSM practices and modern monitoring/observability that IT operations roles rely on daily."
+      },
+      {
+        "topic": "Mobile and IoT device management",
+        "rationale": "Enterprise IT increasingly manages mobile and IoT endpoints, a natural extension of the networking/sysadmin core not currently represented."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Cloud-native operations, DevOps and SRE",
+        "rationale": "The sysadmin/systems-integration roles this program trains for are shifting to cloud-native DevOps/SRE; IT 340/IT 490 should evolve toward automated, cloud-based operations."
+      },
+      {
+        "trend": "Zero-trust security and security-by-default",
+        "rationale": "Security is now central to every IT function; the program's networking + sysadmin base is the ideal launchpad for a zero-trust-oriented security track."
+      },
+      {
+        "trend": "AIOps and AI-assisted operations",
+        "rationale": "LLM-assisted troubleshooting and automated incident response are reshaping IT operations, a forward-looking addition to IT 490 systems integration."
+      },
+      {
+        "trend": "Infrastructure-as-Code and platform engineering",
+        "rationale": "Declarative, versioned infrastructure (Terraform/Ansible) is now standard practice and a direct modernization of the IT 340 system-administration content."
+      },
+      {
+        "trend": "Edge and IoT computing",
+        "rationale": "Distributed edge/IoT infrastructure extends the networking curriculum (IT 120/IT 420) into a fast-growing operational domain."
+      }
+    ]
+  },
   "topSuggestions": [
-    "Publish explicit, measurable program-level learning outcomes mapped to the core IT sequence — the biggest gap, since none are currently present.",
-    "Resolve the specialization pathway by naming the actual tracks and their courses so the 24 credits of 'Specialization Course' placeholders (and 21 credits of 'General Elective') become a visible, coherent, industry-current curriculum.",
-    "Fix the four dangling course references (GER 200, GER 300, YWCC 207, YWCC 307) so the prerequisite/requirement graph has zero unresolved codes.",
-    "Clean up presentation artifacts: collapse the split GER rows with embedded URL fragments into single hyperlinked requirement lines, remove null-code stray rows, and expand truncated titles like 'Computing & Effective Com'.",
-    "Add a credit-category summary (major core vs. specialization vs. GER vs. free electives) to make the already-consistent 120-credit distribution transparent at a glance."
+    "Add a required cybersecurity course -- the largest gap given the networking and system-administration backbone.",
+    "Add cloud-computing/DevOps with virtualization/containers and infrastructure-as-code to modernize the on-prem-centric core.",
+    "Publish program-level learning outcomes and an overview.",
+    "Name and sequence the eight 'Specialization Course' slots into published tracks so the concentration's progression is visible.",
+    "Clean presentation: collapse split GER and 'or ...' rows and replace identical specialization placeholders with real course listings."
   ]
 }

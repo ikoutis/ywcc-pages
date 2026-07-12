@@ -5,61 +5,107 @@
     {
       "key": "curriculum_coherence",
       "name": "Curriculum coherence & progression",
-      "score": 4,
-      "justification": "The visible course set shows well-layered, logically building sequences: a computing spine (CS 100 -> CS 113 -> CS 114/IT 114) feeds a web/application track (IS 117 -> IS 218/219 -> IS 322/331/373 -> IS 421) and an advanced-IS/analytics tier (IS 390 -> IS 455, IS 344 -> IS 465), alongside a coherent business foundation (ACCT, ECON, FIN, HRM, ENTR). The STS side is represented by ethics/society content (IS 350). A deepest prerequisite chain of 7 confirms genuine multi-year layering rather than a flat catalog. The main limitation is that only a single plan-of-study group (2nd Semester) was parsed, so full term-over-term ordering cannot be directly verified from the data.",
-      "suggestion": "Publish the complete term-by-term plan of study for both degrees so progression, co-requisite timing, and difficulty ramp can be seen across all eight semesters rather than a single term fragment."
+      "score": 3,
+      "justification": "The information-systems spine is coherent and genuinely vertical (CS 100->113->114, IS 117->218->219->421, IS 331->IS 491 senior project) with a deepestPrereqChain of 7, and business courses (ACCT 115/117, ECON 201, FIN 218/315, HRM 301, ENTR 210, IE 492) interleave sensibly. However, only one plan-of-study term parsed (requirementGroups=1, the '2nd Semester' block), so term-over-term ordering cannot be verified, and for a dual degree whose first half is Science, Technology & Society the STS/policy/social-studies-of-technology content is almost invisible in the course set, represented only by IS 350 Computers, Society and Ethics.",
+      "suggestion": "Restore the full eight-term plan-of-study grid and explicitly slot the STS half (history/philosophy of science, technology policy, science-and-society courses) so the dual degree reads as an integrated program rather than a BIS track with a missing companion."
     },
     {
       "key": "prereq_structure",
       "name": "Prerequisite structure health",
       "score": 4,
-      "justification": "The prerequisite graph is sensible and richly specified: deepestPrereqChain is 7, which is deep but appropriate for a combined four-year degree, and prerequisites use explicit boolean logic and grade conditions (e.g., IS 218 requires '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'; CS 113 'with a grade C or better'). Only 3 of 59 referenced courses are missing from the catalog (missingCoursesSample: YWCC 107, YWCC 207, YWCC 307), roughly 5 percent, and these appear to be YWCC seminar/orientation-type courses rather than technical gateways, so the dangling references are low-impact. The chief watch-item is that several capstone-level courses (IS 333, IS 448, IS 465) sit at depth 7, which can create scheduling bottlenecks.",
-      "suggestion": "Resolve the 3 dangling references (YWCC 107, YWCC 207, YWCC 307) by adding catalog entries or correcting the codes, and document recommended sequencing for the depth-7 courses to avoid senior-year bottlenecks."
+      "justification": "The prerequisite graph is well-formed and readable, with grade-conditioned prerequisites (e.g., 'CS 113 with a grade C or better', 'IS 219 and (IS 331 or CS 331)') and per-course depths from 0 to 7. missingCourseCount is only 3, and all three (YWCC 107, YWCC 207, YWCC 307) are one-credit college seminars that dangle without breaking any core IS chain; the depth-7 path into IS 465/IS 448 is on the deep side but genuine.",
+      "suggestion": "Catalog the three YWCC 107/207/307 seminars so they resolve, and audit the depth-7 chain into IS 465 (statistics GUR -> ... ) to confirm it does not over-constrain scheduling in an already dual-major load."
     },
     {
       "key": "learning_outcomes",
       "name": "Learning outcomes & objectives",
       "score": 2,
-      "justification": "No program-level learning outcomes or educational objectives are present anywhere in the provided data. For a catalog-quality page, and especially for a combined degree that must articulate how STS and Business/Information Systems competencies integrate, the absence of stated outcomes is a real deficiency: prospective students and assessors cannot see what graduates are expected to know or be able to do.",
-      "suggestion": "Publish an explicit set of program-level learning outcomes for the combined degree, ideally mapping each outcome to the STS, business, and information-systems course blocks that develop it."
+      "justification": "The program data contains no program-level learning outcomes, educational objectives, or narrative overview of any kind; only the course list and a single parsed term are present. For a dual degree that fuses a humanities/social-science field (STS) with an applied IS field, the absence of outcomes is especially costly because the integrative value proposition is left entirely implicit.",
+      "suggestion": "Publish 5-7 program-level learning outcomes that explicitly bridge the two halves (e.g., analyze the societal and ethical impact of information systems, design and build business web/mobile applications, evaluate technology policy with data)."
     },
     {
       "key": "credit_balance",
       "name": "Credit distribution & balance",
       "score": 2,
-      "justification": "The plan does not reconcile: summedTermCredits is 12 against a statedTotalCredits of 120, giving a creditReconcileDelta of -108. Per the combined/dual-degree caveat this large negative delta is primarily a data-consistency artifact of only one plan-of-study group (2nd Semester, 12 cr) being parsed and of overlapping plans, not proof of a curriculum defect. Nonetheless, with only a single term captured, the split across general education, major core, and electives cannot be assessed for transparency or balance, and the stated total does not tie out to the visible plan.",
-      "suggestion": "Restore and reconcile the full plan of study so summed term credits equal the stated 120 (delta 0), and present a clear breakdown of general-education vs. major-core vs. elective credits for each of the two degrees, flagging shared/overlapping courses."
+      "justification": "The plan does not reconcile: summedTermCredits is only 12.0 against a statedTotalCredits of 120.0, giving a creditReconcileDelta of -108.0 because just one 12-credit term parsed. Beyond the parsing gap, 120 credits is itself suspect for a genuine dual B.S./B.S. degree, which typically requires substantially more, so the reader cannot see how general-education, STS, business, and IS credits are apportioned.",
+      "suggestion": "Rebuild the full credit grid and confirm the true total for the dual degree, then add a distribution summary (general education / STS core / business core / IS core / electives) so the 120 (or corrected) figure is transparent and reconciles term by term."
     },
     {
       "key": "presentation",
       "name": "Presentation & clarity",
       "score": 2,
-      "justification": "The program page is incomplete and partly garbled as captured. Only one requirement group ('2nd Semester') is present, and it contains vague or malformed items: placeholder titles like 'General Elective 5 2' and 'General Elective 6 2', null course codes, a 'Select one of the following:' line with no grouped options, and an 'or IT 491 or IT Capstone Project' alternative rendered as a stray line. IS 491 also shows a null credit value within the group. While the underlying individual course descriptions are strong, the plan-of-study presentation itself is fragmentary, unlabeled beyond one term, and does not read as a finished catalog page.",
-      "suggestion": "Rebuild the plan-of-study display with all terms labeled, real elective titles and credit values, and cleanly grouped 'select one of' alternatives (e.g., IS 491 / IT 491) so the page is legible and complete."
+      "justification": "Only one term rendered (the '2nd Semester' group), several rows carry null course codes, and alternatives appear as bare text such as 'or IT 491 or IT Capstone Project'; there is no program description, no outcomes, and no STS-side structure. The single parsed block therefore reads as a fragment rather than a catalog-quality plan.",
+      "suggestion": "Fix the plan-of-study parsing so all terms render with labeled headings and per-term credit totals, collapse 'or' alternatives into clear either/or pairs, and add a short program overview describing the STS+BIS pairing."
     },
     {
       "key": "industry_relevance",
       "name": "Industry & currency relevance",
-      "score": 4,
-      "justification": "The course inventory reflects current information-systems and business practice well: web and mobile application development (IS 218/219, IS 322), database design (IS 331), cloud-based web systems for startups (IS 421), UX design and usability measurement (IS 247, IS 375, IS 448), social network analysis and web mining/information retrieval (IS 333, IS 392), content management systems (IS 373), e-commerce (IT 310), and data-analysis/data-science foundations (IS 465). The business complement (accounting, finance, fintech restrictions, entrepreneurship) plus STS ethics (IS 350) gives graduates a modern, employable blend. The offering could still be strengthened with more explicit contemporary data science, machine learning, and security content.",
-      "suggestion": "Add or highlight current-practice electives in machine learning/data analytics and information security to keep the technical side aligned with present IS/BIS hiring demand."
+      "score": 3,
+      "justification": "The BIS half is current and employable (IS 218 web apps, IS 322 mobile, IS 331 databases, IS 333 social network analysis, IS 390 requirements analysis, IS 455 IS management, IT 310 e-commerce, IS 247/375 UX), but for a program explicitly branded Science, Technology & Society the currency of the STS half is thin: only IS 350 touches ethics, and there is no data governance, technology policy, privacy law, or applied data-science/AI content despite this being exactly where STS+IS careers now concentrate.",
+      "suggestion": "Add or list electives in technology policy / data governance and applied data science or AI so the STS half carries modern currency (algorithmic accountability, privacy regulation) rather than resting on a single ethics course."
     }
   ],
   "courseLevel": {
     "descriptionQuality": {
       "score": 4,
-      "justification": "Sampled course descriptions are overwhelmingly present, specific, and informative, conveying concrete topics and skills (e.g., IS 331 on relational databases and back-end functionality, IS 421 on cloud-based web systems in a startup context, IS 448 on usability and UX measurement). Restrictions and audience notes are included where relevant. A few entries are thin, notably IS 489 ('Students continue their research in preparation for completing a Research Thesis.'), but these are the exception rather than the norm."
+      "justification": "The sampled courses carry real, specific descriptions rather than placeholders (e.g., ACCT 115 develops 'fundamentals of financial accounting'; IS 333 teaches programs that 'grab information from social networking systems ... and analyze this to reveal useful but hidden information'). Excerpts are truncated at ~220 characters, and a few are genuinely thin (IS 489 INFO Undergrad Thesis Research at ~81 characters), but coverage is otherwise strong and informative."
     },
     "prerequisiteClarity": {
       "score": 4,
-      "justification": "Prerequisites are generally stated unambiguously with explicit boolean logic and grade thresholds (e.g., '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)', 'CS 113 with a grade C or better'). GUR/GER-based prerequisites (IS 333, IS 448, IS 465) enumerate the full list of acceptable courses, which is verbose but internally consistent. The only clarity/consistency drag is the 3 dangling YWCC references (YWCC 107/207/307) elsewhere in the referenced set, though none appears in the sampled prerequisite strings."
+      "justification": "Prerequisites are stated in clear, human-readable form with explicit grade conditions and boolean structure (e.g., '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'), and the parser resolved a clean depth graph. The only blemish is the 3 dangling YWCC 107/207/307 seminar references, which are peripheral one-credit courses rather than gatekeepers."
     }
   },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Technology and science policy / STS methods",
+        "rationale": "For a degree whose first half is Science, Technology & Society, the course set shows no policy analysis, history/philosophy of science, or qualitative social-science methods course; IS 350 alone cannot carry the STS half, so a dedicated STS core (e.g., a Technology, Policy and Society course) is needed."
+      },
+      {
+        "topic": "Applied data analytics and machine learning",
+        "rationale": "The IS track stops at IS 333 social network analysis and IS 392 web mining; there is no applied ML, predictive modeling, or Python/R data-science course, which is now standard for information-systems graduates and directly relevant to an STS student studying data-driven society."
+      },
+      {
+        "topic": "Data privacy, security, and governance",
+        "rationale": "No cybersecurity, privacy, or data-governance course appears despite IS 218/322/331 building data-collecting web, mobile, and database systems; STS+BIS graduates working at the technology-society boundary need GDPR/CCPA-style privacy and security engineering literacy."
+      },
+      {
+        "topic": "Quantitative research and statistics",
+        "rationale": "Only MATH 105 (elementary probability and statistics) is visible; an STS+IS program that analyzes technology in society should require inferential statistics and research design (e.g., MATH 333) so students can produce, not just consume, empirical claims."
+      },
+      {
+        "topic": "Cloud and modern software delivery",
+        "rationale": "The web sequence (IS 117/218/219/421) is traditional server-side web development with no cloud, DevOps, or API/microservice content, leaving a gap between the program's build courses and how business information systems are actually deployed today."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI governance and algorithmic accountability",
+        "rationale": "This is the fastest-growing STS-meets-technology niche and the natural destination for STS+BIS graduates; the program should extend IS 350 into a dedicated responsible-AI / algorithmic-accountability course to own this space."
+      },
+      {
+        "trend": "Data privacy regulation and compliance",
+        "rationale": "Privacy law (GDPR, CCPA, state AI acts) is reshaping how information systems are built and operated; a program that combines societal analysis with hands-on IS development is ideally positioned to teach privacy-by-design if it adds a privacy/compliance elective."
+      },
+      {
+        "trend": "Generative AI in business applications",
+        "rationale": "LLM-assisted development and AI-embedded business software are now baseline industry practice; IS 218/322/421 build courses should incorporate AI-assisted and AI-feature development so graduates ship current systems."
+      },
+      {
+        "trend": "Platform and social-media analytics for policy",
+        "rationale": "IS 333 social network analysis is a strong foundation the program can grow into misinformation, platform governance, and computational social science, uniting the STS and IS halves around a marketable, high-demand skill set."
+      },
+      {
+        "trend": "Human-centered and ethical UX",
+        "rationale": "With IS 247/375/448 already present, the program can position for value-sensitive and ethical design, an area where STS framing plus UX practice is a distinctive combination employers increasingly seek."
+      }
+    ]
+  },
   "topSuggestions": [
-    "Publish explicit program-level learning outcomes for the combined degree, mapping each to the STS, business, and information-systems course blocks that develop it (currently none are stated).",
-    "Restore and reconcile the full plan of study so summed term credits equal the stated 120 credits (creditReconcileDelta currently -108, driven by only one parsed term); this fixes both the credit-balance and presentation gaps.",
-    "Clean up the plan-of-study presentation: replace placeholder items ('General Elective 5 2', 'General Elective 6 2'), fill null course codes and the null credit on IS 491, and cleanly group the 'select one of' alternatives (IS 491 / IT 491).",
-    "Resolve the 3 dangling course references (YWCC 107, YWCC 207, YWCC 307) by adding catalog entries or correcting the codes.",
-    "Add or spotlight current-practice electives in machine learning/data analytics and information security, and document sequencing for the depth-7 capstone courses to prevent senior-year bottlenecks."
+    "Rebuild the full plan-of-study grid; only one 12-credit term parsed (creditReconcileDelta -108 against a stated 120), so students currently cannot see the degree structure at all.",
+    "Make the Science, Technology & Society half explicit by slotting STS/policy/history-of-science courses, since the visible curriculum is almost entirely BIS with only IS 350 representing STS.",
+    "Publish program-level learning outcomes that bridge societal analysis and applied IS, none of which currently appear in the data.",
+    "Add modern data and policy currency: an applied data-science/ML course and a technology-policy or data-privacy course, closing the biggest STS-side and IS-side gaps at once.",
+    "Catalog the YWCC 107/207/307 seminars and verify the true dual-degree credit total so the page reconciles and dangling references disappear."
   ]
 }

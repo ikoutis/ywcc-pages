@@ -1,0 +1,111 @@
+{
+  "id": "journalism-minor-448",
+  "name": "Journalism Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "A recognizable journalism craft spine is present (COM 338 The Newsroom, COM 336 Multimedia Journalism, COM 337 Photojournalism, COM 317 Advanced Composition, COM 324 Podcast Practicum, COM 390 Electronic Writing Workshop), and COM 336 sensibly builds on COM 240. However the 15-credit menu is diluted by many non-journalism COM/HIST/LIT electives, and with an empty requirementGroups there is no declared intro-to-advanced required path.",
+      "suggestion": "Designate a required reporting-craft core (e.g., COM 201 -> COM 338 The Newsroom -> COM 336 Multimedia Journalism) and mark the rest as electives."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is clean: missingCourseCount is 0 (no dangling references), and chains carry consistent, explicit grade conditions. COM 336 Multimedia Journalism -> COM 240 New Media Technologies is a sensible internal build; the deepest chain (6) is otherwise driven by the ENGL/GER gateway pattern.",
+      "suggestion": "Where a course genuinely needs production skills (e.g., COM 336), state the media prerequisite explicitly rather than relying on the GER ladder."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the parsed data (the page carries only a name and a course menu, with an empty requirementGroups). For a catalog page this absence is itself a real finding.",
+      "suggestion": "Publish 3-5 explicit, measurable program learning outcomes stating what a completer of the minor should know and be able to do."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 4,
+      "justification": "The minor states a 15-credit total and every course is a uniform 3 credits, so the requirement is transparent and evenly weighted; creditReconcileDelta is null only because no term breakdown is parsed (a data caveat for a menu-style minor, not a defect).",
+      "suggestion": "Publish how the 15 credits divide between a required reporting core and electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Course-level descriptions are present and substantive and the total credits are stated, but the program page has no description and no requirementGroups, so the plan of study is not legibly grouped.",
+      "suggestion": "Add a brief program description and group the menu into a required core and elective tiers."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The menu is notably current for a small program: multimedia and mobile storytelling (COM 336, COM 350 Digital Video Production), audio (COM 324 Podcast Practicum), visual reporting (COM 337 Photojournalism), and platform practice (COM 343 Social Media Analytics) all map to today's newsroom; gaps are data journalism, verification, and a dedicated ethics/law course.",
+      "suggestion": "Add a data-journalism and verification component so graduates can report with and about data and detect manipulated media."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Sampled descriptions are present and informative across the COM/HIST/LIT courses; none are flagged thin or missing."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "prerequisiteRaw is present with consistent 'C or higher' conditions and 0 dangling references. Some clauses are verbose or redundant (COM 343 restates that 'COM 201 or PSY 201 provides necessary background'), and many cite a GER category rather than a specific course."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Journalism ethics & media law",
+        "rationale": "No practice-oriented ethics/law course is required; HIST 370 Legal Issues in the History of Media is historical, not professional standards."
+      },
+      {
+        "topic": "Data journalism & computational reporting",
+        "rationale": "There is no data/CAR course; a natural build on COM 343 Social Media Analytics."
+      },
+      {
+        "topic": "Investigative reporting & verification/fact-checking",
+        "rationale": "COM 338 The Newsroom and COM 336 Multimedia Journalism cover production but not sourcing, verification, or public-records methods."
+      },
+      {
+        "topic": "Beat reporting (science, business, politics)",
+        "rationale": "Specialized beat reporting - valuable at a STEM university - is absent from the menu."
+      },
+      {
+        "topic": "Business of news & audience analytics",
+        "rationale": "Media economics and entrepreneurial/creator-economy journalism are not represented."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI in the newsroom",
+        "rationale": "LLM-assisted drafting, summarization, and synthetic-media detection should modernize COM 336 Multimedia Journalism and COM 355 Digital Media Futures."
+      },
+      {
+        "trend": "Verification & misinformation/deepfake detection",
+        "rationale": "Extend COM 343 Social Media Analytics into provenance and manipulated-media detection, now core to digital reporting."
+      },
+      {
+        "trend": "Audio and creator-economy journalism",
+        "rationale": "COM 324 Podcast Practicum is a strong seed for newsletters, independent audio, and subscription models."
+      },
+      {
+        "trend": "Interactive data & visual storytelling",
+        "rationale": "Pair COM 353 Applied Visual Communication with data visualization for explanatory journalism."
+      },
+      {
+        "trend": "Mobile-first / vertical social video",
+        "rationale": "Extend COM 350 Digital Video Production toward platform-native vertical formats and social distribution."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Add a required journalism ethics & media-law course.",
+    "Add data/computational journalism and verification/fact-checking skills.",
+    "Publish explicit learning outcomes and a required-core vs. elective structure.",
+    "Integrate AI-assisted reporting and synthetic-media detection into existing digital courses.",
+    "Trim non-journalism electives so the 15 credits center on reporting craft."
+  ]
+}

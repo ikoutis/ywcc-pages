@@ -1,0 +1,111 @@
+{
+ "id": "b-s-in-industrial-engineering-technology-645",
+ "name": "B.S. in Industrial Engineering Technology",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 2,
+   "justification": "Term-over-term progression cannot be verified because only a single term is present in the data (requirementGroups 1: a final '2nd Semester' listing ECET 400, CHEM 301 and three electives); the other seven terms are missing. The 35-course sample pool shows a coherent industrial-engineering-technology blend (ECET 350 computerized controls, ECET 412 power, ECET 415/416/418 networking/telecom, IE 355 human factors, IE 449 robotics, IE 473 safety, ME 215 materials, MNET/MATH statistics) with a deep graph, but as published the plan does not read as a sequence.",
+   "suggestion": "Restore the full 8-term plan of study; the page currently exposes only the final term."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 3,
+   "justification": "deepestPrereqChain is 9 with sound upper-level chains (ECET 350 depth 8, ECET 400 depth 9, ECET 418 depth 7). Of the 7 dangling references, five are placeholders/labs (CHEM 125A, GER 200, GER 300, PHYS 102A, PHYS 103A) but two, CPT 310 and ENG 340, are genuine broken course links that should resolve.",
+   "suggestion": "Fix the real dangling references CPT 310 and ENG 340, and resolve the CHEM 125A / PHYS-lab / GER placeholders."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or ABET student outcomes appear in the provided data; only course descriptions and a single plan term are present.",
+   "suggestion": "Publish explicit ETAC/ABET-style student outcomes for the IET program."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 2,
+   "justification": "The credits do not reconcile: summedTermCredits 15 against statedTotalCredits 120 gives creditReconcileDelta -105.0. This stems from the plan being parsed as a single term, so the distribution across GER, math/science and major core cannot be verified from the data; it is a data-completeness problem rather than an over-credited plan.",
+   "suggestion": "Publish all eight terms so summed credits reconcile to the stated 120 and the distribution is auditable."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 2,
+   "justification": "The catalog page is effectively missing its plan of study: only the final '2nd Semester' block appears, so a prospective student cannot see the four-year path. Course descriptions themselves are complete.",
+   "suggestion": "Render the complete term-by-term plan so the page is usable for advising."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 3,
+   "justification": "The sampled pool is reasonably current for industrial-engineering technology, emphasizing computerized industrial controls (ECET 350), automation/robotics (IE 449), telecommunications/networking (ECET 415/416/418) and object-oriented programming (ECET 444). Currency gaps include operations-research/optimization depth, data analytics, and Industry 4.0/IIoT integration.",
+   "suggestion": "Add analytics/OR and an Industry 4.0/IIoT option (building on ECET 350 controls and ENGR 301 data science)."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "Descriptions are present and specific (ECET 350 on computerized industrial control systems, ECET 418 on fiber-optic and wireless transmission, ECET 444 on object-oriented application development); a few entries (ECET 210, ECET 329) fold prerequisite/restriction text into the description."
+  },
+  "prerequisiteClarity": {
+   "score": 3,
+   "justification": "Most prerequisites are explicit and compound (ECET 350 '(ECET 211 or CPT 315 or ECE 252) and ECET 311', ECET 416 'CS ... and ECET 415'), but two genuine dangling references (CPT 310, ENG 340) plus placeholders reduce clarity, and several courses list 'None' while their text imposes standing restrictions."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Operations research and optimization",
+    "rationale": "The pool is controls- and electronics-heavy but light on deterministic/stochastic optimization, a core industrial-engineering competency for scheduling and resource allocation."
+   },
+   {
+    "topic": "Data analytics and statistical process control",
+    "rationale": "Quantitative coverage rests on MATH 305/MNET 315; a modern IET program needs applied analytics and SPC for quality and process data."
+   },
+   {
+    "topic": "Lean and Six Sigma quality systems",
+    "rationale": "No lean/Six Sigma or dedicated quality-systems course appears in the sampled pool, despite being standard for industrial-engineering-technology careers."
+   },
+   {
+    "topic": "Supply chain and production planning",
+    "rationale": "Production planning, scheduling and logistics are absent from the sample, leaving a gap in operations-management breadth."
+   },
+   {
+    "topic": "Ergonomics/human-factors depth",
+    "rationale": "IE 355 Human Factors is present but could be extended with workplace-design and safety analytics (IE 473 Safety Engineering is available)."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Industry 4.0 and IIoT-enabled smart factories",
+    "rationale": "ECET 350 computerized controls plus ECET 415/416 networking form a foundation for connected, data-rich manufacturing operations."
+   },
+   {
+    "trend": "Digital twin and simulation of production systems",
+    "rationale": "Simulating and optimizing production digitally is a growing IET skill that the controls/networking base could support."
+   },
+   {
+    "trend": "Data science and ML for operations",
+    "rationale": "Predictive analytics and ML for quality and throughput are in demand; ENGR 301 and MATH 305 could anchor a data-driven elective."
+   },
+   {
+    "trend": "Automation and collaborative robotics",
+    "rationale": "IE 449 Industrial Robotics positions the program for cobot integration and automated material handling."
+   },
+   {
+    "trend": "Cyber-physical / OT security for manufacturing",
+    "rationale": "As factory controls (ECET 350) connect to networks, securing operational technology becomes a differentiating competency."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Restore/publish the complete plan of study: the data contains only one final term (creditReconcileDelta -105.0; summedTermCredits 15 vs stated 120), so the page is missing seven of eight terms.",
+  "Publish explicit program learning outcomes, which are absent from the data.",
+  "Resolve the genuine dangling course references CPT 310 and ENG 340 (plus the CHEM 125A / PHYS-lab / GER placeholders).",
+  "Add operations-research/analytics and an Industry 4.0/IIoT option (build on ECET 350 and ENGR 301) to modernize.",
+  "Add lean/Six Sigma quality-systems and supply-chain/production-planning coverage."
+ ]
+}

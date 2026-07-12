@@ -1,0 +1,111 @@
+{
+  "id": "environmental-studies-and-sustainability-minor-497",
+  "name": "Environmental Studies and Sustainability Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 2,
+      "justification": "There is no requirement structure (requirementGroups=0), and the referenced course pool is dominated by law and history courses (HIST 3xx law-and-society, IT 331/332/400 technology law, MGMT 290 Business Law, IE 447 Legal Aspects of Engineering, STS 300 Legal Reasoning) and a block of physics courses (PHYS 418/433/442/446/450, OPSE 402), with only a few genuinely environmental entries (EVSC 335 Environmental Law, HIST 338 Environmental Justice and Climate Change, HIST 375 Legal Issues in Environmental History). As presented the minor does not cohere around environmental studies and sustainability -- the pool appears shared with a Law/Technology/Culture program and a physics program.",
+      "suggestion": "Publish a curated, structured plan built around environmental-science and sustainability courses rather than the borrowed law and physics pool."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "missingCourseCount=0, so there are no dangling references; deepestPrereqChain=7 reflects the catalog depth of the source courses (e.g., PHYS 433/442 at depth 7) rather than an internal requirement of an interdisciplinary minor. The prerequisite picture is clean.",
+      "suggestion": "State a low, broadly accessible entry prerequisite so this interdisciplinary minor is open to students across colleges."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes appear in the data for this minor.",
+      "suggestion": "Publish learning outcomes describing the environmental-literacy, policy, and sustainability competencies the minor certifies."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "statedTotalCredits is null and there is no term plan or summed credit figure (creditReconcileDelta null), so the minor's size and its core/elective balance cannot be verified.",
+      "suggestion": "State the total credit requirement and a required-versus-elective split."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The empty requirement groups, absent stated total, and an off-topic law/physics-heavy course pool make the page unclear as an environmental-studies plan.",
+      "suggestion": "Publish a legible plan-of-study table listing clearly environmental and sustainability courses."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The environmental-law, policy, and justice angle that is present (EVSC 335 Environmental Law, HIST 338 Environmental Justice and Climate Change, HIST 375 Legal Issues in Environmental History) is genuinely relevant to sustainability careers, but the minor lacks the natural-science and technical sustainability content -- climate science, renewable energy, environmental science, and geospatial analysis -- that employers and graduate programs expect.",
+      "suggestion": "Add environmental-science, climate-science, and renewable-energy/sustainability-technology courses to complement the strong environmental-law and justice offerings."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and substantive across the pool (EVSC 335 Environmental Law, HIST 338 Environmental Justice and Climate Change in America, HIST 375 Legal Issues in Environmental History), with no thin or placeholder excerpts among sampled courses."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites carry clear conditions (typically ENGL 102 plus a 200-level GER) and missingCourseCount=0, so there are no dangling references and the statements are internally consistent."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Environmental science fundamentals and ecology",
+        "rationale": "The pool has environmental law and history but no ecology or environmental-science course, the natural-science foundation of the field."
+      },
+      {
+        "topic": "Physical climate science",
+        "rationale": "HIST 338 covers climate change socially and through environmental justice, but no physical climate-science course is present."
+      },
+      {
+        "topic": "Renewable energy and sustainability technology",
+        "rationale": "Despite 'Sustainability' in the title, there is no energy/renewables/green-technology course (the physics courses in the pool, e.g., PHYS 446 solid state, are not energy-focused)."
+      },
+      {
+        "topic": "GIS, remote sensing, and environmental data",
+        "rationale": "No geospatial or environmental-data-analysis course is present, though this is a core applied skill in the field."
+      },
+      {
+        "topic": "Environmental economics and policy analysis",
+        "rationale": "MGMT 290 is general business law and EVSC 335 is environmental law, but no environmental-economics or policy-analysis course is present."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Climate resilience and adaptation planning",
+        "rationale": "Connecting HIST 338 environmental justice to technical adaptation content matches a fast-growing area of practice."
+      },
+      {
+        "trend": "Sustainability analytics, ESG, and carbon accounting",
+        "rationale": "Data-driven sustainability is a rapidly growing employer demand absent from the current pool."
+      },
+      {
+        "trend": "Renewable-energy transition and clean technology",
+        "rationale": "Pairing the physics offerings with an explicit energy-systems course would give the 'sustainability' half real content."
+      },
+      {
+        "trend": "Environmental justice and equity",
+        "rationale": "HIST 338 already anchors this rapidly growing area, which the minor could build out into a strength."
+      },
+      {
+        "trend": "Circular economy and life-cycle assessment",
+        "rationale": "Quantitative sustainability methods such as LCA are increasingly expected and are absent from the pool."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Curate the course pool to the discipline -- as presented it is dominated by law/history and physics courses with only a few environmental entries (EVSC 335, HIST 338, HIST 375); rebuild it around environmental-science and sustainability courses.",
+    "Add the field's core science and technical content -- environmental science/ecology, climate science, renewable energy, and GIS/environmental data -- to complement the strong environmental-law and justice offerings.",
+    "Publish an explicit requirement structure and a stated total credit count (both currently absent).",
+    "Add an environmental-economics/policy-analysis course and sustainability-analytics/ESG content.",
+    "Publish program-level learning outcomes for the minor."
+  ]
+}

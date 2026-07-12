@@ -1,0 +1,111 @@
+{
+  "id": "mathematics-of-finance-and-actuarial-science-minor-481",
+  "name": "Mathematics of Finance and Actuarial Science Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 4,
+      "justification": "No formal requirement groups are provided (requirementGroups=0), but the referenced pool is genuinely focused and well-ordered for the discipline: Mathematics of Finance I/II (MATH 346/347), Financial Derivatives I/II capstones (MATH 432/433), Actuarial Mathematics I (MATH 441), Stochastic Processes (MATH 477), Stochastic Simulation (MATH 448), and Operations Research (MATH 334), supported by probability, statistics, and regression -- a coherent set with a clear capstone. A few mathematical-biology courses (MATH 372/373/374, 430/431) sit in the pool as strays.",
+      "suggestion": "Publish the plan of study and, notably, add the Actuarial Mathematics II follow-on to complete the actuarial sequence."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "missingCourseCount=0, so there are no dangling references; deepestPrereqChain=7 reflects the source courses' catalog depth rather than an internal requirement of a short minor. The prerequisite picture is clean, and the finance capstones (MATH 432 -> 433) chain sensibly.",
+      "suggestion": "State the calculus/probability entry prerequisite so students see the on-ramp to the finance sequence."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes appear in the data for this minor.",
+      "suggestion": "Publish learning outcomes describing the financial-mathematics and actuarial competencies the minor certifies (and any actuarial-exam alignment)."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "statedTotalCredits=16.0 is published, but with no term plan or summed credit figure the required-versus-elective split is not shown and creditReconcileDelta is null (a data-consistency caveat expected for an unstructured minor record).",
+      "suggestion": "Show how the stated 16 credits split into required finance/actuarial core versus electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "The pool is on-topic and legible for this minor, but there are still no requirement groups or stated plan, and a few mathematical-biology courses appear as strays in the pool.",
+      "suggestion": "Publish a structured plan-of-study table and remove the stray mathematical-biology courses from the referenced list."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The pool aligns strongly with actuarial and quantitative-finance careers: derivatives (MATH 432/433), actuarial mathematics (MATH 441), stochastic processes (MATH 477), regression (MATH 344), and operations research (MATH 334) map to actuarial exams (P, FM) and quant roles. The gaps are that only Actuarial Mathematics I (not II) is present and there is no computational-finance/programming or machine-learning-in-finance course.",
+      "suggestion": "Add Actuarial Mathematics II and a financial-data/programming (Python/R) course to modernize the classical derivatives-and-actuarial core."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and substantive across the finance/actuarial spine (MATH 432/433 Mathematics of Financial Derivatives I/II, MATH 441 Actuarial Mathematics I, MATH 477 Stochastic Processes), with no thin or placeholder excerpts among sampled courses."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites carry clear 'grade C or better' conditions and missingCourseCount=0, so there are no dangling references and the finance capstone chain (MATH 432 -> 433) is internally consistent."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Actuarial Mathematics II",
+        "rationale": "Only MATH 441 (Actuarial Mathematics I) is in the pool; the follow-on covering reserves and life contingencies (MATH 442) needed for actuarial-exam readiness is absent."
+      },
+      {
+        "topic": "Financial data analysis and programming (Python/R)",
+        "rationale": "No computational-finance or programming course appears despite the quantitative content, so students may lack hands-on implementation skills."
+      },
+      {
+        "topic": "Financial time series and econometrics",
+        "rationale": "MATH 344 covers regression but not financial time series or volatility modeling (e.g., GARCH), which is core to quantitative finance."
+      },
+      {
+        "topic": "Quantitative risk management",
+        "rationale": "No value-at-risk or risk-management course is present, a standard component of modern financial mathematics."
+      },
+      {
+        "topic": "Machine learning in finance",
+        "rationale": "No machine-learning course is referenced for pricing, fraud detection, or algorithmic-trading applications."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Machine learning and AI in quantitative finance",
+        "rationale": "Pricing, trading, and fraud detection are increasingly machine-learning-driven, a direction absent from the classical pool."
+      },
+      {
+        "trend": "Computational finance and large-scale Monte Carlo",
+        "rationale": "Extending MATH 448 stochastic simulation and the MATH 432/433 derivatives numerics toward high-performance simulation matches industry practice."
+      },
+      {
+        "trend": "Financial data science and alternative data",
+        "rationale": "Connecting regression (MATH 344) and stochastic processes (MATH 477) to large financial datasets reflects a fast-growing skill set."
+      },
+      {
+        "trend": "Predictive analytics in actuarial practice",
+        "rationale": "Actuaries now use predictive models beyond classical life-contingency tables, so the actuarial track should modernize."
+      },
+      {
+        "trend": "FinTech and algorithmic trading",
+        "rationale": "Market-relevant directions, including emerging digital-asset modeling, that would strengthen graduate employability."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Add Actuarial Mathematics II (MATH 442) to complete the actuarial sequence -- only Actuarial Mathematics I appears, leaving the actuarial-exam pathway incomplete.",
+    "Add a computational-finance/financial-programming course (Python/R) and a financial-time-series/risk course to modernize the classical derivatives-and-actuarial core.",
+    "Introduce machine-learning-in-finance content.",
+    "Publish a plan-of-study table showing how the stated 16 credits split into required core versus electives, and remove the stray mathematical-biology courses from the pool.",
+    "Publish program-level learning outcomes for the minor."
+  ]
+}

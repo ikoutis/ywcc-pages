@@ -1,0 +1,103 @@
+{
+  "id": "b-s-general-engineering-concentration-in-quality-and-reliability-engineering-684",
+  "name": "B.S. General Engineering - Concentration in Quality and Reliability Engineering",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 2,
+      "justification": "The displayed plan of study is essentially a duplicate of the mechatronics sequence (ECE 231, MECH 234/236/237, ME 231/305/430/441, ENGR 423/424, CS 440, IE 455) and does not contain the courses that define a Quality & Reliability concentration. The signature courses -- ENGR 430 (Engineering for Quality and Reliability), IE 461 (Product Quality Assurance), IE 331 (Applied Statistical Methods), MATH 244 (Probability Theory), ENGR 360 (GD&T & Applied Metrology), and ENGR 425 (Advanced Manufacturing Rotation) -- appear only in the referenced sampleCourses, so the plan a reader sees is incoherent with the concentration's purpose.",
+      "suggestion": "Republish the plan so the quality/reliability core (ENGR 430, IE 461, IE 331/MATH 244, ENGR 360, ENGR 425) is the visible required sequence instead of the mechatronics course list currently shown."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "The referenced quality/reliability courses form a sound statistical chain (MATH 244/IE 331 -> IE 461 Product Quality Assurance; deepestPrereqChain 6 overall), and grade conditions are explicit. However seven codes are missing (CHEM 125A, ENGR 211, ENGR 312, GER 200, PHYS 111A, PHYS 121A, PHYS 231A), and because the displayed plan is the mechatronics one, the intended reliability prerequisite path is not actually shown to students.",
+      "suggestion": "Surface the statistics->quality chain (MATH 244/IE 331 -> IE 461) in the plan and catalog the missing co-req codes (including PHYS 231A) so the reliability prerequisite path is both present and complete."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives are present in the data; only a (mismatched) plan of study is given. This is a real omission for a concentration whose whole point is measurable quality and reliability competency.",
+      "suggestion": "Publish explicit outcomes such as 'apply statistical process control and design of experiments' and 'perform reliability/life-data analysis and FMEA'."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "Numerically the plan reconciles (creditReconcileDelta 0; 120 vs 120) with well-loaded terms, but because the displayed sequence is the mechatronics plan, the credit distribution shown is not the quality/reliability distribution -- the balance cannot be trusted to represent this concentration.",
+      "suggestion": "After restoring the correct courses, state the credit split among the statistics core, the quality/reliability courses, and the supporting engineering electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The catalog page displays the wrong sequence: it shows the mechatronics/robotics courses rather than the Quality & Reliability courses, so a prospective student cannot see the concentration's actual requirements. This is a data-consistency problem, not merely cosmetic, since the defining course ENGR 430 never appears in the plan.",
+      "suggestion": "Correct the page so the Quality & Reliability plan of study renders (with ENGR 430 and the IE quality courses) rather than a copy of the mechatronics sequence."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The concentration's actual referenced course set is well aligned with current practice: IE 331 (Applied Statistical Methods), IE 461 (Product Quality Assurance), ENGR 430 (Quality & Reliability), ENGR 360 (GD&T & Metrology), IE 355 (Human Factors), ENGR 425 (Advanced Manufacturing), and ENGR 301 (Data Science) cover statistical quality, reliability, and metrology as industry expects.",
+      "suggestion": "Add explicit design-of-experiments and Six Sigma content, and connect ENGR 301 to predictive/condition-based maintenance so the reliability track reflects data-driven quality practice."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "The referenced quality/reliability descriptions are specific and informative -- IE 461 (defect prevention, process capability, inspection data), ENGR 430 (principles and tools of quality and reliability), IE 331 (statistical inference, hypothesis testing), ENGR 360 (GD&T and applied metrology) -- with no thin text."
+    },
+    "prerequisiteClarity": {
+      "score": 3,
+      "justification": "Prerequisites are clear and internally consistent for the quality/statistics courses (IE 461 requires IE 331; IE 331 requires MATH 211), but clarity for the concentration is undercut because those courses are not in the displayed plan and seven codes (including PHYS 231A) are dangling."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Design of experiments (DOE)",
+        "rationale": "The referenced statistics courses (IE 331, MATH 244) provide inference, but structured DOE -- central to quality engineering -- is not explicitly covered."
+      },
+      {
+        "topic": "Reliability engineering methods (Weibull/life-data, FMEA, FTA)",
+        "rationale": "ENGR 430 introduces reliability broadly, yet dedicated life-data analysis and failure-mode/fault-tree methods are not surfaced as their own competency."
+      },
+      {
+        "topic": "Statistical process control and Six Sigma",
+        "rationale": "IE 461 touches process capability, but a structured SPC/Six Sigma sequence -- the working language of quality organizations -- is missing from the visible plan."
+      },
+      {
+        "topic": "Metrology and measurement-systems analysis",
+        "rationale": "ENGR 360 (GD&T & Applied Metrology) exists in the catalog but is not in the displayed plan, leaving measurement-system competency out of the concentration a reader sees."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Data-driven quality and predictive maintenance",
+        "rationale": "With ENGR 301 (Data Science) available, ML-based defect prediction and condition-based maintenance are reshaping quality engineering and fit this track directly."
+      },
+      {
+        "trend": "Quality 4.0 and in-line digital inspection",
+        "rationale": "Sensor-instrumented, real-time quality monitoring (Quality 4.0) extends IE 461/ENGR 360 toward where manufacturing quality is heading."
+      },
+      {
+        "trend": "Computer-vision automated inspection",
+        "rationale": "CS 440 (Computer Vision) in the course pool is a natural bridge to automated visual inspection, a fast-growing quality-assurance method."
+      },
+      {
+        "trend": "Model-based reliability and digital twins",
+        "rationale": "Reliability prediction from simulation/digital-twin models is emerging practice that would modernize the ENGR 430 reliability content."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Correct the plan of study so the Quality & Reliability core (ENGR 430, IE 461, IE 331/MATH 244, ENGR 360, ENGR 425) is shown instead of the duplicated mechatronics sequence.",
+    "Add explicit design-of-experiments, SPC/Six Sigma, and reliability (Weibull/FMEA/FTA) content.",
+    "Publish explicit quality/reliability learning outcomes.",
+    "Connect ENGR 301 (Data Science) to predictive/condition-based maintenance for data-driven quality.",
+    "Catalog the missing co-req codes (including PHYS 231A) and surface the statistics->quality prerequisite chain."
+  ]
+}

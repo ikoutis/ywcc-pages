@@ -1,0 +1,103 @@
+{
+  "id": "engineering-innovation-minor-686",
+  "name": "Engineering Innovation Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 2,
+      "justification": "No plan of study or requirement structure is published (requirementGroups is empty), and the 60-course pool is undifferentiated and identical to the Minor in Drones and Robotics -- both share the 686 id and the same course list. The innovation-relevant courses -- ENGR 350 (IP for Engineers), ENTR 210 (Entrepreneurship), ENTR 320 (Financing New Venture), ENTR 440 (Lean Startup), ENGR 320 (Prototyping), and ENGR 430 (Quality & Reliability) -- are present but embedded among unrelated courses (CET 435, BME 472, CHE 312), so no coherent innovation pathway is shown.",
+      "suggestion": "Publish a defined innovation sequence (e.g. required ENGR 350 + ENTR 210 + ENTR 440, with electives such as ENTR 320, ENGR 320, IE 463) and remove the unrelated construction/biomedical/chemical-process courses from the minor's pool."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "Only four codes are dangling (ENGR 211, ENGR 312, GER 200, PHYS 231A), and the innovation courses appropriately carry light or no prerequisites (ENTR 210/440 none; ENTR 320 requires ENTR 410 or 210; ENGR 350 requires FED 101 or MET 103), which suits an accessible minor. The reported deepestPrereqChain of 8 is driven entirely by unrelated technical courses in the shared pool, not by the innovation courses, so it misrepresents this minor's depth.",
+      "suggestion": "Scope the pool to the innovation/entrepreneurship courses and document the (short) prerequisite expectations so students -- including non-engineering-adjacent majors -- can see the low barrier to entry."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No learning outcomes and no requirement structure are provided; the page offers neither objectives nor a plan of study. This is a substantial omission for a minor whose value is a defined innovation/commercialization skill set.",
+      "suggestion": "Publish explicit minor-level outcomes (e.g. 'assess patentability and IP strategy' and 'develop and validate a technology business model') along with the required-credit structure."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "Credit balance cannot be assessed: statedTotalCredits, summedTermCredits, and creditReconcileDelta are all null because no plan exists (a data-consistency caveat from how the minor was captured). A minor should specify its fixed credit total and required/elective split, none of which is present.",
+      "suggestion": "State the minor's total credit requirement and its required-vs-elective breakdown (typical engineering minors are 15-18 credits)."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "As captured, the page has no plan of study, no stated credits, and a course pool that is polluted with unrelated subjects and byte-for-byte identical to the Drones and Robotics minor -- a reader cannot determine what the Engineering Innovation Minor uniquely requires.",
+      "suggestion": "Give the minor its own curated course list distinct from the Drones and Robotics minor, with a required-credit summary at the top of the page."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The innovation content that is present is current and coherent as a set: ENGR 350 (IP for Engineers), ENTR 210 (Entrepreneurship), ENTR 320 (Financing New Venture), ENTR 440 (Lean Startup Accelerator), ENGR 320 (Prototyping), and ENGR 301 (Data Science) map well to how engineers commercialize technology today. The relevance is real even though it must be extracted from a cluttered, shared pool.",
+      "suggestion": "Feature the ideation-to-venture pipeline (ENGR 320 prototyping -> ENGR 350 IP -> ENTR 210/440 venture building -> ENTR 320 financing) as the minor's spine and add a design-thinking front end."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "The innovation course descriptions are specific and informative -- ENGR 350 (patents/IP realization), ENTR 210 (opportunity recognition, business-model validation), ENTR 320 (estimating and securing funding, financial metrics), ENTR 440 (lean-startup customer discovery) -- with no thin or placeholder text; the pool's other descriptions are also complete."
+    },
+    "prerequisiteClarity": {
+      "score": 3,
+      "justification": "Prerequisites for the innovation courses are clear and consistent (ENTR 320/330 require ENTR 410 or 210; ENGR 350 requires FED 101 or MET 103), but because no plan defines which courses count toward the minor, students cannot see which prerequisite chains actually apply to them."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Design thinking / human-centered innovation",
+        "rationale": "The pool jumps from prototyping (ENGR 320) and IP (ENGR 350) to venture building (ENTR 210/440) without a structured front-end ideation/design-thinking course."
+      },
+      {
+        "topic": "Technology transfer and licensing",
+        "rationale": "ENGR 350 covers IP fundamentals, but the mechanics of licensing and moving technology IP to market are not represented as a defined competency."
+      },
+      {
+        "topic": "Product management and roadmapping",
+        "rationale": "IE 463 (Invention & Entrepreneurship) in the pool touches product creation, but ongoing product-lifecycle management is absent from any defined requirement."
+      },
+      {
+        "topic": "Engineering economics for decision-making",
+        "rationale": "ENTR 320 (Financing New Venture) addresses venture funding, but broader engineering-economics/cost-analysis competency (e.g. IE 335) is not surfaced as part of the minor."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI-assisted product design and generative design",
+        "rationale": "As the minor teaches prototyping (ENGR 320) and invention (IE 463), generative-AI design tools are rapidly changing how engineers create and iterate products."
+      },
+      {
+        "trend": "AI-driven IP and patent analytics",
+        "rationale": "ENGR 350 (IP for Engineers) would be modernized by prior-art search and patent analytics tools now central to IP practice."
+      },
+      {
+        "trend": "Lean/agile venture building and alternative financing",
+        "rationale": "ENTR 440 (Lean Startup) and ENTR 320 (Financing New Venture) position the minor for today's metrics-driven, crowdfunding/SAFE-era startup landscape."
+      },
+      {
+        "trend": "Sustainable and impact-driven ventures",
+        "rationale": "ESG and mission-driven venture models are a growing expectation that pairs naturally with the ENTR entrepreneurship sequence."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish a curated, dedicated innovation course list and sequence (required ENGR 350/ENTR 210/ENTR 440 plus scoped electives) and remove unrelated courses from the pool.",
+    "Separate this minor's course pool from the Drones and Robotics minor, which currently shares the identical 686 course list.",
+    "State the minor's total credit requirement and required-vs-elective split (currently null).",
+    "Publish explicit minor-level learning outcomes (patentability/IP strategy, business-model validation).",
+    "Add a design-thinking front end and surface ENTR 320 (Financing New Venture) to complete the ideation-to-funding pipeline."
+  ]
+}

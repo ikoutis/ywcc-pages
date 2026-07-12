@@ -1,0 +1,111 @@
+{
+  "id": "science-technology-society-minor-449",
+  "name": "Science, Technology & Society Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "The catalog carries a strong, coherent STS spine (STS 310 Technology and Human Values, STS 350 Computers and Society, STS 351 Minds and Machines, STS 375 AI and the Human Mind, STS 312 Technology and Policy, STS 363 Sustainability, STS 376 Cyborg Society), reinforced by PHIL 355 Philosophy of Science and PHIL 334 Engineering Ethics. The visible 40-of-59 sample is truncated to non-STS courses (COM/HIST/LIT/PSY), and with an empty requirementGroups the well-matched STS core is not declared as a required pathway.",
+      "suggestion": "Foreground the STS 3xx core as a declared spine (values/computers/policy/AI) rather than presenting a broad HSS elective menu."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is clean: missingCourseCount is 0 (no dangling references), and chains carry consistent, explicit grade conditions. STS 364 Sustainability Policy -> STS 363 Sustainability Studies is a sensible internal build; the deepest chain (6) otherwise reflects the ENGL/GER gateway, appropriate for a minor.",
+      "suggestion": "Add a small number of clearly sequenced STS pairings (intro STS -> methods -> capstone) to make progression explicit."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the parsed data (the page carries only a name and a course menu, with an empty requirementGroups). For a catalog page this absence is itself a real finding.",
+      "suggestion": "Publish 3-5 explicit, measurable program learning outcomes stating what a completer of the minor should know and be able to do."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "statedTotalCredits is null so the credit requirement is not published, and creditReconcileDelta is null (an expected caveat for a menu-style minor with no parsed term plan). Courses are uniformly 3 credits, so the menu is internally even but the total is opaque.",
+      "suggestion": "Publish the total credit requirement and the split between a required STS core and thematic electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Course descriptions are present and substantive, but the program page has no description, no requirementGroups, and no stated credits, and the parsed sample is truncated so the STS identity is under-represented on the page.",
+      "suggestion": "Add a program description and surface the STS 3xx core explicitly so the page reflects the minor's actual focus."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "STS offerings are markedly current: STS 350 Computers and Society, STS 375 AI and the Human Mind, STS 351 Minds and Machines, STS 312 Technology and Policy, and STS 363 Sustainability map directly to today's debates on AI governance, data, and climate. The main gap is an explicit data-justice / algorithmic-accountability offering.",
+      "suggestion": "Add or modernize a data-and-algorithmic-society course extending STS 350 Computers and Society into governance and fairness."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Sampled descriptions are present and substantive across STS/PHIL/PSY courses; none are flagged thin (PSY 361 carries an abbreviated title)."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "prerequisiteRaw is present with consistent 'C or higher' conditions and 0 dangling references; STS 364 -> STS 363 and PSY 361 -> PSY 359 are clear. Most electives cite a GER category rather than a specific STS prerequisite, a mild ambiguity, and PHIL 331 lists HUM 102 where siblings list ENGL 102."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "STS research methods",
+        "rationale": "STS 304 Qualitative and STS 307 Quantitative Research Methods exist in the catalog; a methods requirement should be an explicit part of the pathway."
+      },
+      {
+        "topic": "Data & algorithmic society / data justice",
+        "rationale": "Beyond STS 350 Computers and Society, dedicated coverage of algorithmic governance and data justice is missing."
+      },
+      {
+        "topic": "Innovation & science policy",
+        "rationale": "STS 312 Technology and Policy is a seed, but funding, regulation, and science-governance depth are limited."
+      },
+      {
+        "topic": "Energy & environmental STS",
+        "rationale": "STS 363 Sustainability and STS 360 Ethics and the Environment exist; ensure energy-transition and climate-technology coverage is included."
+      },
+      {
+        "topic": "Health, biomedicine & society",
+        "rationale": "Biomedicine-in-society is thin; link PHIL 351 Biomedical Ethics with a health-technology STS offering."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI/algorithmic accountability & sociotechnical systems",
+        "rationale": "STS 375 AI and the Human Mind and STS 351 Minds and Machines position the minor well; modernize with current AI-governance material."
+      },
+      {
+        "trend": "Climate & sustainability transitions",
+        "rationale": "STS 363 Sustainability Studies and STS 364 Sustainability Policy can anchor a stronger energy/climate track."
+      },
+      {
+        "trend": "Data justice, surveillance & platform society",
+        "rationale": "Extend STS 350 Computers and Society into platform power, surveillance, and data rights."
+      },
+      {
+        "trend": "Human-AI interaction & cyborg futures",
+        "rationale": "STS 376 Cyborg Society and PSY 359 Cyberpsychology connect the minor to embodied human-technology relations."
+      },
+      {
+        "trend": "Public trust in science & science communication",
+        "rationale": "Timely post-pandemic; pair STS with COM courses to address misinformation and expertise."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Foreground the STS 3xx core (Technology and Human Values, Computers and Society, AI and the Human Mind, Technology and Policy) as a declared spine.",
+    "Publish explicit learning outcomes and a required core-vs-elective structure.",
+    "State the total credit requirement.",
+    "Add or modernize a data-justice / algorithmic-accountability offering.",
+    "Make an STS research-methods course (STS 304/307) an explicit part of the pathway."
+  ]
+}

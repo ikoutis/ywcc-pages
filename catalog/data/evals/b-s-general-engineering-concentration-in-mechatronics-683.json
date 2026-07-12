@@ -1,0 +1,103 @@
+{
+  "id": "b-s-general-engineering-concentration-in-mechatronics-683",
+  "name": "B.S. General Engineering -Concentration in Mechatronics",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 4,
+      "justification": "This is the most coherent of the concentrations: it integrates the three mechatronics domains in a well-ordered sequence -- mechanical (MECH 234 -> MECH 236 -> ME 231 -> ME 305 System Dynamics; MECH 237), electrical (ECE 231 Circuits), and computing (CS 100, MATH 337 Linear Algebra, ENGR 301 Data Science) -- and lands them in applied courses ENGR 330 (Microcontrollers/IoT), IE 455 (Robotics & PLCs), ENGR 423 (Drone Science), ENGR 424 (Robotics Science), CS 440 (Computer Vision), and the ENGR 400 design project. The main gap is the lack of a dedicated feedback-control course; ME 305 (system dynamics) and ENGR 424 (motion control) touch it but no explicit controls course completes the loop.",
+      "suggestion": "Add a dedicated feedback-control course (ECE 431 Introduction to Feedback Control Systems exists in the catalog) after ME 305 so the mechatronics loop -- sense, model, control, actuate -- is fully closed."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is deep and well-formed (deepestPrereqChain 6, e.g. MECH 234 -> MECH 236/237 -> ME 231 -> ME 305 with MATH 222) and the robotics courses gate sensibly (ENGR 424 requires a programming course). Six codes are missing (CHEM 125A, ENGR 211, ENGR 312, GER 200, PHYS 111A, PHYS 121A) but these are co-req labs, prof-skills, and GER placeholders, not broken technical chains.",
+      "suggestion": "Catalog the co-req/prof-skills codes (CHEM 125A, ENGR 211/312, PHYS 111A/121A) to clear the dangling references; the technical chains themselves need no change."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives are provided in the data, only the plan of study. This is a real omission for an integrative concentration whose graduates should demonstrate multi-domain system design.",
+      "suggestion": "Publish explicit outcomes such as 'design and integrate mechanical, electrical, and embedded subsystems' and 'implement sensing and motion control for a robotic system'."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 4,
+      "justification": "The plan reconciles exactly (creditReconcileDelta 0; 120 vs 120) with well-loaded 12-17 credit terms and a strong, transparent technical-core-to-gen-ed ratio; the mechanical/electrical/computing split is visibly balanced.",
+      "suggestion": "State the credit weighting of the mechanical vs electrical vs computing threads so students can see the mechatronics balance at a glance."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "The eight-term plan is largely clean and legible with credits, but a parsing artifact leaked a stray row titled '684 B.S. General Engineering - Concentration in Quality and Reliability Engineering' into Third Year 1st Semester, which would confuse a reader. Otherwise labeling is clear.",
+      "suggestion": "Remove the stray cross-reference row ('684 ... Quality and Reliability Engineering') that bled into Third Year 1st Semester so the mechatronics plan is not mixed with another concentration's heading."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The concentration is strongly current: CS 440 (Computer Vision), ENGR 423 (Drone Science), ENGR 424 (Robotics Science), ENGR 330 (IoT/microcontrollers), ME 441 (CAE simulation), and ENGR 301 (Data Science) reflect where mechatronics and robotics practice is today.",
+      "suggestion": "Introduce a robot software-framework element (e.g. ROS) and hardware-in-the-loop simulation within ENGR 424/ME 441 so students use the toolchains industry expects."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are specific and technical -- ME 305 (dynamic-system modeling and simulation), ME 231 (kinematic analysis of mechanisms), CS 440 (computer-vision methods), ENGR 424 (robot sensing, motion control, motion planning) -- with no thin or placeholder text."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated unambiguously and are internally consistent, including multi-course conjunctions (ME 305 requires MATH 222, MECH 236, ME 231; ME 231 requires MATH 213 and a C in MECH 234). Only the co-req lab/prof-skills codes read as dangling."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Dedicated feedback control systems",
+        "rationale": "ME 305 (system dynamics) and ENGR 424 (motion control) approach control, but no standalone controls course (ECE 431 exists in the catalog) closes the sense-model-control-actuate loop."
+      },
+      {
+        "topic": "Embedded/real-time systems and sensor-actuator depth",
+        "rationale": "ENGR 330 (microcontrollers/IoT) is an entry point, but real-time firmware, RTOS, and detailed sensor/actuator interfacing are not developed further."
+      },
+      {
+        "topic": "Digital signal processing",
+        "rationale": "Robotics perception (CS 440) and system dynamics assume signal fundamentals that no dedicated DSP course provides."
+      },
+      {
+        "topic": "Mechatronic system-integration capstone specificity",
+        "rationale": "ENGR 400 is a general multidisciplinary capstone; a mechatronics-specific integration project would consolidate the mechanical/electrical/computing threads."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI-driven perception and autonomy",
+        "rationale": "CS 440 (Computer Vision) and ENGR 424 (Robotics Science) position the track for ML-based perception, SLAM, and autonomous behavior, the frontier of robotics."
+      },
+      {
+        "trend": "ROS and robot software frameworks",
+        "rationale": "Adding ROS/Gazebo tooling around ENGR 424 aligns graduates with the de-facto industry robotics software stack."
+      },
+      {
+        "trend": "Human-robot collaboration and cobots",
+        "rationale": "Collaborative robotics and safe human-robot interaction are a fast-growing industrial segment the IE 455/ENGR 424 base could extend into."
+      },
+      {
+        "trend": "Digital twins and hardware-in-the-loop",
+        "rationale": "ME 441 (CAE simulation) is a natural springboard to digital-twin and HIL workflows now standard in mechatronic development."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Add a dedicated feedback-control course (ECE 431) after ME 305 to close the mechatronics control loop.",
+    "Remove the stray '684 Quality and Reliability' row that leaked into the Third Year plan.",
+    "Publish explicit multi-domain mechatronics learning outcomes.",
+    "Introduce ROS/hardware-in-the-loop tooling within ENGR 424/ME 441 for industry-standard toolchains.",
+    "Catalog the co-req/prof-skills codes (CHEM 125A, ENGR 211/312, PHYS 111A/121A) to clear dangling references."
+  ]
+}

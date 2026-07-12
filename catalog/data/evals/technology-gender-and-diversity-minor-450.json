@@ -1,0 +1,111 @@
+{
+  "id": "technology-gender-and-diversity-minor-450",
+  "name": "Technology, Gender and Diversity Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "A genuine on-theme core exists: STS 342 Gender, Technology and Society, PSY 339 Psychology of Diversity, HRM 310 Managing Diversity and Inclusion, STS 352 Race and Ethnicity, and HIST 362 Sex, Gender, and the Law. But these sit inside the same broad STS/PSY pool (which also carries off-theme items like STS 315 Sports, Technology and Society and STS 365 Animal Intelligence), and with an empty requirementGroups no required core is declared.",
+      "suggestion": "Declare an on-theme required core (STS 342, PSY 339, HRM 310, STS 352, HIST 362) and separate general STS/PSY electives."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is clean: missingCourseCount is 0 (no dangling references), and chains carry consistent, explicit grade conditions. The deepest chain (5) is modest and comes from the ENGL/GER gateway and internal pairs like PSY 361 -> PSY 359; no dangling references appear.",
+      "suggestion": "Add a clear gateway (e.g., STS 201 or STS 342) so the identity courses anchor the rest of the menu."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the parsed data (the page carries only a name and a course menu, with an empty requirementGroups). For a catalog page this absence is itself a real finding.",
+      "suggestion": "Publish 3-5 explicit, measurable program learning outcomes stating what a completer of the minor should know and be able to do."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "statedTotalCredits is null so the credit requirement is not published, and creditReconcileDelta is null (an expected caveat for a menu-style minor with no parsed term plan). Courses are uniformly 3 credits, so the menu is even but the total is opaque.",
+      "suggestion": "Publish the total credit requirement and the split between the on-theme core and electives."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "Course descriptions are present and substantive, but the program page has no description, no requirementGroups, and no stated credits, and STS 325 appears with a truncated title ('ST:'), so the minor's focus is not clearly presented.",
+      "suggestion": "Add a program description, resolve truncated special-topics titles, and group the on-theme core ahead of general electives."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The theme is highly current for a technical university: STS 342 Gender, Technology and Society, PSY 339 Psychology of Diversity, and HRM 310 Managing Diversity and Inclusion map to inclusive design, workforce equity, and algorithmic fairness debates. Gaps are a dedicated algorithmic-bias course and broader diversity coverage (LGBTQ, disability).",
+      "suggestion": "Add an algorithmic-fairness / data-feminism course linking STS 342 with STS 350 Computers and Society and STS 375 AI and the Human Mind."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Sampled descriptions are present and substantive; none are flagged thin or missing, though STS 325 shows a truncated title ('ST:') and PSY 361 an abbreviated one."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "prerequisiteRaw is present with consistent 'C or higher' conditions and 0 dangling references; internal chains such as PSY 361 -> PSY 359 are clear. Most electives cite a GER category rather than a specific prerequisite, a mild ambiguity."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Feminist science & technology studies (theory)",
+        "rationale": "Beyond STS 342, foundational feminist-STS and intersectionality theory is not represented."
+      },
+      {
+        "topic": "Inclusive / accessible design",
+        "rationale": "Designing technology for diverse users (universal design, accessibility, inclusive HCI) is absent though central to the theme."
+      },
+      {
+        "topic": "Algorithmic bias & fairness",
+        "rationale": "Data and AI bias is missing; a natural connection to STS 350 Computers and Society and STS 375 AI and the Human Mind."
+      },
+      {
+        "topic": "Underrepresented groups in STEM (pipeline & workforce)",
+        "rationale": "HRM 310 touches workplace inclusion, but a dedicated STEM-equity/pipeline course is missing."
+      },
+      {
+        "topic": "LGBTQ & disability studies",
+        "rationale": "Diversity coverage centers on gender and race (STS 342, STS 352, HIST 362); queer and disability perspectives are not represented."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Algorithmic fairness & bias auditing",
+        "rationale": "The front line of technology-and-diversity work; extend STS 342 and STS 350 into fairness auditing."
+      },
+      {
+        "trend": "Inclusive design & accessible technology",
+        "rationale": "Universal design and assistive technology are fast-growing practice areas the minor does not yet cover."
+      },
+      {
+        "trend": "Data feminism & critical data studies",
+        "rationale": "Pair STS 342 Gender, Technology and Society with data methods (STS 307) for a critical-data track."
+      },
+      {
+        "trend": "Diversity in AI & dataset representation",
+        "rationale": "Link to STS 375 AI and the Human Mind to address representation and bias in AI systems."
+      },
+      {
+        "trend": "Workforce equity & inclusive organizations",
+        "rationale": "Build on HRM 310 with measurable DEI practice as employers formalize inclusion programs."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Define an on-theme required core (STS 342, PSY 339, HRM 310, STS 352, HIST 362) and separate general electives.",
+    "Add algorithmic-bias/data-feminism and inclusive-design courses.",
+    "Publish explicit learning outcomes.",
+    "State the total credit requirement.",
+    "Broaden diversity coverage (LGBTQ, disability) beyond gender and race."
+  ]
+}

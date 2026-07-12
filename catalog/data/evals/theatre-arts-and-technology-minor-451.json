@@ -1,0 +1,111 @@
+{
+  "id": "theatre-arts-and-technology-minor-451",
+  "name": "Theatre Arts and Technology Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 1,
+      "justification": "The parsed course pool bears essentially no relationship to the program title: all 17 referenced courses are PSY, STS, HIST, HRM, or LIT (e.g., PSY 321 Social Psychology, STS 376 Cyborg Society, HRM 310 Managing Diversity, LIT 386 Science Fiction), and not a single theatre, performance, dramaturgy, or stagecraft course appears. With an empty requirementGroups there is also no declared structure. This is a serious coherence failure and, most likely, a data-extraction gap that must be corrected.",
+      "suggestion": "Populate the minor with actual theatre courses (acting/directing, dramaturgy, technical theatre) or fix the catalog data, then declare a required core."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "For the courses that are present the prerequisite graph is clean (missingCourseCount=0, sensible 'C or higher' conditions, deepest chain 5). However, for a Theatre Arts and Technology minor the absence of any production skills ladder (e.g., introductory -> advanced lighting/sound/design) is itself a structural deficiency the graph cannot show.",
+      "suggestion": "Add a sequenced technical-theatre ladder (foundations -> advanced design/production) with explicit prerequisites."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the parsed data (the page carries only a name and a course menu, with an empty requirementGroups). For a catalog page this absence is itself a real finding.",
+      "suggestion": "Publish 3-5 explicit, measurable program learning outcomes stating what a completer of the minor should know and be able to do."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "statedTotalCredits is null so the requirement is unpublished, and creditReconcileDelta is null (an expected caveat for a menu-style minor with no parsed plan). More fundamentally, with only 17 off-theme courses it is unclear how a student would actually assemble a theatre credential.",
+      "suggestion": "Publish the total credit requirement and, once theatre courses are added, define the core-vs-elective credit split."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The page has no description, no requirementGroups, and no stated credits, and the small 17-course pool does not match the program title, so the catalog page does not communicate what the minor is.",
+      "suggestion": "Add a program description and a legible plan of study that actually reflects theatre arts and technology."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 1,
+      "justification": "The theatre-technology field centers on lighting, sound, scenic/projection design, stage management, and increasingly immersive/virtual production - none of which appear; the borrowed PSY/STS technology courses (e.g., STS 375 AI and the Human Mind) do not substitute for production skills. As presented, the minor offers no preparation for theatre or entertainment-technology careers.",
+      "suggestion": "Introduce industry-standard production coursework (lighting, sound, projection/media design, stage management) reflecting current theatre practice."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 3,
+      "justification": "The descriptions of the courses that are present are substantive and none are flagged thin or missing (PSY 361 shows an abbreviated title); however the score is capped because none of the described courses is a theatre course, so the descriptions do not represent the program's stated subject."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "prerequisiteRaw is present with consistent 'C or higher' conditions and 0 dangling references; PSY 361 -> PSY 359 is a clear internal chain. Most electives cite a GER category rather than a specific prerequisite, a mild ambiguity."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Foundational theatre & performance",
+        "rationale": "Acting, directing, dramaturgy, and script analysis are entirely absent from the pool despite the program title."
+      },
+      {
+        "topic": "Technical theatre / stagecraft",
+        "rationale": "Lighting, sound, and set/scenic design and stage management - the 'technology' the title promises - are missing."
+      },
+      {
+        "topic": "Digital & projection media for performance",
+        "rationale": "Projection mapping, video scenography, and show-control tools (e.g., QLab) are not represented."
+      },
+      {
+        "topic": "Playwriting & devised performance",
+        "rationale": "Creation-based methods for making new work are absent."
+      },
+      {
+        "topic": "Theatre history & dramatic literature",
+        "rationale": "LIT 386 Science Fiction is the only literature course; there is no dramatic-literature or theatre-history grounding."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Immersive & XR/VR performance",
+        "rationale": "Virtual production and AR/VR staging are a natural NJIT tech-arts niche the minor could own once theatre courses exist."
+      },
+      {
+        "trend": "Projection mapping & real-time media",
+        "rationale": "Live digital scenography with tools like QLab, Isadora, or TouchDesigner is now standard in professional theatre technology."
+      },
+      {
+        "trend": "Virtual production & motion capture",
+        "rationale": "Game-engine (Unreal) stagecraft and digital puppetry are reshaping design and would distinguish a technology-focused theatre minor."
+      },
+      {
+        "trend": "Spatial audio & immersive sound design",
+        "rationale": "Object-based and spatial audio are increasingly central to performance technology."
+      },
+      {
+        "trend": "AI & generative design in performance",
+        "rationale": "Connect LIT 386 Science Fiction and STS 375 AI and the Human Mind to generative scenography and performance futures."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Critical: populate the minor with real theatre courses (acting/directing, dramaturgy, stagecraft) or correct the catalog data - the current pool contains no theatre content and does not match the title.",
+    "Add the technology core the title promises: lighting, sound, projection/media design, and virtual/immersive production.",
+    "Publish explicit learning outcomes and a required production sequence.",
+    "State the total credit requirement and define a core-vs-elective structure.",
+    "Add theatre history and dramatic literature for artistic grounding."
+  ]
+}
