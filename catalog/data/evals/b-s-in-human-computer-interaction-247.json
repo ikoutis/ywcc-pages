@@ -6,60 +6,106 @@
       "key": "curriculum_coherence",
       "name": "Curriculum coherence & progression",
       "score": 4,
-      "justification": "The eight-term plan builds a clear HCI spine: foundational computing and web work (CS 100, IS 117, IS 218) leads into the UX thread (IS 247 Designing the User Experience -> IS 375 Discovering User Needs for UX -> IS 448 Usability & Measuring UX), reinforced by psychology/cognitive-science and human-factors courses (PSY 210, Cognitive Processes, IE 355) and a senior project (IS 491). Progression is well ordered and the deepestPrereqChain of 7 confirms genuine vertical depth. Coherence is weakened only by unspecified 'HCI Specialization Elective 1/2' slots and several parsed-in cross-listed Rutgers options that make a few term-to-term transitions harder to read.",
-      "suggestion": "Publish explicit course lists for the 'HCI Specialization Elective' slots and annotate the intended UX-research sequence (IS 247 -> IS 375 -> IS 448) so the core progression is unambiguous."
+      "justification": "The plan builds a genuinely coherent HCI identity: a UX research spine (IS 247 Designing the User Experience -> IS 375 Discovering User Needs -> IS 448 Usability & Measuring UX), a psychology/methods track (PSY 210 plus cross-listed R830 Cognitive Processes, Statistical Methods, and Experimental Methods), a human-factors requirement (IE 355 or AD 201), a design intro (AD 150), and a technical base (CS 100, IS 117, IS 218, IS 331) converging on an IS 491/IT 491 capstone. Progression is well-ordered. The weakness is that the technical/build side stops at web development (IS 218) with no interaction-implementation course, so the degree leans research-heavy relative to making.",
+      "suggestion": "Insert a prototyping/interaction-design studio between IS 247 and IS 448 so students who learn to research and evaluate interfaces also learn to build interactive prototypes, not only web pages."
     },
     {
       "key": "prereq_structure",
       "name": "Prerequisite structure health",
-      "score": 3,
-      "justification": "The prerequisite graph is largely sensible: prerequisites use explicit grade conditions and boolean logic (e.g., IS 218 requires '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'), and intro courses correctly carry none. Of 27 referenced courses only 3 are missing from the catalog (missingCourseCount=3): GER 300 is a general-education placeholder rather than a real course, and YWCC 207 and YWCC 307 are 1-credit professional-development seminars absent from the scraped undergraduate catalog. No core course is dangling. The main caution is the deepestPrereqChain of 7 (IS 448 sits at depth 7), which is on the deep side for an undergraduate elective and risks over-constraining scheduling.",
-      "suggestion": "Resolve the three dangling references — add YWCC 207 and YWCC 307 to the catalog and replace the 'GER 300' placeholder with a linked GER requirement — and audit the depth-7 chain into IS 448 to confirm it is not over-constrained."
+      "score": 4,
+      "justification": "The prerequisite graph is sensible: deepestPrereqChain is 7 (IS 448 Usability & Measuring UX, an appropriate terminal for the UX research sequence) with foundational courses at shallow depths and no evidence of over-constraining. missingCourseCount is 3 and all are peripheral -- GER 300 is a general-education placeholder and YWCC 207/YWCC 307 are one-credit professional-development seminars listed in the plan but absent from the course catalog.",
+      "suggestion": "Resolve the three dangling references by cataloguing YWCC 207/YWCC 307 and re-tagging GER 300 as a requirement category rather than a course code."
     },
     {
       "key": "learning_outcomes",
       "name": "Learning outcomes & objectives",
       "score": 2,
-      "justification": "No program-level learning outcomes or educational objectives are present anywhere in the provided data, and there is no program description either. For a catalog page this is a real gap: prospective students and assessors cannot see what graduates are expected to know or be able to do, which is especially notable for a professional UX/HCI degree where competency statements (user research, interaction design, usability evaluation) would be expected.",
-      "suggestion": "Publish an explicit, measurable set of program learning outcomes (e.g., conduct user research, design and prototype interfaces, plan and analyze usability studies) on the catalog page."
+      "justification": "No program-level learning outcomes, objectives, or overview are present in the data. For an interdisciplinary HCI degree spanning computing, psychology, and design, the absence of an explicit competency statement is especially costly because a student cannot see how the three strands are meant to add up.",
+      "suggestion": "Publish 5-8 learning outcomes covering user research, interaction/interface design, usability evaluation, cognitive/psychological foundations, and ethical design, plus a short overview of the computing/psychology/design blend."
     },
     {
       "key": "credit_balance",
       "name": "Credit distribution & balance",
-      "score": 4,
-      "justification": "The plan reconciles exactly: summedTermCredits (120) equals statedTotalCredits (120), so creditReconcileDelta is 0.0 — internally consistent. Term loads are evenly distributed across the four years (14-16 credits per semester), and the split spans general education, a substantial HCI/computing core, psychology/design support courses, and electives. The transparency of the elective portion is the only limitation: six 'General Elective' slots plus two unspecified 'HCI Specialization Elective' slots make it hard to see exactly how major-vs-free credits are apportioned.",
-      "suggestion": "Keep the balanced, reconciling term structure but add a summary credit-breakdown (GER vs. major core vs. specialization vs. free electives) and enumerate the elective pools so the distribution is fully transparent."
+      "score": 3,
+      "justification": "The plan reconciles (statedTotalCredits 120, summedTermCredits 120, creditReconcileDelta 0.0) and term loads are steady at 14-16 credits. However, transparency is weakened by heavy reliance on unspecified placeholders -- four 'HCI Specialization Electives' plus roughly eight 'General Elective' slots -- and by cross-institution R830 psychology courses whose 3-4 credit values sit oddly against the otherwise uniform 3-credit rows, making the true required content harder to read.",
+      "suggestion": "Enumerate the four HCI specialization electives (or link an approved list) and label the R830 psychology courses' credit values explicitly so the balance between required HCI content and open electives is visible."
     },
     {
       "key": "presentation",
       "name": "Presentation & clarity",
-      "score": 2,
-      "justification": "Terms are clearly labeled (First Year — 1st Semester ... Fourth Year — 2nd Semester) and per-term credit totals are present, which aids legibility. However, the page lacks any program overview/description, and several plan-of-study lines are garbled artifacts: GER requirements are split across multiple rows with broken URL fragments (e.g., '...general-' / 'education-requirements/natural-science-ger/)'), alternative courses appear as standalone rows ('or MATH 138 or General Calculus I'), and 'Select one of the following:' is rendered as an item with credits. These fragments would surface as noise on a catalog page.",
-      "suggestion": "Add a concise program overview paragraph and clean up the plan so GER links, 'or' alternatives, and 'select one of' groupings render as structured options rather than fragmented separate rows."
+      "score": 3,
+      "justification": "Terms are labeled and the core HCI courses render cleanly, but the cross-listed Rutgers-Newark psychology courses appear as null-code title rows with registrar abbreviations ('R830 301 Stat Meth Cog & Beh', 'R830 304 Cognitive Processes', 'R830 102 Prin Of Psychology'), several 'Select one of the following:' and 'or ...' options are unresolved lines, and GER rows are split with null credits.",
+      "suggestion": "Give the R830 cross-listed courses proper codes/titles (or map them to NJIT equivalents), and collapse the 'Select one of the following' and 'or ...' groupings into single readable choice lines."
     },
     {
       "key": "industry_relevance",
       "name": "Industry & currency relevance",
       "score": 4,
-      "justification": "The curriculum maps closely to current UX/HCI practitioner roles: dedicated user research (IS 375 Discovering User Needs for UX), interaction/interface design (IS 247), usability testing and UX measurement (IS 448 Usability & Measuring UX), human factors/ergonomics (IE 355), plus supporting cognitive psychology, statistics, database, and web-application skills. This is a modern, coherent UX pipeline. Gaps relative to current practice are the absence of explicit accessibility, contemporary prototyping tooling (e.g., Figma), and any AI/ML-in-UX or data-informed design content.",
-      "suggestion": "Add or flag electives covering accessibility/inclusive design, industry-standard prototyping tools, and AI/ML in UX to keep the degree aligned with current hiring expectations."
+      "justification": "The curriculum reflects current UX practice strongly: dedicated user-research (IS 375), usability and UX measurement (IS 448), human factors (IE 355), and a solid cognitive/experimental-methods foundation give graduates the research toolkit UX teams hire for. The visible gaps are modern-tooling and craft rather than concept: there is no explicit accessibility course, no prototyping/design-systems studio (Figma), and no front-end implementation depth, so the degree is stronger on evaluating experiences than on designing and shipping them.",
+      "suggestion": "Add an accessibility/inclusive-design course and a prototyping studio using current tools (Figma, design systems) to complement the strong research core with production-ready design skills."
     }
   ],
   "courseLevel": {
     "descriptionQuality": {
       "score": 4,
-      "justification": "All 24 sample courses carry substantive, specific descriptions rather than thin or placeholder text — e.g., IS 448 explains usability and UX research, IS 375 frames anticipating user needs, and CS 100 details problem-solving and program control flow. None are missing or obviously stub descriptions. Only minor caveats: several AD/IE courses lead with enrollment 'Restrictions' text before the substantive content, and the provided data is excerpt-truncated, so full-length completeness cannot be fully confirmed."
+      "justification": "All 24 sampled courses carry present, informative descriptions with no placeholders; the HCI core is especially rich (IS 247 on interface design/evaluation, IS 375 framed around anticipating user needs, IS 448 on UX research and usability, IE 355 human-machine systems). A handful of GER/math rows are terser, but no description reads as thin or empty."
     },
     "prerequisiteClarity": {
       "score": 4,
-      "justification": "Prerequisites are generally stated unambiguously with explicit grade conditions and boolean structure (e.g., ENGL 102 'with a grade of C or higher', IS 218 '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'), and intro courses correctly list none. Clarity is reduced slightly by a few category-style prerequisites that name broad requirement buckets ('Statistics GUR (MATH 105, ...)', 'Computing Literacy GER course') and by the three peripheral dangling references (GER 300, YWCC 207, YWCC 307), but no contradictions or nonsensical grade conditions appear."
+      "justification": "Prerequisites are stated with clear grade gates and sensible logic (IS 218: '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'; COM 312/313 with explicit ENGL 102 + GER conditions), and intro courses correctly show none. Clarity is dinged only by the cross-listed R830 psychology courses, whose prerequisites are not surfaced in NJIT terms, and by minor phrasing variance."
     }
   },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Accessibility & inclusive design (WCAG, assistive technology)",
+        "rationale": "No course addresses accessibility, yet it is now a legal and professional baseline for UX; it should be a required complement to IS 247/IS 448 rather than absent."
+      },
+      {
+        "topic": "Interaction-design & prototyping studio (Figma, design systems)",
+        "rationale": "The program teaches research and evaluation (IS 375/IS 448) but no dedicated hands-on interaction-design/prototyping course, leaving graduates strong on 'why' but light on 'how to build'."
+      },
+      {
+        "topic": "Front-end interface implementation (JavaScript/React interactive prototypes)",
+        "rationale": "Technical build stops at IS 218 web development; HCI graduates increasingly need to prototype interactive, stateful interfaces, not static pages."
+      },
+      {
+        "topic": "Quantitative UX / experimentation and A/B testing at scale",
+        "rationale": "IS 448 covers usability measurement, but modern product UX relies on large-sample experimentation and behavioral analytics that the current lab-oriented R830 stats track does not reach."
+      },
+      {
+        "topic": "Information architecture & content strategy",
+        "rationale": "A core HCI competency for structuring complex systems is not explicitly represented among the IS/design courses."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Designing for generative AI and human-AI interaction",
+        "rationale": "Prompt UX, conversational flows, and trust/uncertainty in AI features are the fastest-growing UX area; the program's strong research core (IS 375/IS 448) is ideally placed to add an AI-interaction elective."
+      },
+      {
+        "trend": "Conversational and multimodal (voice) interfaces",
+        "rationale": "Voice and multimodal UX are mainstream in consumer and enterprise products, extending the interface-design scope of IS 247 beyond screens."
+      },
+      {
+        "trend": "AR/VR and spatial-computing interaction",
+        "rationale": "Spatial interfaces are a major near-future direction for HCI; a specialization elective here would future-proof the design track."
+      },
+      {
+        "trend": "Responsible design and dark-pattern awareness",
+        "rationale": "Building on IS 350 ethics, ethical/persuasive-design scrutiny is now central to UX hiring and regulation."
+      },
+      {
+        "trend": "ResearchOps and data-informed design",
+        "rationale": "UX research is professionalizing into ops and analytics-driven practice, a natural extension of IS 375/IS 448 into tooling and repositories."
+      }
+    ]
+  },
   "topSuggestions": [
-    "Publish explicit, measurable program-level learning outcomes for the HCI degree (user research, interaction design, usability evaluation) — none currently exist on the page.",
-    "Add a program overview description and clean up garbled plan-of-study entries (fragmented GER URL rows, 'or' alternatives, and 'select one of the following' lines).",
-    "Resolve the three dangling course references — add YWCC 207 and YWCC 307 to the catalog and replace the 'GER 300' placeholder with a linked GER requirement.",
-    "Enumerate the 'HCI Specialization Elective' and 'General Elective' pools with concrete course lists and add a GER/core/elective credit-breakdown summary.",
-    "Refresh industry currency by adding explicit accessibility, prototyping-tool, and AI/ML-in-UX coverage to the required or elective offerings."
+    "Publish explicit HCI learning outcomes and a program overview that makes the computing/psychology/design blend legible.",
+    "Add a required accessibility/inclusive-design course -- the single most conspicuous gap for a modern UX degree.",
+    "Add an interaction-design/prototyping studio (Figma, design systems) plus front-end prototyping to balance the research-heavy core.",
+    "Introduce a 'designing for AI / conversational interaction' elective that leverages the strong existing UX-research sequence.",
+    "Enumerate the HCI specialization electives and clean the cross-listed R830 psychology rows so required content is visible."
   ]
 }

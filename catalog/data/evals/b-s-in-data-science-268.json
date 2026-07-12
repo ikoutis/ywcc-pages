@@ -5,61 +5,107 @@
     {
       "key": "curriculum_coherence",
       "name": "Curriculum coherence & progression",
-      "score": 4,
-      "justification": "The eight-term plan is logically ordered and builds cleanly from foundations to advanced data-science work: CS 100 -> CS 113 -> CS 114 -> CS 241/CS 280 -> CS 288 -> CS 435 for computing, a parallel math spine (MATH 111 -> 112 -> 244 -> 341 plus 337 Linear Algebra and 478 Stat Methods), converging on the DS core (DS 340, CS 370 AI, CS 375 Machine Learning, CS 482 Data Mining, CS 450 Data Visualization, CS 444 Big Data Systems) and a CS 492 capstone. Term loads are steady (14-16 credits) with no abrupt difficulty jumps. The main weakness is the truncated Fourth Year 2nd Semester, which shows only an HSS senior seminar and a free elective and omits the second capstone term, leaving the culminating sequence visually incomplete.",
-      "suggestion": "Restore the complete Fourth Year 2nd Semester (including the second capstone course and remaining electives) so the senior year and capstone sequence read as a finished progression."
+      "score": 5,
+      "justification": "The 8-term plan is a model of ordered progression: a programming spine (CS 100 -> CS 113 -> CS 114 -> CS 241/CS 280 -> CS 288) runs in parallel with a math/stats track (MATH 111 -> 112 -> 244 Probability / 337 Linear Algebra -> 341 Statistical Methods II -> 478 Stat Methods in Data Science), and both converge into the data core (CS 331 Databases, DS 340, CS 370 AI, CS 375 ML, CS 482 Data Mining, CS 444 Big Data Systems, CS 450 Data Visualization) and a two-part capstone (CS 492/DS 493). Prerequisite depths climb smoothly from 0 to 7 with no abrupt jumps.",
+      "suggestion": "Convert the generic 'Data Science Elective 1/2/3' placeholders into named concentration tracks (e.g., ML systems, business analytics, bio/health data) so the upper-level path is as prescribed as the core."
     },
     {
       "key": "prereq_structure",
       "name": "Prerequisite structure health",
       "score": 4,
-      "justification": "The prerequisite graph is sensible and well-formed. deepestPrereqChain is 7 (e.g., CS 444 and CS 450), which is appropriate depth for terminal capstone-level courses in a four-year BS and does not indicate over-constraining; foundational and mid-level courses sit at shallow, reasonable depths. missingCourseCount is 6 (GER 200, GER 300, PHYS 111A, PHYS 121A, YWCC 207, YWCC 307), but every dangling reference is peripheral rather than a core node: GER 200/GER 300 are general-education level placeholders, PHYS 111A/121A are co-requisite lab sections, and YWCC 207/307 are one-credit professional-development seminars. The core CS/DS/MATH prerequisite chains themselves resolve cleanly with consistent grade gates.",
-      "suggestion": "Eliminate the six dangling references (GER 200, GER 300, PHYS 111A, PHYS 121A, YWCC 207, YWCC 307) by linking the lab/seminar codes to their catalog entries and re-tagging GER 200/GER 300 as requirement categories rather than course codes."
+      "justification": "The prerequisite graph is well-shaped: deepestPrereqChain=7 is appropriate for a quantitative four-year degree, and the 6 dangling references (missingCourseCount=6: GER 200, GER 300, PHYS 111A, PHYS 121A, YWCC 207, YWCC 307) are GER placeholders, physics labs, and one-credit seminars rather than genuine data-science prerequisite breaks. Structural health is strong but not perfectly clean.",
+      "suggestion": "Add catalog entries or code mappings for YWCC 207/307 and the PHYS 111A/121A labs and resolve the GER 200/300 placeholders so no referenced code dangles."
     },
     {
       "key": "learning_outcomes",
       "name": "Learning outcomes & objectives",
       "score": 2,
-      "justification": "The program data contains no program-level learning outcomes or educational objectives, and no program description or overview of any kind. For a catalog page this absence is a genuine gap: a prospective student can infer the intended skills only by reading the individual course list, with no stated statement of what a graduate will know or be able to do. The strong, current course roster partially implies the intended competencies, but nothing is made explicit.",
-      "suggestion": "Publish an explicit set of program-level learning outcomes (e.g., 4-8 statements covering statistical foundations, machine learning, data engineering/big data, visualization, and ethics) alongside a short program overview."
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the provided data; only a term-by-term plan and per-course descriptions are present. For a flagship B.S. this absence is a real catalog finding.",
+      "suggestion": "Publish explicit program learning outcomes (e.g., what a graduate can model, engineer, analyze, visualize, and communicate) on the catalog page."
     },
     {
       "key": "credit_balance",
       "name": "Credit distribution & balance",
-      "score": 3,
-      "justification": "Across the terms that parsed, the distribution is balanced and transparent (14-16 credits each, with a healthy mix of general education, math, computing core, and data-science electives). However, credit accounting cannot be reconciled: statedTotalCredits is null (the program total did not parse cleanly) and creditReconcileDelta is therefore null. summedTermCredits is only 105.0, well below a typical ~120-125 credit BS, and that undercount is largely because the Fourth Year 2nd Semester is incomplete. The internal balance is adequate, but the missing total and unreconcilable sum are a real credit-transparency defect.",
-      "suggestion": "Parse and display a single stated total program credit count and verify that the summed term credits reconcile to it (currently statedTotalCredits is null and the summed 105 excludes an incomplete final term)."
+      "score": 2,
+      "justification": "The plan does not reconcile: statedTotalCredits is null and creditReconcileDelta is therefore null, while summedTermCredits is only 105.0, well short of a typical ~120-credit B.S. The eighth term (Fourth Year, 2nd Semester) is truncated with null credits and just two items (a senior-seminar GER and one free elective), so both the stated total and the final-term accounting are incomplete.",
+      "suggestion": "State the program's total credit requirement and complete the eighth-term listing so the summed credits reconcile to a stated total (targeting the ~120-121 typical of a B.S.)."
     },
     {
       "key": "presentation",
       "name": "Presentation & clarity",
-      "score": 2,
-      "justification": "While the terms are clearly labeled and most course rows carry code, title, and credits, the page has multiple structural presentation defects. General-education requirement rows are broken across two items with catalog URLs bleeding into the title text (e.g., 'History and Humanities GER 200 level (http://catalog.njit.edu/...' followed by a second row 'general-education-requirements/ger-200-level/)'), several such rows carry null credits, some titles are truncated or abbreviated ('Computing & Effective Com', 'Stat Methods in Data Sci'), the FYS seminar row has a null code, and the final term is incomplete. Combined with the absent program description, these issues meaningfully hurt readability and completeness.",
-      "suggestion": "Clean the plan-of-study rendering: merge each split GER row into a single readable requirement line, strip raw URLs out of titles, restore full course titles, and fill in the null credit values."
+      "score": 3,
+      "justification": "Terms are clearly labeled by year and semester and the required courses are legible, but presentation is undercut by the truncated final term (null credits, only two rows), the null stated total, and repeated generic 'Data Science Elective' placeholders that leave the upper-level path visually open.",
+      "suggestion": "Complete the eighth-term rows, add a stated total, and replace bare elective placeholders with example course lists so the plan is fully legible end to end."
     },
     {
       "key": "industry_relevance",
       "name": "Industry & currency relevance",
       "score": 4,
-      "justification": "The required and elective courses reflect current data-science practice strongly. The core spans machine learning (CS 375), artificial intelligence (CS 370), data mining (CS 482), big data systems (CS 444), data visualization (CS 450), database design (CS 331), a dedicated data-science foundations course (DS 340), and a two-part capstone (CS 492), supported by a solid statistics/linear-algebra spine (MATH 244, 337, 341, 478) and systems programming (CS 288 Linux). This is a modern, employable stack. The gaps are marginal: there is no course explicitly named for deep learning, cloud/MLOps, or data engineering pipelines, though ML/AI and Big Data partially cover this ground.",
-      "suggestion": "Add or explicitly surface an elective in deep learning and one in cloud/data-engineering (pipelines, MLOps) to close the most visible modern gaps relative to current industry hiring."
+      "justification": "The required core is strong and current for data science: CS 375 Machine Learning, CS 482 Data Mining, CS 444 Big Data Systems, CS 450 Data Visualization, CS 370 AI, CS 331 Databases, and a deep statistics track (MATH 244/341/478). The main currency gaps are the absence of a dedicated deep-learning course beyond intro ML, no MLOps/data-engineering pipeline course, and no explicit generative-AI/LLM content.",
+      "suggestion": "Add a deep-learning course and an MLOps/data-engineering course so graduates can both build modern models and deploy them in production."
     }
   ],
   "courseLevel": {
     "descriptionQuality": {
       "score": 4,
-      "justification": "All 38 sampled courses carry present, specific, and informative descriptions with no placeholder or missing-description entries. Most descriptions run to the excerpt cap (~220 characters) and convey real topical content (e.g., CS 375 ML, DS 340 data-science fundamentals, CS 444 big data). A few math entries are terse (MATH 111 at 89 characters: 'limits, differentiation, applications of differentiation, and integration'), but even these are accurate and usable rather than thin or empty."
+      "justification": "Course descriptions are present and substantive across the program's spine (CS 375 Machine Learning, CS 444 Big Data Systems, CS 482 Data Mining, MATH 478 Statistical Methods in Data Science), with no thin or placeholder excerpts observed among sampled courses."
     },
     "prerequisiteClarity": {
       "score": 4,
-      "justification": "Prerequisites are stated unambiguously with explicit grade gates (predominantly 'with a grade of C or better') and sensible boolean logic across alternatives (e.g., CS 280: 'CS 114 or CS 116 or IT 114 or equivalent'). Chains are internally consistent. Minor blemishes keep it from a 5: phrasing varies ('grade C or better' vs 'grade of C or better' vs 'grade of C or higher'), CS 444 contains a duplicated-word typo ('all with with a grade of C or better'), and six referenced codes (GER 200/300, PHYS 111A/121A, YWCC 207/307) are dangling, though these are peripheral GER/lab/seminar placeholders rather than core prerequisites."
+      "justification": "Prerequisites are stated with clear course logic and grade conditions, and the only dangling references (missingCourseCount=6) are non-core GER placeholders, physics labs, and one-credit seminars rather than data-science course breaks, so the core prerequisite chain is unambiguous."
     }
   },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Deep learning and neural networks",
+        "rationale": "CS 375 is 'Introduction to Machine Learning' and CS 370 is intro AI, but there is no dedicated deep-learning course (CNNs, RNNs, transformers), which is now foundational to contemporary data science."
+      },
+      {
+        "topic": "Data engineering and MLOps",
+        "rationale": "CS 444 Big Data Systems is infrastructure-adjacent, but no course covers data pipelines, feature stores, model deployment, or monitoring, the single biggest skills gap for industry data-science hiring."
+      },
+      {
+        "topic": "Experimental design and causal inference",
+        "rationale": "The stats spine (MATH 244/341/478) is strong on probability and regression but has no A/B testing or causal inference, which are central to product and industry analytics."
+      },
+      {
+        "topic": "Applied NLP and unstructured data",
+        "rationale": "CS 482 Data Mining and CS 370 AI touch adjacent ground, but there is no text/NLP or computer-vision course even though most modern data is unstructured."
+      },
+      {
+        "topic": "Responsible AI: fairness, privacy, and interpretability",
+        "rationale": "IS 350 Computers, Society and Ethics is a general ethics course; given the ML and data-mining core, the program should add dedicated algorithmic-fairness, privacy (e.g., differential privacy), and model-interpretability content."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Generative AI and large language models",
+        "rationale": "The AI/ML spine (CS 370/375/482) predates the foundation-model era; a course or module on LLMs, prompting, retrieval-augmented generation, and fine-tuning is essential positioning for graduates."
+      },
+      {
+        "trend": "MLOps and production / data-centric AI",
+        "rationale": "Industry has shifted from model-building to reliable ML systems; CS 444 and the CS 492/DS 493 capstone could anchor a production-ML track."
+      },
+      {
+        "trend": "Cloud-native and real-time / streaming data",
+        "rationale": "CS 444 Big Data Systems should modernize toward streaming (Kafka), lakehouse architectures, and cloud data platforms that dominate current data engineering."
+      },
+      {
+        "trend": "Trustworthy AI and AI governance",
+        "rationale": "Regulation such as the EU AI Act and practices like model cards are arriving; graduates need fairness, privacy, and governance literacy beyond the single IS 350 ethics course."
+      },
+      {
+        "trend": "Domain-specialized data science",
+        "rationale": "The elective pool already includes BME 210 and BNFO 135 (bio/health signals and bioinformatics); deepening domain tracks (health, business analytics) via the elective placeholders would sharpen employability."
+      }
+    ]
+  },
   "topSuggestions": [
-    "Publish explicit program-level learning outcomes and a short program overview; the data currently contains no stated outcomes, objectives, or description.",
-    "Fix credit transparency: parse and display a single stated total credit count and reconcile it against summed term credits (statedTotalCredits is null, summedTermCredits is only 105 and excludes an incomplete final term).",
-    "Repair the plan-of-study presentation: merge split GER requirement rows, strip catalog URLs out of title text, restore truncated course titles, fill null credits, and complete the Fourth Year 2nd Semester.",
-    "Resolve the six dangling course references (GER 200, GER 300, PHYS 111A, PHYS 121A, YWCC 207, YWCC 307) by linking labs/seminars to catalog entries and re-tagging GER levels as requirement categories, not course codes.",
-    "Add or surface electives in deep learning and cloud/data-engineering (pipelines, MLOps) to close the most visible gaps against current data-science industry practice."
+    "State a total credit requirement and complete the truncated eighth term so the plan reconciles (current summed credits are only 105 against a null stated total).",
+    "Add a deep-learning course and an MLOps/data-engineering course to close the two clearest gaps between the curriculum and industry data-science practice.",
+    "Introduce generative-AI/LLM content and a responsible-AI (fairness/privacy/interpretability) offering to modernize the AI-ML core beyond IS 350's general ethics.",
+    "Convert the 'Data Science Elective 1/2/3' placeholders into named concentration tracks with example course lists.",
+    "Publish program-level learning outcomes and resolve the 6 dangling GER/lab/seminar references so the catalog page is complete."
   ]
 }

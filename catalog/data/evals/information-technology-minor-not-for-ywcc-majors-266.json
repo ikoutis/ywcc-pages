@@ -1,0 +1,111 @@
+{
+  "id": "information-technology-minor-not-for-ywcc-majors-266",
+  "name": "Information Technology Minor (not for YWCC majors",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "The pool carries a real IT infrastructure spine (IT 120 -> IT 202 -> IT 340/IT 420 -> IT 490, plus IS 331 Databases), but as with the sibling IT minor it is diluted by nine game-design courses in a 32-course pool with no plan-of-study grid. For non-computing students this incoherence is more damaging, because they have no major context to help them assemble a sensible five-course path from the menu.",
+      "suggestion": "For a non-YWCC audience, prescribe a fixed IT core sequence rather than a pool so students without a computing background follow a coherent introduction-to-IT path."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 2,
+      "justification": "References are clean (missingCourseCount=0), but the prerequisite depth is the central problem for THIS audience: the deepest chain is 7 (IS 465 depth 7; IT 340/420 and IS 421 at depth 5) and those chains run back through CS/IS courses that non-YWCC students will not have taken. A large share of the advertised pool is therefore effectively unreachable for the exact students this minor targets.",
+      "suggestion": "Curate a low-prerequisite pathway (IT 120, IS 117, IT 202 at depths 0-2 with clearly stated non-computing entry points) and drop or gate the depth-5-to-7 courses that non-majors cannot realistically enter."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives are present; only course descriptions exist. This is a real finding for any catalog page and is especially important here, since non-computing students rely on stated outcomes to judge whether the minor is appropriate for them.",
+      "suggestion": "Publish outcomes aimed at non-computing students (e.g., 'apply IT tools to a home discipline', 'administer basic networked systems', 'manage and query data')."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "As a minor there is no term grid and summedTermCredits/creditReconcileDelta are null, so this is a transparency point: statedTotalCredits=15 is given without a required-versus-elective breakdown. Uniform 3-credit courses keep arithmetic simple.",
+      "suggestion": "State the 15-credit structure and clearly mark any prerequisite courses a non-major must take first, since those could push the real cost above 15 credits."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The displayed course pool is byte-identical to the 'for YWCC majors' IT minor and to the Mobile and Web minor, so the catalog provides no way to see what makes this non-major credential different, and the parsed name is even truncated ('...not for YWCC majors' with no closing parenthesis). Both issues are genuine presentation defects.",
+      "suggestion": "Fix the truncated program name and present a distinct, non-major-appropriate course list rather than reusing the shared pool."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The IT infrastructure content (networking IT 120/420, system administration IT 340, systems integration IT 490, databases IS 331, web IT 202/IS 218) is relevant, but for a non-major audience the more current draw would be applied IT literacy, and the pool lacks cybersecurity and cloud entirely while over-indexing on game courses.",
+      "suggestion": "Add an accessible security-and-privacy course and a cloud-literacy course pitched at non-computing students."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and specific throughout the pool (IT 120 Network Technology, IT 202 Internet Applications, IS 331 Database Design), with no thin or placeholder text observed."
+    },
+    "prerequisiteClarity": {
+      "score": 3,
+      "justification": "Prerequisite statements themselves are clear and non-dangling (missingCourseCount=0), but for a non-computing audience the clarity gap is that many prerequisites presuppose CS/IS courses these students lack, and the page does not flag which courses are open to non-majors."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Cybersecurity and personal/organizational information assurance",
+        "rationale": "There is no security course in a pool that includes networking and system administration; security is the highest-value addition and is especially relevant framing for non-computing students."
+      },
+      {
+        "topic": "Cloud computing and IT service literacy",
+        "rationale": "IT 340/IT 420 are traditional on-premises courses with no cloud, virtualization, or SaaS content, yet cloud services are how most non-computing professionals actually encounter IT."
+      },
+      {
+        "topic": "Applied data management and analytics for non-majors",
+        "rationale": "IS 331 Databases is technical; a non-major audience would benefit from an applied data/analytics course connecting IT to their home discipline."
+      },
+      {
+        "topic": "Low-barrier introductory IT pathway",
+        "rationale": "The pool is dominated by depth-4-to-7 IS/IT courses and nine game courses, but offers little that a student with no computing prerequisites can start with, so the pool is mismatched to its audience."
+      },
+      {
+        "topic": "IT automation and everyday scripting",
+        "rationale": "No course teaches basic scripting/automation, which is arguably the most transferable IT skill for students from other majors."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Cloud and SaaS-based IT for non-specialists",
+        "rationale": "Non-computing professionals increasingly manage cloud tools; the minor should teach cloud literacy rather than only on-premises system administration."
+      },
+      {
+        "trend": "Cybersecurity awareness and privacy for all disciplines",
+        "rationale": "Every field now faces security and privacy obligations, making a non-major security course both timely and broadly marketable."
+      },
+      {
+        "trend": "Generative-AI tools and AI literacy",
+        "rationale": "AI copilots are transforming how non-technical professionals use IT; an AI-literacy component would strongly differentiate this non-major minor."
+      },
+      {
+        "trend": "No-code / low-code application building",
+        "rationale": "Non-computing students can deliver real value through no-code platforms, a fast-growing area the current IS/IT-heavy pool does not address."
+      },
+      {
+        "trend": "Data governance and compliance across professions",
+        "rationale": "GDPR/CCPA-style obligations reach every discipline, so governance literacy would make this minor relevant to non-computing majors' careers."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Replace the shared 32-course pool with a curated low-prerequisite IT pathway that non-computing students can actually complete without unstated CS/IS prerequisites.",
+    "Fix the truncated program name and differentiate this entry from the identical 'for YWCC majors' and 'Mobile and Web' course lists.",
+    "Add accessible cybersecurity and cloud-literacy courses aimed at non-majors, the competencies most missing and most marketable.",
+    "Publish learning outcomes framed for non-computing students so they can judge fit.",
+    "State the 15-credit structure and flag prerequisite courses that could raise the true credit cost for a non-major."
+  ]
+}

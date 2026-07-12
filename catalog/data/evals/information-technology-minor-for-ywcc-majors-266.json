@@ -1,0 +1,111 @@
+{
+  "id": "information-technology-minor-for-ywcc-majors-266",
+  "name": "Information Technology Minor (for YWCC majors)",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "The pool does contain a legitimate IT infrastructure spine (IT 120 Network Technology -> IT 202 Internet Applications -> IT 340 System Administration / IT 420 Computer Systems and Networks -> IT 490 Systems Integration, plus IS 331 Databases), which gives the minor real coherence potential. That spine is diluted, however, by nine game-design courses (IT 265/266/270/286/366/382/383/466/487) in a 32-course pool with no plan-of-study grid, so the IT identity is buried in a menu.",
+      "suggestion": "Define an explicit IT core progression (networking -> systems administration -> systems integration, plus databases and web) and move the game courses out of the required IT set."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "References are clean (missingCourseCount=0, no dangling codes), a real strength. The deepest chain is 7 with IS 465 at depth 7 and IT 340/420/IS 421 at depth 5; since this minor is for YWCC (computing) majors, those students generally do hold the underlying prerequisites, so accessibility is less of a problem here than for the non-YWCC version.",
+      "suggestion": "Publish a recommended prerequisite-aware ordering so YWCC majors slot the IT courses efficiently around their major sequence."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives appear in the data; only course descriptions are present. For a catalog credential this is a real finding, and it also makes it impossible to see how this minor complements a student's YWCC major.",
+      "suggestion": "Publish outcomes describing the IT breadth a YWCC major gains (e.g., 'administer networked systems', 'integrate enterprise IT components', 'manage relational data stores')."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "As a minor there is no term grid and summedTermCredits/creditReconcileDelta are null, so this is a transparency point rather than a defect: statedTotalCredits=15 is stated but with no required-versus-elective breakdown. All courses are uniform 3 credits.",
+      "suggestion": "State the 15-credit structure and, importantly, list which of the student's own YWCC-major courses may not be double-counted toward the minor."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The displayed course pool is byte-identical to the 'not for YWCC majors' IT minor and to the Mobile and Web minor, so the catalog gives no way to distinguish this specific credential. The entire policy rationale for a separate 'for YWCC majors' entry (different eligible/countable courses) is invisible in the presented data, which is a genuine clarity defect.",
+      "suggestion": "Differentiate this entry from the non-YWCC version by showing the eligibility rules and the course set that YWCC majors may actually count."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The IT infrastructure coverage is solid and job-relevant (networking IT 120/420, system administration IT 340, systems integration IT 490, databases IS 331, web/internet IT 202/IS 218), but the pool has no cybersecurity and no cloud/virtualization content, which are the two defining competencies of contemporary IT practice and are expected under ACM IT2017 guidance.",
+      "suggestion": "Add an information-security course and a cloud/virtualization course to the IT core."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Course descriptions are present and specific across the pool (IT 120 Network Technology, IT 340 System Administration, IS 331 Database Design), with no thin or placeholder excerpts observed."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated with clear course logic and grade conditions where relevant, and missingCourseCount=0 confirms no dangling references across the 32-course pool."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Cybersecurity / information assurance",
+        "rationale": "A 32-course IT pool with networking and system administration but no security course is a serious gap; ACM IT2017 treats information assurance and security as a pervasive pillar, so a Network/Information Security course is the highest-value addition."
+      },
+      {
+        "topic": "Cloud computing and virtualization",
+        "rationale": "IT 340 System Administration and IT 420 Computer Systems and Networks are traditional on-premises courses; there is no AWS/Azure/GCP, containers, or infrastructure-as-code, which is where IT operations now run."
+      },
+      {
+        "topic": "IT automation, scripting, and DevOps",
+        "rationale": "IT 490 Systems Integration is the closest fit, but there is no dedicated scripting-for-operations, configuration-management, or CI/CD content that modern IT roles require."
+      },
+      {
+        "topic": "Enterprise data management and analytics/BI",
+        "rationale": "IS 331 Databases is present but there is no data-warehouse, business-intelligence, or analytics course, even though IT increasingly centers on data pipelines and reporting."
+      },
+      {
+        "topic": "A curated IT identity over game bloat",
+        "rationale": "Nine game-design courses dominate the pool while security and cloud are absent, so the pool does not read as a coherent contemporary IT skill set."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Cloud-native operations and Infrastructure-as-Code",
+        "rationale": "IT is shifting to cloud, containers, and declarative provisioning; IT 340/420 should gain cloud modules so YWCC majors leave with current operations skills."
+      },
+      {
+        "trend": "Cybersecurity and zero-trust architecture",
+        "rationale": "An escalating threat landscape makes security literacy mandatory for every IT professional, and this pool currently offers none."
+      },
+      {
+        "trend": "AIOps and generative-AI IT tooling",
+        "rationale": "AI-driven monitoring, incident triage, and copilots are reshaping IT operations and support, an area no current course touches."
+      },
+      {
+        "trend": "Edge computing, IoT, and 5G connectivity",
+        "rationale": "IT 120/420 networking should extend to IoT device management and edge architectures that are expanding the IT footprint."
+      },
+      {
+        "trend": "Data governance, privacy, and compliance",
+        "rationale": "Regulatory pressure (GDPR/CCPA) makes governance and compliance a core IT competency that complements the minor's data and systems courses."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Add cybersecurity and cloud/virtualization courses, the two most conspicuous gaps in a modern IT pool.",
+    "Differentiate this minor from the identical-looking 'not for YWCC majors' and 'Mobile and Web' pools by showing the eligibility rules and countable course set specific to YWCC majors.",
+    "Define a coherent IT core progression and separate the nine game courses that currently dilute the pool.",
+    "Publish program-level learning outcomes describing the IT breadth a YWCC major gains.",
+    "State the 15-credit required-vs-elective structure, including which courses a student cannot double-count from their YWCC major."
+  ]
+}

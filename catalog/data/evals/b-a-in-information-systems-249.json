@@ -6,60 +6,106 @@
       "key": "curriculum_coherence",
       "name": "Curriculum coherence & progression",
       "score": 4,
-      "justification": "The plan of study lays out a clear, well-ordered IS spine across eight labeled terms: foundational computing and web work (CS 100, IS 117, IS 218, IS 265, IS 247) progress into database, requirements, and UX-research courses (IS 331, IS 390, IS 375, IS 344), and culminate in management and advanced/capstone work (IS 455, IS 465, IS 491). Prerequisite depth (deepest chain of 7, with IS 465 terminal) confirms courses genuinely build on one another term over term with no abrupt jumps. The main weakness is that later years lean heavily on unlabeled placeholder buckets (Career Track, New Media/Business Specialization, and General Electives), which leaves part of the upper-level progression unspecified.",
-      "suggestion": "Attach a concrete example course list to each elective bucket (Career Track, Specialization, General) so the upper-division progression is as legible as the required IS core."
+      "justification": "The B.A. keeps the same well-ordered IS spine as its B.S. siblings (CS 100 -> IS 117 -> IS 218 -> IS 331; IS 265 -> IS 344 -> IS 465; IS 247/IS 375 UX; IS 390 requirements analysis; IS 455 IS management) converging on an IS 491/IT 491 capstone, with a lighter quantitative load (MATH 138, MATH 105) befitting a liberal-arts degree. Progression is logical, but the plan is very elective-driven -- 'IS Career Track Electives 1-3', 'New Media or Business Specialization Electives 1-5', and multiple general electives -- so the required technical arc is comparatively thin and coherence depends on students choosing a coherent track.",
+      "suggestion": "Define named, pre-packaged tracks (e.g., New Media vs. Business) with a fixed course sequence rather than a menu of interchangeable 'Specialization Elective' slots, so each path reads as a coherent progression."
     },
     {
       "key": "prereq_structure",
       "name": "Prerequisite structure health",
       "score": 4,
-      "justification": "The prerequisite graph is deep and sensible: a deepest chain of 7 reflects a genuine multi-year build-up (e.g., IS 465 requires a statistical GER plus IS 265, IS 344, and IS 331/CS 331) without appearing over-constrained. Prerequisites are richly specified with explicit grade conditions and boolean logic. Only 3 of 28 referenced codes are missing from the catalog (missingCourseCount=3: GER 200, YWCC 207, YWCC 307), and all three are peripheral — a general-education category reference and two 1-credit professional-development seminars — rather than breaks in the core IS chain.",
-      "suggestion": "Reconcile the three dangling codes (GER 200, YWCC 207, YWCC 307) with the undergraduate catalog by either linking them to real course entries or replacing the GER placeholder with the specific requirement it points to."
+      "justification": "The prerequisite graph mirrors the department's healthy IS structure: deepestPrereqChain is 7 (IS 465 Advanced IS as terminal), with foundational courses shallow and no over-constraining. missingCourseCount is 3 and all are peripheral -- GER 200 is a general-education placeholder and YWCC 207/YWCC 307 are the one-credit professional-development seminars present in the plan but absent from the catalog.",
+      "suggestion": "Resolve the three dangling references by cataloguing YWCC 207/YWCC 307 and re-tagging GER 200 as a requirement category."
     },
     {
       "key": "learning_outcomes",
       "name": "Learning outcomes & objectives",
       "score": 2,
-      "justification": "No program-level learning outcomes or educational objectives are present in the data (learningOutcomes is null). For a catalog page, the absence of stated outcomes is a real finding: prospective students, advisors, and accreditors cannot see what graduates are expected to know or be able to do, and the plan of study alone does not substitute for explicit competency statements.",
-      "suggestion": "Publish an explicit set of program learning outcomes (e.g., 5-8 measurable statements covering systems analysis, database design, UX, and IS management) on the catalog page."
+      "justification": "No program-level learning outcomes, objectives, or overview appear in the data. Because the B.A. differentiates itself from the B.S. mainly through breadth and track flexibility, the absence of an explicit outcomes statement makes it especially hard for a student to understand what distinguishes this degree.",
+      "suggestion": "Publish learning outcomes that articulate the B.A.'s emphasis (IS analysis/design plus a humanities/new-media or business specialization) and a short overview clarifying how it differs from the B.S."
     },
     {
       "key": "credit_balance",
       "name": "Credit distribution & balance",
-      "score": 4,
-      "justification": "The plan reconciles exactly: summed term credits (120) equal the stated total (120), so creditReconcileDelta is 0.0 — internally consistent with no missing or double-counted credits. Term loads are reasonable and steady (mostly 15-16 credits, with a lighter 12-credit final term), and the mix spans general education (English, math, natural science, history/humanities GERs), a substantial IS major core, and multiple elective categories. The score is held just below exemplary because the numerous unlabeled elective buckets make the precise gen-ed / major-core / elective split hard to verify even though the totals reconcile.",
-      "suggestion": "Add a credit-summary breakdown (major core vs. general education vs. free/track electives) so the balance behind the reconciled 120 total is transparent at a glance."
+      "score": 3,
+      "justification": "The plan reconciles cleanly (statedTotalCredits 120, summedTermCredits 120, creditReconcileDelta 0.0), which is a real strength. Transparency, however, is undercut by the sheer number of unspecified slots -- five 'Specialization Electives', three 'IS Career Track Electives', and several general electives -- meaning a large share of the 120 credits is not visibly defined, which is characteristic of a B.A. but reduces at-a-glance clarity.",
+      "suggestion": "Publish a compact credit-distribution summary (gen-ed vs. IS core vs. track electives vs. free electives) and cap/label the elective menus so the balance between required and open credit is transparent."
     },
     {
       "key": "presentation",
       "name": "Presentation & clarity",
-      "score": 2,
-      "justification": "The plan of study is present with clearly labeled terms and per-item credits, which aids readability. However, completeness and structure suffer: there is no program-level description or overview narrative at all, and several rows are parsing artifacts — GER references have their URLs split across multiple line items with null course codes and null credits (e.g., a 'Natural Science GER (http://...' row followed by a stray 'requirements/natural-science-ger/)' row). These broken fragments and the missing overview undercut an otherwise legible plan.",
-      "suggestion": "Add a concise program overview paragraph and clean up the fragmented GER rows so each requirement renders as a single, complete line rather than split URL fragments."
+      "score": 3,
+      "justification": "The structure is intact and terms are labeled, but footnote superscripts bleed heavily into titles ('General Elective 1 3,7', 'IS Career Track Elective 1 4', 'New Media or Business Specialization Elective 1 5', 'MATH 138 | General Calculus I 1'), GER rows are split with null credits, and duplicated 'Select one of the following:' lines and 'or COM 313 or Technical Writing' options render as unresolved rows -- collectively noisy even though nothing is truncated.",
+      "suggestion": "Strip the footnote reference numbers out of the title text (render them as footnotes) and collapse the 'Select one of the following' / 'or ...' groupings into single readable choice lines."
     },
     {
       "key": "industry_relevance",
       "name": "Industry & currency relevance",
-      "score": 4,
-      "justification": "The curriculum reflects current IS practice well: two dedicated UX courses (IS 247 Designing the User Experience, IS 375 Discovering User Needs for UX), hands-on web application development (IS 117, IS 218), database design (IS 331), requirements analysis and systems design (IS 390), IS management and business processes (IS 455), and an advanced course (IS 465) that explicitly introduces data analysis and data-science techniques. Career-track and New Media/Business specialization electives add contemporary flexibility. Modern gaps are that cybersecurity and cloud computing appear only implicitly (networking is limited to the introductory IT 120) and data analytics is only introductory rather than a named required strand.",
-      "suggestion": "Name current-practice courses in data analytics, cloud, and cybersecurity as explicit required or career-track options rather than leaving them to unlabeled elective buckets."
+      "score": 3,
+      "justification": "The IS core is current -- database design (IS 331), UX (IS 247/IS 375), requirements analysis (IS 390), IS management (IS 455/IS 465), networking (IT 120) -- and the career-track flexibility is a genuine plus. But as a B.A. the technical depth is modest: analytics is limited to what IS 465 touches, there is no security/governance course, no cloud/SaaS exposure, and the only programming is web, so graduates may need to supplement with data or security skills employers now expect.",
+      "suggestion": "Steer at least one required 'IS Career Track Elective' toward a modern data-analytics or information-security course so every B.A. graduate leaves with one concrete, in-demand technical competency beyond web development."
     }
   ],
   "courseLevel": {
     "descriptionQuality": {
       "score": 4,
-      "justification": "All 25 sampled courses carry substantive, specific description excerpts that convey real topics and scope (e.g., IS 218's Web-based information systems, IS 331's database back-end functionality, IS 465's data-analysis and statistics from an IS perspective) rather than thin placeholders. The only blemish is a short, artifact-laden MATH 138 excerpt ending in stray text ('298 Jordan'); otherwise descriptions are informative and consistent."
+      "justification": "All 25 sampled courses carry present, specific descriptions with no missing/placeholder entries (e.g., IS 218 web-based information systems, IS 331 databases for decision-making, IS 465 data analysis/statistics from an IS perspective, IS 350 computing ethics). Descriptions are informative rather than thin, though some registrar titles are abbreviated."
     },
     "prerequisiteClarity": {
       "score": 4,
-      "justification": "Prerequisites are stated unusually clearly and consistently: they include explicit grade conditions ('ENGL 102 with a grade of C or higher') and well-formed boolean logic ('(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'). Clarity is lightly reduced by a few category-level references (e.g., 'Statistical GER', 'History and Humanities GER 200 level') and the 3 dangling codes (GER 200, YWCC 207, YWCC 307), which are resolvable but not spelled out as concrete courses."
+      "justification": "Prerequisites are stated with explicit grade gates and coherent alternatives (IS 390: 'CS 103, CS 113, CS 115, IS 218 or IT 202'; IS 455: '(IS 265 or MIS 245) and IS 390'; COM 312/313 with ENGL 102 + GER conditions), and intro courses correctly show none. Minor issues -- GER-set placeholders embedded in IS 350's prerequisite and slight phrasing variance -- keep it from a 5."
     }
   },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Applied data analytics (SQL, Python, visualization)",
+        "rationale": "Analytics is confined to IS 465; even a B.A. IS graduate is expected to query and visualize data, so a hands-on analytics course should anchor at least one career track."
+      },
+      {
+        "topic": "Information security, privacy & governance",
+        "rationale": "No security or data-governance course exists despite IS 350 raising ethics/privacy conceptually; compliance and infosec literacy are baseline for IS roles."
+      },
+      {
+        "topic": "Cloud computing and SaaS platforms",
+        "rationale": "The technical stack is web + networking (IT 120) with no cloud exposure, yet modern IS work is overwhelmingly delivered on cloud/SaaS ecosystems."
+      },
+      {
+        "topic": "IT project management & Agile delivery",
+        "rationale": "IE 492 is generic management; a dedicated Agile/PM course would connect IS 390 requirements work to how IS projects are actually run."
+      },
+      {
+        "topic": "Business process management / enterprise systems",
+        "rationale": "IS 455 treats processes conceptually; hands-on ERP or workflow-automation experience would make the business specialization concrete."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Generative AI and low-code application development",
+        "rationale": "IS professionals increasingly assemble solutions with AI copilots and low-code tools; a B.A. track could adopt this quickly to add applied value on top of IS 218/IS 344."
+      },
+      {
+        "trend": "Cloud-native and SaaS-centric IS",
+        "rationale": "Configuration and integration of SaaS platforms is now core IS work and a natural modernization of IS 344/IS 455."
+      },
+      {
+        "trend": "Self-service business intelligence and data storytelling",
+        "rationale": "Data-driven decision-making with self-service BI fits the B.A.'s communication strengths (COM 312/313) and would differentiate its graduates."
+      },
+      {
+        "trend": "Digital transformation and process automation (RPA)",
+        "rationale": "Organizations are automating processes IS 455 studies; RPA/process-mining exposure would make the business track current."
+      },
+      {
+        "trend": "Data privacy and governance (GDPR/CCPA)",
+        "rationale": "Extending IS 350 ethics into concrete governance/compliance aligns with a fast-growing, communication-heavy IS career path suited to a B.A."
+      }
+    ]
+  },
   "topSuggestions": [
-    "Publish explicit program-level learning outcomes (5-8 measurable competency statements); none are currently present.",
-    "Add a program overview/description narrative to the catalog page, which currently has none.",
-    "Clean up presentation artifacts and reconcile the 3 dangling course codes (GER 200, YWCC 207, YWCC 307), including the GER rows whose URLs are split across null-code line items.",
-    "Name current-practice courses in data analytics, cloud, and cybersecurity as explicit required or career-track options rather than leaving them implicit.",
-    "Label the elective buckets (General, Career Track, and New Media/Business Specialization) with concrete example course lists so the core-vs-elective split is transparent."
+    "Publish program-level learning outcomes and an overview that clarifies how the B.A. differs from the B.S. in Information Systems.",
+    "Convert the loose 'Specialization Elective' menus into named, fixed tracks (New Media / Business) so each path is a coherent sequence.",
+    "Guarantee one modern technical competency per graduate by steering a career-track elective into applied analytics or information security.",
+    "Add cloud/SaaS and Agile-project-management options to close the most visible currency gaps.",
+    "Clean presentation: remove footnote numbers from titles and collapse split GER and 'or ...' rows into single lines."
   ]
 }

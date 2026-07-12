@@ -1,0 +1,111 @@
+{
+  "id": "mobile-and-web-minor-266",
+  "name": "Mobile and Web Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 2,
+      "justification": "The 32-course pool is not curated to 'mobile and web': it is the full IS/IT inventory and includes nine game courses (IT 265/266/270/286/366/382/383/466/487) and infrastructure courses (IT 340 System Administration, IT 420 Computer Systems and Networks, IT 490 Systems Integration) that have no clear mobile/web rationale. With no plan-of-study grid (requirementGroups=0), the minor reads as an unfiltered menu rather than a coherent web+mobile progression.",
+      "suggestion": "Replace the generic pool with a curated sequence (IS 117 -> IS 218 -> IS 219/IS 421 for web, IS 322 for mobile, IS 331 for data) and remove the unrelated game and sysadmin courses."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "References are clean (missingCourseCount=0) with no dangling codes, but the deepest chain is 7 and marquee courses sit deep (IS 465 at depth 7, IS 421/IT 340/IT 420 at depth 5, IS 322/IS 390 at depth 4). For a 15-credit minor many of these are unreachable without the underlying IS/IT major sequence, so the advertised pool overstates what a minor student can actually take.",
+      "suggestion": "Provide a reachable low-prerequisite path (IS 117 and IT 202 at depth 0-2) and label which advanced courses require major-level prerequisites."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives are present in the data; only course descriptions exist. For a skills-oriented web/mobile credential this omission is a real finding because employers evaluate this minor on concrete build competencies.",
+      "suggestion": "Publish outcomes such as 'design and deploy a responsive web application', 'build and ship a mobile app', and 'model and query an application database'."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "As a minor there is no term grid and summedTermCredits/creditReconcileDelta are null, so this is a transparency point, not a reconciliation defect: statedTotalCredits=15 is given but with no required-versus-elective breakdown. Uniform 3-credit courses keep the arithmetic clean but the page does not show how much of the 15 is prescribed.",
+      "suggestion": "State the 15-credit structure (required web+mobile core versus electives) so students see the balance explicitly."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "The most visible clarity problem is that the displayed course pool is byte-identical to the two Information Technology minors and contradicts this minor's own title, listing game-design and system-administration courses under 'Mobile and Web'. A reader cannot tell what the minor is about from its course list, which is a genuine presentation defect even though individual descriptions are legible.",
+      "suggestion": "Align the displayed course list with the minor's title so game/sysadmin courses are removed and web/mobile courses are foregrounded."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The genuinely relevant courses (IS 117/218/219 website development, IS 421 Advanced Web Applications, IS 322 Mobile Applications, IS 331 Databases, IS 373 CMS, IT 202 Internet Applications) cover real ground but skew toward traditional website development: there is no modern JavaScript framework (React/Vue), no explicit REST/GraphQL API design, no web/mobile security, and no cloud deployment or cross-platform mobile (React Native/Flutter).",
+      "suggestion": "Modernize the core toward component-based front-end frameworks, API-first backends, mobile cross-platform frameworks, and cloud deployment/security."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and informative across sampled courses (IS 218 Building Web Applications, IS 219 Advanced Website Development, IS 322 Mobile Applications), with no thin or placeholder text observed."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated explicitly and consistently (e.g., IS 218/219 require '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'), and missingCourseCount=0 confirms no dangling references."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Modern JavaScript front-end frameworks",
+        "rationale": "The pool's web courses (IS 117/218/219) are website-development oriented with no explicit React/Vue/Angular, component architecture, or single-page-application content that defines current front-end work."
+      },
+      {
+        "topic": "Web and mobile security",
+        "rationale": "No course in the pool addresses authentication, OWASP risks, secure APIs, or HTTPS/TLS, despite security being non-negotiable for anything deployed to the web or an app store."
+      },
+      {
+        "topic": "Cloud deployment and DevOps for web",
+        "rationale": "IT 340 (sysadmin) and IT 420 (networks) are generic infrastructure; there is no cloud-native deployment, containers, CI/CD, serverless, or CDN content that modern web/mobile delivery relies on."
+      },
+      {
+        "topic": "API design (REST/GraphQL) and backend services",
+        "rationale": "API-first design is implied inside IS 218/421 but never taught explicitly, yet decoupled front-ends and mobile clients depend on well-designed service APIs."
+      },
+      {
+        "topic": "Cross-platform mobile and Progressive Web Apps",
+        "rationale": "IS 322 is the only mobile course; there is no React Native/Flutter or PWA content, which is exactly the bridge between the 'mobile' and 'web' halves of this minor."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Generative-AI-assisted development and AI-powered features",
+        "rationale": "Nothing in the pool positions students for integrating LLM APIs, chat UIs, or AI copilots, now a baseline expectation for web/mobile products and for developer productivity."
+      },
+      {
+        "trend": "Progressive Web Apps, WebAssembly, and edge computing",
+        "rationale": "The web platform is moving toward near-native performance and edge delivery; the minor's website-centric courses should incorporate PWA and edge patterns."
+      },
+      {
+        "trend": "Serverless and JAMstack / headless architectures",
+        "rationale": "IS 373 teaches traditional CMS; the field has shifted to headless CMS, static generation, and serverless functions that this minor could adopt."
+      },
+      {
+        "trend": "Accessibility and privacy-by-design",
+        "rationale": "WCAG accessibility and GDPR/CCPA privacy are legal and market requirements for shipped web/mobile apps, yet no course covers them."
+      },
+      {
+        "trend": "Mobile-first, API-first convergence of web and mobile",
+        "rationale": "Shared component and API layers increasingly unify web and mobile front-ends, which is the natural organizing theme this minor should teach explicitly."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Curate the course list to actually match the minor's title, removing the nine game courses and the sysadmin/networks courses that are inherited from a shared pool.",
+    "Modernize the web/mobile core toward JavaScript frameworks (React), REST/GraphQL APIs, and cross-platform mobile so it reflects current practice rather than legacy website development.",
+    "Add web/mobile security and cloud deployment, the two competencies most conspicuously absent from the pool.",
+    "Publish concrete build-oriented learning outcomes for the minor.",
+    "State the 15-credit required-vs-elective structure and flag which advanced courses need major-level prerequisites."
+  ]
+}

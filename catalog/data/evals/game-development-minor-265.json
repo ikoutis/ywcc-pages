@@ -1,0 +1,111 @@
+{
+  "id": "game-development-minor-265",
+  "name": "Game Development Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "The minor is presented as an undifferentiated 40-course pool with no plan-of-study grid (requirementGroups=0), so the 15 credits carry no prescribed core-to-advanced progression; a student could satisfy it with five loosely related picks. The interdisciplinary breadth (AD 112/150, DD 284/321, COM 303/354, IE 355 Human Factors, plus IT 265/266/270/286/360/366/380) fits game development's cross-disciplinary nature, but the flagship advanced game courses (IT 466 3D Game Programming, IT 487 Advanced Game Production, IT 382/383 Game Design for XR) that appear in sibling YWCC minor pools are absent here.",
+      "suggestion": "Define a required spine (e.g., IT 265 Game Architecture -> IT 366 2D Game Programming -> IT 466 3D Game Programming) plus a curated art/UX elective set so the 15 credits form a deliberate progression rather than a menu."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "Prerequisite references are clean (missingCourseCount=0, no dangling codes), a genuine strength, but the deepest chain is 7 and several pool courses sit very deep: IS 333 Social Network Analysis, IS 448 Usability, and IS 465 are at depth 7, and IS 421 at depth 5. In a 15-credit minor those courses are effectively unreachable without the parent IS/IT major sequence, so a meaningful part of the advertised pool is inaccessible to typical minor students.",
+      "suggestion": "Mark which pool courses are realistically reachable inside a 15-credit minor and publish a low-prerequisite entry path (e.g., IT 265/266/270/286 at depths 1-2) so students are not steered toward depth-7 courses they cannot enroll in."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or educational objectives appear anywhere in the provided data; only a course pool with per-course descriptions is present. For a catalog page this absence is a real finding, and it is especially costly for a skills-based credential like game development where employers look for demonstrable competencies.",
+      "suggestion": "Publish 4-6 explicit minor outcomes (e.g., 'build and ship a playable 2D/3D game', 'apply game AI and real-time graphics techniques', 'conduct playtesting/UX evaluation') so the minor's value is legible."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "As a minor there is no plan-of-study grid and summedTermCredits/creditReconcileDelta are null, so this is a credit-transparency point rather than a reconciliation defect: statedTotalCredits=15 (five 3-credit courses) is stated but the page gives no split between a required core and electives. Every pool course is a uniform 3 credits, which keeps arithmetic simple but hides how much of the 15 is prescribed versus free choice.",
+      "suggestion": "State the 15-credit structure explicitly (e.g., 9 credits required game core + 6 credits curated electives) so students can see the required-versus-elective balance at a glance."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "No plan grid is expected for a minor, and course descriptions are legible and substantive. Clarity is undercut, however, by a pool that omits the very advanced game courses (IT 466, IT 487, IT 382/383) present in sibling minors while mixing in many non-game courses (HIST 387, ID 203, IE 355) with no required/optional labeling, so the reader cannot tell what the minor actually centers on.",
+      "suggestion": "Present a clearly labeled required-core / elective structure and include the advanced game-production and XR courses so the page reflects the minor's stated focus."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "Game-specific coverage is respectable (IT 265 Game Architecture, IT 366 2D Game Programming, IT 270 3D Modeling, IT 286 Foundations of Game Production, IT 360 Computer Graphics for VFX) and UX is well served (IS 247/375/448). But there is no dedicated modern game-engine course (Unity/Unreal, C#/C++ pipelines), no game AI (pathfinding, behavior trees, PCG), no multiplayer/networking, and no game audio, and the XR courses are absent from this pool despite existing in the catalog.",
+      "suggestion": "Add or modernize an engine-centric build course and a game-AI course, and surface the existing XR (IT 382/383) offerings so the minor tracks current studio practice."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Sampled descriptions are present and specific across the pool (e.g., DD 284 Video and Animation, IS 322 Mobile Applications, IT 366 2D Game Programming), with no thin/placeholder excerpts observed; restriction notes are included where relevant."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated unambiguously with grade conditions (e.g., COM 303/354 require 'ENGL 102 with a grade of C or higher'), and missingCourseCount=0 means no dangling references; depth-0 intro courses correctly carry none."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Modern game-engine development (Unity/Unreal)",
+        "rationale": "The pool leans on IT 366 2D Game Programming and IT 270 3D Modeling but has no course anchored in a contemporary engine with scripting (C#/C++), scene/ECS architecture, and asset pipelines; the catalog's IT 466 3D Game Programming should be surfaced and modernized as engine-based."
+      },
+      {
+        "topic": "Gameplay AI and procedural content generation",
+        "rationale": "No course covers pathfinding, finite-state machines, behavior trees, or PCG, which are core to shipping games; a dedicated Game AI course would fill the largest technical gap in the pool."
+      },
+      {
+        "topic": "Multiplayer and networked game architecture",
+        "rationale": "IT 120 (intro networking) and IT 490 (systems integration) are generic; there is no netcode, client-server, or real-time synchronization content despite multiplayer being standard in commercial titles."
+      },
+      {
+        "topic": "Game audio and sound design",
+        "rationale": "The pool covers art, animation, and graphics (AD/DD/IT 360) but has no audio component, leaving a full production discipline unrepresented."
+      },
+      {
+        "topic": "Capstone game production / portfolio project",
+        "rationale": "IT 286 Foundations of Game Production is present but the advanced production course (IT 487) is missing from the pool, so there is no shipped-game capstone to anchor a student portfolio."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "XR / AR / VR game development",
+        "rationale": "The catalog already offers IT 382/383 Game Design for XR but they are absent from this minor's pool; surfacing them would position students for the fastest-growing interactive platform."
+      },
+      {
+        "trend": "Generative AI for game content",
+        "rationale": "Procedural asset generation, LLM-driven NPC dialogue, and AI-assisted art are reshaping production pipelines, yet nothing in the pool touches AI-assisted content creation."
+      },
+      {
+        "trend": "Real-time 3D beyond entertainment (virtual production, serious games, digital twins)",
+        "rationale": "IT 360 Computer Graphics for VFX and IT 380 Educational Software Design hint at adjacent uses; game-engine skills increasingly transfer to film, training, and simulation markets."
+      },
+      {
+        "trend": "Data-driven / live-service design and player analytics",
+        "rationale": "IS 333 Social Network Analysis and IS 392 Web Mining exist in the parent pool; games-as-a-service depend on telemetry and analytics that this minor could leverage."
+      },
+      {
+        "trend": "Mobile-first and cross-platform delivery",
+        "rationale": "IS 322 Mobile Applications is in scope; mobile remains the largest games platform, so a mobile game-build path would sharpen employability."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Convert the flat 40-course pool into a required game core plus curated electives with an explicit progression (architecture -> 2D -> 3D -> production capstone).",
+    "Add the missing modern competencies: a game-engine build course, a game-AI course, and game audio; surface the existing XR courses (IT 382/383) that are absent from the pool.",
+    "Publish program-level learning outcomes tied to demonstrable deliverables (ship a playable game, build a portfolio).",
+    "Restore the advanced game courses (IT 466 3D Game Programming, IT 487 Advanced Game Production) to the displayed pool so the minor reflects its own focus.",
+    "State the 15-credit required-vs-elective split and flag which deep-prerequisite pool courses are realistically reachable within the minor."
+  ]
+}
