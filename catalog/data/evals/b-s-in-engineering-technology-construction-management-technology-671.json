@@ -1,0 +1,111 @@
+{
+ "id": "b-s-in-engineering-technology-construction-management-technology-671",
+ "name": "B.S. in Engineering Technology, Construction Management Technology",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 2,
+   "justification": "The plan of study as captured is incoherent for this program: only 3 of the expected 8 requirement groups were parsed (summedTermCredits 42 of a stated 120), and those three parsed terms list biomedical courses (BMET 320, BMET 415, BMET 440, BMET 450, MET 403, MNET 315/414/416/420) that belong to the Biomedical Engineering Technology program, not construction management. The genuine construction-management content (CET 313/314/317/322/411/413/415/416/421/423, CMT 332/436/452, CIM 205) appears only in the unordered sample pool, so a reader cannot follow any CM progression from the page.",
+   "suggestion": "Republish the complete, correct 8-term Construction Management Technology plan of study and remove the biomedical courses that have bled in from the BMET program."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 3,
+   "justification": "Among the genuine construction-management courses the prerequisite graph is sensible (deepest chain 7; CET 411 <- 'CET 313, CET 314, CET 317'; CMT 436 <- CMT 332; CET 416 <- CET 415), and only 5 dangling references (GER 200/300, PHYS 102A/103A, SET 200A) are placeholders. Confidence is undercut, however, by an anomalously high referencedCourses count of 74, indicating multiple programs' courses merged into this record.",
+   "suggestion": "After restoring the correct plan, prune the merged/biomedical course references so the prerequisite graph reflects only the CM curriculum."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or objectives appear in the data; only a partial plan and course descriptions are present. This is a real omission independent of the parsing problems.",
+   "suggestion": "Publish explicit CM student outcomes (estimating and scheduling, contracts and safety, project delivery, structural/MEP systems literacy)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 1,
+   "justification": "Credit accounting is broken: summedTermCredits is 42 against a stated 120 (creditReconcileDelta -78.0) with only 3 of 8 terms parsed, and those terms are contaminated with biomedical courses. Because this is a standalone B.S. (not a combined-degree or minor), the large negative delta is a genuine data/presentation defect, not merely a caveat, and a catalog reader cannot see the credit distribution at all.",
+   "suggestion": "Restore all eight terms so the plan sums to 120 credits and creditReconcileDelta returns to 0."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 1,
+   "justification": "The page is the weakest in the set: more than half the plan is missing, the visible terms show the wrong (biomedical) courses under a Construction Management title, and one prerequisite string on ECET 210 has the prerequisite text bleeding into the description ('PRE: None This is an introductory course ...'). A prospective student cannot use this page to understand the program.",
+   "suggestion": "Rebuild the catalog page from the correct CM plan of study and fix the ECET 210 prerequisite/description parsing artifact."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 3,
+   "justification": "Judged on the genuine CM course pool, the content is reasonably current: estimating (CET 411), project management (CET 415/416), contracts (CET 421), safety/OSHA (CET 423, IE 473), codes (CET 322), structural and MEP systems (CMT 332/452), temporary structures (CMT 436) and organizational behavior (HRM 301). It shares the discipline's modern gaps in BIM/VDC, lean construction and sustainability.",
+   "suggestion": "Modernize CET 317 toward BIM/VDC and add lean-construction and sustainable-building content once the plan is corrected."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "The sampled courses (including CET/CMT construction content) carry specific, informative descriptions (CET 411 on quantity takeoff, pricing and computerized estimating; CMT 452 on water supply, HVAC, fire-protection and electrical building systems; CMT 436 on formwork, falsework and shoring). Description quality is a bright spot amid the structural problems."
+  },
+  "prerequisiteClarity": {
+   "score": 3,
+   "justification": "Prerequisites among the construction courses are explicit and consistent (CET 411 <- 'CET 313, CET 314, CET 317'; CMT 436 <- CMT 332), but overall clarity is compromised by the merged 74-course reference set (biomedical courses mixed in) and the ECET 210 record where prerequisite text runs into the description."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Building Information Modeling (BIM/VDC) and 4D/5D coordination",
+    "rationale": "CET 317 is general construction computing; there is no model-based coordination or 4D/5D scheduling course."
+   },
+   {
+    "topic": "Lean construction and advanced project controls",
+    "rationale": "CET 415/411 are traditional; Last Planner, pull planning and integrated project delivery are absent."
+   },
+   {
+    "topic": "Sustainable/green building and LEED",
+    "rationale": "CET 413 Environmental Science is the only environmental course; energy and LEED content is missing."
+   },
+   {
+    "topic": "Construction risk, finance and data analytics",
+    "rationale": "FIN 315 is general corporate finance; construction-specific cost-risk and data analytics are not covered."
+   },
+   {
+    "topic": "Prefabrication and modular construction methods",
+    "rationale": "CMT 436 addresses temporary structures but offsite/modular delivery methods are not represented."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Digital twins and BIM-based project delivery",
+    "rationale": "Model-centric delivery is now standard for construction managers, the natural extension of CET 317."
+   },
+   {
+    "trend": "Construction robotics, drones and reality capture",
+    "rationale": "Automated layout and drone-based progress monitoring are entering mainstream CM practice."
+   },
+   {
+    "trend": "Modular/industrialized construction",
+    "rationale": "Offsite manufacturing is reshaping schedules and cost, extending CMT 436 content."
+   },
+   {
+    "trend": "AI-driven scheduling, estimating and risk analytics",
+    "rationale": "Data-driven controls modernize CET 411/415 for the next decade of practice."
+   },
+   {
+    "trend": "Decarbonization and embodied-carbon accounting",
+    "rationale": "Owners increasingly require carbon reporting, which CET 413 could incorporate."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Fix the plan of study: only 42 of 120 credits are parsed (delta -78) and the visible terms are contaminated with biomedical courses (BMET 320/415/440/450) that do not belong to Construction Management -- republish the full, correct 8-term CM plan.",
+  "Publish explicit program learning outcomes.",
+  "Add BIM/VDC and lean-construction content and modernize CET 317/411/415.",
+  "Add sustainable-building/LEED and construction data-analytics content.",
+  "Resolve placeholder references (GER 200/300, PHYS 102A/103A, SET 200A) and the ECET 210 prerequisite/description parsing artifact."
+ ]
+}

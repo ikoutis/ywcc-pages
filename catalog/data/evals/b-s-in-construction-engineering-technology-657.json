@@ -1,0 +1,111 @@
+{
+ "id": "b-s-in-construction-engineering-technology-657",
+ "name": "B.S. in Construction Engineering Technology",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 4,
+   "justification": "The 8-term plan builds a clear, well-ordered construction-engineering spine: MATH 138 -> 238 and PHYS 102 -> 103 feed the mechanics chain MET 235 (Statics) -> MET 237 (Strength of Materials) -> CET 233 (Structural Analysis, depth 6) -> CET 331 (Structural Systems, depth 7) -> CET 435 (Temporary Structures, depth 8), while CET 313/314 procedures, 317 computing, 322 codes, 341 soils, 411 estimating, 415/416 project management and senior project, 421 contracts, 423 safety and 431 testing round out the professional core. Progression is smooth (depths rise 0->8) and the senior year integrates management with design.",
+   "suggestion": "Sequence the several undifferentiated 'None' technical-elective/GER slots (notably the Second Year 2nd Semester term, where four of five items are unlabeled) into named clusters so the plan reads as intentional depth rather than open choice."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 4,
+   "justification": "The prerequisite graph is healthy with a deepest chain of 8 (CET 435 <- CET 331 <- CET 233 <- MET 237) and sensible compound conditions (MET 237 requires '(MET 235 or MECH 234 or MECH 235) and (MATH 138 or MATH 111)'). All 5 dangling references in missingCoursesSample (GER 200, GER 300, PHYS 102A, PHYS 103A, SET 200A) are gen-ed placeholders and physics/geomatics lab codes, not genuine breaks in the CET sequence.",
+   "suggestion": "Resolve the placeholder/lab catalog entries (PHYS 102A/103A, SET 200A) and the GER 200/300 placeholders so metrics show zero dangling references."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or ABET/ATMAE-style educational objectives appear anywhere in the provided data; only the plan of study and course descriptions are present. For an accredited-track engineering-technology B.S. this absence is a genuine catalog finding.",
+   "suggestion": "Publish explicit program student outcomes (structural/construction analysis, estimating and scheduling, professional/ethical responsibility, communication) to support accreditation reporting."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 5,
+   "justification": "The plan reconciles exactly: summedTermCredits 120 equals statedTotalCredits 120 (creditReconcileDelta 0.0) and every term is loaded at 15 credits. The distribution transparently balances a math/physics base, a mechanics/structures core, the CET professional sequence, and gen-ed/electives.",
+   "suggestion": "Add a one-line credit-summary table (math-science vs. CET core vs. GER vs. technical electives) so the balanced split is visible without reading all eight terms."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 3,
+   "justification": "Terms are labeled and the required CET courses are legible with rich descriptions, but the plan carries a null-code FYS seminar row at 0 credits and numerous unlabeled 'None' rows for GER/technical-elective slots (the Second Year 2nd Semester term shows only CET 233 with four blank rows), which reads as under-specified.",
+   "suggestion": "Give every requirement row a course code or an explicit named placeholder (e.g., 'Humanities GER 200-level', 'Technical Elective') so no plan row is blank."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 3,
+   "justification": "The required core reflects sound construction-engineering fundamentals: estimating (CET 411), project management (CET 415/416), codes (CET 322), safety/OSHA (CET 423), environmental science (CET 413), structural design (CET 233/331/435) and testing (CET 431). The main currency gaps are Building Information Modeling and digital delivery (CET 317 stops at general 'construction computing' and MET 103/105 at AutoCAD), and there is no dedicated sustainable/green-construction course.",
+   "suggestion": "Modernize CET 317 toward BIM/VDC (Revit, model-based coordination and 4D/5D scheduling) and add a sustainable-construction/LEED elective."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "All 32 sampled courses carry descriptions and most are specific and technical (CET 233 on steel and reinforced-concrete design, CET 322 on the NJ Uniform Construction Code and CSI format, CET 341 on soil mechanics and foundations). A few are terse (CET 341) and MATH 138 ends with a stray '298 Jordan' artifact, but overall description quality is strong."
+  },
+  "prerequisiteClarity": {
+   "score": 4,
+   "justification": "Prerequisites are stated explicitly with consistent grade conditions and sensible compound logic (CET 331 <- 'CET 233 and MATH 238'; CET 411 <- 'CET 313, CET 314, CET 317'). The only detractors are the placeholder/lab dangling references and a couple of restriction notes embedded in descriptions rather than the prerequisite field."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Building Information Modeling (BIM/VDC)",
+    "rationale": "CET 317 Construction Computing and MET 103/105 stop at AutoCAD; modern construction engineering is model-centric, so a Revit/BIM coordination course is expected."
+   },
+   {
+    "topic": "Sustainable and green construction / LEED",
+    "rationale": "CET 413 Environmental Science touches environmental topics but there is no dedicated course on energy modeling, LEED, or low-carbon materials."
+   },
+   {
+    "topic": "Lean construction and digital project controls",
+    "rationale": "CET 415 project management and CET 411 estimating are traditional; Last Planner, lean scheduling and 4D/5D BIM-based controls are absent."
+   },
+   {
+    "topic": "Geotechnical and foundation-design depth",
+    "rationale": "CET 341 Soils and Earthwork is the single geotechnical course; deep-foundation design is underweighted for a construction-engineering track."
+   },
+   {
+    "topic": "Reality capture and construction data analytics",
+    "rationale": "SET 200 Geomatics is present but drones/photogrammetry and jobsite-data analytics are not integrated into the CET sequence."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Digital twins and 4D/5D BIM",
+    "rationale": "The CET 317/411/415 cluster is the natural home for model-based scheduling and cost, positioning graduates for BIM-driven delivery."
+   },
+   {
+    "trend": "Modular and industrialized construction",
+    "rationale": "Offsite/prefab methods are reshaping the field but appear nowhere in the CET procedures courses (313/314)."
+   },
+   {
+    "trend": "Construction robotics and drones for site monitoring",
+    "rationale": "Automated layout and drone progress-tracking are becoming standard and connect to SET 200 geomatics content."
+   },
+   {
+    "trend": "Decarbonization and embodied carbon",
+    "rationale": "Embodied-carbon accounting for materials is an emerging owner requirement that CET 413 could extend."
+   },
+   {
+    "trend": "AI-assisted estimating and project analytics",
+    "rationale": "CET 411 estimating is ripe for modernization toward data-driven, AI-assisted quantity takeoff and productivity analytics."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish explicit program learning outcomes / student outcomes, which are absent and are needed for accreditation reporting.",
+  "Modernize CET 317 toward BIM/VDC and add a sustainable-construction/LEED elective to close the two biggest currency gaps.",
+  "Introduce lean-construction and 4D/5D digital project-controls content into CET 411/415.",
+  "Label the blank 'None' elective/GER plan rows and add a credit-summary table for readability.",
+  "Resolve the placeholder dangling references (GER 200/300, PHYS 102A/103A, SET 200A)."
+ ]
+}

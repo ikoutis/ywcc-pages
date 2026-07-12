@@ -1,0 +1,111 @@
+{
+ "id": "b-s-in-engineering-technology-biomedical-engineering-technology-669",
+ "name": "B.S. in Engineering Technology, Biomedical Engineering Technology",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 4,
+   "justification": "The plan builds three complementary spines to a device-technology outcome: a biomedical core (BME 111 Physiology -> BME 210 Biological Signal Processing -> BMET 320 Data Acquisition/Imaging -> BMET 415 Biomedical Mechatronics -> BMET 450 Senior Project, plus BMET 440 experiential), an electronics track (ECET 201 Circuits -> ECET 329 Analog/Digital Electronics), and a manufacturing/quality track (MNET 215 Materials, MNET 315 Statistics -> 416 Scheduling / 420 Quality). Math/physics/chemistry foundations and MET 303/304/403 thermo-fluids support them. Progression (depth 0->6) is smooth and appropriate for a technology (versus engineering) degree.",
+   "suggestion": "Consolidate the eight open Technical/Free Elective slots into a named concentration (e.g., medical imaging or device manufacturing) so the upper-level plan reads as intentional depth."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 4,
+   "justification": "The prerequisite graph is healthy (deepest chain 6, BMET 450 <- BMET 415 and <- MNET 416) with rich compound conditions (BMET 320 requires a CAD course, a programming course, BME 111, physics and calculus). The 7 dangling references (CHEM 125A/126A, ENGR 211, GER 200/300, PHYS 102A/103A) are lab codes, a professional-skills seminar and gen-ed placeholders, not genuine breaks.",
+   "suggestion": "Resolve the CHEM/PHYS lab codes and ENGR 211 and GER placeholders so the metrics show zero dangling references."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or educational objectives are present in the data; only the plan and course descriptions appear. For an accredited-track engineering-technology B.S. this is a real omission.",
+   "suggestion": "Publish explicit student outcomes (device instrumentation and data acquisition, quality/regulatory practice, teamwork/communication) to support accreditation."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 4,
+   "justification": "The plan reconciles exactly (summedTermCredits 120 = statedTotalCredits 120, delta 0.0). Most terms are loaded at 15-16 credits, though the final term is light at 12. The distribution is broadly balanced across foundations, BME core, electronics and manufacturing, but a large share of upper-level credit is open electives (five Technical + three Free Elective slots).",
+   "suggestion": "Rebalance the light 12-credit final term and convert some of the eight open elective slots into required device/imaging courses so the major core is more fully specified."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 3,
+   "justification": "Terms are labeled and course descriptions are complete, but the plan carries many unlabeled 'None' rows (Technical Elective 1-5, Free Elective 1-3, GER placeholders) and a fragmentary 'or EPS 202' alternative row, which leaves several requirement rows under-specified.",
+   "suggestion": "Give every plan row a code or an explicit named placeholder and render the 'ECON 201 or EPS 202' choice as a single labeled requirement."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 4,
+   "justification": "The curriculum is current for biomedical device technology: imaging and data acquisition (BMET 320 covering MRI/ultrasound/X-ray), biomedical mechatronics (BMET 415), biological signal processing (BME 210), quality systems and ISO (MNET 420), and a required experiential course (BMET 440). The chief gaps are medical-device regulatory affairs (FDA QSR / ISO 13485), device cybersecurity, and biomaterials/sterilization.",
+   "suggestion": "Add a medical-device regulatory-affairs and quality course (FDA design controls, ISO 13485) and adopt NJIT's MIT 231 medical-device cybersecurity course."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "All 30 sampled courses have descriptions and the biomedical entries are specific (BMET 320 on imaging modalities and physiologic sensors; BME 210 on filtering and processing of biologically inspired signals; BMET 415 on design and control of mechatronic systems for biomedical applications). Manufacturing and foundation courses are equally clear."
+  },
+  "prerequisiteClarity": {
+   "score": 4,
+   "justification": "Prerequisites are explicit with grade conditions and coherent compound logic (BMET 450 <- 'BMET 415, COM 313, and MNET 416'; ECET 329 <- ECET 201). Only the lab/seminar/GER placeholders are missing, and the chain depth is consistent with the plan."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Medical-device regulatory affairs and quality systems (FDA QSR, ISO 13485, design controls)",
+    "rationale": "MNET 420 teaches general quality/ISO but not medical-device-specific regulation, which is central to the field."
+   },
+   {
+    "topic": "Medical-device cybersecurity",
+    "rationale": "BMET 320 handles data acquisition with no security content; NJIT's MIT 231 (Intro to Computer Security: Medical Devices) directly fills this gap."
+   },
+   {
+    "topic": "Biomaterials and biocompatibility/sterilization",
+    "rationale": "MNET 215 Materials and Processes is general manufacturing; biomaterials, biocompatibility and sterilization are not covered."
+   },
+   {
+    "topic": "Embedded/firmware for medical devices",
+    "rationale": "BMET 415 mechatronics touches control but a dedicated embedded-systems course (e.g., ECET 311) would strengthen device design."
+   },
+   {
+    "topic": "Biomedical software and data analysis",
+    "rationale": "Beyond BME 210, there is no course on programming for biomedical signal/image analysis (Python, MATLAB) that modern device work requires."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Connected/IoT medical devices and device cybersecurity",
+    "rationale": "Networked devices dominate new products, making security and interoperability essential skills that BMET 320 could extend."
+   },
+   {
+    "trend": "AI/ML in medical imaging and diagnostics",
+    "rationale": "BMET 320 and BME 210 are natural hosts for machine-learning-based image and signal analysis."
+   },
+   {
+    "trend": "Wearables and remote patient monitoring",
+    "rationale": "Wearable sensors and telehealth hardware are a fast-growing device category not represented in the core."
+   },
+   {
+    "trend": "Additive manufacturing / 3D printing of devices",
+    "rationale": "MNET 215 could incorporate 3D printing of biomedical components and custom instrumentation."
+   },
+   {
+    "trend": "Digital health and software-as-a-medical-device",
+    "rationale": "Interoperability standards (HL7/FHIR) and SaMD are reshaping the industry and align with a data-acquisition core."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish explicit program learning outcomes / student outcomes for accreditation.",
+  "Add medical-device regulatory affairs/quality (FDA QSR, ISO 13485) and device cybersecurity (adopt MIT 231).",
+  "Add biomaterials/biocompatibility and an embedded-systems option for device design.",
+  "Convert several of the eight open Technical/Free Elective slots into a named imaging or device-manufacturing concentration and rebalance the 12-credit final term.",
+  "Resolve the lab/seminar/GER placeholder references (CHEM 125A/126A, ENGR 211, PHYS 102A/103A, GER 200/300)."
+ ]
+}

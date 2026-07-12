@@ -1,0 +1,111 @@
+{
+ "id": "b-s-in-engineering-technology-software-and-data-engineering-technology-672",
+ "name": "B.S. in Engineering Technology, Software and Data Engineering Technology",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 2,
+   "justification": "The parsed 8-term plan does not match the program's own discipline: aside from CS 106 (introductory Python for non-computing majors) and MATH 105/138, the required courses are overwhelmingly construction and business -- SET 200 geomatics, CIM 205 concrete, CET 313/314/317/322/411/413/415/416/421/423, CMT 332/436/452, ACCT 115, FIN 315, HRM 301, MGMT 290/390, MIS 245, MNET 414. There is no data-structures, algorithms, databases-as-core, software-engineering or data-engineering sequence, so a reader cannot follow any 'software and data' progression. Relevant computing courses (CS 115, IS 331, IT 120/201/202, ECET 311/411) exist only in the referenced pool, not the required plan.",
+   "suggestion": "Reconcile the plan of study with the program title -- replace the construction-management plan with the intended software/data sequence, or elevate the referenced computing courses (CS 115, IS 331, IT 120/201/202, ECET 311/411) into the required core."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 3,
+   "justification": "A deep chain of 8 exists in the referenced pool (ECET 311 -> ECET 411 embedded systems), and only 5 dangling references (GER 200/300, PHYS 102A/103A, SET 200A) are placeholders, so the underlying prerequisite graph is structurally sound. But the graph's depth comes from courses (embedded systems, databases) that are not actually in the required plan, so it does not describe the student's real path.",
+   "suggestion": "Rebuild the prerequisite chain around the courses the program actually requires, so the deepest chains reflect software/data progression rather than embedded-systems electives."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or objectives appear in the data; only the (mismatched) plan and course descriptions are present. This omission is compounded by the plan/title mismatch.",
+   "suggestion": "Publish explicit outcomes for a software/data engineering technologist (programming, data structures, database and pipeline design, software engineering practice, data analysis)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 3,
+   "justification": "Numerically the plan reconciles (summedTermCredits 120 = statedTotalCredits 120, delta 0.0) with transparent per-term credits (12-18 per term), so the arithmetic is clean. The defect is disciplinary balance: essentially zero credits go to the program's own software/data core, with the credit weight consumed by construction, construction-management and business courses.",
+   "suggestion": "Rebalance the plan so a substantial credit block is devoted to programming, data structures/algorithms, databases and data engineering rather than construction courses."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 2,
+   "justification": "Terms are labeled and legible and course descriptions are complete, but the page presents a construction-management/business plan of study under a 'Software and Data Engineering Technology' title -- a serious consistency defect that would mislead any prospective student reading the catalog.",
+   "suggestion": "Correct the plan-of-study table so the courses shown match the program name, which is the single highest-impact fix."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 2,
+   "justification": "For a software and data engineering technology degree, the required plan lacks nearly all current software/data practice: no programming depth beyond CS 106, no data structures/algorithms, no required databases (only the MIS 245 survey), no software engineering, no cloud, and no machine learning or data pipelines. The referenced pool contains IS 331 (Database Design), IT 202 (Internet Applications) and CS 115 (C++) that could supply currency but are not required.",
+   "suggestion": "Elevate IS 331, IT 202 and CS 115 into the required core and add machine-learning/data-science and cloud/data-pipeline courses to make the program current for its field."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "All 38 sampled courses have descriptions and they are specific across both the construction courses and the referenced computing courses (IS 331 on relational database back-end functions; IT 202 on multi-tier web architecture and current web languages; ECET 311 on microcontroller architecture and instruction sets). Description quality is genuinely good; the problem is which courses are required, not how they are described."
+  },
+  "prerequisiteClarity": {
+   "score": 3,
+   "justification": "Prerequisites are explicit where present, with real compound logic (ECET 311 <- a programming course and three ECET courses; IS 331 <- 'IS 218 or IT 202'; IT 202 <- a high-level programming course). However, several referenced computing courses depend on prerequisites (IS 218, IT 202) that are not in the plan of study, and the plan/pool mismatch makes the effective prerequisite path inconsistent."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Data structures and algorithms",
+    "rationale": "The required plan stops at CS 106 (intro Python for non-majors); there is no CS 113/114-level data-structures or algorithms course, a core omission for any software program."
+   },
+   {
+    "topic": "Databases and data-engineering pipelines",
+    "rationale": "IS 331 Database Design exists in the referenced pool but is not required, and MIS 245 is only an introductory MIS survey -- a data program needs a required database/ETL/pipeline course."
+   },
+   {
+    "topic": "Software engineering (version control, testing, CI/CD, OOP)",
+    "rationale": "CS 115 (C++) and IT 202 sit in the pool but no software-engineering course is required; modern hiring expects testing, version control and CI/CD."
+   },
+   {
+    "topic": "Machine learning and data science",
+    "rationale": "Nothing in the required plan addresses statistics beyond MATH 105 or any applied ML/analytics, despite 'Data' being in the program name."
+   },
+   {
+    "topic": "Cloud and distributed systems / big-data tooling",
+    "rationale": "There is no coverage of cloud platforms, containers or distributed data processing that define contemporary data engineering."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Data engineering and ML pipelines (ETL, orchestration)",
+    "rationale": "The 'Data Engineering' in the title has no supporting courses; ETL and pipeline orchestration are the discipline's core."
+   },
+   {
+    "trend": "Generative AI / LLM application development",
+    "rationale": "Building and evaluating LLM-based applications is now a baseline software skill the program should position for."
+   },
+   {
+    "trend": "Cloud-native development and DevOps",
+    "rationale": "Containerized, cloud-deployed services with CI/CD are standard practice absent from the plan."
+   },
+   {
+    "trend": "Data governance, privacy and security",
+    "rationale": "NJIT's security courses (e.g., MIT 231) could anchor a data-governance/privacy requirement essential to data engineering."
+   },
+   {
+    "trend": "Applied machine learning and analytics for engineering data",
+    "rationale": "Analytics over sensor/engineering data is a fast-growing niche this technology degree is well placed to serve once a data core exists."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Reconcile the plan of study with the program title: the displayed 8-term plan is a construction-management/business curriculum (CET/CMT/CIM/FIN/HRM) with only CS 106 as programming and no software or data engineering core -- republish the correct plan or elevate the referenced computing courses (CS 115, IS 331, IT 120/201/202, ECET 311/411) into the required sequence.",
+  "Add a data-structures/algorithms course and a required databases/data-engineering core (build on IS 331).",
+  "Add software engineering (testing, version control, CI/CD) and machine-learning/data-science courses.",
+  "Publish explicit program learning outcomes for a software/data engineering technologist.",
+  "Resolve placeholder references (GER 200/300, PHYS 102A/103A, SET 200A)."
+ ]
+}

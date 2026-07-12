@@ -1,0 +1,111 @@
+{
+ "id": "b-s-in-concrete-industry-management-658",
+ "name": "B.S. in Concrete Industry Management",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 4,
+   "justification": "This hybrid business-plus-concrete-technology program (the national CIM/NSMC model) sequences a clean concrete spine (CIM 101 -> 210 -> 215/310/315 -> 405 -> 410 Senior Project, plus CIM 497 Co-op) alongside a business/industrial-management block (ACCT 117/215, MGMT 390, MRKT 330, FIN 315, MNET 315/416/420, MIS 245) and supporting construction courses (CET 313/314/413/423). The two tracks interleave sensibly toward a management-of-the-concrete-supply-chain outcome.",
+   "suggestion": "Make the intended blend explicit by grouping the CIM technical courses and the MTSM business courses under labeled headings so students see the deliberate business/technology structure."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 4,
+   "justification": "The prerequisite graph (deepest chain 4) is shallow but appropriate for a management-oriented degree, and the concrete sequence is internally consistent (CIM 101 -> 210 -> 215/310/315; CIM 405 <- 205). The 4 dangling references (CHEM 125A, GER 200, GER 300, PHYS 102A) are a lab code and gen-ed placeholders, not real breaks.",
+   "suggestion": "Resolve the CHEM 125A lab and GER/PHYS placeholder references, and confirm CIM 205 is a stated prerequisite for CIM 405 wherever the sequence assumes it."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or educational objectives are present in the data; only the plan of study and course descriptions appear. This is a real omission for a professionally aligned catalog page.",
+   "suggestion": "Publish explicit outcomes spanning concrete technology, quality assurance, and business/management competencies expected of CIM graduates."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 4,
+   "justification": "The plan reconciles exactly (summedTermCredits 120 = statedTotalCredits 120, delta 0.0) and terms are evenly loaded at 14-16 credits. The split is transparent, though the technical concrete core (roughly eight CIM courses) is deliberately lighter than the large business/industrial-management block, which is by design for this degree but worth surfacing.",
+   "suggestion": "Add a credit-summary breakdown (concrete technology vs. business/management vs. gen-ed) so the intentional business weighting is transparent to prospective students."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 3,
+   "justification": "Terms are labeled and course descriptions are complete and specific, but the plan includes several unlabeled 'None' rows (electives/GER) and a missing CHEM 125A lab code, leaving a few requirement rows under-specified.",
+   "suggestion": "Replace blank 'None' rows with explicit named placeholders and restore the CHEM 125A lab entry."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 4,
+   "justification": "The program aligns well with concrete-industry practice: concrete properties and testing (CIM 205), advanced testing and QA (CIM 405), production/delivery management (CIM 310), quality systems and ISO (MNET 420), production scheduling (MNET 416), and a required co-op (CIM 497). The chief currency gaps are sustainability/low-carbon concrete and digital supply-chain automation.",
+   "suggestion": "Add sustainable/low-carbon concrete content (supplementary cementitious materials, carbon-cured and recycled-aggregate concrete) into CIM 205/405."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "All 32 sampled courses have descriptions, and the CIM entries are specific and applications-oriented (CIM 205 on how aggregates/cements/admixtures affect fresh and hardened concrete; CIM 310 on managing the order-and-delivery process; MNET 420 on TQM/SPC/ISO). Business-core descriptions (ACCT, FIN, MGMT) are equally clear."
+  },
+  "prerequisiteClarity": {
+   "score": 4,
+   "justification": "Prerequisites are explicit and internally consistent with grade conditions (ACCT 215 <- 'ACCT 115 or ACCT 117'; MRKT 330 <- 'MGMT 190 or MGMT 390 or departmental approval'; CIM 210 <- CIM 101). Only the gen-ed/lab placeholders are missing, and the shallow chain reflects the program's management orientation rather than a defect."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Sustainable and low-carbon concrete",
+    "rationale": "CIM 205/405 cover properties, testing and QA but not decarbonization, alternative cements, or life-cycle assessment, now a top industry priority."
+   },
+   {
+    "topic": "Digital batching, telematics and Industry 4.0 in ready-mix",
+    "rationale": "CIM 310 Concrete Products and Delivery is traditional; automation, sensors and telematics in production and fleet management are absent."
+   },
+   {
+    "topic": "Supply-chain and logistics analytics",
+    "rationale": "CIM 310 addresses order/delivery but there is no data-driven logistics optimization or analytics course."
+   },
+   {
+    "topic": "Technical sales and CRM for construction materials",
+    "rationale": "MRKT 330 is general marketing, yet CIM careers are sales-intensive; a technical-sales/CRM course tailored to the concrete industry would fit."
+   },
+   {
+    "topic": "Concrete durability, forensics and repair",
+    "rationale": "CIM 405 covers testing/QA but structural durability, forensic evaluation and repair of concrete are underrepresented."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Low-carbon concrete and ESG reporting",
+    "rationale": "Owners and codes increasingly demand embodied-carbon and ESG data, which CIM 205/405 could incorporate."
+   },
+   {
+    "trend": "Digital supply chain and fleet optimization",
+    "rationale": "Telematics and route/plant optimization are transforming ready-mix delivery, extending CIM 310."
+   },
+   {
+    "trend": "Data analytics and AI for quality assurance",
+    "rationale": "CIM 405 QA is a natural place to add sensor-driven, predictive quality analytics."
+   },
+   {
+    "trend": "3D concrete printing / additive construction",
+    "rationale": "Additive concrete methods are moving from research to practice and could feature in CIM 315."
+   },
+   {
+    "trend": "Circular economy and recycled materials",
+    "rationale": "Recycled aggregates and carbon-cured concrete tie sustainability to the CIM technical core."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish explicit program learning outcomes covering both concrete technology and business/management competencies.",
+  "Add sustainable / low-carbon concrete content and life-cycle assessment into CIM 205/405.",
+  "Introduce digital supply-chain and logistics analytics (extend CIM 310).",
+  "Add a technical-sales/CRM elective aligned to the concrete industry's sales-driven careers.",
+  "Resolve placeholder references (CHEM 125A, PHYS 102A, GER 200/300) and label blank plan rows."
+ ]
+}

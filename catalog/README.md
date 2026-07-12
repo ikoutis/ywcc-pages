@@ -59,10 +59,13 @@ Hybrid, per `schema/rubric.md`:
   prerequisite-structure health, learning outcomes, credit balance, presentation, industry
   relevance — plus course-level description quality and prerequisite clarity. Each is scored
   1–5 with a justification and a concrete suggestion, and a ranked `topSuggestions` list.
+- **Field gap & trend analysis** (`fieldAnalysis`): per program, `missingTopics` (subjects
+  the discipline expects but the program underweights) and `emergingTrends` (current/near-
+  future directions to position for), each with a rationale grounded in the actual courses.
 
-**Pilot scope:** the AI pass currently covers the **Ying Wu College of Computing** degree
-programs. The full structural ontology already spans **all disciplines**; scoring the
-remaining colleges is a follow-up run of the same pipeline (see below).
+**Coverage:** all **121 undergraduate programs across all four colleges** (Ying Wu Computing,
+Hillier Architecture & Design, Jordan Hu Science & Liberal Arts, Newark College of
+Engineering) are evaluated. Re-run per college with the commands below.
 
 ## Regenerate
 

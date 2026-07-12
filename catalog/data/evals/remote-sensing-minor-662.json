@@ -1,0 +1,111 @@
+{
+ "id": "remote-sensing-minor-662",
+ "name": "Remote Sensing Minor",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 3,
+   "justification": "The course pool is topically excellent and does build in depth (SET 203 Intro to Remote Sensing -> SET 303 Photogrammetry -> SET 423 Remote Sensing of the Environment and SET 433 RS Digital Image Processing, both depth 5), complemented by raster/vector GIS (SET 220/320), reality capture (SET 405), drone science (ENGR 423) and IoT/microcontrollers (ENGR 330). However, requirementGroups is 0: the minor's plan of study, required-versus-elective structure and course-selection rules are not represented in the data, so ordered progression cannot be confirmed from the catalog page.",
+   "suggestion": "Publish the minor's structure explicitly (required core courses, elective menu, and the number of courses/credits needed) so the coherent topical pool becomes a legible, ordered requirement set."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 4,
+   "justification": "The prerequisite graph is healthy (deepest chain 6) and the remote-sensing courses have sensible dependencies (SET 423 and SET 433 both require SET 303 Photogrammetry). Only one dangling reference (GER 300) appears. A few prerequisite strings carry parser noise ('Prerequisites or', 'Pre or', 'Courses include ...').",
+   "suggestion": "Clean the fragmented prerequisite strings on SET 203 and SET 220 and resolve the single GER 300 placeholder."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No stated minor-level learning outcomes or purpose statement appear in the data. Even for a minor, a short outcomes statement is expected to communicate what completers can do.",
+   "suggestion": "Add explicit minor learning outcomes (e.g., acquire and interpret multispectral imagery, perform image classification, integrate GIS and RS products)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 3,
+   "justification": "creditReconcileDelta and summedTermCredits are null and requirementGroups is 0. For a minor this is a data-consistency caveat rather than a defect in a full plan of study, but as a result the catalog data does not expose the minor's required credit count or the balance between core RS courses and electives.",
+   "suggestion": "Publish the minor's total required credits and the required/elective split so a reader can see the balance; the null reconcile values are expected for a minor and need only a stated credit total."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 2,
+   "justification": "The minor is represented only as a flat course pool with no requirement groups, no credit total and no indication of which of the 34 listed courses are required versus optional, so a catalog reader cannot determine how to complete the minor. Individual course descriptions are rich, but the page-level structure is essentially missing.",
+   "suggestion": "Render the minor as an explicit requirement structure (core courses + choose-N electives + credit total), which is the single highest-impact fix for this page."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 4,
+   "justification": "The pool is strongly current: dedicated remote-sensing courses (SET 203, SET 423, SET 433), raster and vector GIS (SET 220/320), reality capture/point clouds (SET 405), drone science (ENGR 423), IoT (ENGR 330) and robotics (ENGR 424). The gaps are machine-learning-based image analysis and cloud earth-observation platforms rather than fundamentals.",
+   "suggestion": "Modernize SET 433 to include machine-learning/deep-learning image classification and a Google Earth Engine / cloud-processing component."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "All 34 sampled courses have descriptions and the remote-sensing entries are specific (SET 433 on digital image analysis from airborne/spaceborne instruments; SET 423 on RS applications in natural resources with hands-on real-world work; SET 405 on 3D point-cloud reality capture). A few descriptions begin with stray prerequisite fragments."
+  },
+  "prerequisiteClarity": {
+   "score": 3,
+   "justification": "Prerequisites are mostly present and sensible (SET 423/433 <- SET 303), but several strings are visibly mangled by parsing ('Prerequisites or' on SET 203, 'Pre or' and 'Courses include CS 100 or ...' on SET 220/320), which reduces clarity, and the minor's overall selection rules are not shown."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Machine learning / deep learning for image classification",
+    "rationale": "SET 433 Digital Image Processing emphasizes classical methods; CNN-based land-cover classification is now standard in remote sensing."
+   },
+   {
+    "topic": "Cloud earth-observation processing (Google Earth Engine, cloud-native rasters)",
+    "rationale": "SET 220/423 are desktop-oriented; large-scale open-imagery pipelines (Sentinel/Landsat on the cloud) are absent."
+   },
+   {
+    "topic": "SAR/radar and hyperspectral remote sensing",
+    "rationale": "SET 423/433 emphasize optical imagery; active radar and hyperspectral sensing are underrepresented."
+   },
+   {
+    "topic": "Airborne LiDAR point-cloud analysis",
+    "rationale": "SET 405 reality capture introduces point clouds but airborne LiDAR processing for RS applications is not covered."
+   },
+   {
+    "topic": "Programming/scripting for remote sensing",
+    "rationale": "No Python or Earth Engine API scripting course tailored to RS appears in the pool, limiting reproducible-analysis skills."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Geospatial AI / deep learning for earth observation",
+    "rationale": "Automated feature extraction and classification are reshaping RS and would modernize SET 433."
+   },
+   {
+    "trend": "Cloud earth-observation platforms",
+    "rationale": "Google Earth Engine and cloud-hosted Sentinel/Landsat archives are becoming the default analysis environment."
+   },
+   {
+    "trend": "UAS/drone multispectral sensing",
+    "rationale": "Combining ENGR 423 Drone Science with SET 203 enables low-cost, high-resolution multispectral monitoring."
+   },
+   {
+    "trend": "Climate/environmental monitoring and precision agriculture",
+    "rationale": "RS is central to change detection and precision-ag applications that SET 423 could target."
+   },
+   {
+    "trend": "Multi-sensor data fusion (optical + SAR + LiDAR)",
+    "rationale": "Fusing heterogeneous sensors is a growing methodological frontier the minor could introduce."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish the minor's required-course list, elective menu and credit total (currently no requirement structure is represented in the catalog data).",
+  "Add machine-learning/deep-learning image classification and a Python/Earth Engine scripting component (modernize SET 433).",
+  "Add cloud geospatial processing and SAR/hyperspectral coverage.",
+  "Clean the fragmented prerequisite strings on SET 203/220/320 and resolve the GER 300 placeholder.",
+  "Leverage ENGR 423 Drone Science and SET 203 for a UAS-multispectral capstone experience."
+ ]
+}
