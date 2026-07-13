@@ -1,0 +1,111 @@
+{
+ "id": "m-s-in-computing-and-business-212",
+ "name": "M.S. in Computing and Business",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 3,
+   "justification": "The 30-credit degree blends a CS foundation (CS 505/506/610, plus CS 631/634/652/656) with a business menu weighted toward finance (FIN 600->624/626/634/641/650) and management (MGMT 630/635/650, MRKT 620, HRM 601); however requirementGroups=0 means no parsed core/elective split, and the two halves connect only through the YWCC 691 capstone.",
+   "suggestion": "Define a required computing core plus a business core and an integrative analytics course so the computing and business halves reinforce each other rather than sitting side by side."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 3,
+   "justification": "deepestPrereqChain=2 with sensible finance ladders (FIN 600 as gateway to five 600-level electives), but missingCourseCount=2 flags dangling undergraduate references CS 280 and CS 332 that resolve to nothing in the catalog.",
+   "suggestion": "Resolve the CS 280 and CS 332 dangling references by mapping them to current course codes or removing them from prerequisites."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes are present in the data for this interdisciplinary degree.",
+   "suggestion": "Publish outcomes spanning both domains (e.g., build data-driven business solutions, evaluate technology investments)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 3,
+   "justification": "statedTotalCredits=30 is declared but creditReconcileDelta=null and requirementGroups=0 leave the computing-versus-business credit split invisible, which is a transparency concern for a dual-discipline program.",
+   "suggestion": "Publish a plan of study showing how the 30 credits divide between computing, business and the capstone (YWCC 691)."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 3,
+   "justification": "The 27 sample courses carry present, readable descriptions, but the page has no requirement groups, no outcomes, and at least one parsing artifact (IS 634 prerequisite text merged into the description).",
+   "suggestion": "Add a structured plan-of-study table and clean the merged prerequisite/description text."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 3,
+   "justification": "There is decent analytics currency (MGMT 635 Data Mining and Analysis, MGMT 630 Decision Analysis, CS 634 Data Mining, CS 652 Cognitive Cloud Networking, MIS 625 e-commerce), but no modern BI/visualization, applied ML-for-business, or fintech course connects the heavy finance electives to computing.",
+   "suggestion": "Add a business-analytics/BI course and a fintech elective that ties the FIN sequence to computational methods."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "Descriptions are specific across both domains (e.g., FIN 641 option valuation and forward/futures pricing, MGMT 635 framing research questions on large databases, CS 652 cloud application delivery), with no placeholder text observed."
+  },
+  "prerequisiteClarity": {
+   "score": 3,
+   "justification": "Finance prerequisites are unambiguous (FIN 600 gates the FIN electives), but missingCourseCount=2 (CS 280, CS 332) introduces dangling references and one IS 634 entry mixes prerequisite text into its description."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Business analytics & BI/visualization",
+    "rationale": "CS 634 and MGMT 635 cover data mining but no course delivers dashboards/BI or data storytelling for decision-makers."
+   },
+   {
+    "topic": "Machine learning for business decisions",
+    "rationale": "Predictive analytics beyond classical data mining is absent despite the CS/business overlap."
+   },
+   {
+    "topic": "Product management / Agile & digital transformation",
+    "rationale": "No course bridges technical delivery and business strategy through product/PM practice."
+   },
+   {
+    "topic": "Fintech / computational finance",
+    "rationale": "Six FIN electives exist but none connect derivatives/portfolio theory (FIN 641/650) to computing or algorithmic methods."
+   },
+   {
+    "topic": "IT strategy / enterprise architecture & governance",
+    "rationale": "MGMT 650 Knowledge Management and MIS 625 e-commerce touch strategy, but IT governance/architecture is missing."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Generative AI for business",
+    "rationale": "LLM copilots and workflow automation are reshaping enterprise operations the program's management courses should address."
+   },
+   {
+    "trend": "Analytics engineering & data-driven decision-making",
+    "rationale": "Extends MGMT 630/635 toward the modern data stack that businesses now build on."
+   },
+   {
+    "trend": "Fintech, blockchain and algorithmic trading",
+    "rationale": "Would give the deep FIN elective set (FIN 626/641/650) a computational, forward-looking dimension."
+   },
+   {
+    "trend": "Cloud platform economics & business models",
+    "rationale": "CS 652 Cognitive Cloud Networking pairs naturally with platform/SaaS business-model analysis."
+   },
+   {
+    "trend": "AI governance & responsible technology management",
+    "rationale": "Complements HRM 601 and MGMT courses as firms adopt AI under regulatory scrutiny."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish program-level learning outcomes for the dual-discipline degree.",
+  "Structure the program into a computing core, a business core and an integrative analytics/capstone requirement.",
+  "Resolve the dangling CS 280 and CS 332 prerequisite references.",
+  "Add ML-for-business / BI and a fintech elective to modernize and connect the two halves.",
+  "Publish a plan of study clarifying the computing-versus-business credit balance."
+ ]
+}

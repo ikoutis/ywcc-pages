@@ -1,6 +1,6 @@
-# Regenerable build caches / intermediates (produced by the pipeline from the PDF)
-data/pages.json
-data/eval_inputs*.json
+# Regenerable build caches / intermediates (produced by the pipeline from the PDFs)
+**/pages.json
+**/eval_inputs*.json
 
 # Python bytecode
 __pycache__/

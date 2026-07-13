@@ -1,0 +1,111 @@
+{
+ "id": "m-s-in-computer-science-209",
+ "name": "M.S. in Computer Science",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 4,
+   "justification": "The degree has a clean 12-credit core (CS 610, 630, 631, 656, CS/DS 675) covering algorithms, OS, databases, networks and ML, plus an 18-credit elective pool of ~70 courses; deepestPrereqChain=3 evidences real sequencing (CS 656->646->647; CS 610->665/667/668), giving strong breadth-then-depth progression.",
+   "suggestion": "Group the ~70 electives into named concentration tracks (AI/ML, Security, Systems, Data, Software Engineering) so students see coherent pathways rather than a flat list."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 4,
+   "justification": "metrics report deepestPrereqChain=3, missingCourseCount=0 and no dangling references across 75 referenced courses, with well-formed ladders such as CS 645/646->647 and CS 610->668; the graph is healthy and neither over- nor under-constrained.",
+   "suggestion": "Replace vague gates like 'completion of bridge requirements' (CS 633) with explicit course lists so applicants can self-assess readiness."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or objectives are present in the provided data despite the otherwise well-structured page.",
+   "suggestion": "Publish program learning outcomes tied to the core competency areas (algorithms, systems, ML, security)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 5,
+   "justification": "The plan reconciles exactly: summedTermCredits=30 against statedTotalCredits=30 with creditReconcileDelta=0, split transparently into a 12-credit core and 18-credit electives.",
+   "suggestion": "Consider carving an explicit required capstone or thesis (CS 700B/701B) out of the elective pool so every graduate completes an integrative experience."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 4,
+   "justification": "The page has parsed requirement groups (Core 12 cr / Elective 18 cr) with legible course titles and present descriptions, but lacks stated learning outcomes and any track labeling on the large elective list.",
+   "suggestion": "Add learning outcomes and concentration-track headings to the elective section for scannability."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 5,
+   "justification": "The elective pool is highly current: CS 643 Cloud Computing, CS/DS 677 Deep Learning, DS 680 NLP, CS/DS 644 Big Data, CS 750 High Performance Computing, a full security suite (CS 645/646/647/708/755) and CS 756 mobile/sensor networks reflect contemporary practice.",
+   "suggestion": "Add explicit MLOps/data-engineering and generative-AI/LLM electives to cover the production-ML and foundation-model gaps."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "Sampled descriptions are specific and informative (e.g., CS 643 naming AWS/Google platforms, CS 647 'learning by doing' offensive/defensive labs, CS 703 continuous optimization), with no thin entries observed."
+  },
+  "prerequisiteClarity": {
+   "score": 4,
+   "justification": "With missingCourseCount=0 and explicit chains (CS 611 requires CS 610/435 or doctoral status; CS 668 requires CS 610 and CS 650), prerequisites are largely unambiguous; only phrases like 'completion of bridge requirements' remain vague."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "MLOps / production ML systems",
+    "rationale": "CS/DS 675/677 teach modeling but no course covers deployment, serving, monitoring or lifecycle of ML systems."
+   },
+   {
+    "topic": "Data engineering & streaming pipelines",
+    "rationale": "CS/DS 644 Big Data exists, but modern batch/stream pipeline tooling (Spark/Kafka) and analytics engineering are not represented."
+   },
+   {
+    "topic": "Formal methods / program verification",
+    "rationale": "Theory is strong (CS 611 complexity, CS 665/667 algorithms) yet software correctness/verification is absent from the SE electives."
+   },
+   {
+    "topic": "Quantum computing",
+    "rationale": "An increasingly standard graduate CS topic that does not appear among the 75 referenced courses."
+   },
+   {
+    "topic": "Privacy-preserving / trustworthy ML",
+    "rationale": "The security suite is deep but differential privacy and federated learning are not covered alongside CS 708."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Generative AI / LLMs and agentic systems",
+    "rationale": "DS 680 NLP and CS/DS 677 Deep Learning provide a base to add a dedicated foundation-models/LLM course."
+   },
+   {
+    "trend": "MLOps & responsible AI",
+    "rationale": "Complements the strong ML electives with the engineering and governance skills employers now expect."
+   },
+   {
+    "trend": "Cloud-native, serverless and edge computing",
+    "rationale": "CS 643 Cloud Computing could extend to containers/Kubernetes and serverless architectures."
+   },
+   {
+    "trend": "Confidential computing & privacy-preserving ML",
+    "rationale": "Bridges the security track (CS 708) and ML track with federated learning and differential privacy."
+   },
+   {
+    "trend": "AI for code / program synthesis",
+    "rationale": "Connects the languages (CS 635) and SE electives to LLM-assisted software development."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish program-level learning outcomes on the catalog page.",
+  "Organize the ~70 electives into named concentration tracks (AI/ML, Security, Systems, Data, SE).",
+  "Add a generative-AI/LLM course and an MLOps/data-engineering elective to close production-ML gaps.",
+  "Make a capstone project or thesis (CS 700B/701B) explicitly required rather than optional within electives.",
+  "Standardize 'bridge requirements' into explicit prerequisite course lists."
+ ]
+}

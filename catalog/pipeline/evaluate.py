@@ -8,21 +8,23 @@ never silently overstated.
 import glob
 import json
 import os
+import sys
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.join(HERE, "..", "data")
+import config
+
 DIMS = ["curriculum_coherence", "prereq_structure", "learning_outcomes",
         "credit_balance", "presentation", "industry_relevance"]
 
 
-def main():
-    ontology = json.load(open(os.path.join(DATA, "ontology.json")))
-    metrics = json.load(open(os.path.join(DATA, "metrics.json")))
+def main(level="undergraduate"):
+    cfg = config.resolve(level)
+    ontology = json.load(open(cfg["ontology"]))
+    metrics = json.load(open(cfg["metrics"]))
     programs = {p["id"]: p for p in ontology["programs"]}
 
     evals = {}
     malformed = []
-    for path in sorted(glob.glob(os.path.join(DATA, "evals", "*.json"))):
+    for path in sorted(glob.glob(os.path.join(cfg["evals_dir"], "*.json"))):
         try:
             ev = json.load(open(path))
         except Exception as e:
@@ -55,6 +57,7 @@ def main():
                 for c, ids in by_college.items()}
     out = {
         "meta": {
+            "level": level,
             "rubric": "schema/rubric.md",
             "method": "rubric + AI-assisted (Claude), grounded in deterministic metrics; "
                       "includes field missing-topics and emerging-trends analysis",
@@ -67,12 +70,12 @@ def main():
         },
         "programs": evals,
     }
-    with open(os.path.join(DATA, "evaluations.json"), "w") as f:
+    with open(cfg["evaluations"], "w") as f:
         json.dump(out, f, separators=(",", ":"))
-    print(f"Wrote evaluations.json: {len(evals)} programs evaluated")
+    print(f"[{level}] Wrote {cfg['evaluations']}: {len(evals)} programs evaluated")
     for pid, ev in evals.items():
         print(f"  {pid:44} overall={ev.get('overallScore')}")
 
 
 if __name__ == "__main__":
-    main()
+    main(config.level_from_argv(sys.argv))

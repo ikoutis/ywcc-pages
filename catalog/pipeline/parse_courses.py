@@ -17,7 +17,7 @@ from prereq_parser import parse_prerequisite
 
 # running headers/footers to drop before parsing
 NOISE_RE = re.compile(
-    r"^(?:2024-2025 Undergraduate \d+|\d+ New Jersey Institute of Technology"
+    r"^(?:2024-2025 (?:Undergraduate|Graduate) \d+|\d+ New Jersey Institute of Technology"
     r"|New Jersey Institute of Technology)\s*$"
 )
 
@@ -73,7 +73,9 @@ def parse_courses(pages):
         pm = PREREQ_RE.search(rest[:400])
         if pm:
             val = pm.group(1).strip()
-            if val.lower() not in ("none", "n/a"):
+            # graduate courses often say "No formal prerequisites - ..." -> treat as none
+            if val.lower() not in ("none", "n/a") and not re.match(
+                    r"(?i)^no (formal )?(pre-?requisite|prereq)", val):
                 prereq_raw = re.sub(r"\s+", " ", val)
             rest = rest[:pm.start()] + rest[pm.end():]
         km = COREQ_RE.search(rest[:400])

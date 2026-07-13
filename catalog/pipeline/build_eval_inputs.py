@@ -13,14 +13,15 @@ import json
 import os
 import sys
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.join(HERE, "..", "data")
+import config
+
 MAX_SAMPLE_COURSES = 40
 
 
-def build(college_id="ying-wu-college-of-computing", degrees_only=False):
-    ontology = json.load(open(os.path.join(DATA, "ontology.json")))
-    metrics = json.load(open(os.path.join(DATA, "metrics.json")))
+def build(college_id, level="undergraduate", degrees_only=False):
+    cfg = config.resolve(level)
+    ontology = json.load(open(cfg["ontology"]))
+    metrics = json.load(open(cfg["metrics"]))
     courses = {c["code"]: c for c in ontology["courses"]}
     cmetrics = metrics["courses"]
 
@@ -74,15 +75,17 @@ def build(college_id="ying-wu-college-of-computing", degrees_only=False):
             "sampleCourses": sample,
         }
 
-    out = os.path.join(DATA, f"eval_inputs_{college_id}.json")
+    out = os.path.join(cfg["data"], f"eval_inputs_{college_id}.json")
     with open(out, "w") as f:
         json.dump(packets, f, indent=1)
-    print(f"Wrote {out}: {len(packets)} program packets for {college_id}")
+    print(f"[{level}] Wrote {out}: {len(packets)} program packets for {college_id}")
     for pid, pk in packets.items():
         print(f"  {pid:44} {pk['kind']:6} sampleCourses={len(pk['sampleCourses'])}")
     return packets
 
 
 if __name__ == "__main__":
+    # usage: build_eval_inputs.py <collegeId> [level]
     college = sys.argv[1] if len(sys.argv) > 1 else "ying-wu-college-of-computing"
-    build(college)
+    lvl = sys.argv[2] if len(sys.argv) > 2 else "undergraduate"
+    build(college, lvl)

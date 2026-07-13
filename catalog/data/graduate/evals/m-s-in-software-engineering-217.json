@@ -1,0 +1,111 @@
+{
+ "id": "m-s-in-software-engineering-217",
+ "name": "M.S. in Software Engineering",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 4,
+   "justification": "The 30-credit degree covers a recognizable software-engineering body of knowledge: requirements (IS 676), analysis/design (IS 663), architecture (CS 685), construction/languages (CS 635), testing/QA (CS 684), project management (CS 683, EM 636->637), a team studio (CS 690) and the YWCC 691 capstone; however requirementGroups=0 leaves no parsed core and deepestPrereqChain=2 shows the lifecycle sequence is not enforced.",
+   "suggestion": "Define a required SE core (requirements, architecture, testing, studio) and sequence CS 690 Software Studio and the capstone after design so the lifecycle progression is explicit."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 3,
+   "justification": "deepestPrereqChain=2 with missingCourseCount=0 and no dangling references keeps the graph clean, but most courses are standalone (depth 0); the signature chains are only CS 673->CS 690(->CS 700B) and EM 636->EM 637.",
+   "suggestion": "Add prerequisites that enforce a requirements->design->testing progression instead of leaving most SE courses independent."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes are present in the provided data.",
+   "suggestion": "Publish SE-specific outcomes (e.g., elicit and specify requirements, design and evaluate architectures, apply modern testing and delivery practices)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 3,
+   "justification": "statedTotalCredits=30 is declared but requirementGroups=0 and creditReconcileDelta=null mean the core/elective/studio split is not visible, so balance cannot be verified.",
+   "suggestion": "Publish a plan of study reconciling to 30 credits with explicit SE core, elective and studio/capstone (CS 690 + YWCC 691) credits."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 3,
+   "justification": "The 27 sample courses have present, readable descriptions, but the page lacks requirement groups and outcomes, and several entries (IS 663, IS 676, IS 690) show prerequisite text merged into the description.",
+   "suggestion": "Add a structured plan-of-study table and clean the merged prerequisite/description fields."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 3,
+   "justification": "Modern practice is partly represented (IS 663 references Agile/lean, IS 661 UX Design, IS 690 web services/middleware, CS 684 testing, CS 685 architecture), but DevOps/CI-CD, cloud-native microservices and secure-SDLC (DevSecOps) are notably absent from a contemporary SE curriculum.",
+   "suggestion": "Add DevOps/CI-CD and cloud-native microservices courses, since professional software engineering now centers on continuous delivery."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "Descriptions are informative and specific (e.g., CS 690 team-based industrial-scale project, IS 663 process models and agile/lean principles, CS 685 software-architecture terms and methods), with no placeholder entries in the sample."
+  },
+  "prerequisiteClarity": {
+   "score": 3,
+   "justification": "missingCourseCount=0 keeps references valid, but most courses list no prerequisites (depth 0) and several entries (IS 663, IS 676, IS 690) blend prerequisite prose into their descriptions, reducing clarity."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "DevOps / CI-CD & release engineering",
+    "rationale": "CS 684 covers testing but no course addresses continuous integration/delivery pipelines central to modern software delivery."
+   },
+   {
+    "topic": "Cloud-native architecture & microservices",
+    "rationale": "CS 685 Architecture and IS 690 web services stop short of containers, microservices and Kubernetes-era design."
+   },
+   {
+    "topic": "Secure software engineering / DevSecOps",
+    "rationale": "There is no secure-SDLC course; security appears only via general electives (CS 678/696)."
+   },
+   {
+    "topic": "Empirical software engineering / software analytics",
+    "rationale": "CS 634 Data Mining exists but is not applied to repository mining, metrics or defect prediction."
+   },
+   {
+    "topic": "AI-assisted software engineering",
+    "rationale": "CS 675 Machine Learning is available yet no course covers LLM copilots or automated testing/repair now reshaping SE."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "AI-assisted development (LLM copilots)",
+    "rationale": "CS 675 provides an ML base to add code-generation/review tooling that is transforming developer workflows."
+   },
+   {
+    "trend": "DevOps / DevSecOps & platform engineering",
+    "rationale": "Complements CS 684 testing and CS 683 project management with the continuous-delivery skills employers expect."
+   },
+   {
+    "trend": "Cloud-native, microservices & serverless architecture",
+    "rationale": "Extends CS 685 and IS 690 toward the distributed patterns dominant in industry."
+   },
+   {
+    "trend": "MLOps / engineering ML-enabled systems",
+    "rationale": "Bridges CS 675 and the SE core as software increasingly embeds machine-learning components."
+   },
+   {
+    "trend": "Site reliability engineering & observability",
+    "rationale": "Adds operational rigor (SLOs, monitoring) that the current design/testing-focused curriculum omits."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish program-level learning outcomes for the degree.",
+  "Define and publish a required SE core with an enforced requirements->design->testing->studio sequence.",
+  "Add DevOps/CI-CD and cloud-native microservices courses to modernize the curriculum.",
+  "Add AI-assisted-SE and secure-SDLC electives.",
+  "Publish a plan of study clarifying the core/elective/studio credit split that reconciles to 30."
+ ]
+}
