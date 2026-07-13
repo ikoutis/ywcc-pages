@@ -1,0 +1,111 @@
+{
+  "id": "design-of-the-user-experience-minor-264",
+  "name": "Design of the User Experience Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "A genuine UX core is present and well-chosen: IS 247 Designing the User Experience, IS 375 Discovering User Needs for UX, IS 448 Usability & Measuring UX, and IE 355 Human Factors, supported by design foundations (AD 112, AD 150, DD 284/321, ID 203). However the referenced pool is diluted by a large block of game-programming and technical courses (IT 265/266/286/360/366/382/383/466/487, IT 230 security, IT 330 forensics, CS 482 data mining) that are not UX, and with requirementGroups=0 there is no required-core-then-elective progression shown.",
+      "suggestion": "Anchor the minor on a required UX core (IS 247 -> IS 375 -> IS 448 plus IE 355) and curate the elective list toward interaction and visual design, moving the game-programming and forensics/security courses out of the default UX menu."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "This program has the cleanest prerequisite data of the set: missingCourseCount is 0 with an empty missingCoursesSample, and prerequisites are readable and grade-conditioned. The deepestPrereqChain is 7, driven by advanced electives (IS 448 and IS 465 gated behind a statistics GUR, CS 482 behind CS 301), which is deep for a design-oriented audience even though the core UX courses (IS 247, IS 375 at depth 0) are accessible.",
+      "suggestion": "Keep the accessible UX core at the front and clearly flag the depth-7 electives (IS 448, IS 465, CS 482) as advanced/optional so design-focused students are not blocked by statistics or CS-algorithms prerequisites."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives are present in the data. A UX minor in particular benefits from stated outcomes (research, design, evaluation) because employers read UX competencies literally, and none are published here.",
+      "suggestion": "Publish 4-5 UX learning outcomes covering user research, interaction/visual design, prototyping, and usability evaluation."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "No credit information is available to assess balance: statedTotalCredits is null, requirementGroups is 0, and creditReconcileDelta is null. This is a credit-transparency gap for the minor rather than an internal inconsistency, but students cannot see the required total or how the UX core and electives divide.",
+      "suggestion": "Publish the minor's credit total and the split between the required UX core and electives (a typical 15-18 credit structure)."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "The underlying data is clean (missingCourseCount=0, no dangling references, clear course descriptions and prerequisites), which aids readability, but at the minor level there is no overview and no requirement structure (requirementGroups=0), so the page presents a course pool rather than a designed minor.",
+      "suggestion": "Add a brief UX-minor overview and an explicit requirement block (required core + 'choose N from' electives) so the strong UX spine is visible rather than buried in a long alphabetical pool."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 4,
+      "justification": "The UX content is current and marketable: IS 375 user-needs research, IS 448 usability and UX measurement, IE 355 human factors, and forward-looking interactive-media electives including IT 382/383 Game Design for XR and DD 321 Interactive and Reactive Environments. The visible gaps are the practitioner staples of accessibility, prototyping tools, and design systems rather than any dated emphasis.",
+      "suggestion": "Add an accessibility/inclusive-design course and a hands-on prototyping course (industry tools such as Figma) to cover the two competencies most requested of UX hires."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are specific and informative (e.g., IS 448 explains 'user experience research is the process of understanding why and how people use products and services ... usability refers to the ease of use and learnability'; IT 265 introduces 'core concepts and design methodologies integral to designing and developing games'). Excerpts are truncated at ~220 characters and a couple are shorter, but none read as placeholder text."
+    },
+    "prerequisiteClarity": {
+      "score": 5,
+      "justification": "Prerequisite clarity is the strongest in this set: missingCourseCount is 0 with no dangling references, and prerequisites are stated unambiguously with grade conditions (e.g., 'CS 113 or CS 115', 'IT 266 and either IT 114 or CS 114'). The graph is internally consistent end to end."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Accessibility and inclusive design",
+        "rationale": "With IS 247/375/448 covering research and usability, the absence of any WCAG/accessibility course is the most conspicuous gap for a modern UX credential where accessibility is now a legal and hiring requirement."
+      },
+      {
+        "topic": "Interaction design and prototyping tools",
+        "rationale": "The pool teaches research and evaluation but shows no course centered on hands-on interaction design and industry prototyping (Figma/Sketch), the concrete deliverable UX employers expect."
+      },
+      {
+        "topic": "Information architecture and content design",
+        "rationale": "No IA or content-design course appears; structuring navigation, taxonomy, and content is a core UX competency distinct from the visual-design foundations (AD 112/150) present here."
+      },
+      {
+        "topic": "Design systems and UI engineering",
+        "rationale": "Modern UX work is delivered through component-based design systems; the minor has visual foundations but nothing on systematized UI patterns bridging design and front-end."
+      },
+      {
+        "topic": "Quantitative UX and experimentation",
+        "rationale": "IS 448 measures usability, but there is no dedicated A/B testing / UX analytics course, leaving the data-driven side of contemporary UX practice underweighted despite the available statistics courses."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI-driven and generative UX",
+        "rationale": "Generative UI and AI-assisted design are reshaping the discipline; a minor centered on IS 247/375/448 should introduce designing for and with AI to stay current."
+      },
+      {
+        "trend": "XR and spatial interface design",
+        "rationale": "IT 382/383 Game Design for XR and DD 321 already give the minor an XR foothold; extending these toward spatial/AR-VR UX positions graduates for a fast-growing interface frontier."
+      },
+      {
+        "trend": "Conversational and voice interfaces",
+        "rationale": "Voice and chat-based UX are now mainstream product surfaces not represented in the pool; adding conversational-design content would broaden the minor's relevance."
+      },
+      {
+        "trend": "Accessibility-first and ethical design",
+        "rationale": "Regulation and platform policy are pushing accessibility and value-sensitive design to the center of UX; the minor should make inclusive, ethical design an explicit thread."
+      },
+      {
+        "trend": "Design ops and cross-functional collaboration",
+        "rationale": "UX increasingly runs as an operational discipline embedded with engineering and product; exposure to design ops and handoff practice would make graduates immediately useful on teams."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Anchor the minor on a required UX core (IS 247 -> IS 375 -> IS 448 plus IE 355) and curate electives toward design, moving the large game-programming and forensics/security block out of the default UX menu.",
+    "Add an accessibility/inclusive-design course and a hands-on prototyping course (Figma), the two most-requested UX competencies currently missing.",
+    "Publish the minor's credit total and required-versus-elective structure (statedTotalCredits is null; requirementGroups=0) plus a short UX overview.",
+    "Publish UX learning outcomes (research, design, prototyping, evaluation), none of which appear in the data.",
+    "Flag the depth-7 electives (IS 448, IS 465, CS 482) as advanced so design-focused students are not blocked by statistics/CS-algorithm prerequisites."
+  ]
+}

@@ -1,0 +1,111 @@
+{
+ "id": "m-s-in-cyber-security-and-privacy-213",
+ "name": "M.S. in Cyber Security and Privacy",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 4,
+   "justification": "A tightly themed 15-credit five-course core (CS 608 Cryptography, CS 645 Security & Privacy, CS 646 Network Protocols Security, CS 647 Counter Hacking, CS 656 Internet Protocols) anchors a coherent security elective set (forensics IS 680/681/682, cloud/IoT security ECE 683, wireless CS 755, law/policy MGMT 688/691); deepestPrereqChain=3 (CS 656->646->647; ->708) gives a genuine foundations-to-offense progression.",
+   "suggestion": "Add a required privacy-specific course and sequence the offensive/defensive electives into a labeled progression, since 'Privacy' in the title currently rests almost entirely on CS 708."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 4,
+   "justification": "metrics show deepestPrereqChain=3, missingCourseCount=0 and no dangling references across 40 referenced courses, with real ladders such as CS 656->CS 646->CS 647 and CS 608/645/696->CS 708.",
+   "suggestion": "Tighten vague gates like 'completion of bridge requirements' (CS 633) into explicit prerequisite courses."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or objectives appear in the provided data.",
+   "suggestion": "Publish outcomes covering both security engineering and privacy competencies (e.g., threat modeling, applied cryptography, privacy-by-design)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 3,
+   "justification": "statedTotalCredits=30 with a parsed 15-credit core implies a balanced 15/15 core-elective split, but summedTermCredits=15 and creditReconcileDelta=-15 show the elective half (and any required capstone/thesis) is not represented in the plan.",
+   "suggestion": "Publish the 15 elective credits and the capstone/thesis requirement so the plan reconciles to the full 30 credits."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 3,
+   "justification": "The page parses and labels the core group and course descriptions are present, but the group name carries raw bullet text ('• Five Core Courses required for all students') and titles retain footnote markers ('&1', '&2', '&3'), and no outcomes are stated.",
+   "suggestion": "Clean the footnote/bullet markers, format the requirement-group heading, and add learning outcomes."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 5,
+   "justification": "The curriculum is strongly current: CS 647 Counter Hacking, CS 708 Advanced Data Security and Privacy, CS 755 wireless security, ECE 683 Cloud and IoT Networking and Security, IS 682 forensic auditing and MGMT 688/691 cyber law/ethics reflect contemporary security practice.",
+   "suggestion": "Add a privacy-engineering course (differential privacy/PETs) and a cloud-security/DevSecOps elective to cover the two most notable modern gaps."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "Descriptions are detailed and practice-oriented (e.g., CS 647 hands-on offensive/defensive labs, CS 708 security/privacy of large-scale data, IS 682 computer-forensics evidence collection), with no thin entries in the sample."
+  },
+  "prerequisiteClarity": {
+   "score": 4,
+   "justification": "missingCourseCount=0 and prerequisites are mostly explicit (CS 708 requires CS 608/645/696; CS 647 requires CS 645/646/696/ECE 638), though some entries (IS 665) fold prerequisite prose into the description and a few gate only on 'bridge requirements'."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Privacy engineering (differential privacy, PETs)",
+    "rationale": "'Privacy' is in the degree title yet only CS 708 addresses it; there is no dedicated course on differential privacy, PETs or GDPR/CCPA compliance."
+   },
+   {
+    "topic": "Cloud security / DevSecOps",
+    "rationale": "CS 643 Cloud Computing and ECE 683 IoT security exist but no course covers secure cloud architecture, containers or CI/CD security."
+   },
+   {
+    "topic": "Application / software security (secure SDLC)",
+    "rationale": "CS 684 Testing/QA is present but there is no dedicated appsec course covering SAST/DAST and secure coding."
+   },
+   {
+    "topic": "Security operations, threat intel & incident response",
+    "rationale": "Forensics (IS 682) is covered, but SOC/blue-team operations, SIEM and incident response are absent."
+   },
+   {
+    "topic": "Adversarial machine learning / AI security",
+    "rationale": "CS 634 Data Mining exists but no course addresses attacks on and defenses for ML systems."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "AI/ML for security and adversarial ML",
+    "rationale": "Pairs the data-mining elective (CS 634) with LLM-assisted attack/defense, a fast-moving security frontier."
+   },
+   {
+    "trend": "Privacy-enhancing technologies & confidential computing",
+    "rationale": "Federated learning and homomorphic encryption directly extend the 'Privacy' mandate barely covered by CS 708."
+   },
+   {
+    "trend": "Zero-trust & cloud-native security",
+    "rationale": "Builds on ECE 683 Cloud/IoT security toward the zero-trust architectures enterprises are adopting."
+   },
+   {
+    "trend": "Post-quantum cryptography",
+    "rationale": "CS 608 Cryptography and Security should incorporate NIST post-quantum standards as classical schemes are deprecated."
+   },
+   {
+    "trend": "Supply-chain and IoT/OT security",
+    "rationale": "ECE 683 IoT networking is a natural anchor for expanding into supply-chain and operational-technology threats."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish program-level learning outcomes covering both security and privacy competencies.",
+  "Add a dedicated privacy-engineering course so the curriculum matches the 'and Privacy' in the degree title.",
+  "Add cloud-security/DevSecOps and adversarial-ML/AI-security electives.",
+  "Publish the full 30-credit plan (elective 15 credits plus capstone/thesis) so credits reconcile.",
+  "Modernize CS 608 Cryptography with post-quantum cryptography content."
+ ]
+}

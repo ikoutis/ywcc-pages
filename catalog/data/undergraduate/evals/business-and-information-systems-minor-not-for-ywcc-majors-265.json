@@ -1,0 +1,111 @@
+{
+  "id": "business-and-information-systems-minor-not-for-ywcc-majors-265",
+  "name": "Business and Information Systems Minor (not for YWCC majors)",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "The referenced pool has a coherent applied-IS theme: a web sequence (IS 117 -> IS 218 -> IS 219 -> IS 421), databases (IS 331), mobile (IS 322), UX (IS 247/375), requirements analysis (IS 390), IS management (IS 455), advanced IS (IS 465), plus e-commerce (IT 310), networking (IT 120), and system administration (IT 340). At 15 credits (about five courses) this is a reasonable foundation, but with requirementGroups=0 no required-versus-elective sequence is shown and the pool also carries game/media electives (IT 265/266/286/366/380, DD, AD) that stray from a business-IS focus.",
+      "suggestion": "Publish a required IS foundation (e.g., IS 265 -> IS 218 -> IS 331) plus a curated elective menu, and separate the game/media courses so a non-computing student sees a clear applied-IS path."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "The prerequisite graph is clean (missingCourseCount=0, no dangling references) with readable grade-conditioned prerequisites. But this minor is explicitly for non-YWCC majors, and the deepestPrereqChain is 7: the most advanced electives (IS 465 at depth 7 behind a statistics GUR, IS 421 at depth 5 behind IS 219 and IS 331) sit behind ladders a non-computing student cannot reach inside 15 credits.",
+      "suggestion": "Designate a low-prerequisite path through the minor (starting from depth-0 courses such as IS 265, IS 117, IS 247) so non-majors can complete 15 credits without hitting depth-5-to-7 gatekept electives."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives are present in the data. Non-majors adding this minor cannot see what business-and-information-systems competencies they will gain.",
+      "suggestion": "Publish 4-5 learning outcomes framed for non-computing students (e.g., build a business web application, design a database, analyze systems requirements, manage IS-enabled business processes)."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "Credit transparency is partial: statedTotalCredits is 15.0 (a standard, clearly stated minor total, better than the null-credit minors in this college), but with requirementGroups=0 and a null creditReconcileDelta the split between any required core and electives is not shown, so balance within the 15 credits cannot be assessed.",
+      "suggestion": "Break the 15 credits into a stated required core and elective allowance (e.g., 9 credits required + 6 elective) so students see how the minor is composed, not just its total."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "The stated 15-credit total and clean references (missingCourseCount=0) aid clarity, and course descriptions/prerequisites are present, but the minor still lacks an overview and any requirement structure (requirementGroups=0), so it reads as a course list rather than a designed minor.",
+      "suggestion": "Add a short minor overview and an explicit requirement block (required courses + 'choose N from' electives) to make the 15-credit structure legible."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The applied-IS content is current and employable for non-majors (IS 218 web apps, IS 322 mobile, IS 331 databases, IS 247/375 UX, IT 310 e-commerce, IT 120 networking, IT 340 system administration, IS 455 IS management). The gaps are the modern business-technology staples: data analytics/BI, cybersecurity fundamentals, cloud, and project management.",
+      "suggestion": "Add a business-analytics or cybersecurity-fundamentals elective to the menu so non-majors gain a currently in-demand skill alongside the web/database core."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and specific across the sampled courses (e.g., IS 333 social network analysis, IT 265 game architecture and design), with informative content rather than placeholders. Excerpts are truncated at ~220 characters and a few are shorter (IT 265 ~149), but the pool is well described overall."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated clearly with grade conditions and boolean structure (e.g., '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'), and missingCourseCount is 0 with no dangling references, so the graph is internally consistent. The one caveat is that several attractive electives carry deep chains a non-major must plan around."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Business data analytics and BI",
+        "rationale": "The pool covers building and managing systems (IS 218/331/455) but no analytics or business-intelligence course; data-driven decision making is now central to information-systems roles and is the clearest missing competency for non-majors."
+      },
+      {
+        "topic": "Cybersecurity fundamentals",
+        "rationale": "Only IT 120 networking is present; a non-computing student building web, mobile, and database systems (IS 218/322/331) should have a security-fundamentals option, which the menu lacks."
+      },
+      {
+        "topic": "IT project management",
+        "rationale": "IS 390 covers requirements and IS 455 covers IS management, but there is no project-management course (Agile/Scrum, scope, budgeting) that non-majors need to lead technology work in a business setting."
+      },
+      {
+        "topic": "Enterprise systems / ERP and cloud SaaS",
+        "rationale": "E-commerce (IT 310) and system administration (IT 340) appear, but there is no exposure to enterprise/ERP or cloud SaaS platforms that dominate real business information systems."
+      },
+      {
+        "topic": "Data storytelling and visualization",
+        "rationale": "With no analytics or visualization course, non-majors leave without the ability to turn business data into clear decisions, a skill employers increasingly expect from an IS minor."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Low-code / no-code business applications",
+        "rationale": "Much business IS work now happens on low-code platforms; a minor for non-majors is an ideal place to add low-code app building alongside the traditional IS 117/218 web sequence."
+      },
+      {
+        "trend": "AI-assisted business tooling",
+        "rationale": "Generative-AI features and copilots are entering everyday business software; the minor should expose non-majors to using and evaluating AI-enabled business systems."
+      },
+      {
+        "trend": "Cloud and SaaS delivery",
+        "rationale": "Business systems are overwhelmingly cloud/SaaS today, yet the minor's build and admin courses (IS 218/421, IT 340) are traditional; a cloud thread would modernize it."
+      },
+      {
+        "trend": "Cybersecurity awareness for business",
+        "rationale": "Security and privacy responsibilities now reach every business function; a security-fundamentals option would make the minor markedly more relevant to non-computing majors."
+      },
+      {
+        "trend": "Digital transformation and process automation",
+        "rationale": "IS 455 IS management and business processes can grow toward automation/RPA and digital-transformation practice, a fast-growing area for business professionals adding an IS credential."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Publish an explicit requirement structure for the 15 credits (required IS core + curated electives); requirementGroups=0 means the minor currently shows only a course pool.",
+    "Designate a low-prerequisite path so non-computing majors can complete the minor without the depth-5-to-7 gatekept electives (IS 421, IS 465).",
+    "Add a business-analytics/BI course and a cybersecurity-fundamentals option, the most in-demand competencies missing from the menu.",
+    "Publish learning outcomes framed for non-majors, none of which appear in the data.",
+    "Separate the game/media electives (IT 265/266/286/366/380) from the default menu so the applied-business-IS focus is clear."
+  ]
+}

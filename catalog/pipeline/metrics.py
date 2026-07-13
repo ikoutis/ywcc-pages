@@ -11,9 +11,10 @@ Graph-level:    prerequisite cycles (expected: none), depth distribution, orphan
 """
 import json
 import os
+import sys
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.join(HERE, "..", "data")
+import config
+
 SHORT_DESC = 120  # chars; below this a description is "thin"
 
 
@@ -134,15 +135,15 @@ def compute(ontology):
     }
 
 
-def main():
-    ontology = json.load(open(os.path.join(DATA, "ontology.json")))
+def main(level="undergraduate"):
+    cfg = config.resolve(level)
+    ontology = json.load(open(cfg["ontology"]))
     metrics = compute(ontology)
-    out = os.path.join(DATA, "metrics.json")
-    with open(out, "w") as f:
+    with open(cfg["metrics"], "w") as f:
         json.dump(metrics, f, separators=(",", ":"))
-    print("Wrote", out)
+    print(f"[{level}] Wrote {cfg['metrics']}")
     print(json.dumps(metrics["summary"], indent=2))
 
 
 if __name__ == "__main__":
-    main()
+    main(config.level_from_argv(sys.argv))

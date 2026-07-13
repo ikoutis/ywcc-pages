@@ -18,9 +18,7 @@ import sys
 
 import pdfplumber
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-PDF_PATH = os.path.join(ROOT, "2024-2025 Undergraduate.pdf")
-OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "pages.json")
+import config
 
 
 def detect_printed_number(page):
@@ -39,11 +37,14 @@ def detect_printed_number(page):
 
 
 def main():
-    if not os.path.exists(PDF_PATH):
-        sys.exit(f"PDF not found: {PDF_PATH}")
+    cfg = config.resolve(config.level_from_argv(sys.argv))
+    pdf_path, out_path = cfg["pdf"], cfg["pages"]
+    if not os.path.exists(pdf_path):
+        sys.exit(f"PDF not found: {pdf_path}")
+    print(f"[{cfg['level']}] extracting {os.path.basename(pdf_path)}", flush=True)
     pages = []
     printed_offsets = []
-    with pdfplumber.open(PDF_PATH) as pdf:
+    with pdfplumber.open(pdf_path) as pdf:
         n = len(pdf.pages)
         for i, page in enumerate(pdf.pages):
             text = page.extract_text() or ""
@@ -58,15 +59,15 @@ def main():
     if printed_offsets:
         offset = max(set(printed_offsets), key=printed_offsets.count)
     out = {
-        "source": os.path.basename(PDF_PATH),
+        "source": os.path.basename(pdf_path),
+        "level": cfg["level"],
         "page_count": len(pages),
         "printed_offset": offset,
         "pages": pages,
     }
-    os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
-    with open(OUT_PATH, "w") as f:
+    with open(out_path, "w") as f:
         json.dump(out, f)
-    print(f"Wrote {OUT_PATH}: {len(pages)} pages, printed_offset={offset}", flush=True)
+    print(f"Wrote {out_path}: {len(pages)} pages, printed_offset={offset}", flush=True)
 
 
 if __name__ == "__main__":

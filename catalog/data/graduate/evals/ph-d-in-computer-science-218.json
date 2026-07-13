@@ -1,0 +1,111 @@
+{
+ "id": "ph-d-in-computer-science-218",
+ "name": "Ph.D. in Computer Science",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 2,
+   "justification": "As a research doctorate a light course footprint is expected, but the page surfaces only three courses (CS 725/726 Independent Study and the 0-credit CS 791 Graduate Seminar) with requirementGroups=0, so there is no visible structure for breadth/qualifier coursework, candidacy or dissertation research.",
+   "suggestion": "Publish the doctoral milestone structure (breadth/qualifier coursework, candidacy exam, dissertation-research registration) so the research progression is legible on the catalog page."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 3,
+   "justification": "With only 3 referenced courses, deepestPrereqChain=0 and missingCourseCount=0, there is essentially no prerequisite graph to evaluate; the registration gates that exist (advisor approval for CS 725/726) are administrative rather than academic.",
+   "suggestion": "Point students to the graduate CS course catalog they draw advanced breadth coursework from, so the research page connects to the wider curriculum."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning or research outcomes are stated in the provided data.",
+   "suggestion": "Publish doctoral learning outcomes framed as research competencies (independent research, scholarly communication, dissertation defense)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 2,
+   "justification": "statedTotalCredits=null and creditReconcileDelta=null leave the total credit requirement and dissertation-credit minimums unstated, which is a transparency gap even for a research degree.",
+   "suggestion": "State the total post-bachelor's/master's credit requirement and the minimum dissertation-research credits."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 2,
+   "justification": "The page is sparse: only 3 courses, no requirement groups, no outcomes and no description of admission, qualifiers, candidacy or dissertation timeline, so a prospective student cannot infer the program's shape.",
+   "suggestion": "Add a program-structure section (admission, qualifying/breadth exams, candidacy, dissertation, expected timeline)."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 3,
+   "justification": "Research currency cannot be judged from three administrative course entries (CS 725/726 independent study, CS 791 seminar); the seminar mechanism supports exposure to current topics but no research areas are surfaced.",
+   "suggestion": "List active research areas and labs (AI/ML, security, systems, theory) so prospective students can see the program's current directions."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 3,
+   "justification": "The three descriptions are present but largely administrative (registration restrictions and advisor-approval boilerplate for CS 725/726; a brief seminar summary for CS 791), so they convey process rather than substantive research content."
+  },
+  "prerequisiteClarity": {
+   "score": 3,
+   "justification": "Prerequisites are null and the registration conditions (doctoral-student restriction, advisor approval) are stated clearly and consistently with missingCourseCount=0, though there is little prerequisite structure to assess."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Formal research-methods & responsible conduct of research",
+    "rationale": "Only independent study and a seminar appear; no required research-methods/RCR course is listed for doctoral training."
+   },
+   {
+    "topic": "Breadth/qualifier coursework structure",
+    "rationale": "No breadth requirement across CS areas (theory, systems, AI) is visible, unlike a typical PhD core."
+   },
+   {
+    "topic": "Dissertation research course sequence",
+    "rationale": "The three courses omit a dissertation-research registration (e.g., a CS 79x dissertation course) central to doctoral progress."
+   },
+   {
+    "topic": "Advanced research seminars by area",
+    "rationale": "Beyond CS 791, no area-specific research seminars (AI/ML, security, systems) are surfaced to convey the research frontier."
+   },
+   {
+    "topic": "Teaching & professional development",
+    "rationale": "TA training, grant writing and academic-job preparation are standard doctoral elements not represented on the page."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Generative AI / LLMs and foundation models",
+    "rationale": "A dominant CS research thrust the program should surface through advanced seminars and dissertation areas."
+   },
+   {
+    "trend": "Trustworthy & responsible AI",
+    "rationale": "Fairness, privacy and safety in ML are fast-growing doctoral research directions worth advertising."
+   },
+   {
+    "trend": "AI-for-science & interdisciplinary computational research",
+    "rationale": "Ties CS doctoral work to the college's data-science and AI programs for cross-area dissertations."
+   },
+   {
+    "trend": "Reproducibility & open science in CS research",
+    "rationale": "Increasingly expected of doctoral training and a natural addition to the graduate seminar (CS 791)."
+   },
+   {
+    "trend": "Quantum computing / post-Moore systems",
+    "rationale": "An emerging frontier that would signal currency in the program's research portfolio."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish the doctoral program structure and milestones (breadth/qualifier, candidacy, dissertation) on the catalog page.",
+  "State the total credit and minimum dissertation-research credit requirements.",
+  "Add and advertise required research-methods and responsible-conduct-of-research training.",
+  "List faculty research areas and labs to convey current research directions (AI/ML, security, systems, theory).",
+  "Publish program-level research learning outcomes."
+ ]
+}

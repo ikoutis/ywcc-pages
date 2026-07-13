@@ -16,17 +16,29 @@ from collections import defaultdict
 PRINTED_OFFSET = 1  # printed_page = pdf_index + 1
 
 DEGREE_RE = re.compile(
-    r"^(B\.S\.|B\.A\.|B\.F\.A\.|B\.Arch\.?|Bachelor|B\.S\.E\.T\.|B\.S\.[A-Z])", re.I
+    r"^(B\.S\.|B\.A\.|B\.F\.A\.|B\.Arch\.?|Bachelor|B\.S\.E\.T\.|B\.S\.[A-Z]"
+    r"|M\.S\.|M\.A\.|M\.Arch\.?|M\.B\.A\.?|M\.F\.A\.?|M\.Eng\.?|M\.Sc\.?"
+    r"|Master|Ph\.?\s?D\.?|Doctor)", re.I
 )
 URL_RE = re.compile(r"\((?:https?://)?catalog\.njit\.edu[^)]*\)")
 PPARAM_RE = re.compile(r"\?P=([A-Z]{2,4})%20(\d{3}[A-Z]?)")
 CODE_INLINE_RE = re.compile(r"\b([A-Z]{2,4}) (\d{3}[A-Z]?)\b")
-NOISE_LINE_RE = re.compile(r"^(?:2024-2025 Undergraduate \d+|\d+ New Jersey Institute of Technology)\s*$")
+NOISE_LINE_RE = re.compile(
+    r"^(?:2024-2025 (?:Undergraduate|Graduate) \d+|\d+ New Jersey Institute of Technology)\s*$")
 
 YEAR_RE = re.compile(r"^((?:First|Second|Third|Fourth|Fifth|Sixth) Year)\s*$")
 SEM_RE = re.compile(r"^(\d(?:st|nd|rd|th) Semester|Fall Semester|Spring Semester|Summer(?: Semester)?)(?:\s+Credits)?\s*$")
 TERMCR_RE = re.compile(r"^Term Credits\s+(\d+(?:\.\d+)?)\s*$")
 TOTALCR_RE = re.compile(r"Total Credits\s+(\d+(?:\.\d+)?)")
+
+# graduate requirement-group format: "Core Courses (12 credits)", "Elective Courses (18 credits)"
+GRAD_GROUP_RE = re.compile(r"^(.{2,60}?)\s*\((\d+(?:\.\d+)?)\s*credits?\)\s*$", re.I)
+GRAD_ROWCODE_RE = re.compile(r"^([A-Z]{2,4}(?:/[A-Z]{2,4})?\s\d{3}[A-Z]?)\s+(.+)$")
+GRAD_TOTAL_RE = re.compile(
+    r"(?:completion of|requires?(?:\s+a\s+minimum\s+of)?|minimum of|total of)\s+(\d+)\s+credits", re.I)
+# start of a course-DESCRIPTION block ("CS 610. Data Structures. 3 credits") — marks the end
+# of a program's requirements region and the beginning of the department course dump
+COURSE_DESC_ANCHOR = re.compile(r"^[A-Z]{2,4} \d{3}[A-Z]?\. .+?\. \d+(?:\.\d+)? credits", re.I)
 
 
 def slug(s):
@@ -48,8 +60,11 @@ def program_kind(title):
 
 
 def degree_of(title):
-    m = re.match(r"(B\.S\.|B\.A\.|B\.F\.A\.|B\.Arch\.?|Bachelor of [A-Za-z]+)", title)
-    return m.group(1) if m else None
+    m = re.match(
+        r"(B\.S\.|B\.A\.|B\.F\.A\.|B\.Arch\.?|M\.S\.|M\.A\.|M\.Arch\.?|M\.B\.A\.?|M\.F\.A\.?"
+        r"|M\.Eng\.?|Ph\.?\s?D\.?|Bachelor of [A-Za-z]+|Master of [A-Za-z]+|Doctor of [A-Za-z]+)",
+        title)
+    return m.group(1).strip() if m else None
 
 
 def parse_toc(pdf):
@@ -75,8 +90,14 @@ def parse_toc(pdf):
     return entries
 
 
-def build_hierarchy(entries):
-    """From TOC entries, produce colleges, departments, programs (with page ranges)."""
+def build_hierarchy(entries, level="undergraduate"):
+    """From TOC entries, produce colleges, departments, programs (with page ranges).
+
+    Programs sit at the deepest TOC indentation (x0==81). For undergraduate we key off the
+    degree/minor/certificate wording; for graduate, many certificates are named by topic
+    ("Foundations of Cybersecurity") with no degree wording, so every x0==81 entry under a
+    college is treated as a program (non-degree ones are graduate certificates).
+    """
     colleges, departments, programs = [], [], []
     cur_college = None
     cur_dept = None
@@ -90,12 +111,18 @@ def build_hierarchy(entries):
             continue
         if printed < 145:  # front matter / policies, before first college
             continue
-        if looks_like_program(title):
+        is_program = looks_like_program(title)
+        if not is_program and level == "graduate" and e.get("x0") == 81 and cur_college:
+            is_program = True  # topic-named graduate certificate
+        if is_program:
+            kind = program_kind(title)
+            if kind == "other" and level == "graduate":
+                kind = "certificate"
             programs.append({
                 "id": slug(title) + f"-{printed}",
                 "name": title,
                 "degree": degree_of(title),
-                "kind": program_kind(title),
+                "kind": kind,
                 "collegeId": cur_college["id"] if cur_college else None,
                 "departmentId": cur_dept["id"] if cur_dept else None,
                 "printedPage": printed,
@@ -139,7 +166,7 @@ CREDITS_HDR_RE = re.compile(r"\((\d+(?:\.\d+)?)\s*credits", re.I)
 PLAN_HDR_RE = re.compile(r"^(First Year|Plan of Study|Degree Requirements|Curriculum|Program Requirements)\b")
 
 
-def parse_program_body(program, pages, prev_printed, next_printed):
+def parse_program_body(program, pages, prev_printed, next_printed, level="undergraduate"):
     name = program["name"]
     # generous idx window around the TOC page (the spread starts a page or two before it)
     lo = max(0, (prev_printed - PRINTED_OFFSET) if prev_printed else program["printedPage"] - PRINTED_OFFSET - 4)
@@ -148,6 +175,11 @@ def parse_program_body(program, pages, prev_printed, next_printed):
     # drop running-header lines "<pageno> <program name>"
     hdr_re = re.compile(r"^\d{1,4}\s+" + re.escape(name) + r"\s*$")
     lines = [ln for ln in lines if not hdr_re.match(ln.strip())]
+
+    # Graduate programs use named "(N credits)" requirement groups rather than a term-by-term
+    # plan of study, so they get a dedicated parser.
+    if level == "graduate":
+        return _finish_graduate(program, lines)
 
     # locate the canonical requirements block: a bare program-name line followed shortly
     # by "(NN credits" or a plan header, reading to the next "Total Credits N".
@@ -229,6 +261,77 @@ def parse_program_body(program, pages, prev_printed, next_printed):
             item = _parse_req_item(s)
             if item:
                 cur["items"].append(item)
+
+    program = {k: v for k, v in program.items() if not k.startswith("_")}
+    program.update({
+        "statedTotalCredits": stated,
+        "totalCredits": sum(g["credits"] for g in groups if g["credits"]) or None,
+        "description": None,
+        "requirementGroups": [g for g in groups if g["items"]],
+        "courseCodes": sorted(codes),
+    })
+    return program
+
+
+def _finish_graduate(program, lines):
+    """Parse a graduate program: named '(N credits)' requirement groups, 'Code Title' rows,
+    and a stated total from 'requires the completion of N credits' (or the sum of groups)."""
+    name = program["name"]
+    start = next((i for i, ln in enumerate(lines) if ln.strip() == name), 0)
+    block = _coalesce(lines[start:])
+
+    # Bound the block: stop at the next program heading, at the first course-DESCRIPTION line
+    # ("CS 610. Title. 3 credits" — the department course dump, which is not requirements),
+    # or after a hard line cap. This prevents stub/certificate pages from absorbing the
+    # neighbouring course-description section.
+    trimmed = []
+    for j, ln in enumerate(block):
+        s = ln.strip()
+        if j > 0 and COURSE_DESC_ANCHOR.match(s):
+            break
+        if j > 0 and s != name and DEGREE_RE.match(s) and len(s) < 80 and \
+                (any(GRAD_GROUP_RE.match(x.strip()) for x in trimmed) or len(trimmed) > 10):
+            break
+        trimmed.append(ln)
+        if len(trimmed) >= 150:
+            break
+    block = trimmed
+    raw = "\n".join(block)
+
+    stated = None
+    gm = GRAD_TOTAL_RE.search(raw)
+    if gm:
+        stated = float(gm.group(1))
+    if stated is not None and stated < 6:  # implausible total for a grad program -> unreliable
+        stated = None
+
+    codes = set()
+    for m in PPARAM_RE.finditer(raw):
+        codes.add(f"{m.group(1)} {m.group(2)}")
+    for m in CODE_INLINE_RE.finditer(URL_RE.sub(" ", raw)):
+        codes.add(f"{m.group(1)} {m.group(2)}")
+
+    groups = []
+    cur = None
+    for ln in block:
+        s = URL_RE.sub("", ln).strip()
+        if not s:
+            continue
+        gh = GRAD_GROUP_RE.match(s)
+        if gh and not re.match(r"(?i)^(select|required|total|choose|up to|at least|at most)\b", gh.group(1)):
+            cur = {"name": gh.group(1).strip(), "credits": float(gh.group(2)), "items": []}
+            groups.append(cur)
+            continue
+        if re.match(r"(?i)^(code title credits|total credits\b|select .*following|required:|choose )", s):
+            continue
+        if cur is not None:
+            rm = GRAD_ROWCODE_RE.match(s)
+            if rm:
+                cur["items"].append({"code": re.sub(r"\s+", " ", rm.group(1)),
+                                     "title": rm.group(2).strip() or None,
+                                     "credits": None, "raw": s})
+    if stated is None and groups:
+        stated = sum(g["credits"] for g in groups if g["credits"]) or None
 
     program = {k: v for k, v in program.items() if not k.startswith("_")}
     program.update({

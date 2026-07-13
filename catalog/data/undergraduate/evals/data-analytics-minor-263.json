@@ -1,0 +1,111 @@
+{
+  "id": "data-analytics-minor-263",
+  "name": "Data Analytics Minor",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "A real analytics spine exists in the referenced set: statistics (MATH 333, MATH 341, IE 331), data mining (CS 482), databases (CS 331, IS 331), web mining (IS 392), and social network analysis (IS 333). But that spine is surrounded by many courses with no analytics rationale (AD 112/150 art and design, COM 303/354/355 digital media, DD 284/321, ID 203, HRM 301, ENTR 210, IE 447 legal), and with requirementGroups=0 there is no visible required-core-then-elective ladder to guide selection.",
+      "suggestion": "Define an explicit required analytics core (a statistics course, a databases course, and CS 482 data mining) plus a curated elective list, and drop or clearly separate the art/design/media courses that do not serve a data-analytics outcome."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 3,
+      "justification": "The graph is well-formed with readable, grade-conditioned prerequisites, but the analytics capstone-level courses sit deep: CS 482 Data Mining is at depth 7 (it requires CS 301, which itself chains back through the CS 113/114 sequence), and the deepestPrereqChain is 7. missingCourseCount is 2 (YWCC 207, YWCC 307), both peripheral seminars. For a minor aimed partly at non-CS students, reaching the most valuable analytics courses demands a long prerequisite ladder.",
+      "suggestion": "Offer at least one applied-analytics course with a short prerequisite path (e.g., statistics -> a single programming/data course) so non-CS minors can reach a genuine analytics capstone without completing the depth-7 CS 301 chain, and catalog YWCC 207/307."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives appear in the data; the minor is represented only by a referenced course pool. Prospective students cannot see what an analytics-minor graduate should be able to do (e.g., clean data, model, visualize, interpret).",
+      "suggestion": "Publish 4-5 learning outcomes for the minor covering data preparation, statistical modeling, mining/prediction, and communicating results with visualizations."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 2,
+      "justification": "There is no credit information to evaluate: statedTotalCredits is null, requirementGroups is 0, and creditReconcileDelta is null, so the required credit total and the required-versus-elective split are entirely absent. This is a credit-transparency gap rather than an internal inconsistency, but it leaves students unable to plan the minor.",
+      "suggestion": "Publish the minor's total credit requirement and how it divides between a required analytics core and electives (a typical 15-18 credit structure) directly on the page."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 2,
+      "justification": "With requirementGroups=0 the page exposes no structure (no 'choose N from' lists, no core-versus-elective grouping) and no minor overview, and 2 course references dangle (YWCC 207/307). Course-level descriptions and prerequisites are present, but the minor as a unit is not legibly presented.",
+      "suggestion": "Add a short minor overview and an explicit requirement block listing the required courses and the elective menu so the analytics focus is visible at a glance."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The classic analytics toolkit is represented (MATH 333/341 statistical inference, CS 482 data mining, IS 392 web mining, IS 333 social network analysis, database courses), which is solid but somewhat dated. Absent are the tools that now define the field: a Python/R data-science course, applied machine learning, data visualization/BI, and any data-engineering or big-data/cloud component.",
+      "suggestion": "Add an applied machine-learning course and a hands-on data-visualization/BI course (Python or R based) so the minor reflects how analytics is practiced today rather than stopping at classical statistics and mining."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and specific across the pool (e.g., CS 482 'covers the concepts and principles of advanced data mining systems design ... association and dependency analysis, classification, prediction, and clustering'; MATH 333 lists 'discrete and continuous distributions ... statistical inference for the mean and variance'). A few excerpts are shorter (IT 265 at ~149 characters), and all are truncated at ~220, but content is informative rather than placeholder."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are unambiguous and grade-conditioned (e.g., 'CS 301 with a grade C or better' for CS 482, 'MATH 244 ... or MATH 333' for MATH 341), and only 2 peripheral references (YWCC 207/307) dangle. The depth is high but the statements themselves are clear and internally consistent."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Programming for data (Python/R, pandas)",
+        "rationale": "The pool relies on CS 482 and stats courses but shows no dedicated data-programming course; modern analytics is built on Python/R data-wrangling, and without it the minor teaches concepts students cannot readily implement."
+      },
+      {
+        "topic": "Applied machine learning",
+        "rationale": "CS 482 Data Mining is the only predictive-modeling course and it sits at depth 7; a lighter applied-ML course (supervised/unsupervised methods, model evaluation) is now core to any analytics credential and is absent."
+      },
+      {
+        "topic": "Data visualization and business intelligence",
+        "rationale": "No visualization, dashboarding, or BI course appears, yet communicating findings visually (Tableau/Power BI/matplotlib) is the analytics skill employers most consistently demand."
+      },
+      {
+        "topic": "Data engineering and SQL at scale / ETL",
+        "rationale": "CS 331 and IS 331 cover database design, but there is no ETL, data-warehousing, or big-data (Spark/cloud) content, leaving the pipeline that feeds analytics unaddressed."
+      },
+      {
+        "topic": "Data ethics, bias, and privacy",
+        "rationale": "For a data-analytics credential there is no course on responsible data use, bias, or privacy; given IS 333 harvests social-media data, an ethics/privacy component is a notable and topical gap."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "Generative AI and LLMs for analytics",
+        "rationale": "LLM-assisted data analysis and natural-language querying are rapidly entering the analyst workflow; the minor should add exposure so graduates use current tooling rather than classical mining alone."
+      },
+      {
+        "trend": "MLOps and reproducible data pipelines",
+        "rationale": "Analytics work is increasingly productionized; even at minor scope, awareness of versioned, reproducible pipelines would modernize the CS 482 / database thread."
+      },
+      {
+        "trend": "Cloud data platforms",
+        "rationale": "Analytics now runs on Snowflake/BigQuery-style cloud warehouses; the database courses (CS 331/IS 331) could be extended toward cloud data platforms to match hiring demand."
+      },
+      {
+        "trend": "Responsible and privacy-preserving analytics",
+        "rationale": "Regulation and public scrutiny of data use are rising; a minor that already includes social-network and web mining (IS 333/IS 392) should position explicitly around ethical, privacy-aware analytics."
+      },
+      {
+        "trend": "Real-time and streaming analytics",
+        "rationale": "Batch statistics is giving way to streaming/real-time analytics in industry; positioning the mining and database courses toward streaming data would keep the minor current."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Define an explicit required analytics core (statistics + databases + CS 482 data mining) and a curated elective list; the current referenced pool mixes analytics with unrelated art/design/media courses and shows no structure (requirementGroups=0).",
+    "Add a hands-on data-programming course (Python/R) and an applied machine-learning course so students can implement, not just study, analytics.",
+    "Add a data-visualization/BI course to cover the field's most-demanded communication skill, currently absent.",
+    "Publish the minor's total credits and required-versus-elective split (statedTotalCredits is null) and add a short overview so the minor is legible and plannable.",
+    "Provide a low-prerequisite route to a capstone analytics course so non-CS students can reach it without the depth-7 CS 301 chain."
+  ]
+}

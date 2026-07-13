@@ -49,6 +49,13 @@ a { color: inherit; }
 .crumbs { margin: 0 0 18px; font-size: .9rem; color: var(--muted); }
 .crumbs a { color: var(--cyan); text-decoration: none; }
 
+/* level switch (undergraduate / graduate) */
+.levelnav { display: inline-flex; margin-top: 22px; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; }
+.levelnav a { padding: 8px 20px; font-size: .9rem; font-weight: 800; letter-spacing: .02em; text-decoration: none; color: var(--muted); }
+.levelnav a + a { border-left: 1px solid var(--border); }
+.levelnav a.active { background: var(--accent); color: #fff; }
+.levelnav a:not(.active):hover { color: var(--text); background: rgba(255,255,255,.06); }
+
 /* ---- stat tiles ---- */
 .stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; margin: 32px 0; background: var(--border); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
 .stats article { background: var(--panel-2); padding: 18px 16px; }

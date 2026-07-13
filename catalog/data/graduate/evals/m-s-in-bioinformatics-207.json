@@ -1,0 +1,111 @@
+{
+ "id": "m-s-in-bioinformatics-207",
+ "name": "M.S. in Bioinformatics",
+ "dimensions": [
+  {
+   "key": "curriculum_coherence",
+   "name": "Curriculum coherence & progression",
+   "score": 3,
+   "justification": "The 30-credit degree presents a broad interdisciplinary menu of 41 referenced courses spanning BIOL 605/630/672, CHEM 673, CS 631/634/744, DS 675/677 and a deep biostatistics spine (MATH 662->665->654/659), but requirementGroups=0 means no required core or capstone sequence is parsed, so it reads as an elective cafeteria; only CS 744 (Data Mining and Management in Bioinformatics) is a genuinely bioinformatics-specific course.",
+   "suggestion": "Define a required bioinformatics core (sequence/genomics analysis + systems biology + biostatistics) so the menu progresses coherently rather than functioning as a course catalog."
+  },
+  {
+   "key": "prereq_structure",
+   "name": "Prerequisite structure health",
+   "score": 4,
+   "justification": "metrics show deepestPrereqChain=2, missingCourseCount=0 and no dangling references, with clean chains such as MATH 662->665->654/659 and CS 631->632; depth is modest but sound for a menu-style master's.",
+   "suggestion": "Given the mixed BIOL/CHEM/CS/MATH intake, publish explicit bridge expectations (programming plus molecular biology) since several courses (e.g., BIOL 672, DS 644) gate only on 'permission of the instructor'."
+  },
+  {
+   "key": "learning_outcomes",
+   "name": "Learning outcomes & objectives",
+   "score": 2,
+   "justification": "No program-level learning outcomes or educational objectives appear anywhere in the provided data for this degree page.",
+   "suggestion": "Publish 4-6 measurable program learning outcomes (e.g., analyze omics data, apply statistical inference to biological questions, build reproducible pipelines)."
+  },
+  {
+   "key": "credit_balance",
+   "name": "Credit distribution & balance",
+   "score": 3,
+   "justification": "statedTotalCredits=30 is standard (~10 courses), but requirementGroups=0 and creditReconcileDelta=null mean no plan-of-study split among core, electives and project/thesis (CS 700B/701B) is visible, so the balance cannot be verified.",
+   "suggestion": "Publish a plan of study that reconciles to 30 credits with an explicit core / elective / project-or-thesis credit breakdown."
+  },
+  {
+   "key": "presentation",
+   "name": "Presentation & clarity",
+   "score": 3,
+   "justification": "Course descriptions are present and specific across the 40 sample courses, but the page carries no parsed requirement groups, no term/section labels and no stated outcomes, so it presents as a flat course list.",
+   "suggestion": "Add a structured plan-of-study table that labels required core versus elective tracks and the culminating project/thesis."
+  },
+  {
+   "key": "industry_relevance",
+   "name": "Industry & currency relevance",
+   "score": 3,
+   "justification": "Quantitative currency is strong (DS 675 Machine Learning, DS 677 Deep Learning, DS 644 Big Data, CS 634 Data Mining, rich biostatistics), but modern bioinformatics staples such as next-generation-sequencing analysis, genomics algorithms and deep-learning structural biology are essentially absent, leaving CS 744 as the lone bio-specific offering.",
+   "suggestion": "Add genomics/NGS analysis and a structural-bioinformatics (deep-learning protein modeling) course to close the gap between the strong data spine and biological application."
+  }
+ ],
+ "courseLevel": {
+  "descriptionQuality": {
+   "score": 4,
+   "justification": "Sample course descriptions are substantive and specific (e.g., BIOL 672 modeling of metabolic/genetic networks, MATH 654 clinical-trial phases, DS 677 GPU/deep-learning topics) with no thin or placeholder entries evident."
+  },
+  "prerequisiteClarity": {
+   "score": 3,
+   "justification": "missingCourseCount=0 and many chains are explicit (MATH 662->665), but numerous courses list only 'permission of the instructor' and at least one entry (IS 634) has prerequisite text bleeding into the description, reducing clarity."
+  }
+ },
+ "fieldAnalysis": {
+  "missingTopics": [
+   {
+    "topic": "Sequence analysis & genomics algorithms",
+    "rationale": "No dedicated course on alignment, assembly or phylogenetics; CS 744 is the only bioinformatics-specific offering among 41 referenced courses."
+   },
+   {
+    "topic": "Next-generation sequencing (NGS) data analysis",
+    "rationale": "RNA-seq, variant calling and single-cell workflows are core to modern practice yet absent from the course menu."
+   },
+   {
+    "topic": "Structural bioinformatics / protein modeling",
+    "rationale": "Despite DS 677 Deep Learning, no course applies it to protein structure prediction in the AlphaFold era."
+   },
+   {
+    "topic": "Reproducible computational pipelines",
+    "rationale": "DS 644 Big Data is generic; there is no coverage of Nextflow/Snakemake or cloud genomics pipeline reproducibility."
+   },
+   {
+    "topic": "Multi-omics integration",
+    "rationale": "Biostatistics (MATH 665) and ML (DS 675) exist in isolation but no course integrates genomic, proteomic and clinical data."
+   }
+  ],
+  "emergingTrends": [
+   {
+    "trend": "Deep learning for structural biology",
+    "rationale": "DS 677 provides the deep-learning foundation to add AlphaFold/ESMFold-style protein-structure training the program currently lacks."
+   },
+   {
+    "trend": "Genomic foundation models / biological LLMs",
+    "rationale": "Techniques like DNABERT and scGPT could extend the ML courses toward genomic language modeling."
+   },
+   {
+    "trend": "Single-cell and spatial omics",
+    "rationale": "These now-dominant experimental data types would give the biostatistics spine (MATH 665, 678) contemporary biological applications."
+   },
+   {
+    "trend": "Precision medicine & multi-omics analytics",
+    "rationale": "MATH 654 clinical trials plus ML positions the program for translational, patient-level analytics."
+   },
+   {
+    "trend": "Cloud-scale, FAIR/reproducible genomics",
+    "rationale": "Building on DS 644 Big Data to teach FAIR data and reproducible cloud pipelines reflects where computational biology infrastructure is heading."
+   }
+  ]
+ },
+ "topSuggestions": [
+  "Publish measurable program-level learning outcomes for the degree page.",
+  "Define a required bioinformatics core (sequence/genomics + systems biology + biostatistics) instead of a broad elective menu.",
+  "Add genomics/NGS analysis and a deep-learning structural-bioinformatics course to close discipline gaps.",
+  "Publish a plan of study reconciling to 30 credits with a core/elective/thesis breakdown.",
+  "Introduce reproducible-pipeline and cloud-genomics content to modernize the data-engineering side."
+ ]
+}

@@ -3,7 +3,9 @@
    and per-program pages, including a self-contained layered SVG prerequisite graph. */
 "use strict";
 
-const DATA = "../data";
+const PARAMS = new URLSearchParams(location.search);
+const LEVEL = PARAMS.get("level") === "graduate" ? "graduate" : "undergraduate";
+const DATA = `../data/${LEVEL}`;
 let O, M, E, COURSES;
 
 async function loadData() {
@@ -15,6 +17,16 @@ async function loadData() {
   O = o; M = m; E = e;
   COURSES = new Map(O.courses.map((c) => [c.code, c]));
 }
+
+// Wire the Undergraduate / Graduate switch (links preserve the current page).
+function markLevelNav(page) {
+  document.querySelectorAll(".levelnav a").forEach((a) => {
+    const lv = a.dataset.level;
+    a.href = page === "program" ? `index.html?level=${lv}` : `index.html?level=${lv}`;
+    a.classList.toggle("active", lv === LEVEL);
+  });
+}
+const levelParam = () => `level=${LEVEL}`;
 
 const esc = (s) => (s == null ? "" : String(s).replace(/[&<>"]/g, (c) => (
   { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])));
@@ -69,7 +81,7 @@ function renderProgramGrid() {
     const scoreHtml = sc != null
       ? `<span class="score ${scoreClass(sc)}"><span class="n">${sc.toFixed(1)}</span><span class="d">/5</span></span>`
       : `<span class="unscored">not yet evaluated</span>`;
-    return `<a class="card" href="program.html?id=${encodeURIComponent(p.id)}">
+    return `<a class="card" href="program.html?${levelParam()}&id=${encodeURIComponent(p.id)}">
       <span class="deg">${esc(p.degree || p.kind)}</span>
       <h3>${esc(p.name)}</h3>
       <div class="meta">${esc(collegeName(p.collegeId))}${p.statedTotalCredits ? " · " + p.statedTotalCredits + " cr" : ""}</div>
@@ -90,7 +102,7 @@ function renderProgram() {
 
   const head = document.getElementById("head");
   head.innerHTML = `
-    <p class="crumbs"><a href="index.html">Catalog ontology</a> › ${esc(collegeName(p.collegeId))}</p>
+    <p class="crumbs"><a href="index.html?${levelParam()}">${O.meta.level === "graduate" ? "Graduate" : "Undergraduate"} catalog</a> › ${esc(collegeName(p.collegeId))}</p>
     <p class="kicker">${esc(p.degree || p.kind)}${deptName(p.departmentId) ? " · " + esc(deptName(p.departmentId)) : ""}</p>
     <h1>${esc(p.name)}</h1>
     <div class="tagrow">
@@ -307,10 +319,15 @@ function buildGraph(container, program) {
 
 /* ---------------- boot ---------------- */
 async function boot(page) {
+  markLevelNav(page);
   try {
     await loadData();
     if (page === "overview") renderOverview();
     else renderProgram();
+    if (page === "program") {
+      const bl = document.querySelector(".backlink");
+      if (bl) bl.setAttribute("href", `index.html?${levelParam()}`);
+    }
   } catch (err) {
     document.body.insertAdjacentHTML("beforeend",
       `<div class="wrap"><p style="color:var(--bad)">Failed to load catalog data: ${esc(err.message)}.<br>Serve this folder over HTTP (e.g. <code>python -m http.server</code>) — file:// blocks fetch.</p></div>`);

@@ -1,0 +1,111 @@
+{
+  "id": "business-and-information-systems-minor-for-computing-sciences-majors-265",
+  "name": "Business and Information Systems Minor (for Computing Sciences Majors)",
+  "dimensions": [
+    {
+      "key": "curriculum_coherence",
+      "name": "Curriculum coherence & progression",
+      "score": 3,
+      "justification": "The applied-IS theme is coherent (web IS 117->218->219->421, databases IS 331, mobile IS 322, requirements IS 390, IS management IS 455, advanced IS 465, e-commerce IT 310, networking IT 120, system administration IT 340), but this variant is meant specifically for computing-sciences majors and its referenced course set is essentially identical to the non-majors version. For CS majors, courses that overlap their own major (IS 218/219 web development, IS 331 databases duplicating CS 331, IT 114 programming) add little new, and the business content that should distinguish a BIS minor for technologists is not visible in the pool.",
+      "suggestion": "Differentiate this variant by excluding courses that overlap the computing major and foregrounding business and management content (accounting, economics, finance, IS management, e-commerce) so CS majors gain genuine business breadth rather than repeating technical material."
+    },
+    {
+      "key": "prereq_structure",
+      "name": "Prerequisite structure health",
+      "score": 4,
+      "justification": "The prerequisite graph is clean (missingCourseCount=0, no dangling references) with readable, grade-conditioned prerequisites. The deepestPrereqChain is 7, but unlike the non-majors variant that depth is appropriate for this audience: computing-sciences majors have already completed the CS 113/114 and statistics prerequisites, so the depth-5-to-7 electives (IS 421, IS 465) are genuinely reachable rather than blocking.",
+      "suggestion": "Since prerequisites are not a barrier for this audience, use the freed capacity to require the higher-value advanced IS courses (IS 455, IS 465) and confirm none double-count against the student's CS major requirements."
+    },
+    {
+      "key": "learning_outcomes",
+      "name": "Learning outcomes & objectives",
+      "score": 2,
+      "justification": "No program-level learning outcomes or objectives appear in the data. For a minor whose value is giving computing majors business and information-systems breadth, the absence of stated outcomes obscures exactly what differentiates it from the core CS major.",
+      "suggestion": "Publish 4-5 outcomes emphasizing the business/IS competencies CS majors gain (systems analysis, IS management, e-commerce, business process design) that their major does not already cover."
+    },
+    {
+      "key": "credit_balance",
+      "name": "Credit distribution & balance",
+      "score": 3,
+      "justification": "statedTotalCredits is 15.0, a clear and standard minor total (better than the null-credit minors in this college), but with requirementGroups=0 and a null creditReconcileDelta there is no stated required-versus-elective split, and no rule preventing overlap with the CS major is visible, which matters most for this variant.",
+      "suggestion": "Publish the 15-credit breakdown and an explicit non-overlap rule (credits that count for the CS major cannot double-count here) so the minor demonstrably adds new coursework."
+    },
+    {
+      "key": "presentation",
+      "name": "Presentation & clarity",
+      "score": 3,
+      "justification": "The stated 15-credit total and clean references (missingCourseCount=0) aid clarity, and descriptions/prerequisites are present, but there is no overview, no requirement structure (requirementGroups=0), and nothing on the page that visibly distinguishes this variant from the non-majors minor with which it shares a course pool.",
+      "suggestion": "Add an overview that states the audience and the differentiator versus the non-majors variant, plus an explicit requirement block, so the two 265 minors are not indistinguishable."
+    },
+    {
+      "key": "industry_relevance",
+      "name": "Industry & currency relevance",
+      "score": 3,
+      "justification": "The applied-IS courses are current (IS 218 web apps, IS 322 mobile, IS 331 databases, IT 310 e-commerce, IS 455 IS management), but for computing-sciences majors the differentiating value should be business currency, and the pool underweights business analytics, product/project management, and finance/entrepreneurship that would complement strong technical skills.",
+      "suggestion": "Add business-facing electives (business analytics, product/project management, entrepreneurship/finance) that leverage the student's technical depth, rather than IS courses that restate skills from the CS major."
+    }
+  ],
+  "courseLevel": {
+    "descriptionQuality": {
+      "score": 4,
+      "justification": "Descriptions are present and specific (e.g., IS 333 social network analysis, IT 265 'core concepts and design methodologies integral to designing and developing games'), informative rather than placeholder. Excerpts are truncated at ~220 characters with a few shorter, but coverage is strong."
+    },
+    "prerequisiteClarity": {
+      "score": 4,
+      "justification": "Prerequisites are stated clearly with grade conditions and boolean logic (e.g., '(IS 117 or IT 202) and (CS 100, CS 113, or CS 115)'), and missingCourseCount is 0 with no dangling references, so the graph is internally consistent and, for this CS-major audience, its depth is fully navigable."
+    }
+  },
+  "fieldAnalysis": {
+    "missingTopics": [
+      {
+        "topic": "Business core (accounting, economics, finance)",
+        "rationale": "For a BIS minor aimed at computing majors, the highest-value content is business fundamentals their major omits, yet the referenced pool shows applied-IS/IT courses rather than an ACCT/ECON/FIN business core."
+      },
+      {
+        "topic": "Product and project management",
+        "rationale": "CS majors already build software; what a business minor should add is leading it (Agile/Scrum, product, budgeting), and no project-management course is present in the pool."
+      },
+      {
+        "topic": "Business analytics and decision modeling",
+        "rationale": "There is no analytics or decision-modeling course to pair the students' technical ability with business insight, the natural differentiator for technologists adding a business minor."
+      },
+      {
+        "topic": "Entrepreneurship and technology commercialization",
+        "rationale": "For CS majors, entrepreneurship/tech-commercialization content converts engineering skill into ventures; it is absent from this minor's visible set despite fitting the audience well."
+      },
+      {
+        "topic": "Enterprise systems and cloud economics",
+        "rationale": "E-commerce (IT 310) appears, but ERP/enterprise systems and the economics of cloud/SaaS delivery, where business and computing meet, are not represented."
+      }
+    ],
+    "emergingTrends": [
+      {
+        "trend": "AI product management and technical leadership",
+        "rationale": "Demand is surging for engineers who can lead AI-enabled products; this minor is well placed to add product/technical-leadership content that leverages CS majors' skills."
+      },
+      {
+        "trend": "FinTech and technology-driven business models",
+        "rationale": "Computing majors increasingly enter FinTech and platform businesses; e-commerce (IT 310) could anchor a thread toward modern digital business models and payments."
+      },
+      {
+        "trend": "Data-driven decision making",
+        "rationale": "Pairing the students' programming ability with business analytics is a high-return direction the minor should own, rather than restating IS build courses they already know."
+      },
+      {
+        "trend": "Cloud and SaaS business models",
+        "rationale": "Software is delivered as cloud services; teaching the business and economic side of cloud/SaaS gives CS majors context their technical courses omit."
+      },
+      {
+        "trend": "Startup and product entrepreneurship",
+        "rationale": "Technology entrepreneurship is a natural, high-demand extension for computing majors; an entrepreneurship elective would make the minor distinctively valuable to this audience."
+      }
+    ]
+  },
+  "topSuggestions": [
+    "Differentiate this variant from the non-majors minor: exclude courses that overlap the CS major (IS 218/219, IS 331, IT 114) and foreground a business core (accounting, economics, finance, management) so CS majors gain genuine business breadth.",
+    "Publish an explicit non-overlap/double-counting rule against the CS major so the 15-credit minor demonstrably adds new coursework.",
+    "Add product/project-management and business-analytics electives that leverage, rather than repeat, the students' technical skills.",
+    "Publish a requirement structure and an overview stating the audience and differentiator; requirementGroups=0 and the shared course pool make this indistinguishable from the non-majors variant today.",
+    "Publish learning outcomes emphasizing the business/IS competencies CS majors do not already get from their major."
+  ]
+}
