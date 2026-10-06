@@ -34,7 +34,8 @@ pushed the buttons apart.
 
 **Fix.** Rebuilt with `<div>`s only (see the rules below). Checked with a CKEditor round
 trip (the output was identical, and stable on a second save) and against the live theme
-CSS at desktop and phone widths.
+CSS at desktop and phone widths. The fixed markup, ready to paste into Source mode, is
+[examples/phd-student-directory.html](examples/phd-student-directory.html).
 
 ## Why it happens
 
